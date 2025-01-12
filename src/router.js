@@ -13,6 +13,10 @@ import DigitalMarketing from "./Components/Services/DigitalMarketing/DigitalMark
 import Home from "./Pages/Services/DigitalMarketing/Home";
 import SocialMarketing from "./Components/Services/DigitalMarketing/SocialMarketing";
 import SeoServices from "./Components/Services/DigitalMarketing/SeoServices";
+import ContentWriting from "./Components/Services/ContentWriting/ContentWriting";
+import GraphicsDesign from "./Components/Services/GraphicsDesign/GraphicsDesign";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import Blog from "./Components/Blog/Blog";
 
 export const appRouter = createBrowserRouter([
     {
@@ -28,6 +32,14 @@ export const appRouter = createBrowserRouter([
         {
           path: "/aboutus",
           element: <AboutUs />,
+        },
+        {
+          path: "/contact",
+          element: <ContactUs />,
+        },
+        {
+          path: "/blog",
+          element: <Blog />,
         },
         {
           path: "/services",
@@ -77,6 +89,14 @@ export const appRouter = createBrowserRouter([
             },
           ]
         },
+        {
+          path: "services/content-writing",
+          element: <ContentWriting />
+        },
+        {
+          path: "services/graphics-design",
+          element: <GraphicsDesign />
+        }
         
     ],
 }

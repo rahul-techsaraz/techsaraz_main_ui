@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import LOGO from '../../images/Tech-SaraZ-logo-300x99.webp'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // This function handles the scroll logic
+  const handleScroll = () => {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      setShowScrollTop(true);
+    } else {
+      setShowScrollTop(false);
+    }
+  };
+
+  // Scroll function for the button click
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    // Adding scroll event listener on component mount
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
+    <>
    <footer>
   <div className="footer-child">
   <div className="footer-wraper">
@@ -28,16 +54,16 @@ const Footer = () => {
       <div className="footer-box-menu-heading">QUICK LINKS</div>
       <div className="footer-1st-menu">
       <ul>
-        <li><Link to="index.html">Home</Link></li>
-        <li><Link to="about.html">About</Link></li>
-        <li><Link to="services.html">Services</Link></li>
-        <li><Link to="portfolio.html">Portfolio</Link></li>
-        <li><Link to="blog.html">Blog</Link></li>
-        <li><Link to="contact.html">Contact</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/aboutus">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        {/* <li><Link to="portfolio.html">Portfolio</Link></li> */}
+        <li><Link to="/blog">Blog</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
     </div>
-    <div className="footer-box">
+    {/* <div className="footer-box">
       <div className="footer-box-menu-heading">Legal</div>
       <div className="footer-1st-menu">
       <ul>
@@ -47,7 +73,7 @@ const Footer = () => {
         <li><Link to="#">Refund Policy</Link></li>
       </ul>
     </div>
-    </div>
+    </div> */}
 
     <div className="footer-box">
       <h3 className="footer-box-menu-heading">Contact Info</h3>
@@ -59,6 +85,13 @@ const Footer = () => {
   </div>
 </div>
 </footer>
+{showScrollTop  && (<div id="scroll-top" onClick={scrollToTop}>
+  <button id="btn"
+  ><i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+  </button>
+  </div>
+  )}
+</>
   )
 }
 

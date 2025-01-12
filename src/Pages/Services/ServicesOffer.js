@@ -30,15 +30,14 @@ const ServicesOffer = () => {
     <nav className="services-nav">
         <ul>
           <li>
-            <Link to="./web-development"><div className="link">
+            <Link to="/services/web-development"><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
                           <img src={machineLearning} alt="" />
                       </div>
                       <div className="service-div"><h1 className="service-text">Web Development</h1></div>
-                      <div className="service-peragraph"><p className="service-p"> It is a long established fact that a reader will be distracted by 
-                          the readable content of a page when looking at its layout</p></div>
+                      <div className="service-peragraph"><p className="service-p"> Tech SaraZ builds custom websites using an iterative, best-user-focused approach for great functionality and user experience in an intuitive interface.</p></div>
                           <div className="service-icon">
                               <i className="fa-solid fa-arrow-right-long"></i>
                           </div>
@@ -54,7 +53,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="./e-commerce">
+            <Link to="/services/e-commerce">
               <div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
@@ -62,8 +61,7 @@ const ServicesOffer = () => {
                           <img src={campaignImage} alt="" />
                       </div>
                       <div className="service-div"><h1 className="service-text">E-commerce</h1></div>
-                      <div className="service-peragraph"><p className="service-p"> It is a long established fact that a reader will be distracted by 
-                          the readable content of a page when looking at its layout</p></div>
+                      <div className="service-peragraph"><p className="service-p"> We create personalized, interactive e-commerce platforms, merging technology with a user-centric design to enhance customers' shopping experience.</p></div>
                           <div className="service-icon">
                               <i className="fa-solid fa-arrow-right-long"></i>
                           </div>
@@ -78,7 +76,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="./ui-and-ux-designing">
+            <Link to="/services/ui-and-ux-designing">
               <div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
@@ -86,8 +84,7 @@ const ServicesOffer = () => {
                           <img src={graphicdesignerImage} alt="" />
                       </div>
                       <div className="service-div"><h1 className="service-text">UI and UX Designing</h1></div>
-                      <div className="service-peragraph"><p className="service-p"> It is a long established fact that a reader will be distracted by 
-                          the readable content of a page when looking at its layout</p></div>
+                      <div className="service-peragraph"><p className="service-p"> Our design services balance aesthetics and usability, creating interactive UI and UX designs that enhance user experience and boost engagement.</p></div>
                           <div className="service-icon">
                               <i className="fa-solid fa-arrow-right-long"></i>
                           </div>
@@ -102,15 +99,14 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="./digital-merketing"><div className="link">
+            <Link to="/services/digital-merketing"><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
                         <img src={digitalartImage} alt="" />
                       </div>
                       <div className="service-div"><h1 className="service-text">Digital Marketing</h1></div>
-                      <div className="service-peragraph"><p className="service-p"> It is a long established fact that a reader will be distracted by 
-                          the readable content of a page when looking at its layout</p></div>
+                      <div className="service-peragraph"><p className="service-p"> We leverage the latest strategies with our comprehensive digital marketing services. We amplify your brand presence, attract more leads, and convert them into your loyal customers.</p></div>
                           <div className="service-icon">
                               <i className="fa-solid fa-arrow-right-long"></i>
                           </div>
@@ -126,15 +122,14 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="./content-writing"><div className="link">
+            <Link to="/services/content-writing"><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
                         <img src={write1Image} alt="" />
                       </div>
                       <div className="service-div"><h1 className="service-text">Content Writing</h1></div>
-                      <div className="service-peragraph"><p className="service-p"> It is a long established fact that a reader will be distracted by 
-                          the readable content of a page when looking at its layout</p></div>
+                      <div className="service-peragraph"><p className="service-p"> Our professional writers craft compelling narratives that resonate with your audience, driving engagement and bolstering your brand's image.</p></div>
                           <div className="service-icon">
                               <i className="fa-solid fa-arrow-right-long"></i>
                           </div>
@@ -150,15 +145,14 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="./graphics-design"><div className="link">
+            <Link to="/services/graphics-design"><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
                         <img src={pentool2Image} alt="" />
                       </div>
                       <div className="service-div"><h1 className="service-text">Graphics Designing</h1></div>
-                      <div className="service-peragraph"><p className="service-p"> It is a long established fact that a reader will be distracted by 
-                          the readable content of a page when looking at its layout</p></div>
+                      <div className="service-peragraph"><p className="service-p"> Our graphic design services deliver stunning, creative visuals that captivate your audience and effectively communicate your brand message.</p></div>
                           <div className="service-icon">
                               <i className="fa-solid fa-arrow-right-long"></i>
                           </div>

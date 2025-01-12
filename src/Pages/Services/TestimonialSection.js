@@ -18,7 +18,7 @@ const TestimonialSection = () => {
 	<div className="testmonial-heading">
 		<h1 className="testmonial-h1">What Clients Say</h1>
     </div>
-	{/* <div className="owl-carousel owl-theme testimonials-container"> */}
+	{/* <div className="owl-carousel owl-theme testimonials-container"> */} 
         <CustomOwlCarousel isloop={true} margin={10} isnav={true}>
     	<div className="item testimonial-card">
     		<main className="test-card-body">

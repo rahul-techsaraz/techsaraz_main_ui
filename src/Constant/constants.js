@@ -158,6 +158,25 @@ export const constants = {
             alt:'Blogs Image'
         },
       
+    },
+    socialIcons: [
+        "facebook-f", "twitter", "x-twitter", "instagram", "youtube", "react", "node-js", "php", "angular", "python"
+      ],
+    socialLinks: {
+       facebook:"https://www.facebook.com/techsaraz06/",
+       instagram:"https://www.instagram.com/techsaraz/",
+       youtube:"https://www.youtube.com/@techsaraz",
+       linkedin:"https://www.linkedin.com/company/tech-saraz/",
+       tweeter:"https://twitter.com/TechSaraz"
+    },
+    heroBannerHeading:{
+        subtitle: "Where innovation meets expertise in web development",
+        linkText: "Tech SaraZ",
+        linkUrl: "#",
+    },
+    landingPageText: {
+        heroSectionMainSubText:`At Techsaraz, we deliver innovative technology services tailored to attract and engage your ideal customers. Our expert solutions help you grow, connect with your audience, and stand out in a competitive market. Let's unlock your business’s true potential together`,
+        aboutSectionDescription:"Tech SaraZ is a software company based in Bangalore that specializes in top-notch digital Marketing and web design. In our fast-paced digital world, it’s crucial to make your products or services shine brighter than the rest. We’re here to support those with big dreams and a relentless drive to succeed in their online businesses by providing our unmatched services. A well-designed website is the key to drawing in and keeping customers in this digital era. We at Tech SaraZ grasp this essential fact, and our work ranges from creating the most inventive and user-friendly websites to effectively marketing business online. A top-tier website and extraordinary marketing services can act as the spark that sends business soaring. Our experienced professionals are committed to ensuring your online presence isn’t just another face in the crowd but a standout player that grabs attention and fuels business growth. With Tech SaraZ, you can be confident that your digital marketing needs are in the safest hands."
     }
     
 }
