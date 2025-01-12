@@ -6,11 +6,12 @@ import { appRouter } from './router';
 import { RouterProvider } from 'react-router-dom';
 import 'owl.carousel';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={appRouter} />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

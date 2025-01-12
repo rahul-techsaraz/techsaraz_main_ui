@@ -1,9 +1,9 @@
-import React from 'react';
-import SocialMediaMarketingCompetitors from '../../../Pages/Services/DigitalMarketing/SocialMarketingCompititor';
-import { OurEcommerce } from '../../../Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment';
-import BenefitsSection from '../../BenefitsSection/BenefitsSection';
-import { seoBenefitsData } from '../../../Constant/config/benefitsConfig';
-import { constant } from '../../../Constant/en';
+import React from "react";
+import SocialMediaMarketingCompetitors from "../../../Pages/Services/DigitalMarketing/SocialMarketingCompititor";
+import { OurEcommerce } from "../../../Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment";
+import BenefitsSection from "../../BenefitsSection/BenefitsSection";
+import { seoBenefitsData } from "../../../Constant/config/benefitsConfig";
+import { constant } from "../../../Constant/en";
 
 const SeoServices = () => {
   const { title, description } = constant;

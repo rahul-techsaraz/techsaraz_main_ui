@@ -1,15 +1,15 @@
-import React from 'react';
-import './blog.css';
-import BlogHeroSection from './BlogHeroSection';
-import BlogMainConatainer from './BlogMainConatainer';
+import React from 'react'
+import './blog.css'
+import BlogHeroSection from './BlogHeroSection'
+import BlogMainConatainer from './BlogMainConatainer'
 
 const Blog = () => {
   return (
     <>
-      <BlogHeroSection />
-      <BlogMainConatainer />
+    <BlogHeroSection />
+    <BlogMainConatainer />
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

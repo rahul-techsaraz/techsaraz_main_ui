@@ -16,9 +16,9 @@ const CompetitorBox = ({ icon, title, description }) => {
 
 // Prop validation
 CompetitorBox.propTypes = {
-  icon: PropTypes.string.isRequired, // 'icon' should be a string and is required
-  title: PropTypes.string.isRequired, // 'title' should be a string and is required
-  description: PropTypes.string.isRequired, // 'description' should be a string and is required
+  icon: PropTypes.string.isRequired,      // 'icon' should be a string and is required
+  title: PropTypes.string.isRequired,     // 'title' should be a string and is required
+  description: PropTypes.string.isRequired // 'description' should be a string and is required
 };
 
 export default CompetitorBox;
