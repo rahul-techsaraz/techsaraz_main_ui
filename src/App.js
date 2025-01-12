@@ -1,15 +1,14 @@
-import { Outlet } from "react-router-dom";
-import Header from "./Components/Header/Header";
+import { Outlet } from 'react-router-dom';
+import Header from './Components/Header/Header';
 import './style/style.css';
-import './style/home-media.css'
-import Footer from "./Components/Footer/Footer";
-import ClientSection from "./Pages/LandingPages/ClientSection";
-import BlogSection from "./Pages/LandingPages/BlogSection";
-import { config } from "./Constant/config";
-import PortfolioSection from "./Pages/LandingPages/PortfolioSection";
-import { useEffect, useRef, useState } from "react";
+import './style/home-media.css';
+import Footer from './Components/Footer/Footer';
+import ClientSection from './Pages/LandingPages/ClientSection';
+import BlogSection from './Pages/LandingPages/BlogSection';
+import { config } from './Constant/config';
+import PortfolioSection from './Pages/LandingPages/PortfolioSection';
+import { useEffect, useRef, useState } from 'react';
 function App() {
-
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
 
@@ -53,34 +52,35 @@ function App() {
 
   useEffect(() => {
     // Get the follower element
-    const follower = document.querySelector("#mouse-follower");
+    const follower = document.querySelector('#mouse-follower');
 
     if (!follower) return;
 
     // Set up the mousemove event listener
-    document.addEventListener("mousemove", setCoords);
+    document.addEventListener('mousemove', setCoords);
 
     // Start the animation loop when the component mounts
     update(follower);
 
     // Cleanup the event listener on component unmount
     return () => {
-      document.removeEventListener("mousemove", setCoords);
+      document.removeEventListener('mousemove', setCoords);
     };
   }, [mouseX, mouseY]); // Only trigger effect when mouse position changes
   return (
     <>
-        <div className="full-section">
-        <div id="mouse-follower" style={{position:'fixed'}}></div>
-          <Header />
-          <Outlet />
-          <PortfolioSection portfolios={config.LandingPortfolioConfig.portfolios} />
-          <ClientSection clients={config.LandingClientConfig.clients} />
-            <BlogSection blogs={config.BlogConfig.blogs} />
-          <Footer />
-        </div>
+      <div className="full-section">
+        <div id="mouse-follower" style={{ position: 'fixed' }}></div>
+        <Header />
+        <Outlet />
+        <PortfolioSection
+          portfolios={config.LandingPortfolioConfig.portfolios}
+        />
+        <ClientSection clients={config.LandingClientConfig.clients} />
+        <BlogSection blogs={config.BlogConfig.blogs} />
+        <Footer />
+      </div>
     </>
-
   );
 }
 

@@ -57,7 +57,7 @@ BenefitsSection.propTypes = {
       imageSrc: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

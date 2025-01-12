@@ -2,7 +2,7 @@ import React from 'react';
 import { images } from '../../../../Constant/images';
 
 const Section = ({ title, description, image, items }) => {
-    const {checkedImage} = image;
+  const { checkedImage } = image;
   return (
     <section className="in-bangalore">
       <div className="in-bangalore-pulse">
@@ -37,7 +37,7 @@ const Section = ({ title, description, image, items }) => {
 };
 
 const CompetitorSection = () => {
-    const {competitorAnalysisImage} = images;
+  const { competitorAnalysisImage } = images;
   return (
     <section className="competitor">
       <div className="competitor-pulse">
@@ -77,7 +77,7 @@ const CompetitorSection = () => {
               icon: 'fa-object-ungroup',
               title: 'High-Quality UI/UX Design Services',
               description:
-                'If you\'re seeking to build a web or mobile app, our highly skilled team is equipped to offer you top-tier UI/UX design services. We strive to construct interactive, high-quality products efficiently, solidifying our reputation as a trusted UI and UX design company in Bangalore.',
+                "If you're seeking to build a web or mobile app, our highly skilled team is equipped to offer you top-tier UI/UX design services. We strive to construct interactive, high-quality products efficiently, solidifying our reputation as a trusted UI and UX design company in Bangalore.",
             },
           ].map((item, index) => (
             <div className="competitor-box" key={index}>
@@ -95,8 +95,7 @@ const CompetitorSection = () => {
 };
 
 const UiUxDesign = () => {
-    const {uxDesignImage,
-        uxStratagyImage} = images;
+  const { uxDesignImage, uxStratagyImage } = images;
   const uxStrategyData = {
     title: 'UX Strategy',
     description: [
@@ -107,7 +106,13 @@ const UiUxDesign = () => {
       pulseImage: uxDesignImage,
       mainImage: uxStratagyImage,
     },
-    items: ['Fast setup', 'User-friendly', 'Best For online store', 'Seamless integration', 'Optimize your business'],
+    items: [
+      'Fast setup',
+      'User-friendly',
+      'Best For online store',
+      'Seamless integration',
+      'Optimize your business',
+    ],
   };
 
   return (

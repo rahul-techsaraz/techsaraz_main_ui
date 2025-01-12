@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SocialMediaIcons = ({ icons }) => {
   return (
@@ -13,7 +13,13 @@ const SocialMediaIcons = ({ icons }) => {
   );
 };
 
-const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUrl }) => {
+const LetterHeroBanner = ({
+  headingText,
+  socialIcons,
+  subtitle,
+  linkText,
+  linkUrl,
+}) => {
   return (
     <div className="web-development-banner">
       {/* Social Media Icons Section */}
@@ -22,7 +28,7 @@ const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUr
       {/* About Us Text Section */}
       <div className="about-us-text-p">
         <p className="about-text-p1">
-          Welcome to{" "}
+          Welcome to{' '}
           <Link to={linkUrl} className="tech-saraz-animation">
             <span className="tech-saraz-name-animation" />
             <span className="tech-saraz-name-animation" />
@@ -38,7 +44,7 @@ const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUr
       <div className="about-hero-section-text">
         <div className="heading-bounce-animation">
           <h1 className="animation-heading-text">
-            {headingText.split("").map((letter, index) => (
+            {headingText.split('').map((letter, index) => (
               <span key={index} className="animation-heading-span">
                 {letter}
               </span>
@@ -51,13 +57,22 @@ const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUr
 };
 
 LetterHeroBanner.defaultProps = {
-  headingText: "WEB DEVELOPMENT",
+  headingText: 'WEB DEVELOPMENT',
   socialIcons: [
-    "facebook-f", "twitter", "x-twitter", "instagram", "youtube", "react", "node-js", "php", "angular", "python"
+    'facebook-f',
+    'twitter',
+    'x-twitter',
+    'instagram',
+    'youtube',
+    'react',
+    'node-js',
+    'php',
+    'angular',
+    'python',
   ],
-  subtitle: "Where innovation meets expertise in web development",
-  linkText: "Tech SaraZ",
-  linkUrl: "#",
+  subtitle: 'Where innovation meets expertise in web development',
+  linkText: 'Tech SaraZ',
+  linkUrl: '#',
 };
 
 export default LetterHeroBanner;
