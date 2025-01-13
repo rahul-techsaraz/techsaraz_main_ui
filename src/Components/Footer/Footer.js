@@ -88,11 +88,7 @@ const Footer = () => {
 </div>
 </footer>
 {showScrollTop  && (<div id="scroll-top" onClick={scrollToTop}>
-<<<<<<< HEAD
-  <button id="btn"
-=======
   <button id="btn" className='scroll-top-button-22'
->>>>>>> origin/jayantadiv
   ><i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
   </button>
   </div>
