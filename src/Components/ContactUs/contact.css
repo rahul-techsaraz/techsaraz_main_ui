@@ -26,6 +26,7 @@ html{
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 9999;
+  pointer-events: none;
 }
 
   /*  */
@@ -472,7 +473,7 @@ html{
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-  .contact-fill-up-in-box-fillup-wraper{
+  .contact-fill-up-in-box-fillup-wraper23{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;

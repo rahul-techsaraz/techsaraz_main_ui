@@ -936,7 +936,7 @@ header.sticky li a {
   border: 3px solid #e9ceff;
   width: 100%;
   position: relative;
-  height: 250px;
+  height: 290px;
   transition: .3s ease;
   border-radius: 20px;
 }
@@ -948,7 +948,7 @@ background: linear-gradient(to right, #2a0845, #6441A5);
   margin: 20px 0 0 20px;
   position: absolute;
   width: 100%;
-  height: 244px;
+  height: 284px;
   transition: .4s ease;
   border-radius: 16px;
   display: flex;
@@ -1688,7 +1688,7 @@ nav ul li .link > img{
   border: 1px solid #ff0033;
   border-radius: 20px;
 }
-.conuter-img img{
+.counter-img-sub{
    width: 70px;
    padding-bottom: 15px;
 }
@@ -2296,7 +2296,7 @@ style attribute{
 .item1-img{
   padding: 20px;
 }
-.item1-img img{
+.item1-img-img{
   width:140px;
   /* filter: contrast(0%); */
   opacity: 1;
@@ -2707,7 +2707,10 @@ font-weight: 600;
   font-size: 14px;
 }
 
-
+.scroll-top-button-22{
+  background-color: transparent;
+  border: none;
+}
 /* footer end */
 
 

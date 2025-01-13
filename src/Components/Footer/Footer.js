@@ -1,4 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
+// import '../../style/home-media.css';
 import LOGO from '../../images/Tech-SaraZ-logo-300x99.webp'
 import { Link } from 'react-router-dom';
 
@@ -86,7 +88,11 @@ const Footer = () => {
 </div>
 </footer>
 {showScrollTop  && (<div id="scroll-top" onClick={scrollToTop}>
+<<<<<<< HEAD
   <button id="btn"
+=======
+  <button id="btn" className='scroll-top-button-22'
+>>>>>>> origin/jayantadiv
   ><i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
   </button>
   </div>

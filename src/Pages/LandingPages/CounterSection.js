@@ -34,7 +34,7 @@ const CounterSection = () => {
       <div className="stats-container">
         <div className="stat">
           <div className="counter-img">
-            <img src={serviceImage} alt="Happy Clients" />
+            <img className='counter-img-sub' src={serviceImage} alt="Happy Clients" />
           </div>
           <div className="subscribers-odometer odometer plus">
             {happyClients}
@@ -44,7 +44,7 @@ const CounterSection = () => {
 
         <div className="stat">
           <div className="counter-img">
-            <img src={workFromHome3image} alt="Complete Projects" />
+            <img className='counter-img-sub' src={workFromHome3image} alt="Complete Projects" />
           </div>
           <div className="videos-odometer odometer plus">
             {completeProjects}
@@ -54,7 +54,7 @@ const CounterSection = () => {
 
         <div className="stat">
           <div className="counter-img">
-            <img src={expertiseImage} alt="Years of Experience" />
+            <img className='counter-img-sub' src={expertiseImage} alt="Years of Experience" />
           </div>
           <div className="projects-odometer odometer plus">
             {yearsOfExperience}
@@ -64,7 +64,7 @@ const CounterSection = () => {
 
         <div className="stat">
           <div className="counter-img">
-            <img src={sportsTrophyImage} alt="Winning Awards" />
+            <img className='counter-img-sub' src={sportsTrophyImage} alt="Winning Awards" />
           </div>
           <div className="winning-odometer odometer plus">
             {winningAwards}

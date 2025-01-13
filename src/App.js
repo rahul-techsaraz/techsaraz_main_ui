@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import './style/style.css';
-import './style/home-media.css'
+import './style/home-media.css';
 import Footer from "./Components/Footer/Footer";
 import ClientSection from "./Pages/LandingPages/ClientSection";
 import BlogSection from "./Pages/LandingPages/BlogSection";
