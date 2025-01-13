@@ -1,16 +1,23 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import '../../../Pages/css/web-development.css';
-import WebDevelopmentBanner from '../../../Pages/Services/WebDevelopment/WebDevelopmentBanner'
-import BestCompanySection from '../../../Pages/Services/WebDevelopment/BestCompanySection'
-import WebCompetitorSection from '../../../Pages/Services/WebDevelopment/WebCompetitorSection'
+import LetterHeroBanner from '../../LetterHeroBanner/LetterHeroBanner';
+import { constants } from '../../../Constant/constants';
+import BestCompanySection from '../../BestCompanySection/BestCompanySection';
+import CompetitorSection from '../../CompetitorSection/CompetitorSection';
 
 const MainWebDevelopmentSection = () => {
   return (
     <>
-    <WebDevelopmentBanner />
+    <LetterHeroBanner
+      headingText={"Web Developer"} 
+      socialIcons={constants.socialIcons} 
+      subtitle={constants.heroBannerHeading.subtitle}
+      linkText={constants.heroBannerHeading.linkText} 
+      linkUrl={constants.heroBannerHeading.linkUrl}
+      />
     <BestCompanySection />
-    <WebCompetitorSection />
+    <CompetitorSection />
     <Outlet />
     </>
   )

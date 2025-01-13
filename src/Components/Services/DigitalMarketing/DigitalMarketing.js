@@ -2,16 +2,21 @@ import React from 'react'
 import '../../../Pages/css/digital-merketing.css';
 import '../../../Pages/css/web-development.css';
 import '../../../Pages/css/social-marketing.css';
-
-
-import WebDevelopmentBanner from '../../../Pages/Services/WebDevelopment/WebDevelopmentBanner'
-import BestCompanySection from '../../../Pages/Services/WebDevelopment/BestCompanySection'
 import { Outlet } from 'react-router-dom'
+import LetterHeroBanner from '../../LetterHeroBanner/LetterHeroBanner';
+import { constants } from '../../../Constant/constants';
+import BestCompanySection from '../../BestCompanySection/BestCompanySection';
 
 const DigitalMarketing = () => {
   return (
     <>
-    <WebDevelopmentBanner />
+    <LetterHeroBanner
+          headingText={"Web Developer"} 
+          socialIcons={constants.socialIcons} 
+          subtitle={constants.heroBannerHeading.subtitle}
+          linkText={constants.heroBannerHeading.linkText} 
+          linkUrl={constants.heroBannerHeading.linkUrl}
+          />
     <BestCompanySection />
     <Outlet />
 

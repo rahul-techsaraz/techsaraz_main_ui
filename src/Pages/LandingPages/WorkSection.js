@@ -18,8 +18,7 @@ const WorkSection = () => {
                         <i className="fa-solid fa-laptop-code"></i>
                     </div>
                      <h1 className="work-box-h1">Project Processing</h1>
-                     <p className="work-box-up-box-p">It is a long established fact that a reader will be
-                         distracted by the readable content of a page when looking at its layout.</p>
+                     <p className="work-box-up-box-p">Techsaraz delivers efficient project processing through strategic planning, expert execution, and cutting-edge technology. We work closely with clients to ensure tailored solutions that meet objectives and exceed expectations, ensuring project success.</p>
                 </div>
             </div>
 
@@ -29,8 +28,7 @@ const WorkSection = () => {
                         <i className="fa-solid fa-bullhorn"></i>
                     </div>
                      <h1 className="work-box-h1">High Quality Products</h1>
-                     <p className="work-box-up-box-p">It is a long established fact that a reader will be
-                         distracted by the readable content of a page when looking at its layout.</p>
+                     <p className="work-box-up-box-p">Techsaraz offers high-quality products built with precision and innovation. We prioritize durability, performance, and customer satisfaction, delivering reliable solutions that meet industry standards and exceed client expectations for long-term success.</p>
                 </div>
             </div>
 
@@ -41,8 +39,7 @@ const WorkSection = () => {
                         <i className="fa-solid fa-fill-drip"></i>
                     </div>
                      <h1 className="work-box-h1">Quality Finished</h1>
-                     <p className="work-box-up-box-p">It is a long established fact that a reader will be
-                         distracted by the readable content of a page when looking at its layout.</p>
+                     <p className="work-box-up-box-p">Techsaraz ensures quality finished products through meticulous attention to detail, superior craftsmanship, and rigorous testing. Our commitment to excellence guarantees reliable, high-performance solutions that meet the highest standards of quality.</p>
                 </div>
             </div>
           </div>

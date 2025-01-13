@@ -1,6 +1,7 @@
 import React from 'react'
 import { constants } from '../../Constant/constants'
 import { Link } from 'react-router-dom'
+import CustomOwlCarousel from '../../Components/CustomOwlCarousel/CustomOwlCarousel'
 
 const PortfolioSection = ({portfolios}) => {
   return (
@@ -17,6 +18,7 @@ const PortfolioSection = ({portfolios}) => {
   <div id="horizontal">
       <div className="containe">
           <div className="horizontal__content">
+            <CustomOwlCarousel isloop={true} margin={10} isnav={true}>
                               {portfolios.map(portfolio => (
                  <div className="horizontal__item">
               <Link to={portfolio.portfolioLink} >
@@ -30,7 +32,7 @@ const PortfolioSection = ({portfolios}) => {
                 </Link>
               </div>
             ))}
-           
+           </CustomOwlCarousel>
 
           </div>
       </div>
