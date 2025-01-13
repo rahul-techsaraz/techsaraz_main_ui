@@ -351,3 +351,73 @@ export const config = {
         ]
     }
 }
+
+export const customerRivew = [
+    {
+      name: "HOP TIWARY",
+      date: "28 October 2023",
+      profileImage: "https://lh3.googleusercontent.com/a/ACg8ocI3GCabVwOCCEIiCZ1IzcIDTkjsRH-4oaJlDYZIBOnQ=s120-c-rp-mo-br100",
+      stars: 5,
+      review: "Cooperative & Supportive Team, Well tech & have concept of theme for their customers."
+    },
+    {
+      name: "Kamal Bawa",
+      date: "25 October 2023",
+      profileImage: "https://lh3.googleusercontent.com/a-/ALV-UjXQT4lvV4m427tMLRk4KHZBsM68QMrNFZHh8erqmG9QWxs=s120-c-rp-mo-br100",
+      stars: 5,
+      review: `I have been working with Tech Saraz for 9 months, and it has been a fulfilling journey. 
+        The workplace strongly encourages learning, particularly in web designing and development, which has provided me with an exceptional platform to hone my skills.
+        The highlight of my experience has been working with Saumya ma'am. Her leadership is exceptional, and she fosters a collaborative and educative environment that is both inspiring and fun. 
+        Tech Saraz exudes a warm culture where everyone is supportive and celebrates each other's success. 
+        My experience here has been great, and I look forward to contributing to the company's and personal growth.`
+    },
+    {
+      name: "Hrithik Kohli",
+      date: "25 October 2023",
+      profileImage: "https://lh3.googleusercontent.com/a/ACg8ocKyE9nlblY7zAZKLFylZWvCznMrljANPrpuUbJUDGiD=s120-c-rp-mo-br100",
+      stars: 5,
+      review: "These guys are awesome and Saumya helped me a lot in developing a website for my company. I would suggest everyone to go with them, they are very innovative and professional and will deliver the product in a timely manner."
+    },
+    {
+      name: "Prime Financers",
+      date: "28 September 2023",
+      profileImage: "https://lh3.googleusercontent.com/a/ACg8ocKTdqi27XJrmiWwAZl3683T1BsPbKGX4oQ4f9clDK8=s120-c-rp-mo-br100",
+      stars: 5,
+      review: `We recently designed our company’s website with the help of Tech SaraZ, and we are very happy with the result. 
+        They helped us to make our vision into reality, and delivered a professional and user-friendly website that meets our needs. 
+        The Tech SaraZ team was very responsive, creative, and supportive throughout the process. 
+        We especially want to thank Soni for guiding us and providing valuable feedback. 
+        We highly recommend Tech SaraZ to anyone who needs a quality website design service.`
+    },
+    {
+      name: "Mahipal Singh",
+      date: "28 September 2023",
+      profileImage: "https://lh3.googleusercontent.com/a-/ALV-UjXZajd6ifyuL9XNo0XwfJ7MVqQRznfaC7dmgml1w4lkQ_V1=s120-c-rp-mo-br100",
+      stars: 5,
+      review: `Working with Tech SaraZ has been an absolute pleasure. 
+        Their team of skilled professionals is not only knowledgeable in their field but also dedicated to providing top-notch service and support. 
+        They took the time to understand our unique needs and developed a tailored solution that exceeded our expectations.`
+    },
+    {
+      name: "Rakesh singh",
+      date: "25 September 2023",
+      profileImage: "https://lh3.googleusercontent.com/a-/ALV-UjVRPWaiQ6-AInUlWR5-_1Af29owdbBFl5-0gFiEKzPkAqU=s120-c-rp-mo-br100",
+      stars: 5,
+      review: `It's a really good company making their ways to list themselves as a reliable and deliverables firm in the IT Industry. 
+        The Service is really excellent and sound thus helped me to finish my crucial project on time.`
+    },
+    {
+      name: "Somnath Haldar",
+      date: "24 September 2023",
+      profileImage: "https://lh3.googleusercontent.com/a-/ALV-UjXm6MSs4ftj8MP87cpLVArvlJe1dMyP9PCThd-LOxxHv9Y=s120-c-rp-mo-br100",
+      stars: 5,
+      review: "Highly recommended."
+    },
+    {
+      name: "Utsav Singh",
+      date: "24 September 2023",
+      profileImage: "https://lh3.googleusercontent.com/a/ACg8ocIjsIbt2QQcoPsZS7mqc825Iaq783ZlASMj93P-nrKN=s120-c-rp-mo-br100",
+      stars: 5,
+      review: "Working with Tech SaraZ was extremely helpful for me, and Soni is so friendly and helped me with so many live projects. I am so much thankful and learned a lot here."
+    }
+  ];
