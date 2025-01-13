@@ -17,7 +17,7 @@ const LandingContainer = () => {
             <AboutSection />
             <WorkSection />
             <ServicesOffer />
-            <LetterSlider letters={config.LetterSliderConfig.letters} />
+            {/* <LetterSlider letters={config.LetterSliderConfig.letters} /> */}
             <Mission />
             <CounterSection counters={config.MissionConfig.missions} />
             <TestimonialSection  />
