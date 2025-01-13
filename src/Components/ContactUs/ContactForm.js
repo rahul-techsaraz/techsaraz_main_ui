@@ -36,6 +36,7 @@ const ContactForm = () => {
 
         <div className="contact-fill-up-in-box-fillup">
           <form onSubmit={handleSubmit} className="contact-fill-up-in-box-fillup-wraper">
+            <div className='contact-fill-up-in-box-fillup-wraper23'>
             <div className="contact-fill-up-in-box-fillup-name-input">
               <input
                 type="text"
@@ -70,6 +71,7 @@ const ContactForm = () => {
                 onChange={(e) => setPhone(e.target.value)}
                 required
               />
+            </div>
             </div>
             
             <textarea

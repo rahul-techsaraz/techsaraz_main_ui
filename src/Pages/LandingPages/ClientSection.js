@@ -15,7 +15,7 @@ const ClientSection = ({clients}) => {
                   {clients.map((client, index) => (
                       <div className={`itemLeft item${index+1}`} key={index}>
         <div className={`item${index+1}-img`}>
-          <img src={client.imageUrl} alt={client.alt} />
+          <img className='item1-img-img' src={client.imageUrl} alt={client.alt} />
         </div>
       </div>
                   ))}
@@ -24,7 +24,7 @@ const ClientSection = ({clients}) => {
                   {clients.map((client, index) => (
                       <div className={`itemRight item${index+1}`} key={index}>
         <div className={`item${index+1}-img`}>
-          <img src={client.imageUrl} alt={client.alt} />
+          <img className='item1-img-img' src={client.imageUrl} alt={client.alt} />
         </div>
       </div>
                   ))}
