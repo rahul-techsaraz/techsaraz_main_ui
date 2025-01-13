@@ -25,12 +25,15 @@
 .about-hero-section-text{
   position:absolute;
   color: #00a0fc;
-  bottom: 5%;
-  right: 8%;
-  /* transform: translate(-50%, -50%); */
+  /* bottom: 5%;
+  right: 8%; */
+  transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: 700;
   z-index: 1000;
+  width: 100%;
+  top: 50%;
+  left: 50%;
 }
 
 #worldmap {margin:0 auto;}

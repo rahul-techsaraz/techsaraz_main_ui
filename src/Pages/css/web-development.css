@@ -2466,7 +2466,7 @@ width: 20px;
 .benefits-box{
   width: 30%;
   border: 1px solid #7734eb;
-  height: 420px;
+  height: auto;
   border-radius: 20px;
   padding: 20px;
   display: flex;

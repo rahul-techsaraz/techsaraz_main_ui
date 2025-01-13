@@ -324,12 +324,12 @@ html{
   .paginaion .pagination-item:active{
     box-shadow: none;
   }
-  .active{
+  /* .active{
     color: #ffffff !important;
     background-color: #ff5100 !important;
     position: relative;
     z-index: 99;
-  }
+  } */
 
 
 
