@@ -96,7 +96,18 @@ import uxReserach768x587Image from '../images/UX-Reserach-768x587.webp';
 import uiDesignImage from '../images/ui-design-image.png';
 import logoDesignImage from '../images/logo-design.png';
 import userExperienceDesign768x587Image from '../images/User-Experience-Design-768x587.webp';
-import usabilityImage from '../images/usability-image.png'
+import usabilityImage from '../images/usability-image.png';
+import brewMyBrain from '../images/Brew-My-Brain.jpg';
+import c4PlusEvents from '../images/C4-plus-Events.jpg';
+import globallyVillage from '../images/Globally-village.jpg';
+import tritech from '../images/Tritech.jpg';
+import workwise from '../images/Workwise.jpg';
+import shineBright1 from '../images/Shine-Bright-1.webp';
+import rakeshRathod from '../images/Rakesh-Rathod.jpg';
+import halo from '../images/Halo.webp';
+import persqftAvenu from '../images/Persqft-Avenu.jpg';
+
+
 
 export const images = {
     repairToolImage,
@@ -197,6 +208,16 @@ export const images = {
     user1Image,
     shopify768x587Image,
     eCommercemage,
-    woocommerce1Image
+    woocommerce1Image,
+    brewMyBrain,
+    c4PlusEvents,
+    globallyVillage,
+    tritech,
+    workwise,
+    shineBright1,
+    rakeshRathod,
+    halo,
+    persqftAvenu
+
 }
 
