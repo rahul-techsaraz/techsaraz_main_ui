@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { constants } from '../../Constant/constants'
+import Routes from '../../Constant/routes';
 
 const HeroSection = () => {
   const {heroSectionMainSubText} = constants.landingPageText;
@@ -18,7 +19,7 @@ const HeroSection = () => {
          <h1 className="hero-section-text-main-heading">IT Solutions <span style={{color: "#bbff00;"}}> & Business </span> <br />Services Company</h1>
          <p className="hero-section-text-p">{heroSectionMainSubText}</p>
             <div className="banner-btn">
-                <Link className="banner-btn-btn" to="/contact">
+                <Link className="banner-btn-btn" to={Routes.CONTACT}>
                     ENQUIRE NOW
                 </Link>
               </div>

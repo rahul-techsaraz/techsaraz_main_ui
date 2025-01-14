@@ -18,7 +18,46 @@ const {
     branding1Image,
     businessAndMarketingDesign768x587Image,
     renameImage,
-    designtoolImage
+    designtoolImage,
+    phpImage768x587Image,
+    folderImage,
+    wordpressImgImage,
+    socialImage,
+    shopify2Image,
+    shopifyImage,
+    magneto1Image,
+    magentoImage,
+    joomlaImage,
+    joomlaLogoImage,
+    reactImgImage,
+    atomImage,
+    nodeJs768x587Image,
+    programingImage,
+    mernStackDevelopment768x587Image,
+    uiImage,
+    eCommerceDevelopment768x587Image,
+    ecommerceImage,
+    applicationImage,
+    customApplicationDevelopment768x587Image,
+    businessDashboardAPIIntegration768x587Image,
+    dashboardImage,
+    onlineBookingPlatform768x587Image,
+    onlineBookingImage,
+    shopify768x587Image,
+    shopify1Image,
+    woocommerce768x587Image,
+    woocommerce1Image,
+    uxDesignImage,
+    uxStratagyImage,
+    uxReserach768x587Image,
+    usabilityImage,
+    uiDesignImage,
+    logoDesignImage,
+    userExperienceDesign768x587Image,
+    seoImage2,
+    seoImage,
+    socialMediaImage,
+    digitalMarketing1Image
 } = images; 
 export const serviceContentConfig = [
     {
@@ -188,6 +227,392 @@ export const serviceGraphicsDesignConfig = [
       pulseAltText: 'Rename Pulse',
     },
   ];
+
+export const technologyServicesConfig = 
+   [
+    {
+      "id": 1,
+      "title": "PHP",
+      "description": [
+        "PHP is known for its cost-effectiveness and speed, thanks to its flexible features. It is a cross-platform language that allows developers to write code on various operating systems.",
+        "The PHP platform has demonstrated improved loading speed compared to others, making it a valuable tool for achieving high rankings in SEO.",
+        "PHP offers numerous advantages for web design, including simplicity, speed, flexibility, compatibility, security, and scalability. With PHP, you can create websites that are not only fast and responsive but also user-friendly."
+      ],
+      "imageSrc": phpImage768x587Image,
+      "altText": "PHP Image",
+      "points": [
+        "Responsive",
+        "Up-Gradation",
+        "Security",
+        "Maintenance",
+        "Migrations",
+        "PWA"
+      ],
+      "pulseImageSrc": folderImage,
+      "pulseAltText": "PHP Pulse"
+    },
+    {
+      "id": 2,
+      "title": "WordPress",
+      "description": [
+        "WordPress is one of the simplest forms of website development that allows users to manage the website from any computer with ease. You can get our WordPress web development services in Bangalore.",
+        "As WordPress is 100% customizable, this platform helps to provide a unique experience to visitors. Gains to enhance your site’s functionality and style.",
+        "SEO-friendly and fast: WordPress is optimized for search engines and performance, ensuring that your site ranks well and loads quickly."
+      ],
+      "imageSrc": wordpressImgImage,
+      "altText": "WordPress Image",
+      "points": [
+        "Scalable",
+        "Easy to use",
+        "Best for SEO",
+        "Editor",
+        "Visual",
+        "Optimize your business"
+      ],
+      "pulseImageSrc": socialImage,
+      "pulseAltText": "WordPress Pulse"
+    },
+    {
+      "id": 3,
+      "title": "Shopify",
+      "description": [
+        "Shopify is one of the most popular and powerful e-commerce platforms in the world, with over 1.7 million merchants and billions of dollars in sales. Shopify offers a range of features and benefits for web development.",
+        "Shopify is secure, reliable, and provides 24/7 customer support to its users. It has many mobile-responsive themes to choose from."
+      ],
+      "imageSrc": shopify2Image,
+      "altText": "Shopify Image",
+      "points": [
+        "Fast setup",
+        "User-friendly",
+        "Logical interface",
+        "Best for an online store",
+        "Seamless integration"
+      ],
+      "pulseImageSrc": shopifyImage,
+      "pulseAltText": "Shopify Pulse"
+    },
+    {
+      "id": 4,
+      "title": "Magento",
+      "description": [
+        "Magento is an incredibly powerful self-hosted e-commerce platform that has been gaining popularity among online retailers due to its numerous features and benefits.",
+        "One of the key advantages of using Magento is its excellent SEO capabilities. With Magento, online retailers can significantly enhance their product visibility on Google and other search engines. This can result in increased traffic to their website and ultimately lead to more sales.",
+        "It allows the users to customize their security permissions. Therefore, it is a great way to prevent unauthorized changes & store the data safely & securely."
+      ],
+      "imageSrc": magneto1Image,
+      "altText": "Magento Image",
+      "points": [
+        "Magento 2 migration services",
+        "Features rich",
+        "Multiple languages support",
+        "Ecommerce development"
+      ],
+      "pulseImageSrc": magentoImage,
+      "pulseAltText": "Magento Pulse"
+    },
+    {
+      "id": 5,
+      "title": "Joomla",
+      "description": [
+        "Joomla is a platform that allows the user to use more than one template on a website. Therefore, implement different templates for different pages & attract the user.",
+        "As it supports PHP, making some changes in the code can allow the user to modify the feature with ease.",
+        "You can also extend the functionality of your website with thousands of plugins and themes available for Joomla. Joomla is also SEO-friendly, secure, fast, and mobile-responsive. With Joomla, you can create any website you can imagine."
+      ],
+      "imageSrc": joomlaImage,
+      "altText": "Joomla Image",
+      "points": [
+        "Flexible",
+        "Easy to use",
+        "Mobile friendly",
+        "Editor",
+        "SEO friendly",
+        "Optimize your business"
+      ],
+      "pulseImageSrc": joomlaLogoImage,
+      "pulseAltText": "Joomla Pulse"
+    },
+    {
+      "id": 6,
+      "title": "React",
+      "description": [
+        "React has the potential to reuse components, which means it does not require writing various codes for the same feature. Thereby, it saves time while developing the website.",
+        "As React is intuitive to work, it enables quick & quality-assured web development. Therefore, it saves time for clients & developers."
+      ],
+      "imageSrc": reactImgImage,
+      "altText": "React Image",
+      "points": [
+        "Modern technology",
+        "Rich ecosystem",
+        "Logical interface",
+        "Virtual DOM",
+        "Best for startups"
+      ],
+      "pulseImageSrc": atomImage,
+      "pulseAltText": "React Pulse"
+    },
+    {
+      "id": 7,
+      "title": "Node JS",
+      "description": [
+        "Node.js has a cross-platform compatible feature that ensures broad reach & smooth user experience.",
+        "Developing a website using Node.js requires less code & fewer files. Therefore, it helps to save time & money in startup product development.",
+        "Node.js uses industry-standard security practices and features to protect your web application development from common threats and vulnerabilities."
+      ],
+      "imageSrc": nodeJs768x587Image,
+      "altText": "Node.js Image",
+      "points": [
+        "Fast and lightweight",
+        "Cross-platform",
+        "Rich ecosystem",
+        "Data-intensive applications",
+        "Migrations",
+        "PWA"
+      ],
+      "pulseImageSrc": programingImage,
+      "pulseAltText": "Node JS Pulse"
+    }
+  ];
+
+export const webApplicationDevServicesConfig =  [
+  {
+    id: 1,
+    title: 'MERN stack development',
+    description: [
+      'The Tech Saraz team comprises front-end and back-end development experts specializing in MERN stack development.',
+      'The MERN stack, which combines MongoDB, Express.js, React.js, and Node.js, allows us to create robust, efficient, and scalable web applications.',
+    ],
+    imageSrc: mernStackDevelopment768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: uiImage,
+    pulseAltText: 'Pulse UI Image',
+    points: [],
+  },
+  {
+    id: 2,
+    title: 'E-commerce development',
+    description: [
+      'In today’s digital age, having a user-friendly e-commerce platform is crucial for any business. Tech Saraz specializes in e-commerce web development in Bangalore, building intuitive and engaging platforms that facilitate seamless online shopping experiences.',
+      'Our solutions ultimately drive customer engagement and enhance sales.',
+    ],
+    imageSrc: eCommerceDevelopment768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: ecommerceImage,
+    pulseAltText: 'Pulse E-commerce Image',
+    points: [],
+  },
+  {
+    id: 3,
+    title: 'Custom application development',
+    description: [
+      'At Tech Saraz, we understand that a one-size-fits-all approach doesn’t work in web application development. Our team excels in creating custom web applications designed to meet your unique business requirements.',
+      'Whether it’s an enterprise application or a small business website, Tech Saraz has you covered.',
+    ],
+    imageSrc: customApplicationDevelopment768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: applicationImage,
+    pulseAltText: 'Pulse Application Image',
+    points: [],
+  },
+  {
+    id: 4,
+    title: 'Business dashboard and API integration',
+    description: [
+      'Tech Saraz streamlines your business processes by integrating efficient dashboards and APIs into your web applications. Well-designed dashboards provide valuable insights at a glance, enabling quick decision-making.',
+      'API integration allows different software systems to communicate and work together, enhancing the overall efficiency of your business operations.',
+    ],
+    imageSrc: businessDashboardAPIIntegration768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: dashboardImage,
+    pulseAltText: 'Pulse Dashboard Image',
+    points: [],
+  },
+  {
+    id: 5,
+    title: 'Online Booking Platform',
+    description: [
+      'Acknowledging today’s dynamic, rapidly evolving world, Tech Saraz values a user-friendly online reservation system. Understanding the need for convenience, our company develops intuitive online booking platforms, streamlined to make the reservation process straightforward, eliminating any complications.',
+      'Our systems ensure an easy, stress-free experience for your valuable customers.',
+    ],
+    imageSrc: onlineBookingPlatform768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: onlineBookingImage,
+    pulseAltText: 'Pulse Online Booking Image',
+    points: [],
+  },
+  {
+    id: 6,
+    title: 'Full Stack Development',
+    description: [
+      'As a leading full-stack development company in Bangalore, Tech Saraz handles both front-end and back-end development of your web applications.',
+      'Our comprehensive full-stack development services ensure that every aspect of your web application works seamlessly, delivering an optimal user experience.',
+    ],
+    imageSrc: businessDashboardAPIIntegration768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: designtoolImage,
+    pulseAltText: 'Pulse Design Tool Image',
+    points: [],
+  },
+];
+
+export const ecommerceServicesConfig = [
+  {
+    id: 1,
+    title: 'Shopify e-commerce development in Bangalore',
+    description: [
+      'With a global user base of over 1.7 million merchants, Shopify has earned its place as a reliable e-commerce platform. As a leading player in WooCommerce development in Bangalore, Tech Saraz leverages Shopify’s robust capabilities to deliver secure, dependable, and visually stimulating e-commerce solutions.',
+      'Shopify’s robust support infrastructure and frequent security updates guarantee an uninterrupted shopping experience for your customers.',
+    ],
+    imageSrc: shopify768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: shopify1Image,
+    pulseAltText: 'Pulse Shopify Image',
+    points: [
+      'Fast setup',
+      'User-friendly',
+      'Best For online store',
+      'Seamless integration',
+      'Optimize your business',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Woocommerce development in Bangalore',
+    description: [
+      'WooCommerce provides a versatile e-commerce platform for businesses to showcase their various product with the power of WordPress Plugins and Themes. As an esteemed WooCommerce development company in Bangalore, Tech Saraz harnesses this flexibility to craft customized E-commerce platforms.',
+      'Integrated with WordPress, WooCommerce streamlines operations and optimizes SEO, promising quicker loading times and enhanced conversion rates.',
+    ],
+    imageSrc: woocommerce768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: woocommerce1Image,
+    pulseAltText: 'Pulse WooCommerce Image',
+    points: [
+      'Easy to use',
+      'Optimize For WordPress',
+      'Multi payment options',
+      'Tax calculations',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Magento development in Bangalore',
+    description: [
+      'Magento is celebrated for its scalability and compatibility with third-party integrations. Tech Saraz capitalizes on Magento’s fast loading times and integration features to architect robust E-commerce platforms.',
+      'By incorporating applications like Google Analytics, we provide invaluable insights into customer behavior, finetuning your E-commerce strategy for success.',
+    ],
+    imageSrc: magneto1Image,
+    altText: 'best-company-image',
+    pulseImageSrc: magentoImage,
+    pulseAltText: 'Pulse Magento Image',
+    points: [
+      'Magento 2 migration services',
+      'Features rich',
+      'Multiple languages support',
+      'Ecommerce development',
+    ],
+  },
+];
+
+export const uiuxServicesConfig = [
+  {
+    id: 1,
+    title: 'UX Strategy',
+    description: [
+      'Our strategic process begins with an in-depth analysis of your business model, a clear understanding of your objectives, and a thorough assessment of your users’ needs.',
+      'Leveraging these insights, we craft a UX strategy that captivates your audience, driving user engagement and conversions and positioning us as a leading provider of UX design in Bangalore.',
+    ],
+    imageSrc: uxStratagyImage,
+    altText: 'best-company-image',
+    pulseImageSrc: uxDesignImage,
+    pulseAltText: 'Pulse Online Booking Image',
+    points: ['Fast setup', 'User-friendly', 'Best For online store', 'Seamless integration', 'Optimize your business'],
+  },
+  {
+    id: 2,
+    title: 'UX Research',
+    description: [
+      'Our meticulous UX research shows our commitment to excellence. We focus on understanding user behaviors, preferences, and expectations.',
+      'This comprehensive approach informs our design process, enabling us to create solutions that genuinely resonate with your target audience, further solidifying our reputation for delivering top-notch Bangalore UX services.',
+    ],
+    imageSrc: uxReserach768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: uxDesignImage,
+    pulseAltText: 'Pulse Online Booking Image',
+    points: ['Easy to use', 'Optimize For WordPress', 'Multi payment options', 'Tax calculations'],
+  },
+  {
+    id: 3,
+    title: 'UI Design in Bangalore',
+    description: [
+      'Our team of expert designers at Tech Saraz excels at creating visually stunning and intuitive interfaces. We prioritize optimizing user interaction, crafting designs that consistently reflect your brand’s image, and fostering user loyalty.',
+      'Our commitment to these principles makes us a go-to for UI design in Bangalore.',
+    ],
+    imageSrc: uiDesignImage,
+    altText: 'best-company-image',
+    pulseImageSrc: logoDesignImage,
+    pulseAltText: 'Pulse Online Booking Image',
+    points: ['Magento 2 migration services', 'Multiple languages support', 'Ecommerce development', 'Optimize your business'],
+  },
+  {
+    id: 4,
+    title: 'UX Design in Bangalore',
+    description: [
+      'Our rigorous usability testing ensures our designs hit the mark. These tests allow us to identify potential issues early on and address them proactively, optimizing user satisfaction and overall platform performance.',
+      'This commitment to quality and continuous improvement sets us apart as Bangalore’s best UX/UI design service.',
+    ],
+    imageSrc: userExperienceDesign768x587Image,
+    altText: 'best-company-image',
+    pulseImageSrc: uxDesignImage,
+    pulseAltText: 'Pulse Online Booking Image',
+    points: ['Fast setup', 'User-friendly', 'Best For online store', 'Seamless integration', 'Optimize your business'],
+  },
+  {
+    id: 5,
+    title: 'Usability Testing',
+    description: [
+      'Our rigorous usability testing ensures our designs hit the mark. These tests allow us to identify potential issues early on and address them proactively, optimizing user satisfaction and overall platform performance.',
+      'This commitment to quality and continuous improvement sets us apart as Bangalore’s best UX/UI design service.',
+    ],
+    imageSrc: usabilityImage,
+    altText: 'best-company-image',
+    pulseImageSrc: uxDesignImage,
+    pulseAltText: 'Pulse Online Booking Image',
+    points: ['Easy to use', 'Optimize For WordPress', 'Multi payment options', 'Tax calculations'],
+  },
+];
+
+export const digitalMarketingServicesConfig = [
+  {
+    id: 1,
+    title: 'SEO Services in Bangalore',
+    description: [
+      'Search Engine Optimization is an ever-changing landscape, and staying at the forefront requires a deep understanding of the latest trends and techniques.',
+      'At Tech Saraz, we specialize in strategic keyword research, on-page and off-page optimization, and technical SEO. This multi-pronged approach helps enhance your online presence and promotes sustainable growth.',
+    ],
+    imageSrc: seoImage2,
+    altText: 'best-company-image',
+    pulseImageSrc: seoImage,
+    pulseAltText: 'Pulse SEO Image',
+    points: ['Fast setup', 'User-friendly', 'Best For online store', 'Seamless integration', 'Optimize your business'],
+  },
+  {
+    id: 2,
+    title: 'Social Media Marketing Services in Bangalore',
+    description: [
+      'Our meticulous UX research shows our commitment to excellence. We focus on understanding user behaviors, preferences, and expectations.',
+      'This comprehensive approach informs our design process, enabling us to create solutions that genuinely resonate with your target audience, further solidifying our reputation for delivering top-notch Bangalore UX services.',
+    ],
+    imageSrc: socialMediaImage,
+    altText: 'best-company-image',
+    pulseImageSrc: digitalMarketing1Image,
+    pulseAltText: 'Pulse Digital Marketing Image',
+    points: ['Easy to use', 'Optimize For WordPress', 'Multi payment options', 'Tax calculations'],
+  },
+];
+
+
+
+
+
   
   
   

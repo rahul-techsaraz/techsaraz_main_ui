@@ -8,10 +8,27 @@ import BlogSection from "./Pages/LandingPages/BlogSection";
 import { config } from "./Constant/config";
 import PortfolioSection from "./Pages/LandingPages/PortfolioSection";
 import { useEffect, useRef, useState } from "react";
+import Toast from "./Components/NotificationBar/Notification";
+import { ToastProvider } from "./Context/ToastContext";
+import Popup from "./Components/Popup/Popup";
 function App() {
 
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 2000); // Show after 2 seconds
+
+    // Clean up the timer when component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleClosePopup = () => {
+    setShowPopup(false); // Hide the popup when the close button is clicked
+  };
 
   // Refs to store the follower position
   const posX = useRef(0);
@@ -70,6 +87,8 @@ function App() {
   }, [mouseX, mouseY]); // Only trigger effect when mouse position changes
   return (
     <>
+    <ToastProvider>
+    {/* {showPopup && <Popup message="This is your popup!" onClose={handleClosePopup} />} */}
         <div className="full-section">
         <div id="mouse-follower" style={{position:'fixed'}}></div>
           <Header />
@@ -79,6 +98,7 @@ function App() {
             <BlogSection blogs={config.BlogConfig.blogs} />
           <Footer />
         </div>
+        </ToastProvider>
     </>
 
   );

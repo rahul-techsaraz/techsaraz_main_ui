@@ -1,12 +1,14 @@
 import React from 'react'
-import SocialMediaMarketingCompetitors from '../../../Pages/Services/DigitalMarketing/SocialMarketingCompititor'
-import { OurEcommerce } from '../../../Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment'
+import SlideBoxAnimations from '../../SlideBoxAnimations/SlideBoxAnimations'
+import { socialMediaMarketingSlideAnimationConfig } from '../../../Constant/config/slideBoxAnimationsConfig'
 
 const SocialMarketing = () => {
   return (
     <>
-    <SocialMediaMarketingCompetitors />
-        <OurEcommerce />
+        <SlideBoxAnimations
+           slideAnimationData={socialMediaMarketingSlideAnimationConfig}
+
+              />
     
     
     </>

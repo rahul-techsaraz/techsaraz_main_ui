@@ -17,87 +17,94 @@ import ContentWriting from "./Components/Services/ContentWriting/ContentWriting"
 import GraphicsDesign from "./Components/Services/GraphicsDesign/GraphicsDesign";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Blog from "./Components/Blog/Blog";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";  // Importing the error component
+import Routes from "./Constant/routes";
+
+const { 
+  WEB_DEVELOPMENT,
+  HOME,
+  WORDPRESS_DEVELOPMENT,
+  ECOMMERCE_DEVELOPMENT,
+  UI_UX_DESIGN,
+  SOCIAL_MARKETING,
+  SEO,
+  ABOUT_US,
+  BLOG,
+  CONTACT,
+  SERVICES,
+  DIGITAL_MARKETING,
+  CONTENT_WRITING,
+  GRAPHICS_DESIGN,
+  WEB_APPLICATION_DEVELOPMENT
+} = Routes;
+
+// Defining route paths and nested routes
+const webDevelopmentRoutes = [
+  {
+    path: "",
+    element: <TechnologyList />,
+  },
+  {
+    path: WEB_APPLICATION_DEVELOPMENT,
+    element: <WebApplicationDevelopmentServices />,
+  },
+  {
+    path: WORDPRESS_DEVELOPMENT,
+    element: <WordpressDevelopment />,
+  },
+  {
+    path: ECOMMERCE_DEVELOPMENT,
+    element: <EcommerceDevelopment />,
+  },
+  {
+    path: UI_UX_DESIGN,
+    element: <UiUxDesign />,
+  },
+];
+
+const digitalMarketingRoutes = [
+  {
+    path: "",
+    element: <Home />,
+  },
+  {
+    path: SOCIAL_MARKETING,
+    element: <SocialMarketing />,
+  },
+  {
+    path: SEO,
+    element: <SeoServices />,
+  },
+];
 
 export const appRouter = createBrowserRouter([
-    {
-      path:"/",
-      element:<App />,
-      children:[
-        {
-          path: "/",
-          element: (
-            <LandingContainer />
-          ),
-        },
-        {
-          path: "/aboutus",
-          element: <AboutUs />,
-        },
-        {
-          path: "/contact",
-          element: <ContactUs />,
-        },
-        {
-          path: "/blog",
-          element: <Blog />,
-        },
-        {
-          path: "/services",
-          element: <Services />,
-        },
-        {
-          path:"/services/web-development",
-          element:<MainWebDevelopmentSection />,
-          children: [
-            {
-              path:"",
-              element:<TechnologyList />
-            },
-            {
-              path:"web-application-development",
-              element:<WebApplicationDevelopmentServices />
-            },
-            {
-              path:"wordpress-development",
-              element:<WordpressDevelopment />
-            },
-            {
-              path:"e-commerce",
-              element:<EcommerceDevelopment />
-            },
-            {
-              path:"ui-ux-design",
-              element:<UiUxDesign />
-            }
-          ]
-        },
-        {
-          path: "/services/digital-merketing",
-          element: <DigitalMarketing />,
-          children: [
-            {
-              path:"",
-              element:<Home />
-            },
-            {
-              path:"social-marketing",
-              element:<SocialMarketing />
-            },
-            {
-              path:"seo",
-              element:<SeoServices />
-            },
-          ]
-        },
-        {
-          path: "services/content-writing",
-          element: <ContentWriting />
-        },
-        {
-          path: "services/graphics-design",
-          element: <GraphicsDesign />
-        }
-        
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,  // Set the error page at the root level
+    children: [
+      { path: HOME, element: <LandingContainer /> },
+      { path: ABOUT_US, element: <AboutUs /> },
+      { path: CONTACT, element: <ContactUs /> },
+      { path: BLOG, element: <Blog /> },
+      { path: SERVICES, element: <Services /> },
+
+      {
+        path: WEB_DEVELOPMENT,
+        element: <MainWebDevelopmentSection />,
+        children: webDevelopmentRoutes,
+      },
+      
+      {
+        path: DIGITAL_MARKETING,
+        element: <DigitalMarketing />,
+        children: digitalMarketingRoutes,
+      },
+      
+      { path: CONTENT_WRITING, element: <ContentWriting /> },
+      { path: GRAPHICS_DESIGN, element: <GraphicsDesign /> },
     ],
-}
-  ]);
+  },
+],{
+  basename: '/newversion'
+});

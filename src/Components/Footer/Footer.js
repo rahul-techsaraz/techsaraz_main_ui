@@ -3,8 +3,26 @@ import React, { useEffect, useState } from 'react';
 // import '../../style/home-media.css';
 import LOGO from '../../images/Tech-SaraZ-logo-300x99.webp'
 import { Link } from 'react-router-dom';
+import Routes from '../../Constant/routes';
 
 const Footer = () => {
+  const { 
+    WEB_DEVELOPMENT,
+    HOME,
+    WORDPRESS_DEVELOPMENT,
+    ECOMMERCE_DEVELOPMENT,
+    UI_UX_DESIGN,
+    SOCIAL_MARKETING,
+    SEO,
+    ABOUT_US,
+    BLOG,
+    CONTACT,
+    SERVICES,
+    DIGITAL_MARKETING,
+    CONTENT_WRITING,
+    GRAPHICS_DESIGN,
+    WEB_APPLICATION_DEVELOPMENT
+  } = Routes;
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // This function handles the scroll logic
@@ -56,12 +74,12 @@ const Footer = () => {
       <div className="footer-box-menu-heading">QUICK LINKS</div>
       <div className="footer-1st-menu">
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/aboutus">About</Link></li>
-        <li><Link to="/services">Services</Link></li>
+        <li><Link to={HOME}>Home</Link></li>
+        <li><Link to={ABOUT_US}>About</Link></li>
+        <li><Link to={SERVICES}>Services</Link></li>
         {/* <li><Link to="portfolio.html">Portfolio</Link></li> */}
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to={BLOG}>Blog</Link></li>
+        <li><Link to={CONTACT}>Contact</Link></li>
       </ul>
     </div>
     </div>
