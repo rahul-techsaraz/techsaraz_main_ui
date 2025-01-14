@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 
-  /*  */
+
 
   canvas {
     opacity: 0.5;
@@ -12,7 +12,7 @@
   }
 
 
-  /*  */
+
   .contact-coloum-text{
     position: absolute;
     top: 70%;
@@ -35,7 +35,7 @@
   padding: 0;
   width: 100%;
   height: 100vh;
-  /* margin-top: 50px; */
+
   position: relative;
   overflow: hidden;
 }
@@ -74,25 +74,21 @@
     display: block;
   }
   
-  /**
-   * Paper Plane
-   */
-  /*Paper Plane: Container*/
+
   .plane-container {
     width: 200px;
     margin: 0px auto;
     z-index: 3;
-    /* color: red;
-    background-color: #E73C7E; */
+  
   }
-   /*Paper Plane: Image*/
+  
   .plane {
     width: 100%;
     height: 60px;
     color: #E73C7E;
   }
   
-  /*Paper Plane: Animation*/
+
   .plane-container {
     -webkit-animation: paper-plane-scoping 2s alternate infinite;
     -moz-animation: paper-plane-scoping 2s alternate infinite;
@@ -158,9 +154,7 @@
     }
   }
   
-  /**
-   * Clouds
-   */
+
   .clouds {
     position: absolute;
     top: 0;
@@ -190,8 +184,7 @@
   .cloud.background {
     z-index: 1;
   }
-  
-  /*Cloud Sizing*/
+
   .cloud.smaller {
     margin-right: 400px;
     width: 100px;
@@ -216,7 +209,7 @@
   }
   
   
-  /*Cloud: Animation*/
+ 
   .cloud {
     -webkit-animation-name: cloud-movement;
     -webkit-animation-timing-function: linear;
@@ -284,14 +277,11 @@
   }
 
 
-  /* contact hero section end */
 
-  /* copaany details start */
 
   .company-details{
     width: 100%;
     padding: 70px 100px;
-    /* background-color: #11151C; */
     background-image: linear-gradient(to right, #000,#11151C);
   }
   .company-details-wraper{
@@ -302,7 +292,6 @@
   .company-details-box{
     width: 100%;
     padding: 30px;
-    /* background-color: #fa4848; */
     color: #C4CFDE;
     display: flex;
     gap: 20px;
@@ -318,9 +307,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #C4CFDE; */
-    /* background-color: #fa4848; */
-    /* color: #C4CFDE; */
     border: 1px solid #fa4848;
     background-color: transparent;
     color: #fa4848;
@@ -328,7 +314,6 @@
     transition: .3s;
   }
   .company-details-box:hover .company-details-box-i i{
-    /* border: 1px solid #fa4848; */
     background-color: #fa4848;
     color: #C4CFDE;
     transition: .3s;
@@ -351,14 +336,9 @@
   }
 
 
-  /* copaany details end */
 
-  .contact-fill-up{
-    width: 100%;
-    padding: 70px 100px;
-    background-color: #000;
-    position: relative;
-  }
+
+
   .contact-fill-up-in-box{
     width: 100%;
     padding: 50px;
@@ -381,13 +361,9 @@
   .about-company-pulse{
     height: 75px;
     width: 75px;
-    /* background: linear-gradient(
-        #8a82fb,
-        #407ed7
-    ); */
+
     background: #fa4848;
     position: absolute;
-    /* margin: auto; */
     left: 15%;
     top:33px;
     bottom: 0;
@@ -407,7 +383,6 @@
     width: 100%;
     background-color: #fa4848;
     border-radius: 50%;
-    /* z-index: -1; */
     opacity: 0.7;
   }
   .about-company-pulse:before{
@@ -560,4 +535,4 @@
   }
 
 
-  /*  */
+ */
