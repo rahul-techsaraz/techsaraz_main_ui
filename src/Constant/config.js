@@ -339,16 +339,6 @@ export const config = {
                 blogSummary: 'Clever strategy to maximize your reach',
                 blogDetailURL:'/blog'
             },
-               {
-                blogImages: {
-                    imageURL: constants.images.blog1Image.imageURL,
-                    alt: constants.images.blog1Image.imageURL,
-                },
-                postedDate: 'APRIL 1, 2024',
-                updatedOn: 'APRIL 1, 2024',
-                blogSummary: 'Strategies For Effective Web Design By',
-                blogDetailURL:'/blog'
-            },
 
         ]
     }
