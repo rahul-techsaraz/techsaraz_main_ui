@@ -428,6 +428,9 @@
     .benefits-box-set2{
         height: auto;
       }
+      .company-details-wraper {
+        grid-template-columns: 1fr 1fr;
+    }
     
 
 
@@ -438,6 +441,12 @@
 @media screen and (max-width: 768px){
     .web-development-banner {
         height: 550px;
+    }
+    .contact-fill-up-in-box-fillup-wraper23 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 40px;
     }
     .main-header{
         padding: 20px 40px;
@@ -713,7 +722,7 @@
     }
     .company-details-box {
         justify-content: start;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
     .competitor-box{
         width: 100%;

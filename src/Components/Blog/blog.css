@@ -53,7 +53,7 @@ html{
     width: 100%;
   }
   
-  #gradient {
+  /* #gradient {
     background: radial-gradient(#ff5100, transparent 50%);
     width: 400px;
     height: 400px;
@@ -61,7 +61,7 @@ html{
     top: -200px;
     left: -200px;
     transform: translate(200px, 200px);
-  }
+  } */
   
   .vlog-herosection-p{
     color: #C4CFDE;

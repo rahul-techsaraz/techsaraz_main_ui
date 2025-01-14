@@ -24,10 +24,17 @@ const AboutUs = () => {
         <div className="about-company-in-box-wraper">
             <div className="about-company-in-box-wraper-textbox">
                 <div className="about-company-heading"><button className="about-company-heading-text">ABOUT COMPANY<span className="span-circle"></span></button></div>
-                <div className="about-company-in-box-wraper-textbox-text">Making Your Business More Unique</div>
-                <p className="about-company-in-box-wraper-textbox-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus 
-                    cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
-                    <p className="about-company-in-box-wraper-textbox-text-p2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div className="about-company-in-box-wraper-textbox-text">Welcome to Tech SaraZ</div>
+                <p className="about-company-in-box-wraper-textbox-text-p">Tech SaraZ is a software company based in Bangalore that specializes in
+                   top-notch digital Marketing and web design. In our fast-paced digital world, it’s crucial to make your products or
+                    services shine brighter than the rest. We’re here to support those with big dreams and a relentless drive to succeed in 
+                    their online businesses by providing our unmatched services. A well-designed website is the key to drawing in and keeping 
+                    customers in this digital era. We at Tech SaraZ grasp this essential fact, and our work ranges from creating the most
+                     inventive and user-friendly websites to effectively marketing business online. A top-tier website and extraordinary 
+                     marketing services can act as the spark that sends business soaring. Our experienced professionals are committed to 
+                     ensuring your online presence isn’t just another face in the crowd but a standout player that grabs attention and fuels
+                      business growth. With Tech SaraZ, you can be confident that 
+                  your digital marketing needs are in the safest hands.</p>
                     <div className="about-company-btn">
                         <Link className="about-company-btn-btn" to={CONTACT}>
                             CONTACT US
