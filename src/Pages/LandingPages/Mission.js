@@ -1,6 +1,7 @@
 import React from 'react'
 import { constants } from '../../Constant/constants'
 import { Link } from 'react-router-dom'
+import Routes from '../../Constant/routes'
 
 const Mission = () => {
   return (
@@ -14,7 +15,7 @@ const Mission = () => {
         <div className="our-mission-heading"><button className="our-mission-heading-text">OUR MAIN MISSION<span className="our-mission-span-circle"></span></button></div>
         <h1 className="our-mission-h1">Our Mission Is To Look After The Financial Best Interests With Automation</h1>
         <div className="our-mission-btn">
-            <Link className="our-mission-btn-btn" to="/contact">
+            <Link className="our-mission-btn-btn" to={Routes.CONTACT}>
                 CONTACT US
             </Link>
           </div> 

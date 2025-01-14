@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { images } from '../../Constant/images';
+import Routes from '../../Constant/routes';
 
 const ServicesOffer = () => {
     const {
@@ -11,7 +12,6 @@ const ServicesOffer = () => {
         campaignImage,
         serviceimg2Image,
         graphicdesignerImage,
-        serviceimg4Image,
         digitalartImage,
         pexelsolly3756679Image,
         write1Image,
@@ -19,6 +19,15 @@ const ServicesOffer = () => {
         pentool2Image,
         pexelsfabianwiktor3471423Image
     } = images;
+
+    const { 
+      WEB_DEVELOPMENT,
+      ECOMMERCE_DEVELOPMENT,
+      UI_UX_DESIGN,
+      DIGITAL_MARKETING,
+      CONTENT_WRITING,
+      GRAPHICS_DESIGN,
+    } = Routes;
   return (
     <section className="services">
     <div className="services-pulse">
@@ -30,7 +39,7 @@ const ServicesOffer = () => {
     <nav className="services-nav">
         <ul>
           <li>
-            <Link to="/services/web-development"><div className="link">
+            <Link to={WEB_DEVELOPMENT}><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
@@ -53,7 +62,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="/services/e-commerce">
+            <Link to={`${WEB_DEVELOPMENT}/${ECOMMERCE_DEVELOPMENT}`}>
               <div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
@@ -76,7 +85,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="/services/ui-and-ux-designing">
+            <Link to={`${WEB_DEVELOPMENT}/${UI_UX_DESIGN}`}>
               <div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
@@ -99,7 +108,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="/services/digital-merketing"><div className="link">
+            <Link to={`${DIGITAL_MARKETING}`}><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
@@ -122,7 +131,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="/services/content-writing"><div className="link">
+            <Link to={`${DIGITAL_MARKETING}/${CONTENT_WRITING}`}><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">
@@ -145,7 +154,7 @@ const ServicesOffer = () => {
           </li>
 
           <li>
-            <Link to="/services/graphics-design"><div className="link">
+            <Link to={GRAPHICS_DESIGN}><div className="link">
                   <div className="link-span">
                       <div className="service-flexbox">
                       <div className="service-img">

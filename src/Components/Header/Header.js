@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from '..//../images/Tech-SaraZ-logo-300x99.webp'
 import Routes from '../../Constant/routes';
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { 
         WEB_DEVELOPMENT,
         HOME,
@@ -21,14 +22,19 @@ const Header = () => {
         GRAPHICS_DESIGN,
         WEB_APPLICATION_DEVELOPMENT
       } = Routes;
+
+      const toggleMenu = () => {
+        setIsMenuOpen((prevState) => !prevState);
+      };
   return (
     <header className="main-header">
-  <nav className="header-nav">
-      <div className="menu-icons">
-         <i className="fas fa-bars"></i>
-         <i className="fas fa-times"></i>
+  <nav className={`header-nav ${isMenuOpen ? 'active' : ''}`} >
+      <div className="menu-icons" onClick={toggleMenu}>
+         <i className={`fas fa-bars`} ></i>
+         <i className={`fas fa-times `} 
+            ></i>
       </div>
-      <Link to="/" className="header-logo">
+      <Link to={HOME} className="header-logo">
           <img src={LOGO} alt="" />
         </Link>
       <ul className="nav-list">

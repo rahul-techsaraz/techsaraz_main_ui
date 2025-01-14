@@ -6,10 +6,12 @@ import user1Image from '../../images/user (1).png'
 import service4Image from '../../images/service-4.jpg'
 import ServicesHeroSection from '../../Pages/Services/ServicesHeroSection'
 import WorkSection from '../../Pages/LandingPages/WorkSection';
+import Routes from '../../Constant/routes'
 
 
 
 const AboutUs = () => {
+  const {CONTACT} = Routes
   return (
     <>
     <ServicesHeroSection />
@@ -27,7 +29,7 @@ const AboutUs = () => {
                     cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
                     <p className="about-company-in-box-wraper-textbox-text-p2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                     <div className="about-company-btn">
-                        <Link className="about-company-btn-btn" to="/contact">
+                        <Link className="about-company-btn-btn" to={CONTACT}>
                             CONTACT US
                         </Link>
                       </div>

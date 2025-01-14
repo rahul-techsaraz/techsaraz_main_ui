@@ -1,6 +1,7 @@
 import React from 'react';
 import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
+import Routes from '../../Constant/routes';
 
 const AboutSection = () => {
     const { images } = constants;
@@ -20,7 +21,7 @@ const AboutSection = () => {
                 <div className="about-in-box-wraper-textbox-text">Trusted By Worldwide Clients Since 1980.</div>
                 <p className="about-in-box-wraper-textbox-text-p">{aboutSectionDescription}</p>
                     <div className="about-btn">
-                        <Link className="about-btn-btn" to="/aboutus">
+                        <Link className="about-btn-btn" to={Routes.ABOUT_US}>
                             KNOW MORE
                         </Link>
                       </div>
