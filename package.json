@@ -2,6 +2,7 @@
   "name": "ui_upgrade",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/newversion",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
