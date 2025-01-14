@@ -12454,3 +12454,42 @@ width: 20px;
     box-shadow: 0 0 5px rgba(255,255,255,.4);
   }
 }
+
+/*Swiper css*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+ 
+.swiper-slide-portfolio {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 20px;
+  transition: .3s;
+}
+.swiper-slide-portfolio:hover{
+  border: 1px solid #00fbff;
+  transition: .3s;
+}
+.swiper-slider-box-in-image img{
+  border-radius: 20px;
+}
+.swiper-slider-h2-heading{
+  color: #00fbff;
+  margin-top: 10px;
+}
+.swiper-slider-span{
+  color: #fff;
+}
+ 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,11 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import './style/style.css';
 import './style/home-media.css';
 import Footer from "./Components/Footer/Footer";
 import ClientSection from "./Pages/LandingPages/ClientSection";
 import BlogSection from "./Pages/LandingPages/BlogSection";
-import { config } from "./Constant/config";
+import { config, portfolio } from "./Constant/config";
 import PortfolioSection from "./Pages/LandingPages/PortfolioSection";
 import { useEffect, useRef, useState } from "react";
 import Toast from "./Components/NotificationBar/Notification";
@@ -16,6 +16,13 @@ function App() {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top of the page on route change
+    window.scrollTo(0, 0);
+  }, [location]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -93,7 +100,7 @@ function App() {
         <div id="mouse-follower" style={{position:'fixed'}}></div>
           <Header />
           <Outlet />
-          <PortfolioSection portfolios={config.LandingPortfolioConfig.portfolios} />
+          <PortfolioSection portfolios={portfolio} />
           <ClientSection clients={config.LandingClientConfig.clients} />
             <BlogSection blogs={config.BlogConfig.blogs} />
           <Footer />

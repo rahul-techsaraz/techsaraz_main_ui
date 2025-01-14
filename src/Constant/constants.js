@@ -31,6 +31,7 @@ import blog1Image from '../images/strategies-for-effective-web-design-by-our-age
 import blogImage1 from '../images/Web-designing-–-The-best-way-to-create-professional-websites.jpg'
 import blogImage2 from '../images/How-to-choose-the-Best-web-development-Company.webp'
 import blogImage3 from '../images/cover.jpeg'
+import healthMangersWorld from '../images/Health-Mangers-world.webp'
 
 
 
@@ -131,27 +132,31 @@ export const constants = {
         },
             qwikRealEstateImage: {
             imageURL: qwikRealEstateImage,
-            alt:'Casa Dal Image'
+            alt:'Qwik Real Estate Image'
+        },
+            healthMangersWorld: {
+                imageURL: healthMangersWorld,
+                alt:'Health Mangers World Image'
         },
             socialBudhaImage: {
             imageURL: socialBudhaImage,
-            alt:'Casa Dal Image'
+            alt:'Social Budha Image'
         },
             contentComunityImage: {
             imageURL: contentComunityImage,
-            alt:'Casa Dal Image'
+            alt:'Content Comunity Image'
         },
             wheelChairImage: {
             imageURL: wheelChairImage,
-            alt:'Casa Dal Image'
+            alt:'Wheel Chair Image'
         },
             colonialClientImage: {
             imageURL: colonialClientImage,
-            alt:'Casa Dal Image'
+            alt:'Colonial Client Image'
         },
             logoClientImage: {
             imageURL: logoClientImage,
-            alt:'Casa Dal Image'
+            alt:'Logo Client Image'
         },
             earthImage: {
             imageURL: earthImage,
