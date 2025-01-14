@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Routes from '../../Constant/routes'
 
 const Consultation = () => {
   return (
@@ -10,7 +11,7 @@ const Consultation = () => {
            <div className="consulation-heading">Drop us a line! We are here to answer your questions 24/7</div>
            <div className="consulation-text">NEED A CONSULTATION?</div>
            <div className="consulatio-btn">
-            <Link className="consulatio-btn-btn" to="contactus">
+            <Link className="consulatio-btn-btn" to={Routes.CONTACT}>
                 CONTACT US
             </Link>
           </div>

@@ -1,10 +1,13 @@
 import React from 'react'
 import LetterHeroBanner from '../../LetterHeroBanner/LetterHeroBanner'
 import BestCompanySection from '../../BestCompanySection/BestCompanySection'
-import CompetitorSection from '../../CompetitorSection/CompetitorSection'
 import { serviceGraphicsDesignConfig } from '../../../Constant/config/servicesConfig'
 import ServiceSection from '../ServiceSection '
 import { constants } from '../../../Constant/constants'
+import CompetitorSection from '../../CompetitorSection/CompetitorSection'
+import { graphicsCompetitorData } from '../../../Constant/config/competitorConfigData'
+import CounterSection from '../../../Pages/LandingPages/CounterSection'
+import { config } from '../../../Constant/config'
 
 const GraphicsDesign = () => {
   return (
@@ -17,7 +20,8 @@ const GraphicsDesign = () => {
           linkUrl={constants.heroBannerHeading.linkUrl}
           />
     <BestCompanySection />
-    <CompetitorSection />
+    <CompetitorSection competitorData={graphicsCompetitorData} />
+
     <div>
       {serviceGraphicsDesignConfig.map((section) => (
         <ServiceSection
@@ -33,6 +37,7 @@ const GraphicsDesign = () => {
         />
       ))}
     </div>
+    <CounterSection counters={config.MissionConfig.missions} />
     </>
   )
 }

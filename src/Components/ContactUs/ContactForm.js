@@ -1,18 +1,30 @@
 import React, { useState } from 'react'
 import { images } from '../../Constant/images'
+import { useToast } from '../../Context/ToastContext';
+import { validatePhoneAndEmail } from '../../Utils/utils';
 
 const ContactForm = () => {
+  const { showToast } = useToast();
     const {supportImage} = images;
 
-    const [name, setName] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.stopPropagation();
+    if(!name || !email || !phone || !message){
+      showToast('error',"All fields are mandatory!");
+      return;
+    }
+    // if(!validatePhoneAndEmail()){
+    //   showToast('error',"Invalid phone or email!");
+    //   return;
+    // }
     // Handle the form submission here (e.g., send the data to a server or log it)
-    console.log('Form submitted with values:', { name, email, phone, message });
+    showToast('success',"The email has been sent successfully. The team will connect with you shortly.");
   };
   return (
     <>
@@ -45,7 +57,7 @@ const ContactForm = () => {
                 placeholder="Full Name*"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                required
+                
               />
             </div>
 
@@ -57,7 +69,7 @@ const ContactForm = () => {
                 placeholder="Email Address*"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required
+                
               />
             </div>
 
@@ -69,7 +81,7 @@ const ContactForm = () => {
                 placeholder="Phone Number*"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                required
+                
               />
             </div>
             </div>
@@ -82,7 +94,7 @@ const ContactForm = () => {
               placeholder="Write Your Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              required
+              
             />
             <div className="contact-us-btn">
               <button type="submit" className="contact-us-btn-btn">

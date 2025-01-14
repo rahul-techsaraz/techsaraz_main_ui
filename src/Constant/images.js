@@ -89,9 +89,25 @@ import serviceImage from '../images/service.png';
 import workFromHome3image from '../images/work-from-home (3).png';
 import expertiseImage from '../images/expertise.png';
 import sportsTrophyImage from '../images/sports-trophy.png';
+import applicationImage from '../images/application.png'
+import dashboardImage from '../images/dashboard.png';
+import onlineBookingImage from '../images/online-booking.png'
+import uxReserach768x587Image from '../images/UX-Reserach-768x587.webp';
+import uiDesignImage from '../images/ui-design-image.png';
+import logoDesignImage from '../images/logo-design.png';
+import userExperienceDesign768x587Image from '../images/User-Experience-Design-768x587.webp';
+import usabilityImage from '../images/usability-image.png'
 
 export const images = {
     repairToolImage,
+    usabilityImage,
+    userExperienceDesign768x587Image,
+    uiDesignImage,
+    logoDesignImage,
+    onlineBookingImage,
+    uxReserach768x587Image,
+    applicationImage,
+    dashboardImage,
     blogs13Image,
     sportsTrophyImage,
     serviceImage,

@@ -1,23 +1,25 @@
 import React from 'react'
-import PHP from './PHP'
-import Wordpress from './Wordpress'
-import Shopify from './Shopify'
-import Magento from './Magento'
-import Joomla from './Joomla'
-import ReactTech from './React'
-import Node from './Node'
+import ServiceSection from '../../../../Components/Services/ServiceSection '
+import { technologyServicesConfig } from '../../../../Constant/config/servicesConfig'
+
 
 
 const TechnologyList = () => {
   return (
     <>
-    <PHP />
-    <Wordpress />
-    <Shopify />
-    <Magento />
-    <Joomla />
-    <ReactTech />
-    <Node />
+    {technologyServicesConfig.map((section) => (
+        <ServiceSection
+          key={section.id}
+          title={section.title}
+          description={section.description}
+          imageSrc={section.imageSrc}
+          altText={section.altText}
+          points={section.points}
+          pulseImageSrc={section.pulseImageSrc}
+          pulseAltText={section.pulseAltText}
+          imageSide={section.id % 2 === 0 ? 'right' : 'left'}
+        />
+      ))}
     </>
   )
 }

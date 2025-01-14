@@ -18,7 +18,7 @@ const PortfolioSection = ({portfolios}) => {
   <div id="horizontal">
       <div className="containe">
           <div className="horizontal__content">
-            <CustomOwlCarousel isloop={true} margin={10} isnav={true}>
+            <CustomOwlCarousel>
                               {portfolios.map(portfolio => (
                  <div className="horizontal__item">
               <Link to={portfolio.portfolioLink} >

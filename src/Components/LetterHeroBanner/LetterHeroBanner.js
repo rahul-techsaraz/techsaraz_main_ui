@@ -14,6 +14,8 @@ const SocialMediaIcons = ({ icons }) => {
 };
 
 const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUrl }) => {
+  const splitText = headingText.split("");
+  console.log(splitText)
   return (
     <div className="web-development-banner">
       {/* Social Media Icons Section */}
@@ -37,11 +39,15 @@ const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUr
       {/* Hero Section Heading */}
       <div className="about-hero-section-text">
         <div className="heading-bounce-animation">
-          <h1 className="animation-heading-text">
+        <h1 className="animation-heading-text">
             {headingText.split("").map((letter, index) => (
-              <span key={index} className="animation-heading-span">
-                {letter}
-              </span>
+              letter === " " ? (
+                <br key={index} />
+              ) : (
+                <span key={index} className="animation-heading-span">
+                  {letter}
+                </span>
+              )
             ))}
           </h1>
         </div>

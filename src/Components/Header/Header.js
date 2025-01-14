@@ -1,67 +1,91 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from '..//../images/Tech-SaraZ-logo-300x99.webp'
+import Routes from '../../Constant/routes';
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { 
+        WEB_DEVELOPMENT,
+        HOME,
+        WORDPRESS_DEVELOPMENT,
+        ECOMMERCE_DEVELOPMENT,
+        UI_UX_DESIGN,
+        SOCIAL_MARKETING,
+        SEO,
+        ABOUT_US,
+        BLOG,
+        CONTACT,
+        SERVICES,
+        DIGITAL_MARKETING,
+        CONTENT_WRITING,
+        GRAPHICS_DESIGN,
+        WEB_APPLICATION_DEVELOPMENT
+      } = Routes;
+
+      const toggleMenu = () => {
+        setIsMenuOpen((prevState) => !prevState);
+      };
   return (
     <header className="main-header">
-  <nav className="header-nav">
-      <div className="menu-icons">
-         <i className="fas fa-bars"></i>
-         <i className="fas fa-times"></i>
+  <nav className={`header-nav ${isMenuOpen ? 'active' : ''}`} >
+      <div className="menu-icons" onClick={toggleMenu}>
+         <i className={`fas fa-bars`} ></i>
+         <i className={`fas fa-times `} 
+            ></i>
       </div>
-      <Link to="/" className="header-logo">
+      <Link to={HOME} className="header-logo">
           <img src={LOGO} alt="" />
         </Link>
       <ul className="nav-list">
           <li>
-              <Link to="/" className="">Home</Link>
+              <Link to={HOME} className="">Home</Link>
           </li>
 
           <li>
-              <Link to="/aboutus">about</Link>
+              <Link to={ABOUT_US}>about</Link>
           </li>
           <li>
-              <Link to="/services">Our Services 
+              <Link to={SERVICES}>Our Services 
                   <i className="fas fa-caret-down"></i>
               </Link>
               <ul className="sub-menu">
                   <li>
-                      <Link to="services/web-development">web development <i className="fas fa-caret-down"></i></Link>
+                      <Link to={WEB_DEVELOPMENT}>web development <i className="fas fa-caret-down"></i></Link>
                       <ul className="sub-menu">
                           <li>
-                              <Link to="services/web-development/web-application-development">web applicaion development</Link>
+                              <Link to={`${WEB_DEVELOPMENT}/${WEB_APPLICATION_DEVELOPMENT}`}>web applicaion development</Link>
                           </li>
                           <li>
-                              <Link to="services/web-development/wordpress-development">wordpress development</Link>
+                              <Link to={`${WEB_DEVELOPMENT}/${WORDPRESS_DEVELOPMENT}`}>wordpress development</Link>
                           </li>
                           <li>
-                              <Link to="services/web-development/e-commerce">e-commerce
+                              <Link to={`${WEB_DEVELOPMENT}/${ECOMMERCE_DEVELOPMENT}`}>e-commerce
                               </Link>
                           </li>
                           <li>
-                              <Link to="services/web-development/ui-ux-design">ui and ux design
+                              <Link to={`${WEB_DEVELOPMENT}/${UI_UX_DESIGN}`}>ui and ux design
                               </Link>
                           </li>
                       </ul>
                   </li>
                   <li>
-                      <Link to="services/digital-merketing">Digital marketing <i className="fas fa-caret-down"></i></Link>
+                      <Link to={DIGITAL_MARKETING}>Digital marketing <i className="fas fa-caret-down"></i></Link>
                       <ul className="sub-menu">
                           <li>
-                              <Link to="services/digital-merketing/social-marketing">social media marketing</Link>
+                              <Link to={`${DIGITAL_MARKETING}/${SOCIAL_MARKETING}`}>social media marketing</Link>
                           </li>
                           <li>
-                              <Link to="services/digital-merketing/seo">Seo services</Link>
+                              <Link to={`${DIGITAL_MARKETING}/${SEO}`}>Seo services</Link>
                           </li>
                           
                       </ul>
                   </li>
                   <li>
-                      <Link to="services/content-writing">content writing</Link>
+                      <Link to={CONTENT_WRITING}>content writing</Link>
                   </li>
                   <li>
-                      <Link to="services/graphics-design">graphics design</Link>
+                      <Link to={GRAPHICS_DESIGN}>graphics design</Link>
                   </li>
               </ul>
           </li>
@@ -69,14 +93,14 @@ const Header = () => {
               <Link to="/portfolio">portfolio</Link>
           </li> */}
           <li>
-              <Link to="/blog">Blog</Link>
+              <Link to={BLOG}>Blog</Link>
           </li>
           <li>
-              <Link to="/contact">Contact</Link>
+              <Link to={CONTACT}>Contact</Link>
           </li>
 
           <li className="humberger-menu-button">
-            <Link className="humberger-menu-button-btn-btn" to="/contact">
+            <Link className="humberger-menu-button-btn-btn" to={CONTACT}>
               CONTACT US
           </Link>
         </li>
@@ -84,7 +108,7 @@ const Header = () => {
       </ul>
 
       <div className="header-btn">
-          <Link className="header-btn-btn" to="/contact">
+          <Link className="header-btn-btn" to={CONTACT}>
               CONTACT US
           </Link>
         </div>

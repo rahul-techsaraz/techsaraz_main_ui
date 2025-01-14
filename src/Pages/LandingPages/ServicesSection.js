@@ -1,6 +1,7 @@
 import React from 'react'
 import { constants } from '../../Constant/constants'
 import { Link } from 'react-router-dom';
+import Routes from '../../Constant/routes';
 
 const ServicesSection = ({ services }) => {
     const { images } = constants;
@@ -44,7 +45,7 @@ const ServicesSection = ({ services }) => {
         </ul>
     </nav>
     <div className="services-btn">
-        <Link className="services-btn-btn" to="/services" >
+        <Link className="services-btn-btn" to={Routes.SERVICES} >
             VIEW ALL
         </Link>
       </div> 

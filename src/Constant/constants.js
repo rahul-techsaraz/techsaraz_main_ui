@@ -28,6 +28,10 @@ import colonialClientImage from '../images/Colonial-Logo.webp';
 import logoClientImage from '../images/logo.webp';
 import earthImage from '../images/earth.png';
 import blog1Image from '../images/strategies-for-effective-web-design-by-our-agency.jpg'
+import blogImage1 from '../images/Web-designing-–-The-best-way-to-create-professional-websites.jpg'
+import blogImage2 from '../images/How-to-choose-the-Best-web-development-Company.webp'
+import blogImage3 from '../images/cover.jpeg'
+
 
 
 
@@ -156,6 +160,18 @@ export const constants = {
             blog1Image: {
             imageURL: blog1Image,
             alt:'Blogs Image'
+        },
+        blogImage1:{
+            imageURL:blogImage1,
+            alt:'Blog Image 1'
+        },
+        blogImage2:{
+            imageURL:blogImage2,
+            alt:'Blog Image 2'
+        },
+        blogImage3:{
+            imageURL:blogImage3,
+            alt:'Blog Image 3'
         },
       
     },

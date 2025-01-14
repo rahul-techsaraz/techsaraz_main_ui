@@ -2,10 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { images } from '../../Constant/images';
 
-const BenefitBox = React.memo(({ imageSrc, title, description }) => (
+const BenefitBox = React.memo(({ imageSrc, title, description,icon }) => (
   <article className="benefits-box" id="benefits-seo-heigh">
     <div className="benefits-box-i">
+      {imageSrc ? (
       <img src={imageSrc} alt={`${title}`} />
+      ) : (
+        <i className={`fa-solid ${icon}`} />
+
+      )}
     </div>
     <h1 className="benefits-box-h1">{title}</h1>
     <p className="benefits-box-p">{description}</p>
@@ -27,9 +32,10 @@ const BenefitsSection = ({ benefitsData, title, description }) => {
           {benefitsData.map((benefit) => (
             <BenefitBox
               key={benefit.title} // Replace index with a unique identifier
-              imageSrc={benefit.imageSrc}
+              imageSrc={benefit?.imageSrc}
               title={benefit.title}
               description={benefit.description}
+              icon={benefit?.icon}
             />
           ))}
         </div>

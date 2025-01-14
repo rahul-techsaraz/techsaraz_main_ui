@@ -8,7 +8,7 @@ export const config = {
                     imageUrl: constants.images.machineLearningImage.imageURL,
                     alt:constants.images.machineLearningImage.alt
                 },
-                viewMoreLink: 'services.html',
+                viewMoreLink: '/services',
                 serviceName: 'Web Design',
                 serviceDescription: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
                 serviceIcon:{
@@ -21,7 +21,7 @@ export const config = {
                     imageUrl: constants.images.machineLearningImage.imageURL,
                     alt:constants.images.machineLearningImage.alt
                 },
-                viewMoreLink: 'services.html',
+                viewMoreLink: '/services',
                 serviceName: 'Web Design',
                 serviceDescription: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
                 serviceIcon:{
@@ -34,7 +34,7 @@ export const config = {
                     imageUrl: constants.images.machineLearningImage.imageURL,
                     alt:constants.images.machineLearningImage.alt
                 },
-                viewMoreLink: 'services.html',
+                viewMoreLink: '/services',
                 serviceName: 'Web Design',
                 serviceDescription: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
                 serviceIcon:{
@@ -309,33 +309,33 @@ export const config = {
         blogs: [
             {
                 blogImages: {
-                    imageURL: constants.images.blog1Image.imageURL,
-                    alt: constants.images.blog1Image.imageURL,
+                    imageURL: constants.images.blogImage1.imageURL,
+                    alt: constants.images.blogImage1.imageURL,
                 },
-                postedDate: 'APRIL 1, 2024',
-                updatedOn: 'APRIL 1, 2024',
-                blogSummary: 'Strategies For Effective Web Design By',
-                blogDetailURL:'blog.html'
+                postedDate: '16/11/2024',
+                updatedOn: '16/11/2024',
+                blogSummary: 'Web Development Company in JP Nagar, Bangalore: Elevate Your Online Presence',
+                blogDetailURL:'/blog'
             },
              {
                 blogImages: {
-                    imageURL: constants.images.blog1Image.imageURL,
-                    alt: constants.images.blog1Image.imageURL,
+                    imageURL: constants.images.blogImage2.imageURL,
+                    alt: constants.images.blogImage2.imageURL,
                 },
-                postedDate: 'APRIL 1, 2024',
-                updatedOn: 'APRIL 1, 2024',
-                blogSummary: 'Strategies For Effective Web Design By',
-                blogDetailURL:'blog.html'
+                postedDate: ' 17/11/2023',
+                updatedOn: ' 17/11/2023',
+                blogSummary: 'How to Choose the Best Web Development Company?',
+                blogDetailURL:'/blog'
             },
               {
                 blogImages: {
-                    imageURL: constants.images.blog1Image.imageURL,
-                    alt: constants.images.blog1Image.imageURL,
+                    imageURL: constants.images.blogImage3.imageURL,
+                    alt: constants.images.blogImage3.imageURL,
                 },
-                postedDate: 'APRIL 1, 2024',
-                updatedOn: 'APRIL 1, 2024',
-                blogSummary: 'Strategies For Effective Web Design By',
-                blogDetailURL:'blog.html'
+                postedDate: '27/09/2024',
+                updatedOn: '27/09/2024',
+                blogSummary: 'Clever strategy to maximize your reach',
+                blogDetailURL:'/blog'
             },
                {
                 blogImages: {
@@ -345,7 +345,7 @@ export const config = {
                 postedDate: 'APRIL 1, 2024',
                 updatedOn: 'APRIL 1, 2024',
                 blogSummary: 'Strategies For Effective Web Design By',
-                blogDetailURL:'blog.html'
+                blogDetailURL:'/blog'
             },
 
         ]

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Routes from '../../Constant/routes'
 
 const ServicesHeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const ServicesHeroSection = () => {
               <h1 className="section-tectbox-h1">services</h1>
           </div>
           <div className="about-us-text-p">
-            <p className="about-text-p1">Welcome to    <Link to="#" className="tech-saraz-animation">
+            <p className="about-text-p1">Welcome to    <Link to={Routes.HOME} className="tech-saraz-animation">
               <span className="tech-saraz-name-animation"></span>
               <span className="tech-saraz-name-animation"></span>
               <span className="tech-saraz-name-animation"></span>

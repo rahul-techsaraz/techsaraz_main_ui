@@ -5,10 +5,13 @@ import '../../../Pages/css/content-writing.css';
 import LetterHeroBanner from '../../LetterHeroBanner/LetterHeroBanner'
 import BestCompanySection from '../../BestCompanySection/BestCompanySection'
 import { constants } from '../../../Constant/constants'
-import CompetitorSection from '../../CompetitorSection/CompetitorSection'
 import { serviceContentConfig } from '../../../Constant/config/servicesConfig'
 import ServiceSection from '../ServiceSection '
 import { OurEcommerce } from '../../../Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment';
+import CompetitorSection from '../../CompetitorSection/CompetitorSection';
+import { contentWrittingCompetitorData } from '../../../Constant/config/competitorConfigData';
+import SlideBoxAnimations from '../../SlideBoxAnimations/SlideBoxAnimations';
+import { contentWrittingSlideAnimationConfig } from '../../../Constant/config/slideBoxAnimationsConfig';
 
 const ContentWriting = () => {
   return (
@@ -21,7 +24,7 @@ const ContentWriting = () => {
           linkUrl={constants.heroBannerHeading.linkUrl}
           />
     <BestCompanySection />
-    <CompetitorSection />
+    <CompetitorSection competitorData={contentWrittingCompetitorData} />
     <div>
       {serviceContentConfig.map((section) => (
         <ServiceSection
@@ -37,7 +40,10 @@ const ContentWriting = () => {
         />
       ))}
     </div>
-        <OurEcommerce />
+    <SlideBoxAnimations
+           slideAnimationData={contentWrittingSlideAnimationConfig}
+
+              />
   
    </>
   )
