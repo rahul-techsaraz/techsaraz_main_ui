@@ -50,7 +50,7 @@ const PortfolioSection = ({portfolios}) => {
                               <p className="horizontal-layer-box-p">{portfolio?.description}</p>
                             </div>
                           </div> */}
-                          <div class="swiper-slide">
+                          <div class="swiper-slide swiper-slide-portfolio">
                             <div class="swiper-slider-box-in-image">
                               <img src={portfolio?.image} alt={portfolio?.alt}/>
                             </div>

@@ -15,7 +15,7 @@ export const blogPosts = [
     {
       id: 2,
       image: blogs13Image, // Another blog image
-      author: 'John Doe',
+      author: 'Tech SaraZ',
       date: 'March 5, 2023',
       comments: 5,
       heading: 'How to Create Beautiful UI Designs',

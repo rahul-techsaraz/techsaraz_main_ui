@@ -270,8 +270,8 @@ export const config = {
     LandingClientConfig: {
         clients: [
             {
-                imageUrl: constants.images.brewMyBrainsImage.imageURL,
-                alt:constants.images.brewMyBrainsImage.alt,
+                imageUrl: constants.images.healthMangersWorld.imageURL,
+                alt:constants.images.healthMangersWorld.alt,
             },
             {
                 imageUrl: constants.images.colonialClientImage.imageURL,
@@ -283,11 +283,12 @@ export const config = {
             },
             {
                 imageUrl: constants.images.qwikRealEstateImage.imageURL,
-                alt:constants.images.brewMyBrainsImage.alt,
-            },{
-                imageUrl: constants.images.brewMyBrainsImage.imageURL,
                 alt:constants.images.qwikRealEstateImage.alt,
             },
+            // {
+            //     imageUrl: constants.images.brewMyBrainsImage.imageURL,
+            //     alt:constants.images.brewMyBrainsImage.alt,
+            // },
             {
                 imageUrl: constants.images.socialBudhaImage.imageURL,
                 alt:constants.images.socialBudhaImage.alt,

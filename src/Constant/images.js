@@ -106,6 +106,7 @@ import shineBright1 from '../images/Shine-Bright-1.webp';
 import rakeshRathod from '../images/Rakesh-Rathod.jpg';
 import halo from '../images/Halo.webp';
 import persqftAvenu from '../images/Persqft-Avenu.jpg';
+import customerCare from '../images/customer-care.png';
 
 
 
@@ -217,7 +218,7 @@ export const images = {
     shineBright1,
     rakeshRathod,
     halo,
-    persqftAvenu
-
+    persqftAvenu,
+    customerCare
 }
 
