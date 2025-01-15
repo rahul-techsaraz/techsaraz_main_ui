@@ -1,7 +1,26 @@
 {
-  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "process": "readonly" // Explicitly mark 'process' as a global variable
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks"],
   "rules": {
-    "prettier/prettier": "error"
+    "react-hooks/exhaustive-deps": "off"
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { images } from '../../Constant/images';
 import CompetitorBox from './CompetitorBox';
+import PropTypes from 'prop-types';
 
 // CompetitorSection component
 const CompetitorSection = ({ competitorData }) => {
@@ -17,6 +18,7 @@ const CompetitorSection = ({ competitorData }) => {
           <h1 className="competitor-h1">{title}</h1>
           <p className="competitor-p">{description}</p>
           <div className="competitor-in-box-wraper">
+            {/* Ensure boxes is an array and iterate with map */}
             {boxes.map((item, index) => (
               <CompetitorBox
                 key={index}
@@ -69,6 +71,21 @@ const CompetitorSection = ({ competitorData }) => {
       </section>
     </>
   );
+};
+
+// PropTypes validation
+CompetitorSection.propTypes = {
+  competitorData: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    boxes: PropTypes.arrayOf(
+      PropTypes.shape({
+        icon: PropTypes.string.isRequired, // Assuming icon is a string (URL)
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string,
+      }),
+    ).isRequired, // This validates the array of `boxes`
+  }).isRequired, // This validates the `competitorData` object
 };
 
 export default CompetitorSection;

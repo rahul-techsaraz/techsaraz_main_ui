@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { images } from '../../Constant/images';
-import CustomOwlCarousel from '../../Components/CustomOwlCarousel/CustomOwlCarousel';
 import CustomSwiper from '../../Components/CustomSwiper/CustomSwiper';
 import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive';
-import { constants } from '../../Constant/constants';
 import { customerRivew } from '../../Constant/config';
-import { reviewExpander } from '../../Utils/reviewExpander';
 
 const TestimonialSection = () => {
-  const { quotesImage, pexelsnkhajotia1516680Image } = images;
+  const { quotesImage } = images;
   const [expandedReviews, setExpandedReviews] = useState({});
 
   const toggleReview = (index) => {
@@ -42,7 +39,7 @@ const TestimonialSection = () => {
             breakPoint={SwiperResponsive()}
           >
             {customerRivew.map((review, index) => (
-              <swiper-slide>
+              <swiper-slide key={`${review.name}-${index}`}>
                 <div className="swiper-slide position-relative">
                   <div className="item testimonial-card">
                     <main className="test-card-body">
@@ -84,10 +81,10 @@ const TestimonialSection = () => {
               </swiper-slide>
             ))}
           </CustomSwiper>
-          <div class="swiper-button-prev courselist-button-prev">
+          <div className="swiper-button-prev courselist-button-prev">
             {/* <img src={leftArrow} alt="" /> */}
           </div>
-          <div class="swiper-button-next courselist-button-next">
+          <div className="swiper-button-next courselist-button-next">
             {/* <img src={rightArrow} alt="" /> */}
           </div>
         </div>

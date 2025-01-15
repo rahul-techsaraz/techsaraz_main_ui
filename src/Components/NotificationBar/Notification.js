@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Notification.css';
+import PropTypes from 'prop-types';
 
 const Toast = ({ type, message, isVisible, onClose }) => {
   const [toastClass, setToastClass] = useState('toast');
@@ -39,5 +40,10 @@ const Toast = ({ type, message, isVisible, onClose }) => {
     </div>
   );
 };
-
+Toast.propTypes = {
+  type: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+  isVisible: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 export default Toast;

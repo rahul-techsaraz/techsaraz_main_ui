@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 import Routes from '../../Constant/routes';
@@ -42,7 +43,6 @@ const ServicesSection = ({ services }) => {
                         </div>
                         <div className="service-peragraph">
                           <p className="service-p">
-                            {' '}
                             {service.serviceDescription}
                           </p>
                         </div>
@@ -72,4 +72,21 @@ const ServicesSection = ({ services }) => {
   );
 };
 
-export default ServicesSection;
+// Prop validation for ServicesSection
+ServicesSection.propTypes = {
+  services: PropTypes.arrayOf(
+    PropTypes.shape({
+      serviceName: PropTypes.string.isRequired, // Name of the service
+      serviceDescription: PropTypes.string.isRequired, // Description of the service
+      serviceImage: PropTypes.shape({
+        imageUrl: PropTypes.string.isRequired, // Image URL
+        alt: PropTypes.string.isRequired, // Alt text for the image
+      }).isRequired,
+      serviceIcon: PropTypes.shape({
+        imageUrl: PropTypes.string.isRequired, // Icon Image URL
+        alt: PropTypes.string.isRequired, // Alt text for the icon
+      }).isRequired,
+      viewMoreLink: PropTypes.string.isRequired, // Link to view more details of the service
+    }),
+  ).isRequired, // The services prop is required to be an array of service objects
+};

@@ -35,9 +35,9 @@ export const OurEcommerce = () => {
             <div className="our-ecommerce-in-box-wraper-in-box" key={index}>
               <h3 className="our-ecommerce-in-box-wraper-in-box-h1">{title}</h3>
               <p className="our-ecommerce-in-box-wraper-in-box-p">
-                Social media platforms are not just about posting content;
-                they're about showcasing your brand in the best light. By using
-                the unique creative opportunities each platform offers, you can
+                Social media platforms are not just about posting content; they
+                are about showcasing your brand in the best light. By using the
+                unique creative opportunities each platform offers, you can
                 position your brand effectively and attractively.
               </p>
               <div className="overlay"></div>

@@ -5,23 +5,7 @@ import { Link } from 'react-router-dom';
 import Routes from '../../Constant/routes';
 
 const Footer = () => {
-  const {
-    WEB_DEVELOPMENT,
-    HOME,
-    WORDPRESS_DEVELOPMENT,
-    ECOMMERCE_DEVELOPMENT,
-    UI_UX_DESIGN,
-    SOCIAL_MARKETING,
-    SEO,
-    ABOUT_US,
-    BLOG,
-    CONTACT,
-    SERVICES,
-    DIGITAL_MARKETING,
-    CONTENT_WRITING,
-    GRAPHICS_DESIGN,
-    WEB_APPLICATION_DEVELOPMENT,
-  } = Routes;
+  const { HOME, ABOUT_US, BLOG, CONTACT, SERVICES } = Routes;
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // This function handles the scroll logic
@@ -145,7 +129,11 @@ const Footer = () => {
       {showScrollTop && (
         <div id="scroll-top" onClick={scrollToTop}>
           <button id="btn" className="scroll-top-button-22">
+<<<<<<< HEAD
+            <i className="fa-regular fa-paper-plane" aria-hidden="true"></i>
+=======
             <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+>>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
           </button>
         </div>
       )}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
   return (
@@ -91,4 +92,9 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
   );
 };
 
+BlogSidebar.propTypes = {
+  categories: PropTypes.array.isRequired,
+  recentPosts: PropTypes.array.isRequired,
+  tags: PropTypes.array.isRequired,
+};
 export default BlogSidebar;

@@ -7,7 +7,6 @@ import BestCompanySection from '../../BestCompanySection/BestCompanySection';
 import { constants } from '../../../Constant/constants';
 import { serviceContentConfig } from '../../../Constant/config/servicesConfig';
 import ServiceSection from '../ServiceSection ';
-import { OurEcommerce } from '../../../Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment';
 import CompetitorSection from '../../CompetitorSection/CompetitorSection';
 import { contentWrittingCompetitorData } from '../../../Constant/config/competitorConfigData';
 import SlideBoxAnimations from '../../SlideBoxAnimations/SlideBoxAnimations';

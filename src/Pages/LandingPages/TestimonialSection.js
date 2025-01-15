@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes for validation
 import { constants } from '../../Constant/constants';
 
 const TestimonialSection = ({ testimonials }) => {
@@ -56,6 +57,24 @@ const TestimonialSection = ({ testimonials }) => {
       </div>
     </div>
   );
+};
+
+// Prop validation for TestimonialSection
+TestimonialSection.propTypes = {
+  testimonials: PropTypes.arrayOf(
+    PropTypes.shape({
+      testimonialName: PropTypes.string.isRequired, // Name of the testimonial
+      testimonialDescription: PropTypes.string.isRequired, // Description of the testimonial
+      profileImage: PropTypes.shape({
+        imageUrl: PropTypes.string.isRequired, // URL of the profile image
+        alt: PropTypes.string.isRequired, // Alt text for the profile image
+      }).isRequired,
+      profileDetails: PropTypes.shape({
+        profileName: PropTypes.string.isRequired, // Name of the person in the testimonial
+        profileDescription: PropTypes.string.isRequired, // Description of the person's role or details
+      }).isRequired,
+    }),
+  ).isRequired, // The testimonials prop should be an array of testimonial objects
 };
 
 export default TestimonialSection;

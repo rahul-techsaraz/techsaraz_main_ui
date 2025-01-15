@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import { images } from '../../Constant/images';
 
 const ClientSection = ({ clients }) => {
@@ -45,6 +46,16 @@ const ClientSection = ({ clients }) => {
       </div>
     </section>
   );
+};
+
+// Prop validation for ClientSection
+ClientSection.propTypes = {
+  clients: PropTypes.arrayOf(
+    PropTypes.shape({
+      imageUrl: PropTypes.string.isRequired, // URL of the client's image
+      alt: PropTypes.string.isRequired, // Alt text for the image
+    }),
+  ).isRequired, // Ensures clients is an array of client objects
 };
 
 export default ClientSection;
