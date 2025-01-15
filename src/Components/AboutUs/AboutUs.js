@@ -14,7 +14,7 @@ const AboutUs = () => {
       <ServicesHeroSection />
 
       <section className="about-company">
-        <div className="about-company-pulse">
+        <div className="about-company-pulse about-page-company-pulse">
           <img src={user1Image} alt="" />
         </div>
         <div className="about-company-in-box">
