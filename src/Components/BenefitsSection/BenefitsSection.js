@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { images } from '../../Constant/images';
 
-const BenefitBox = React.memo(({ imageSrc, title, description,icon }) => (
+const BenefitBox = React.memo(({ imageSrc, title, description, icon }) => (
   <article className="benefits-box" id="benefits-seo-heigh">
     <div className="benefits-box-i">
       {imageSrc ? (
-      <img src={imageSrc} alt={`${title}`} />
+        <img src={imageSrc} alt={`${title}`} />
       ) : (
         <i className={`fa-solid ${icon}`} />
-
       )}
     </div>
     <h1 className="benefits-box-h1">{title}</h1>
@@ -63,7 +62,7 @@ BenefitsSection.propTypes = {
       imageSrc: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

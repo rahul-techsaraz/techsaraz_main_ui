@@ -16,9 +16,6 @@ const ServiceSection = ({
   return (
     <>
       <div>
-      
-        
-
         {imageSide === 'left' && (
           <section className="in-bangalore">
             <div className="in-bangalore-pulse">
@@ -37,19 +34,18 @@ const ServiceSection = ({
 
               {points.length > 0 && (
                 <div className="in-bangalore-down-box-parent">
-                <div className="in-bangalore-down-box">
-                  {points.map((text, index) => (
-                    <div className="in-bangalore-down-box-i-text" key={index}>
-                      <div className="in-bangalore-down-box-i">
-                        <img src={checkedImage} alt="" />
+                  <div className="in-bangalore-down-box">
+                    {points.map((text, index) => (
+                      <div className="in-bangalore-down-box-i-text" key={index}>
+                        <div className="in-bangalore-down-box-i">
+                          <img src={checkedImage} alt="" />
+                        </div>
+                        <div className="in-bangalore-down-box-text">{text}</div>
                       </div>
-                      <div className="in-bangalore-down-box-text">{text}</div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
               )}
-              
             </div>
           </section>
         )}
@@ -71,20 +67,24 @@ const ServiceSection = ({
               </div>
 
               {points.length > 0 && (
-                  <div className="in-bangalore2-down-box-parent">
+                <div className="in-bangalore2-down-box-parent">
                   <div className="in-bangalore2-down-box">
                     {points.map((text, index) => (
-                      <div className="in-bangalore2-down-box-i-text" key={index}>
+                      <div
+                        className="in-bangalore2-down-box-i-text"
+                        key={index}
+                      >
                         <div className="in-bangalore2-down-box-i">
                           <img src={checkedImage} alt="" />
                         </div>
-                        <div className="in-bangalore2-down-box-text">{text}</div>
+                        <div className="in-bangalore2-down-box-text">
+                          {text}
+                        </div>
                       </div>
                     ))}
                   </div>
                 </div>
               )}
-              
             </div>
           </section>
         )}

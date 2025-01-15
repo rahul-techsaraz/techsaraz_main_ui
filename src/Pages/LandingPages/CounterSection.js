@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { images } from '../../Constant/images';
 
 const CounterSection = () => {
@@ -7,10 +7,15 @@ const CounterSection = () => {
   const [yearsOfExperience, setYearsOfExperience] = useState(0);
   const [winningAwards, setWinningAwards] = useState(0);
 
-  const {serviceImage,workFromHome3image,expertiseImage,sportsTrophyImage} = images;
+  const {
+    serviceImage,
+    workFromHome3image,
+    expertiseImage,
+    sportsTrophyImage,
+  } = images;
 
   // Function to increment the counter
-  const incrementCounter = (setter, targetValue,time) => {
+  const incrementCounter = (setter, targetValue, time) => {
     let count = 0;
     const interval = setInterval(() => {
       if (count < targetValue) {
@@ -23,58 +28,74 @@ const CounterSection = () => {
   };
 
   useEffect(() => {
-    incrementCounter(setHappyClients, 225,15); // Example target value for Happy Clients
-    incrementCounter(setCompleteProjects, 470,10); // Example target value for Complete Projects
-    incrementCounter(setYearsOfExperience, 8,50); // Example target value for Years of Experience
-    incrementCounter(setWinningAwards, 25,50); // Example target value for Winning Awards
+    incrementCounter(setHappyClients, 225, 15); // Example target value for Happy Clients
+    incrementCounter(setCompleteProjects, 470, 10); // Example target value for Complete Projects
+    incrementCounter(setYearsOfExperience, 8, 50); // Example target value for Years of Experience
+    incrementCounter(setWinningAwards, 25, 50); // Example target value for Winning Awards
   }, []);
   return (
     <section className="counter">
-    <div className="counter-in-box">
-      <div className="stats-container">
-        <div className="stat">
-          <div className="counter-img">
-            <img className='counter-img-sub' src={serviceImage} alt="Happy Clients" />
+      <div className="counter-in-box">
+        <div className="stats-container">
+          <div className="stat">
+            <div className="counter-img">
+              <img
+                className="counter-img-sub"
+                src={serviceImage}
+                alt="Happy Clients"
+              />
+            </div>
+            <div className="subscribers-odometer odometer plus">
+              {happyClients}
+            </div>
+            <div className="type">Happy Clients</div>
           </div>
-          <div className="subscribers-odometer odometer plus">
-            {happyClients}
-          </div>
-          <div className="type">Happy Clients</div>
-        </div>
 
-        <div className="stat">
-          <div className="counter-img">
-            <img className='counter-img-sub' src={workFromHome3image} alt="Complete Projects" />
+          <div className="stat">
+            <div className="counter-img">
+              <img
+                className="counter-img-sub"
+                src={workFromHome3image}
+                alt="Complete Projects"
+              />
+            </div>
+            <div className="videos-odometer odometer plus">
+              {completeProjects}
+            </div>
+            <div className="type">Complete Projects</div>
           </div>
-          <div className="videos-odometer odometer plus">
-            {completeProjects}
-          </div>
-          <div className="type">Complete Projects</div>
-        </div>
 
-        <div className="stat">
-          <div className="counter-img">
-            <img className='counter-img-sub' src={expertiseImage} alt="Years of Experience" />
+          <div className="stat">
+            <div className="counter-img">
+              <img
+                className="counter-img-sub"
+                src={expertiseImage}
+                alt="Years of Experience"
+              />
+            </div>
+            <div className="projects-odometer odometer plus">
+              {yearsOfExperience}
+            </div>
+            <div className="type">Years of Experience</div>
           </div>
-          <div className="projects-odometer odometer plus">
-            {yearsOfExperience}
-          </div>
-          <div className="type">Years of Experience</div>
-        </div>
 
-        <div className="stat">
-          <div className="counter-img">
-            <img className='counter-img-sub' src={sportsTrophyImage} alt="Winning Awards" />
+          <div className="stat">
+            <div className="counter-img">
+              <img
+                className="counter-img-sub"
+                src={sportsTrophyImage}
+                alt="Winning Awards"
+              />
+            </div>
+            <div className="winning-odometer odometer plus">
+              {winningAwards}
+            </div>
+            <div className="type">Winning Awards</div>
           </div>
-          <div className="winning-odometer odometer plus">
-            {winningAwards}
-          </div>
-          <div className="type">Winning Awards</div>
         </div>
       </div>
-    </div>
-  </section>
-  )
-}
+    </section>
+  );
+};
 
-export default CounterSection
+export default CounterSection;
