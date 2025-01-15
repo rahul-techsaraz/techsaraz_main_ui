@@ -7,6 +7,7 @@ import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive
 import { display } from '@splidejs/splide/src/js/utils'
 
 const PortfolioSection = ({portfolios}) => {
+  console.log(portfolios)
   return (
     <section className="creative-work portfolio-section-start">
   <div className="creative-work-pulse">
