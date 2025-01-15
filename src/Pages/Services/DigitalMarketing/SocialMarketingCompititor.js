@@ -6,7 +6,7 @@ const SocialMediaMarketingCompetitors = () => {
       iconClass: 'fa-earth-americas',
       title: 'Custom Plans',
       description:
-        'At Tech Saraz, we create unique plans that fit each client\'s needs. We take the time to learn about your business, audience, and industry to help you stand out online.',
+        "At Tech Saraz, we create unique plans that fit each client's needs. We take the time to learn about your business, audience, and industry to help you stand out online.",
     },
     {
       iconClass: 'fa-laptop',

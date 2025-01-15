@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 /* services hero section start */
 
-
-.services-hero-section{
+.services-hero-section {
   background-color: #000000;
-  height:100vh;
+  height: 100vh;
   position: relative;
 }
-.animate-center{
+.animate-center {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -18,13 +16,13 @@
   align-items: center;
 }
 
-.hro{
+.hro {
   padding: 0 100px;
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.section-tectbox-h1{
+.section-tectbox-h1 {
   font-size: 50px;
   color: #00fc7e;
   text-transform: uppercase;
@@ -36,103 +34,152 @@
 
 /* start */
 
-
-.arm-left{
+.arm-left {
   animation: armSwipe 5s 1s infinite ease-in-out;
   transform-origin: left top;
+}
+@keyframes armSwipe {
+  0% {
+    transform: rotate(-10deg);
   }
-  @keyframes armSwipe{
-    0%{transform: rotate(-10deg);}
-    50%{transform: rotate(0deg);}
-      100%{transform: rotate(-10deg);}
+  50% {
+    transform: rotate(0deg);
   }
-  .arm-right{
-    animation: armRightSwipe 5s 1s infinite ease-in-out;
-    transform-origin: right top;
+  100% {
+    transform: rotate(-10deg);
   }
-  @keyframes armRightSwipe {
-    0%{transform: rotate(-1deg);}
-    50%{transform: rotate(-5deg);}
-      100%{transform: rotate(-1deg);}
+}
+.arm-right {
+  animation: armRightSwipe 5s 1s infinite ease-in-out;
+  transform-origin: right top;
+}
+@keyframes armRightSwipe {
+  0% {
+    transform: rotate(-1deg);
   }
-  .astronaut{
-    width: 40%;
-    height: auto;
-    overflow: visible;
-    animation: Levitation 5s 1s infinite ease-in-out;
+  50% {
+    transform: rotate(-5deg);
   }
-  @keyframes Levitation{
-    0%{transform: translateY(100px);}
-    50%{transform: translateY(80px); }
-    100%{transform: translateY(100px);}
+  100% {
+    transform: rotate(-1deg);
   }
-  .leg-right{
-    animation: LegSwipe 5s 1s infinite ease-out;
-    transform-origin: left bottom;
+}
+.astronaut {
+  width: 40%;
+  height: auto;
+  overflow: visible;
+  animation: Levitation 5s 1s infinite ease-in-out;
+}
+@keyframes Levitation {
+  0% {
+    transform: translateY(100px);
   }
-  @keyframes LegSwipe {
-    0%{transform: rotate(8deg);}
-    50%{transform: rotate(5deg);}
-    100%{transform: rotate(8deg);}
+  50% {
+    transform: translateY(80px);
   }
-  .leg-left{
-  
+  100% {
+    transform: translateY(100px);
   }
-  @keyframes LegLeftSwipe {
-    0%{transform: rotate(2deg);}
-    50%{transform: rotate(0deg);}
-    100%{transform: rotate(2deg);}
+}
+.leg-right {
+  animation: LegSwipe 5s 1s infinite ease-out;
+  transform-origin: left bottom;
+}
+@keyframes LegSwipe {
+  0% {
+    transform: rotate(8deg);
   }
-  .reflect{
-    animation: faceOpacity 5s 1s infinite;
+  50% {
+    transform: rotate(5deg);
   }
-  @keyframes faceOpacity {
-    0%{opacity: 0.7;}
-    70%{opacity: 1;}
-    100%{opacity: 0.7;}
+  100% {
+    transform: rotate(8deg);
   }
-  .eye-right{
-    animation: eyeBlink 5s infinite step-start 0s;
+}
+.leg-left {
+}
+@keyframes LegLeftSwipe {
+  0% {
+    transform: rotate(2deg);
   }
-  .eye-left{
-    animation: eyeLeftBlink 5s infinite step-start 0s;
-  
+  50% {
+    transform: rotate(0deg);
   }
-  @keyframes eyeBlink {
-    90%{transform: none; animation-timing-function: ease-in;}
-    93%{transform: translateY(135px) scaleY(0);}
-    100%{animation-timing-function: ease-in;}
+  100% {
+    transform: rotate(2deg);
   }
-  @keyframes eyeLeftBlink {
-    90%{transform: none; animation-timing-function: ease-in;}
-    93%{transform: translateY(155px) scaleY(0);}
-    100%{animation-timing-function: ease-in;}
+}
+.reflect {
+  animation: faceOpacity 5s 1s infinite;
+}
+@keyframes faceOpacity {
+  0% {
+    opacity: 0.7;
   }
-  .stars{
-    width: 800px;
-    fill:#fff;
-    overflow: visible;
-    animation: starsRotate 155s 1s linear;
-    transform-origin: center;
+  70% {
+    opacity: 1;
   }
-  @keyframes starsRotate {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+  100% {
+    opacity: 0.7;
   }
-  
+}
+.eye-right {
+  animation: eyeBlink 5s infinite step-start 0s;
+}
+.eye-left {
+  animation: eyeLeftBlink 5s infinite step-start 0s;
+}
+@keyframes eyeBlink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(135px) scaleY(0);
+  }
+  100% {
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes eyeLeftBlink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(155px) scaleY(0);
+  }
+  100% {
+    animation-timing-function: ease-in;
+  }
+}
+.stars {
+  width: 800px;
+  fill: #fff;
+  overflow: visible;
+  animation: starsRotate 155s 1s linear;
+  transform-origin: center;
+}
+@keyframes starsRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* end */
 
 /*  */
 
-.services-upper-text{
-  color: #C4CFDE;
+.services-upper-text {
+  color: #c4cfde;
   position: absolute;
   top: 40px;
-
 }
 
-.about-coloum-text{
+.about-coloum-text {
   position: absolute;
   top: 70%;
   transform: translateY(-50%);
@@ -142,10 +189,10 @@
   color: #00fc7e;
   font-weight: 700;
 }
-.about-coloum-text-p{
+.about-coloum-text-p {
   display: block;
 }
-.textBox{
+.textBox {
   position: relative;
   width: 100%;
   height: 100%;
@@ -155,63 +202,67 @@
 
 /* services start */
 
-
-
-
 /* services end */
 
 /* consulation start */
 
-.consulation{
+.consulation {
   width: 100%;
   background-color: #000;
   /* height: 70vh; */
   padding: 70px 100px;
 }
-.consulation-in-box{
+.consulation-in-box {
   width: 100%;
   padding: 50px;
   border: 2px solid #eb4034;
   border-radius: 20px;
-  background-color: #11151C;
+  background-color: #11151c;
 }
-.consulation-img{
+.consulation-img {
   width: 100%;
   height: 60vh;
   border-radius: 20px;
-  background: url(../../images/bg-cta-home2.jpg)no-repeat;
+  background: url(../../images/bg-cta-home2.jpg) no-repeat;
   background-position: center;
   object-fit: contain;
   border-radius: 20px;
 }
-.consulation-layer{
+.consulation-layer {
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
 }
-.consulation-heading{
+.consulation-heading {
   font-size: 20px;
-  color: #C4CFDE;
+  color: #c4cfde;
 }
-.consulation-text{
+.consulation-text {
   font-size: 70px;
   color: #eb4034;
   font-weight: 600;
 }
 
-.consulatio-btn-btn{
+.consulatio-btn-btn {
   position: relative;
-  background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
+  background: linear-gradient(
+    -90deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #ee7752
+  );
   background-size: 400% 100%;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
-  border-radius:50px;
+  border-radius: 50px;
   font-size: 14px;
   letter-spacing: 1px;
   padding: 0;
@@ -227,7 +278,7 @@
   margin-top: 20px;
 }
 
-.consulatio-btn-btn .consulatio-btn{
+.consulatio-btn-btn .consulatio-btn {
   color: black;
   min-height: 40px;
   padding: 0 1.618em;
@@ -239,7 +290,6 @@
   z-index: 1;
   mix-blend-mode: overlay;
   font-family: 'Helvetica Neue';
-  
 }
 
 @keyframes Gradient {
@@ -249,13 +299,4 @@
   }
 }
 
-
-
 /* consulation end */
-
-
-
-
-
-
-
