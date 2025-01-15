@@ -1,16 +1,15 @@
-import { Outlet, useLocation } from "react-router-dom";
-import Header from "./Components/Header/Header";
+import { Outlet, useLocation } from 'react-router-dom';
+import Header from './Components/Header/Header';
 import './style/style.css';
 import './style/home-media.css';
-import Footer from "./Components/Footer/Footer";
-import ClientSection from "./Pages/LandingPages/ClientSection";
-import BlogSection from "./Pages/LandingPages/BlogSection";
-import { config, portfolio } from "./Constant/config";
-import PortfolioSection from "./Pages/LandingPages/PortfolioSection";
-import { useEffect, useRef, useState } from "react";
-import { ToastProvider } from "./Context/ToastContext";
+import Footer from './Components/Footer/Footer';
+import ClientSection from './Pages/LandingPages/ClientSection';
+import BlogSection from './Pages/LandingPages/BlogSection';
+import { config, portfolio } from './Constant/config';
+import PortfolioSection from './Pages/LandingPages/PortfolioSection';
+import { useEffect, useRef, useState } from 'react';
+import { ToastProvider } from './Context/ToastContext';
 function App() {
-
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
@@ -75,37 +74,36 @@ function App() {
 
   useEffect(() => {
     // Get the follower element
-    const follower = document.querySelector("#mouse-follower");
+    const follower = document.querySelector('#mouse-follower');
 
     if (!follower) return;
 
     // Set up the mousemove event listener
-    document.addEventListener("mousemove", setCoords);
+    document.addEventListener('mousemove', setCoords);
 
     // Start the animation loop when the component mounts
     update(follower);
 
     // Cleanup the event listener on component unmount
     return () => {
-      document.removeEventListener("mousemove", setCoords);
+      document.removeEventListener('mousemove', setCoords);
     };
   }, [mouseX, mouseY]); // Only trigger effect when mouse position changes
   return (
     <>
-    <ToastProvider>
-    {/* {showPopup && <Popup message="This is your popup!" onClose={handleClosePopup} />} */}
+      <ToastProvider>
+        {/* {showPopup && <Popup message="This is your popup!" onClose={handleClosePopup} />} */}
         <div className="full-section">
-        <div id="mouse-follower" style={{position:'fixed'}}></div>
+          <div id="mouse-follower" style={{ position: 'fixed' }}></div>
           <Header />
           <Outlet />
           <PortfolioSection portfolios={portfolio} />
           <ClientSection clients={config.LandingClientConfig.clients} />
-            <BlogSection blogs={config.BlogConfig.blogs} />
+          <BlogSection blogs={config.BlogConfig.blogs} />
           <Footer />
         </div>
-        </ToastProvider>
+      </ToastProvider>
     </>
-
   );
 }
 

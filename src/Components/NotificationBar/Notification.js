@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import './Notification.css';
 
@@ -34,7 +33,9 @@ const Toast = ({ type, message, isVisible, onClose }) => {
   return (
     <div className={`${toastClass} ${toastTypeClass}`}>
       <span className="message">{message}</span>
-      <button className="close-btn" onClick={onClose}>X</button>
+      <button className="close-btn" onClick={onClose}>
+        X
+      </button>
     </div>
   );
 };
