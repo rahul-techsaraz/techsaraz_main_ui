@@ -81,11 +81,13 @@ const TestimonialSection = () => {
               </swiper-slide>
             ))}
           </CustomSwiper>
-          <div className="swiper-button-prev courselist-button-prev">
-            {/* <img src={leftArrow} alt="" /> */}
+          <div className="swiper-button-prev-next-flex">
+          <div className="swiper-button-prev testimonial-prev-button">
+            <i className="fa-solid fa-arrow-left"></i>
           </div>
-          <div className="swiper-button-next courselist-button-next">
-            {/* <img src={rightArrow} alt="" /> */}
+          <div className="swiper-button-next testimonial-next-button">
+            <i className="fa-solid fa-arrow-right"></i>
+          </div>
           </div>
         </div>
         {/* </div> */}
