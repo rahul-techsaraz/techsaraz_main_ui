@@ -1,26 +1,27 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
-import LandingContainer from "./Components/LandingContainer/LandingContainer";
-import AboutUs from "./Components/AboutUs/AboutUs";
-import Services from "./Components/Services/Services";
-import MainWebDevelopmentSection from "./Components/Services/WebDevelopment";
-import WebApplicationDevelopmentServices from "./Pages/Services/WebDevelopment/WebApplicationDevelopment/WebApplicationDevelopmentServices";
-import TechnologyList from "./Pages/Services/WebDevelopment/TechnologyList";
-import WordpressDevelopment from "./Pages/Services/WebDevelopment/WebApplicationDevelopment/WordpressDevelopment";
-import EcommerceDevelopment from "./Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment";
-import UiUxDesign from "./Pages/Services/WebDevelopment/WebApplicationDevelopment/UiUxDesign";
-import DigitalMarketing from "./Components/Services/DigitalMarketing/DigitalMarketing";
-import Home from "./Pages/Services/DigitalMarketing/Home";
-import SocialMarketing from "./Components/Services/DigitalMarketing/SocialMarketing";
-import SeoServices from "./Components/Services/DigitalMarketing/SeoServices";
-import ContentWriting from "./Components/Services/ContentWriting/ContentWriting";
-import GraphicsDesign from "./Components/Services/GraphicsDesign/GraphicsDesign";
-import ContactUs from "./Components/ContactUs/ContactUs";
-import Blog from "./Components/Blog/Blog";
-import ErrorPage from "./Components/ErrorPage/ErrorPage";  // Importing the error component
-import Routes from "./Constant/routes";
+import React from 'react';
+import { createBrowserRouter } from 'react-router-dom';
+import App from './App';
+import LandingContainer from './Components/LandingContainer/LandingContainer';
+import AboutUs from './Components/AboutUs/AboutUs';
+import Services from './Components/Services/Services';
+import MainWebDevelopmentSection from './Components/Services/WebDevelopment';
+import WebApplicationDevelopmentServices from './Pages/Services/WebDevelopment/WebApplicationDevelopment/WebApplicationDevelopmentServices';
+import TechnologyList from './Pages/Services/WebDevelopment/TechnologyList';
+import WordpressDevelopment from './Pages/Services/WebDevelopment/WebApplicationDevelopment/WordpressDevelopment';
+import EcommerceDevelopment from './Pages/Services/WebDevelopment/WebApplicationDevelopment/EcommerceDevelopment';
+import UiUxDesign from './Pages/Services/WebDevelopment/WebApplicationDevelopment/UiUxDesign';
+import DigitalMarketing from './Components/Services/DigitalMarketing/DigitalMarketing';
+import Home from './Pages/Services/DigitalMarketing/Home';
+import SocialMarketing from './Components/Services/DigitalMarketing/SocialMarketing';
+import SeoServices from './Components/Services/DigitalMarketing/SeoServices';
+import ContentWriting from './Components/Services/ContentWriting/ContentWriting';
+import GraphicsDesign from './Components/Services/GraphicsDesign/GraphicsDesign';
+import ContactUs from './Components/ContactUs/ContactUs';
+import Blog from './Components/Blog/Blog';
+import ErrorPage from './Components/ErrorPage/ErrorPage'; // Importing the error component
+import Routes from './Constant/routes';
 
-const { 
+const {
   WEB_DEVELOPMENT,
   HOME,
   WORDPRESS_DEVELOPMENT,
@@ -35,13 +36,13 @@ const {
   DIGITAL_MARKETING,
   CONTENT_WRITING,
   GRAPHICS_DESIGN,
-  WEB_APPLICATION_DEVELOPMENT
+  WEB_APPLICATION_DEVELOPMENT,
 } = Routes;
 
 // Defining route paths and nested routes
 const webDevelopmentRoutes = [
   {
-    path: "",
+    path: '',
     element: <TechnologyList />,
   },
   {
@@ -64,7 +65,7 @@ const webDevelopmentRoutes = [
 
 const digitalMarketingRoutes = [
   {
-    path: "",
+    path: '',
     element: <Home />,
   },
   {
@@ -79,9 +80,9 @@ const digitalMarketingRoutes = [
 
 export const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,  // Set the error page at the root level
+    errorElement: <ErrorPage />, // Set the error page at the root level
     children: [
       { path: HOME, element: <LandingContainer /> },
       { path: ABOUT_US, element: <AboutUs /> },
@@ -94,17 +95,15 @@ export const appRouter = createBrowserRouter([
         element: <MainWebDevelopmentSection />,
         children: webDevelopmentRoutes,
       },
-      
+
       {
         path: DIGITAL_MARKETING,
         element: <DigitalMarketing />,
         children: digitalMarketingRoutes,
       },
-      
+
       { path: CONTENT_WRITING, element: <ContentWriting /> },
       { path: GRAPHICS_DESIGN, element: <GraphicsDesign /> },
     ],
   },
-],{
-  basename: '/newversion'
-});
+]);

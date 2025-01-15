@@ -2,13 +2,14 @@
   "name": "ui_upgrade",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/newversion",
+  "homepage": "/",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs-com": "^3.2.0",
     "jquery": "^3.7.1",
     "owl.carousel": "^2.3.4",
     "prop-types": "^15.8.1",
@@ -23,8 +24,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint:fix": "eslint src/**/*.js --fix",
+    "lint": "eslint src/**/*.js",
+    "prettify": "prettier src/**/*.js --write"
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +45,35 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+<<<<<<< HEAD
+    "*.js": "npm run lint:fix"
+=======
+    "*.js": "prettier --write",
+    "*.jsx": "prettier --write",
+    "*.ts": "prettier --write",
+    "*.tsx": "prettier --write"
+>>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+<<<<<<< HEAD
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+=======
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.1",
+>>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2"
   }
 }

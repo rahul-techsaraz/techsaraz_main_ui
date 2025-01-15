@@ -1,13 +1,11 @@
-import React from 'react'
-import ServiceSection from '../../../../Components/Services/ServiceSection '
-import { technologyServicesConfig } from '../../../../Constant/config/servicesConfig'
-
-
+import React from 'react';
+import ServiceSection from '../../../../Components/Services/ServiceSection ';
+import { technologyServicesConfig } from '../../../../Constant/config/servicesConfig';
 
 const TechnologyList = () => {
   return (
     <>
-    {technologyServicesConfig.map((section) => (
+      {technologyServicesConfig.map((section) => (
         <ServiceSection
           key={section.id}
           title={section.title}
@@ -21,7 +19,7 @@ const TechnologyList = () => {
         />
       ))}
     </>
-  )
-}
+  );
+};
 
-export default TechnologyList
+export default TechnologyList;

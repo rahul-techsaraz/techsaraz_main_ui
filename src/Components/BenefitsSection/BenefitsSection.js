@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { images } from '../../Constant/images';
 
-const BenefitBox = React.memo(({ imageSrc, title, description,icon }) => (
+const BenefitBox = React.memo(({ imageSrc, title, description, icon }) => (
   <article className="benefits-box" id="benefits-seo-heigh">
     <div className="benefits-box-i">
       {imageSrc ? (
-      <img src={imageSrc} alt={`${title}`} />
+        <img src={imageSrc} alt={`${title}`} />
       ) : (
         <i className={`fa-solid ${icon}`} />
-
       )}
     </div>
     <h1 className="benefits-box-h1">{title}</h1>
@@ -43,11 +42,14 @@ const BenefitsSection = ({ benefitsData, title, description }) => {
     </section>
   );
 };
+BenefitsSection.displayName = 'BenefitsSection';
+BenefitBox.displayName = 'BenefitBox';
 
 BenefitBox.propTypes = {
-  imageSrc: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  icon: PropTypes.string,
 };
 
 BenefitBox.defaultProps = {
@@ -60,10 +62,11 @@ BenefitsSection.propTypes = {
   benefitsData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      imageSrc: PropTypes.string.isRequired,
+      imageSrc: PropTypes.string,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-    })
+      icon: PropTypes.string,
+    }),
   ).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

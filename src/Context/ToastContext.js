@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext } from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import Toast from '../Components/NotificationBar/Notification';
 
 // Create the Toast context
@@ -35,4 +36,9 @@ export const ToastProvider = ({ children }) => {
       />
     </ToastContext.Provider>
   );
+};
+
+// Add prop validation for ToastProvider
+ToastProvider.propTypes = {
+  children: PropTypes.node.isRequired, // Ensures children are passed as valid React nodes
 };
