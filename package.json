@@ -47,7 +47,14 @@
     ]
   },
   "lint-staged": {
+<<<<<<< HEAD
     "*.js": "npm run lint:fix"
+=======
+    "*.js": "prettier --write",
+    "*.jsx": "prettier --write",
+    "*.ts": "prettier --write",
+    "*.tsx": "prettier --write"
+>>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
   },
   "husky": {
     "hooks": {
@@ -55,11 +62,16 @@
     }
   },
   "devDependencies": {
+<<<<<<< HEAD
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
+=======
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.1",
+>>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2"
