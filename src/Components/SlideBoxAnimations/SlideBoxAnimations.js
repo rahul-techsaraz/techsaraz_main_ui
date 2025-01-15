@@ -3,7 +3,6 @@ import '../../Pages/css/social-marketing.css';
 import '../../Pages/css/e-commerce.css';
 import '../../Pages/css/web-development.css';
 import PropTypes from 'prop-types';
-
 const SlideBoxAnimations = ({ slideAnimationData }) => {
   return (
     <section className="our-ecommerce">

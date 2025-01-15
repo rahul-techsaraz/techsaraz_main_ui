@@ -129,11 +129,7 @@ const Footer = () => {
       {showScrollTop && (
         <div id="scroll-top" onClick={scrollToTop}>
           <button id="btn" className="scroll-top-button-22">
-<<<<<<< HEAD
             <i className="fa-regular fa-paper-plane" aria-hidden="true"></i>
-=======
-            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
->>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
           </button>
         </div>
       )}
