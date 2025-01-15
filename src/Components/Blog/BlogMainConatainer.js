@@ -12,9 +12,9 @@ import BlogSidebar from './BlogSideBar';
 const BlogMainConatainer = () => {
   return (
     <>
-      <section class="blog-down-section">
-        <div class="blog-down-section-layer">
-          <div class="blog-down-section-leftbox">
+      <section className="blog-down-section">
+        <div className="blog-down-section-layer">
+          <div className="blog-down-section-leftbox">
             {blogPosts.map((post) => (
               <BlogPost
                 key={post.id}
@@ -28,7 +28,7 @@ const BlogMainConatainer = () => {
               />
             ))}
 
-            <div class="paginaion">
+            <div className="paginaion">
               <Link to="#" class="pagination-item">
                 Prev
               </Link>

@@ -42,11 +42,14 @@ const BenefitsSection = ({ benefitsData, title, description }) => {
     </section>
   );
 };
+BenefitsSection.displayName = 'BenefitsSection';
+BenefitBox.displayName = 'BenefitBox';
 
 BenefitBox.propTypes = {
-  imageSrc: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  icon: PropTypes.string,
 };
 
 BenefitBox.defaultProps = {
@@ -59,9 +62,10 @@ BenefitsSection.propTypes = {
   benefitsData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      imageSrc: PropTypes.string.isRequired,
+      imageSrc: PropTypes.string,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
+      icon: PropTypes.string,
     }),
   ).isRequired,
   title: PropTypes.string.isRequired,

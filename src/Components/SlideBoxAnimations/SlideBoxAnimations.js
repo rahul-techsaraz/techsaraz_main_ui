@@ -2,6 +2,8 @@ import React from 'react';
 import '../../Pages/css/social-marketing.css';
 import '../../Pages/css/e-commerce.css';
 import '../../Pages/css/web-development.css';
+import PropTypes from 'prop-types';
+
 const SlideBoxAnimations = ({ slideAnimationData }) => {
   return (
     <section className="our-ecommerce">
@@ -11,7 +13,7 @@ const SlideBoxAnimations = ({ slideAnimationData }) => {
           {slideAnimationData.description}
         </p>
         <div className="our-ecommerce-in-box-wraper">
-          {slideAnimationData.services.map((service, index) => (
+          {slideAnimationData.services.map((service) => (
             <div
               className="our-ecommerce-in-box-wraper-in-box"
               key={service.id}
@@ -32,6 +34,10 @@ const SlideBoxAnimations = ({ slideAnimationData }) => {
       </div>
     </section>
   );
+};
+
+SlideBoxAnimations.propTypes = {
+  slideAnimationData: PropTypes.array.isRequired,
 };
 
 export default SlideBoxAnimations;

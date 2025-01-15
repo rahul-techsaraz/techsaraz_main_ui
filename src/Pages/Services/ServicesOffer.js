@@ -90,7 +90,7 @@ const ServicesOffer = () => {
                           {' '}
                           We create personalized, interactive e-commerce
                           platforms, merging technology with a user-centric
-                          design to enhance customers' shopping experience.
+                          design to enhance customers shopping experience.
                         </p>
                       </div>
                       <div className="service-icon">
@@ -191,7 +191,7 @@ const ServicesOffer = () => {
                           {' '}
                           Our professional writers craft compelling narratives
                           that resonate with your audience, driving engagement
-                          and bolstering your brand's image.
+                          and bolstering your brand image.
                         </p>
                       </div>
                       <div className="service-icon">

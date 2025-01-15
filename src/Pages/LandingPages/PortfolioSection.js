@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
-import CustomOwlCarousel from '../../Components/CustomOwlCarousel/CustomOwlCarousel';
 import CustomSwiper from '../../Components/CustomSwiper/CustomSwiper';
 import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive';
-import { display } from '@splidejs/splide/src/js/utils';
 
 const PortfolioSection = ({ portfolios }) => {
   console.log(portfolios);
@@ -30,22 +29,6 @@ const PortfolioSection = ({ portfolios }) => {
         <div className="loc">
           <div id="horizontal">
             <div className="containe">
-              {/* <div className="horizontal__content"> */}
-              {/* <CustomOwlCarousel>
-                              {portfolios.map(portfolio => (
-                 <div className="horizontal__item">
-              <Link to={portfolio?.link} >
-                <div className="horizontal-in-box">
-                  <div className="horizontal__num">
-                    <img src={portfolio?.image} alt={portfolio?.portfolioImage?.alt} />
-                    <div className="horizontal-layer-box">{portfolio?.title}</div>
-                      <p className="horizontal-layer-box-p">{portfolio?.description}</p>
-                    </div>
-                  </div>
-              </Link>
-              </div>
-            ))}
-           </CustomOwlCarousel> */}
               <div className="swiper-wrapper position-relative">
                 <CustomSwiper
                   navigationNext=".courselist-button-next"
@@ -55,27 +38,17 @@ const PortfolioSection = ({ portfolios }) => {
                   breakPoint={SwiperResponsive()}
                 >
                   {portfolios.map((portfolio) => (
-                    <swiper-slide>
+                    <swiper-slide key={portfolio.link}>
                       <div className="swiper-slide position-relative">
                         <Link to={portfolio.link}>
-                          {/* <div className="horizontal-in-box">
-                            <div className="horizontal__num" style={{display:'flex', flexDirection:'column'}}>
-                              <img src={portfolio.image} alt={portfolio?.alt} />
-                              <div className="horizontal-layer-box">{portfolio?.title}</div>
-                              <p className="horizontal-layer-box-p">{portfolio?.description}</p>
+                          <div className="swiper-slide swiper-slide-portfolio">
+                            <div className="swiper-slider-box-in-image">
+                              <img src={portfolio.image} alt={portfolio.alt} />
                             </div>
-                          </div> */}
-                          <div class="swiper-slide swiper-slide-portfolio">
-                            <div class="swiper-slider-box-in-image">
-                              <img
-                                src={portfolio?.image}
-                                alt={portfolio?.alt}
-                              />
-                            </div>
-                            <h2 class="swiper-slider-h2-heading">
+                            <h2 className="swiper-slider-h2-heading">
                               {portfolio.title}
                             </h2>
-                            <span class="swiper-slider-span">
+                            <span className="swiper-slider-span">
                               {portfolio.description}
                             </span>
                           </div>
@@ -84,21 +57,28 @@ const PortfolioSection = ({ portfolios }) => {
                     </swiper-slide>
                   ))}
                 </CustomSwiper>
-                <div class="swiper-button-prev courselist-button-prev">
-                  {/* <img src={leftArrow} alt="" /> */}
-                </div>
-                <div class="swiper-button-next courselist-button-next">
-                  {/* <img src={rightArrow} alt="" /> */}
-                </div>
+                <div className="swiper-button-prev courselist-button-prev"></div>
+                <div className="swiper-button-next courselist-button-next"></div>
               </div>
-
-              {/* </div> */}
             </div>
           </div>
         </div>
       </div>
     </section>
   );
+};
+
+// Prop validation for PortfolioSection
+PortfolioSection.propTypes = {
+  portfolios: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string.isRequired, // URL of the portfolio
+      image: PropTypes.string.isRequired, // Image URL of the portfolio
+      alt: PropTypes.string.isRequired, // Alt text for the portfolio image
+      title: PropTypes.string.isRequired, // Title of the portfolio item
+      description: PropTypes.string.isRequired, // Description of the portfolio item
+    }),
+  ).isRequired, // Ensures portfolios is an array of portfolio objects
 };
 
 export default PortfolioSection;

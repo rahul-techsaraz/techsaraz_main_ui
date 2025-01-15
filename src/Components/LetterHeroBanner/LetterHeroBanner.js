@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const SocialMediaIcons = ({ icons }) => {
   return (
@@ -80,5 +81,14 @@ LetterHeroBanner.defaultProps = {
   linkText: 'Tech SaraZ',
   linkUrl: '#',
 };
-
+LetterHeroBanner.propTypes = {
+  headingText: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+  linkUrl: PropTypes.string.isRequired,
+  socialIcons: PropTypes.array.isRequired,
+};
+SocialMediaIcons.propTypes = {
+  icons: PropTypes.array.isRequired,
+};
 export default LetterHeroBanner;

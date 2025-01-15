@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const BlogPost = ({
   image,
@@ -55,6 +56,16 @@ const BlogPost = ({
       </div>
     </div>
   );
+};
+
+BlogPost.propTypes = {
+  image: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  comments: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
+  readMoreLink: PropTypes.string.isRequired,
+  paragraph: PropTypes.string.isRequired,
 };
 
 export default BlogPost;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from '../../Constant/images';
+import PropTypes from 'prop-types';
 
 const ServiceSection = ({
   title,
@@ -91,6 +92,17 @@ const ServiceSection = ({
       </div>
     </>
   );
+};
+
+ServiceSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
+  altText: PropTypes.string.isRequired,
+  points: PropTypes.array.isRequired,
+  imageSide: PropTypes.string,
+  pulseImageSrc: PropTypes.string.isRequired,
+  pulseAltText: PropTypes.string.isRequired,
 };
 
 export default ServiceSection;

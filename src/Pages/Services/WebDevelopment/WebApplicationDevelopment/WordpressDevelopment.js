@@ -97,8 +97,8 @@ const WordpressDevelopment = () => {
               Visibility matters in the digital world. Tech Saraz helps enhance
               your digital presence with our specialized WordPress SEO services.
               We optimize your website for search engines, improve rankings, and
-              drive organic traffic. Let's make your brand easily discoverable
-              for your audience.
+              drive organic traffic. Let&rsquo;s make your brand easily
+              discoverable for your audience.
             </p>
           </div>
           <div className="benefits-box">
@@ -107,7 +107,7 @@ const WordpressDevelopment = () => {
             </div>
             <h1 className="benefits-box-h1">WordPress Ecommerce Solutions</h1>
             <p className="benefits-box-p">
-              Bring your store online with Tech Saraz's WordPress Ecommerce
+              Bring your store online with Tech Saraz WordPress Ecommerce
               solutions. We design user-friendly, secure, and efficient
               e-commerce platforms that offer a seamless shopping experience to
               your customers. With easy navigation, quick checkouts, and secure
@@ -122,11 +122,11 @@ const WordpressDevelopment = () => {
             <h1 className="benefits-box-h1">Payment Gateway Integration</h1>
             <p className="benefits-box-p">
               Ensure secure and smooth transactions on your website with Tech
-              Saraz's payment gateway integration services. We integrate
-              reliable and secure payment gateways into your WordPress website,
-              providing various payment options for your customers. With our
-              service, you can assure your customers of specific transactions,
-              enhancing their trust in your brand.
+              Saraz payment gateway integration services. We integrate reliable
+              and secure payment gateways into your WordPress website, providing
+              various payment options for your customers. With our service, you
+              can assure your customers of specific transactions, enhancing
+              their trust in your brand.
             </p>
           </div>
           <div className="benefits-box">
@@ -135,11 +135,11 @@ const WordpressDevelopment = () => {
             </div>
             <h1 className="benefits-box-h1">CDN Integration</h1>
             <p className="benefits-box-p">
-              Boost your website's performance with CDN Integration by Tech
-              Saraz. CDN, or Content Delivery Network, significantly improves
-              your website's loading speed, enhancing the user experience. Our
-              team ensures a seamless integration process, making your website
-              faster and more efficient for users around the globe.
+              Boost your website performance with CDN Integration by Tech Saraz.
+              CDN, or Content Delivery Network, significantly improves your
+              website loading speed, enhancing the user experience. Our team
+              ensures a seamless integration process, making your website faster
+              and more efficient for users around the globe.
             </p>
           </div>
         </div>

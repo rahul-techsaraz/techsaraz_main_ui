@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { images } from '../../Constant/images';
+import PropTypes from 'prop-types';
 
 const BestCompanySection = ({
   title = 'Welcome to Tech Saraz, your go-to web design company in Bangalore.',
@@ -41,6 +42,13 @@ const BestCompanySection = ({
       </div>
     </section>
   );
+};
+
+BestCompanySection.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  buttonText: PropTypes.string,
+  buttonLink: PropTypes.string,
 };
 
 export default BestCompanySection;

@@ -32,7 +32,7 @@ const LetterSlider = () => {
       );
 
       // Log the cloned slides (optional)
-      clonedSlides.forEach((clonedSlide) => {});
+      clonedSlides.forEach(() => {});
     });
 
     // Set initial active slide when the component is mounted

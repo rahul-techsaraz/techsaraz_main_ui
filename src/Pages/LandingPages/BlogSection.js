@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 
@@ -48,6 +49,22 @@ const BlogSection = ({ blogs }) => {
       </div>
     </section>
   );
+};
+
+// Prop validation for BlogSection
+BlogSection.propTypes = {
+  blogs: PropTypes.arrayOf(
+    PropTypes.shape({
+      blogImages: PropTypes.shape({
+        imageURL: PropTypes.string.isRequired, // The URL of the blog image
+        alt: PropTypes.string.isRequired, // The alt text for the image
+      }).isRequired,
+      updatedOn: PropTypes.string.isRequired, // The date the blog was last updated
+      postedDate: PropTypes.string.isRequired, // The original posting date
+      blogSummary: PropTypes.string.isRequired, // A brief summary of the blog
+      blogDetailURL: PropTypes.string.isRequired, // The URL for the full blog post
+    }),
+  ).isRequired, // Ensure blogs is an array of blog objects
 };
 
 export default BlogSection;

@@ -34,8 +34,8 @@ const ServicesHeroSection = () => {
         >
           <defs>
             <linearGradient x1="99.997%" y1="50%" x2=".002%" y2="50%" id="a">
-              <stop stop-color="#DC818F" stop-opacity="0" offset="22.69%" />
-              <stop stop-color="#DC818F" offset="86.98%" />
+              <stop stopColor="#DC818F" stopOpacity="0" offset="22.69%" />
+              <stop stopColor="#DC818F" offset="86.98%" />
             </linearGradient>
             <linearGradient
               x1="49.987%"
@@ -44,12 +44,12 @@ const ServicesHeroSection = () => {
               y2="99.977%"
               id="b"
             >
-              <stop stop-color="#FFF" offset=".129%" />
-              <stop stop-color="#FFF" stop-opacity=".4" offset="50.46%" />
-              <stop stop-color="#FFF" stop-opacity=".1" offset="97.9%" />
+              <stop stopColor="#FFF" offset=".129%" />
+              <stop stopColor="#FFF" stopOpacity=".4" offset="50.46%" />
+              <stop stopColor="#FFF" stopOpacity=".1" offset="97.9%" />
             </linearGradient>
           </defs>
-          <g className="stars" fill-rule="evenodd">
+          <g className="stars" fillRule="evenodd">
             <circle cx="75" cy="212" r="2" />
             <circle cx="117.5" cy="300.5" r="1.5" />
             <circle cx="148" cy="251" r="2" />
@@ -108,7 +108,7 @@ const ServicesHeroSection = () => {
             <circle cx="97" cy="669" r="2" />
           </g>
 
-          <g fill="none" fill-rule="evenodd">
+          <g fill="none" fillRule="evenodd">
             <g className="leg-right">
               <path
                 d="M858.4 321.1L767 371.5l-86.5 47.7c-8.4 4.6-17.5 6.8-26.4 6.8-19.3 0-38.1-10.2-48.1-28.4-14.6-26.5-5-59.9 21.5-74.5L657 307l52.3-28.8 61.2-33.8L748 128.2c-5.8-29.7 13.6-58.5 43.4-64.3 13.3-2.6 26.5-.1 37.5 6.1 13.5 7.6 23.6 20.9 26.8 37.3l30.2 155.4c4.4 23.3-6.6 46.9-27.5 58.4z"
