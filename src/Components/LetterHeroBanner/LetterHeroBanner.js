@@ -12,7 +12,7 @@ const SocialMediaIcons = ({ icons }) => {
     </div>
   );
 };
-
+// Dummy commit
 const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUrl }) => {
   const splitText = headingText.split("");
   console.log(splitText)
