@@ -1,15 +1,14 @@
 import React from 'react';
-import './contact.css'
-import ContactHeroSection from './ContactHeroSection'
+import ContactHeroSection from './ContactHeroSection';
 import ContactForm from './ContactForm';
 
 const ContactUs = () => {
   return (
     <>
-    <ContactHeroSection />
-    <ContactForm />
+      <ContactHeroSection />
+      <ContactForm />
     </>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;

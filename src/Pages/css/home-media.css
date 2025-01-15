@@ -1,210 +1,309 @@
 /* 1024 start */
 
-@media screen and (max-width: 1200px){
-    .competitor-box{
-        height: auto;
-      }
-      .benefits-box-set2{
-        height: auto;
-      }
-      #tech-saraz-unique{
-        height: auto;
-      }
-      #competitor-next-text{
-        height: auto;
-      }
-      .benefits-box{
-        height: auto;
-      }
-      #benefit-box-next{
-        height: auto;
-      }
-      #benefit-social-icon{
-        height: auto;
-      }
-      #competitor-seo-box{
-        height: 380px;
-      }
-      #competitor-seo-box{
-        height: auto;
-      }
-      #benefits-seo-heigh{
-        height: auto;
-      }
+@media screen and (max-width: 1200px) {
+  .competitor-box {
+    height: auto;
+  }
+  .benefits-box-set2 {
+    height: auto;
+  }
+  #tech-saraz-unique {
+    height: auto;
+  }
+  #competitor-next-text {
+    height: auto;
+  }
+  .benefits-box {
+    height: auto;
+  }
+  #benefit-box-next {
+    height: auto;
+  }
+  #benefit-social-icon {
+    height: auto;
+  }
+  #competitor-seo-box {
+    height: 380px;
+  }
+  #competitor-seo-box {
+    height: auto;
+  }
+  #benefits-seo-heigh {
+    height: auto;
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .main-header {
+    padding: 20px 80px;
+  }
+  .main-header.sticky {
+    padding: 10px 70px;
+  }
+  .hero-section-text {
+    margin-left: 70px;
+  }
+  .main-header .header-logo img {
+    width: 140px;
+  }
+  .header-btn-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .nav-list a {
+    padding: 15px 8px;
+    font-size: 14px;
+  }
 
-@media screen and (max-width: 1024px){
-    .main-header{
-        padding: 20px 80px; 
-    }
-    .main-header.sticky{
-        padding: 10px 70px;
-    }
-    .hero-section-text{
-        margin-left: 70px;
-    }
-    .main-header .header-logo img {
-        width: 140px;
-    }
-    .header-btn-btn{
-        width: 130px;
-        height: 40px;
-        font-size: 13px;
-    }
-    .nav-list a{
-        padding: 15px 8px;
-        font-size: 14px;
-    }
+  /* web development page media start */
 
-    /* web development page media start */
-
-    .best-company,.in-bangalore2, .about, .consulation, .blog-down-section, .about-company, .work, .services, .seo-services-ani-box, .in-bangalore6, .next-project, .social-media-marketing-competitors, .social-media-marketing, .our-ecommerce, .in-bangalore4, .in-bangalore3, .in-bangalore5, .competitor, .service-in, .php, .wordpress, .shopify, .magento, .joomla, .react, .node-js, .professional, .benefits, .creative-work, .our-client, .in-bangalore{
-        padding: 70px;
-    }
-    .competitor-h1, .in-bangalore2-h1, .in-bangalore5-h1, .contact-fill-up-in-box-up-text, .section-tectbox-h1, .about-company-in-box-wraper-textbox-text, .work-h1, .about-in-box-wraper-textbox-text, .seo-services-ani-box-in-box-h1, .social-media-marketing-competitors-h1,.our-ecommerce-in-box-h1, .social-media-marketing-in-box-h1, .in-bangalore4-h1, .in-bangalore3-h1, .service-in-h1, .php-h1, .wordpress-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1, .in-bangalore-h1{
-        font-size: 45px;
-    }
-    .service-in-box, .in-bangalore2-box, .about-in-box, .consulation-in-box, .about-company-in-box, .services-in-box, .work-in-box, .in-bangalore6-box, .seo-services-ani-box-in-box, .next-project-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .in-bangalore4-box, .in-bangalore3-box, .in-bangalore-box, .competitor-in-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box{
-        padding: 45px;
-    }
-    .benefits-in-box-wraper,.social-media-marketing-in-box-wraper{
-        grid-template-columns: 1fr 1fr;
-    }
-    .best-company-in-box-wraper-imgbox img,.in-bangalore5-imgbox img, .about-in-box-wraper-imgbox img, .in-bangalore3-imgbox img, .in-bangalore4-imgbox img, .in-bangalore2-imgbox img, .php-imgbox img, .wordpress-imgbox img, .shopify-imgbox img, .magento-imgbox img, .joomla-imgbox img, .react-imgbox img, .in-bangalore-imgbox img{
-        height: 400px;
-    }
-    .best-company-in-box-wraper-imgbox{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .down-box, .in-bangalore-down-box, .in-bangalore3-down-box, .in-bangalore4-down-box, .in-bangalore2-down-box{
-        font-size: 17px;
-        justify-content: center;
-        column-gap: 15px;
-        row-gap: 5px;
-    }
-    .down-box-text, .in-bangalore-down-box-text{
-        font-size: 17px;
-    }
-    .our-ecommerce-in-box-wraper{
-        row-gap: 20px;
-        column-gap: 20px;
-    }
-
-    /* about start */
-
-    /* work start */
-   .work-in-box-wraper{
+  .best-company,
+  .in-bangalore2,
+  .about,
+  .consulation,
+  .blog-down-section,
+  .about-company,
+  .work,
+  .services,
+  .seo-services-ani-box,
+  .in-bangalore6,
+  .next-project,
+  .social-media-marketing-competitors,
+  .social-media-marketing,
+  .our-ecommerce,
+  .in-bangalore4,
+  .in-bangalore3,
+  .in-bangalore5,
+  .competitor,
+  .service-in,
+  .php,
+  .wordpress,
+  .shopify,
+  .magento,
+  .joomla,
+  .react,
+  .node-js,
+  .professional,
+  .benefits,
+  .creative-work,
+  .our-client,
+  .in-bangalore {
+    padding: 70px;
+  }
+  .competitor-h1,
+  .in-bangalore2-h1,
+  .in-bangalore5-h1,
+  .contact-fill-up-in-box-up-text,
+  .section-tectbox-h1,
+  .about-company-in-box-wraper-textbox-text,
+  .work-h1,
+  .about-in-box-wraper-textbox-text,
+  .seo-services-ani-box-in-box-h1,
+  .social-media-marketing-competitors-h1,
+  .our-ecommerce-in-box-h1,
+  .social-media-marketing-in-box-h1,
+  .in-bangalore4-h1,
+  .in-bangalore3-h1,
+  .service-in-h1,
+  .php-h1,
+  .wordpress-h1,
+  .shopify-h1,
+  .magento-h1,
+  .joomla-h1,
+  .react-h1,
+  .node-js-h1,
+  .professional-h1,
+  .benefits-h1,
+  .creative-work-heading h1,
+  .in-bangalore-h1 {
+    font-size: 45px;
+  }
+  .service-in-box,
+  .in-bangalore2-box,
+  .about-in-box,
+  .consulation-in-box,
+  .about-company-in-box,
+  .services-in-box,
+  .work-in-box,
+  .in-bangalore6-box,
+  .seo-services-ani-box-in-box,
+  .next-project-in-box,
+  .social-media-marketing-in-box,
+  .social-media-marketing-competitors-in-box,
+  .our-ecommerce-in-box,
+  .in-bangalore4-box,
+  .in-bangalore3-box,
+  .in-bangalore-box,
+  .competitor-in-box,
+  .best-company-in-box,
+  .php-box,
+  .wordpress-box,
+  .shopify-box,
+  .magento-box,
+  .joomla-box,
+  .react-box,
+  .node-js-box,
+  .professional-box,
+  .benefits-in-box,
+  .our-client-in-box {
+    padding: 45px;
+  }
+  .benefits-in-box-wraper,
+  .social-media-marketing-in-box-wraper {
     grid-template-columns: 1fr 1fr;
-   }
-   .work-box-down-box-parent{
+  }
+  .best-company-in-box-wraper-imgbox img,
+  .in-bangalore5-imgbox img,
+  .about-in-box-wraper-imgbox img,
+  .in-bangalore3-imgbox img,
+  .in-bangalore4-imgbox img,
+  .in-bangalore2-imgbox img,
+  .php-imgbox img,
+  .wordpress-imgbox img,
+  .shopify-imgbox img,
+  .magento-imgbox img,
+  .joomla-imgbox img,
+  .react-imgbox img,
+  .in-bangalore-imgbox img {
+    height: 400px;
+  }
+  .best-company-in-box-wraper-imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .down-box,
+  .in-bangalore-down-box,
+  .in-bangalore3-down-box,
+  .in-bangalore4-down-box,
+  .in-bangalore2-down-box {
+    font-size: 17px;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 5px;
+  }
+  .down-box-text,
+  .in-bangalore-down-box-text {
+    font-size: 17px;
+  }
+  .our-ecommerce-in-box-wraper {
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  /* about start */
+
+  /* work start */
+  .work-in-box-wraper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .work-box-down-box-parent {
     position: relative;
     left: 50%;
     top: 20px;
   }
 
-   /* services start */
+  /* services start */
 
-   .services-h1{
+  .services-h1 {
     font-size: 45px;
-   }
-   .services-in-box{
-    padding:50px 30px;
-   }
-   .consulation-text{
+  }
+  .services-in-box {
+    padding: 50px 30px;
+  }
+  .consulation-text {
     font-size: 60px;
-   }
+  }
 
-   /* mission start */
+  /* mission start */
 
-   .our-mission-h1{
+  .our-mission-h1 {
     font-size: 45px;
-   }
-   .our-mission{
-    padding: 70px; 
-   }
-   .our-mission-btn-btn{
+  }
+  .our-mission {
+    padding: 70px;
+  }
+  .our-mission-btn-btn {
     margin-top: 10px;
-   }
-   .conta{
+  }
+  .conta {
     margin-top: -60px;
-   }
+  }
 
-   /* counter start */
+  /* counter start */
 
-   .counter{
-    padding: 70px; 
-   }
-   .counter-in-box{
+  .counter {
+    padding: 70px;
+  }
+  .counter-in-box {
     padding: 50px 30px;
-   }
+  }
 
-   /* testimonial start */
+  /* testimonial start */
 
-   .testimonials-section{
-    padding: 70px; 
-   }
-   .tesimonial-in-box{
+  .testimonials-section {
+    padding: 70px;
+  }
+  .tesimonial-in-box {
     padding: 50px 30px;
-   }
-   .testmonial-heading h1{
+  }
+  .testmonial-heading h1 {
     font-size: 45px;
-   }
+  }
 
-   /* portfolio start */
+  /* portfolio start */
 
-   /* .creative-work{
+  /* .creative-work{
     padding: 70px 80px; 
    } */
-   .creative-work-in-box{
+  .creative-work-in-box {
     padding: 50px 30px;
-   }
+  }
 
+  /* client start */
 
-   /* client start */
-
-
-   .our-client-in-box{
+  .our-client-in-box {
     padding: 50px 30px;
-   }
-   .our-client-heading h1{
+  }
+  .our-client-heading h1 {
     font-size: 45px;
-   }
+  }
 
-   /* vlog start */
+  /* vlog start */
 
-   .blog{
-    padding: 70px; 
-   }
-   .blog-in-box{
+  .blog {
+    padding: 70px;
+  }
+  .blog-in-box {
     padding: 50px 30px;
-   }
-   .blog-heading h1{
+  }
+  .blog-heading h1 {
     font-size: 45px;
-   }
+  }
 
-   /* footer start */
+  /* footer start */
 
-   .footer-child{
-    padding:50px 70px;
-   }
-   .footer-logo img {
+  .footer-child {
+    padding: 50px 70px;
+  }
+  .footer-logo img {
     width: 140px;
-   }
-   .about-company-in-box-wraper-imgbox{
+  }
+  .about-company-in-box-wraper-imgbox {
     padding: 25px;
-   }
+  }
 
-   /* about banner section start */
+  /* about banner section start */
 
-   .about-hero-section, .services-hero-section, .layerrr{
+  .about-hero-section,
+  .services-hero-section,
+  .layerrr {
     height: 700px;
-}
-.vlog-herosection{
+  }
+  .vlog-herosection {
     height: 56vh;
-}
+  }
 
   /* footer end */
 
@@ -213,72 +312,70 @@
   .hro {
     padding: 0 70px;
   }
-  .about-us-text-p{
+  .about-us-text-p {
     left: 80px;
   }
-  .astronaut{
+  .astronaut {
     width: 45%;
   }
-  .animate-center{
+  .animate-center {
     position: relative;
     top: 25%;
   }
-  .competitor-box{
+  .competitor-box {
     height: auto;
   }
-  .plane-container{
+  .plane-container {
     position: relative;
     top: 200px;
   }
-
 }
-
 
 /* 912 px start */
 
-@media screen and (max-width: 912px){
+@media screen and (max-width: 912px) {
+  /* header section  start*/
 
-    /* header section  start*/
+  .benefits-box-set2 {
+    height: auto;
+  }
 
-    .benefits-box-set2 {
-        height: auto;
-    }
+  .main-header {
+    padding: 20px 60px;
+  }
+  .main-header.sticky {
+    padding: 10px 50px;
+  }
 
-    .main-header{
-        padding: 20px 60px;
-    }
-    .main-header.sticky{
-        padding: 10px 50px;
-    }
+  /* header section  end*/
 
-    /* header section  end*/
+  .hero-section,
+  .services-hero-section {
+    height: 60vh;
+  }
+  .hero-section-text {
+    margin-left: 60px;
+  }
 
-    .hero-section, .services-hero-section{
-        height: 60vh;
-    }
-    .hero-section-text{
-        margin-left: 60px;
-    }
-
-     /* about start */
-    .about{
-        padding: 70px 60px;
-    }
-    .about-in-box{
-        padding: 50px 25px;
-    }
-    /* .about-in-box-wraper-textbox-text{
+  /* about start */
+  .about {
+    padding: 70px 60px;
+  }
+  .about-in-box {
+    padding: 50px 25px;
+  }
+  /* .about-in-box-wraper-textbox-text{
         font-size: 40px;
     } */
-    /* .about-in-box-wraper-imgbox img{
+  /* .about-in-box-wraper-imgbox img{
         height: 400px;
     } */
 
-     /* about end */
+  /* about end */
 
-      /* work start */
+  /* work start */
 
-      /* .work{
+  /* .work{
         padding: 70px 50px;
       }
       .work-in-box{
@@ -288,819 +385,1204 @@
         font-size: 40px;
       } */
 
-      /* services start */
+  /* services start */
 
-      .services{
-        padding: 70px 50px;
-      }
-      .services-in-box{
-        padding: 50px 25px;
-      }
-      .services-h1{
-        font-size: 40px;
-      }
+  .services {
+    padding: 70px 50px;
+  }
+  .services-in-box {
+    padding: 50px 25px;
+  }
+  .services-h1 {
+    font-size: 40px;
+  }
 
-      /* text slider start */
+  /* text slider start */
 
-      .splide .splide__track ul li{
-        font-size: 8em;
-      }
+  .splide .splide__track ul li {
+    font-size: 8em;
+  }
 
-      /* our mission start */
+  /* our mission start */
 
-      .our-mission{
-        padding: 70px 50px;
-      }
-      .our-mission-in-box{
-        padding: 50px 25px;
-      }
-      .our-mission-h1{
-        font-size: 40px;
-      }
-      .conta{
-        margin-top: -35px;
-      }
+  .our-mission {
+    padding: 70px 50px;
+  }
+  .our-mission-in-box {
+    padding: 50px 25px;
+  }
+  .our-mission-h1 {
+    font-size: 40px;
+  }
+  .conta {
+    margin-top: -35px;
+  }
 
-      /* counter start */
+  /* counter start */
 
-      .counter{
-        padding: 30px;
-      }
-      .counter-in-box{
-        padding: 25px;
-      }
-      .stats-container{
-        grid-template-columns: 1fr 1fr;
-      }
-      .benefits-box{
-        width: 48%;
-      }
+  .counter {
+    padding: 30px;
+  }
+  .counter-in-box {
+    padding: 25px;
+  }
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .benefits-box {
+    width: 48%;
+  }
 
-      /* testimonial start */
+  /* testimonial start */
 
-      .testimonials-section{
-        padding: 70px 50px;
-      }
-      /* .tesimonial-in-box{
+  .testimonials-section {
+    padding: 70px 50px;
+  }
+  /* .tesimonial-in-box{
         padding:50px 25px;
       } */
 
-      /* portfolio start */
+  /* portfolio start */
 
-      .creative-work{
-        padding: 70px 50px;
-      }
-      .creative-work-in-box{
-        padding:50px 25px;
-      }
+  .creative-work {
+    padding: 70px 50px;
+  }
+  .creative-work-in-box {
+    padding: 50px 25px;
+  }
 
-      /* footer start */
+  /* footer start */
 
-      .footer-child{
-        padding: 50px;
-      }
-      .icon-group{
-        display: flex;
-        column-gap: 5px;
-        flex-wrap: wrap;
-        row-gap: 5px;
-      }
+  .footer-child {
+    padding: 50px;
+  }
+  .icon-group {
+    display: flex;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
 
-      /* web development page start */
+  /* web development page start */
 
-      .nav-list a {
-        padding: 15px 20px;
-    }
-    .web-development-banner{
-        height: 650px;
-    }
-    .about-us-text-p{
-        left: 60px;
-        gap: 8px;
-        font-size: 17px;
-    }
-    .animation-heading-text span{
-        font-size: 70px;
-    }
-    .best-company, .competitor, .work, .contact-fill-up, .company-details, .blog-down-section, .consulation, .about-company, .our-mission, .services, .social-media-marketing, .seo-services-ani-box, .next-project, .social-media-marketing-competitors, .our-ecommerce, .in-bangalore6, .in-bangalore3, .in-bangalore5,.in-bangalore4, .in-bangalore, .in-bangalore2, .service-in, .php, .wordpress, .shopify, .magento, .joomla, .react, .node-js, .professional, .benefits, .creative-work, .our-client{
-        padding: 50px;
-    }
-    .competitor-h1, .service-in-h1, .testmonial-heading h1, .contact-fill-up-in-box-up-text, .work-h1, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .about-in-box-wraper-textbox-text, .in-bangalore3-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .our-ecommerce-in-box-h1, .social-media-marketing-competitors-h1, .in-bangalore6-h1, .in-bangalore4-h1, .in-bangalore2-h1 ,.php-h1, .wordpress-h1, .in-bangalore-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1{
-        font-size: 40px;
-    }
-    .service-in-box, .competitor-in-box, .next-project-in-box, .consulation-in-box, .work-in-box, .tesimonial-in-box, .seo-services-ani-box-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .benefits-in-box, .in-bangalore5-box, .in-bangalore6-box, .in-bangalore-box, .in-bangalore4-box, .in-bangalore3-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box{
-        padding: 35px;
-    }
-    .best-company-pulse, .in-bangalore-pulse, .work-pulse, .about-company-pulse, .about-company-pulse, .blog-pulse, .mission-pulse, .testimonial-pulse, .services-pulse, .in-bangalore5-pulse, .pulse, .social-media-marketing-competitors-pulse, .in-bangalore6-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .in-bangalore2-pulse ,.competitor-pulse, .php-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse{
-        height: 65px;
-        width: 65px;
-        top: 17px;
-        left: 10%;
-    }
-    .best-company-pulse img , .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
-        width: 35px;
-    }
-    .best-company-p, .service-in-p, .in-bangalore6-p, .in-bangalore5-p, .php-p, .in-bangalore4-p, .in-bangalore3-p, .in-bangalore-p, .in-bangalore2-p, .wordpress-p, .shopify-p, .magento-p, .joomla-p, .react-p, .node-js-p, .professional-p{
-        font-size: 16px;
-    }
-    .best-company-in-box-wraper-imgbox img, .about-in-box-wraper-imgbox img, .in-bangalore-imgbox img, .in-bangalore6-imgbox img, .in-bangalore5-imgbox img, .in-bangalore3-imgbox img, .in-bangalore4-imgbox img,  .in-bangalore2-imgbox img, .php-imgbox img, .wordpress-imgbox img, .shopify-imgbox img, .magento-imgbox img, .joomla-imgbox img, .react-imgbox img{
-        height: 350px;
-    }
-    .down-box{
-        font-size: 16px;
-    }
-    .competitor-box-h1{
-        text-align: center;
-    }
-    .work-in-box{
-        padding: 35px 35px 60px 35px;
-    }
-    .consulation-img{
-        height: 30vh;
-    }
-    .about-hero-section, .services-hero-section{
-        height: 600px;
-    }
-    .competitor-box{
-        width: 46%;
-        height: auto;
-    }
-    .benefits-box-set2{
-        height: auto;
-      }
-    
-
-
+  .nav-list a {
+    padding: 15px 20px;
+  }
+  .web-development-banner {
+    height: 650px;
+  }
+  .about-us-text-p {
+    left: 60px;
+    gap: 8px;
+    font-size: 17px;
+  }
+  .animation-heading-text span {
+    font-size: 70px;
+  }
+  .best-company,
+  .competitor,
+  .work,
+  .contact-fill-up,
+  .company-details,
+  .blog-down-section,
+  .consulation,
+  .about-company,
+  .our-mission,
+  .services,
+  .social-media-marketing,
+  .seo-services-ani-box,
+  .next-project,
+  .social-media-marketing-competitors,
+  .our-ecommerce,
+  .in-bangalore6,
+  .in-bangalore3,
+  .in-bangalore5,
+  .in-bangalore4,
+  .in-bangalore,
+  .in-bangalore2,
+  .service-in,
+  .php,
+  .wordpress,
+  .shopify,
+  .magento,
+  .joomla,
+  .react,
+  .node-js,
+  .professional,
+  .benefits,
+  .creative-work,
+  .our-client {
+    padding: 50px;
+  }
+  .competitor-h1,
+  .service-in-h1,
+  .testmonial-heading h1,
+  .contact-fill-up-in-box-up-text,
+  .work-h1,
+  .about-company-in-box-wraper-textbox-text,
+  .blog-heading h1,
+  .about-in-box-wraper-textbox-text,
+  .in-bangalore3-h1,
+  .seo-services-ani-box-in-box-h1,
+  .social-media-marketing-in-box-h1,
+  .our-ecommerce-in-box-h1,
+  .social-media-marketing-competitors-h1,
+  .in-bangalore6-h1,
+  .in-bangalore4-h1,
+  .in-bangalore2-h1,
+  .php-h1,
+  .wordpress-h1,
+  .in-bangalore-h1,
+  .shopify-h1,
+  .magento-h1,
+  .joomla-h1,
+  .react-h1,
+  .node-js-h1,
+  .professional-h1,
+  .benefits-h1,
+  .creative-work-heading h1 {
+    font-size: 40px;
+  }
+  .service-in-box,
+  .competitor-in-box,
+  .next-project-in-box,
+  .consulation-in-box,
+  .work-in-box,
+  .tesimonial-in-box,
+  .seo-services-ani-box-in-box,
+  .social-media-marketing-in-box,
+  .social-media-marketing-competitors-in-box,
+  .our-ecommerce-in-box,
+  .benefits-in-box,
+  .in-bangalore5-box,
+  .in-bangalore6-box,
+  .in-bangalore-box,
+  .in-bangalore4-box,
+  .in-bangalore3-box,
+  .best-company-in-box,
+  .php-box,
+  .wordpress-box,
+  .shopify-box,
+  .magento-box,
+  .joomla-box,
+  .react-box,
+  .node-js-box,
+  .professional-box,
+  .benefits-in-box,
+  .our-client-in-box {
+    padding: 35px;
+  }
+  .best-company-pulse,
+  .in-bangalore-pulse,
+  .work-pulse,
+  .about-company-pulse,
+  .about-company-pulse,
+  .blog-pulse,
+  .mission-pulse,
+  .testimonial-pulse,
+  .services-pulse,
+  .in-bangalore5-pulse,
+  .pulse,
+  .social-media-marketing-competitors-pulse,
+  .in-bangalore6-pulse,
+  .in-bangalore4-pulse,
+  .in-bangalore3-pulse,
+  .in-bangalore2-pulse,
+  .competitor-pulse,
+  .php-pulse,
+  .wordpress-pulse,
+  .shopify-pulse,
+  .magento-pulse,
+  .joomla-pulse,
+  .react-pulse,
+  .node-js-pulse,
+  .benefits-pulse,
+  .creative-work-pulse,
+  .our-client-pulse {
+    height: 65px;
+    width: 65px;
+    top: 17px;
+    left: 10%;
+  }
+  .best-company-pulse img,
+  .in-bangalore2-pulse img,
+  .about-company-pulse img,
+  .about-company-pulse img,
+  .blog-pulse img,
+  .services-pulse img,
+  .testimonial-pulse img,
+  .mission-pulse img,
+  .work-pulse img,
+  .pulse img,
+  .competitor-pulse img,
+  .social-media-marketing-competitors-pulse img,
+  .php-pulse img,
+  .shopify-pulse img,
+  .magento-pulse img,
+  .joomla-pulse img,
+  .react-pulse img,
+  .node-js-pulse img,
+  .benefits-pulse img,
+  .creative-work-pulse img,
+  .our-client-pulse img {
+    width: 35px;
+  }
+  .best-company-p,
+  .service-in-p,
+  .in-bangalore6-p,
+  .in-bangalore5-p,
+  .php-p,
+  .in-bangalore4-p,
+  .in-bangalore3-p,
+  .in-bangalore-p,
+  .in-bangalore2-p,
+  .wordpress-p,
+  .shopify-p,
+  .magento-p,
+  .joomla-p,
+  .react-p,
+  .node-js-p,
+  .professional-p {
+    font-size: 16px;
+  }
+  .best-company-in-box-wraper-imgbox img,
+  .about-in-box-wraper-imgbox img,
+  .in-bangalore-imgbox img,
+  .in-bangalore6-imgbox img,
+  .in-bangalore5-imgbox img,
+  .in-bangalore3-imgbox img,
+  .in-bangalore4-imgbox img,
+  .in-bangalore2-imgbox img,
+  .php-imgbox img,
+  .wordpress-imgbox img,
+  .shopify-imgbox img,
+  .magento-imgbox img,
+  .joomla-imgbox img,
+  .react-imgbox img {
+    height: 350px;
+  }
+  .down-box {
+    font-size: 16px;
+  }
+  .competitor-box-h1 {
+    text-align: center;
+  }
+  .work-in-box {
+    padding: 35px 35px 60px 35px;
+  }
+  .consulation-img {
+    height: 30vh;
+  }
+  .about-hero-section,
+  .services-hero-section {
+    height: 600px;
+  }
+  .competitor-box {
+    width: 46%;
+    height: auto;
+  }
+  .benefits-box-set2 {
+    height: auto;
+  }
 }
 
 /* 768px media screen  start */
 
-@media screen and (max-width: 768px){
-    .web-development-banner {
-        height: 550px;
-    }
-    .main-header{
-        padding: 20px 40px;
-    }
-    .main-header.sticky{
-        padding: 10px 30px;
-    }
-    .about-us-text-p{
-        left: 40px;
-    }
-    .animation-heading-text span {
-        font-size: 60px;
-    }
-.down-box-text {
+@media screen and (max-width: 768px) {
+  .web-development-banner {
+    height: 550px;
+  }
+  .main-header {
+    padding: 20px 40px;
+  }
+  .main-header.sticky {
+    padding: 10px 30px;
+  }
+  .about-us-text-p {
+    left: 40px;
+  }
+  .animation-heading-text span {
+    font-size: 60px;
+  }
+  .down-box-text {
     font-size: 16px;
-}
+  }
 
-.best-company, .in-bangalore, .services, .contact-fill-up, .company-details, .blog-down-section, .consulation, .about-company, .testimonials-section, .our-mission, .blog, .work, .about, .in-bangalore3, .seo-services-ani-box, .social-media-marketing,  .next-project, .social-media-marketing-competitors, .in-bangalore6, .our-ecommerce, .in-bangalore5, .in-bangalore4, .in-bangalore2, .competitor, .service-in, .php, .wordpress, .shopify, .magento, .joomla, .react, .node-js, .professional, .benefits, .creative-work, .our-client{
-    padding:30px;
-}
-.best-company-pulse, .competitor-pulse, .work-pulse, .about-company-pulse, .blog-pulse, .testimonial-pulse, .mission-pulse, .services-pulse, .php-pulse, .pulse, .in-bangalore6-pulse, .social-media-marketing-competitors-pulse, .in-bangalore2-pulse, .in-bangalore-pulse, .in-bangalore5-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse{
+  .best-company,
+  .in-bangalore,
+  .services,
+  .contact-fill-up,
+  .company-details,
+  .blog-down-section,
+  .consulation,
+  .about-company,
+  .testimonials-section,
+  .our-mission,
+  .blog,
+  .work,
+  .about,
+  .in-bangalore3,
+  .seo-services-ani-box,
+  .social-media-marketing,
+  .next-project,
+  .social-media-marketing-competitors,
+  .in-bangalore6,
+  .our-ecommerce,
+  .in-bangalore5,
+  .in-bangalore4,
+  .in-bangalore2,
+  .competitor,
+  .service-in,
+  .php,
+  .wordpress,
+  .shopify,
+  .magento,
+  .joomla,
+  .react,
+  .node-js,
+  .professional,
+  .benefits,
+  .creative-work,
+  .our-client {
+    padding: 30px;
+  }
+  .best-company-pulse,
+  .competitor-pulse,
+  .work-pulse,
+  .about-company-pulse,
+  .blog-pulse,
+  .testimonial-pulse,
+  .mission-pulse,
+  .services-pulse,
+  .php-pulse,
+  .pulse,
+  .in-bangalore6-pulse,
+  .social-media-marketing-competitors-pulse,
+  .in-bangalore2-pulse,
+  .in-bangalore-pulse,
+  .in-bangalore5-pulse,
+  .in-bangalore4-pulse,
+  .in-bangalore3-pulse,
+  .wordpress-pulse,
+  .shopify-pulse,
+  .magento-pulse,
+  .joomla-pulse,
+  .react-pulse,
+  .node-js-pulse,
+  .benefits-pulse,
+  .creative-work-pulse,
+  .our-client-pulse {
     height: 60px;
     width: 60px;
     top: 0px;
-}
-.best-company-pulse img ,.competitor-pulse img, .blog-pulse img, .about-company-pulse img, .testimonial-pulse img, .mission-pulse img, .services-pulse img, .work-pulse img, .php-pulse img, .in-bangalore6-pulse img, .in-bangalore3-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
+  }
+  .best-company-pulse img,
+  .competitor-pulse img,
+  .blog-pulse img,
+  .about-company-pulse img,
+  .testimonial-pulse img,
+  .mission-pulse img,
+  .services-pulse img,
+  .work-pulse img,
+  .php-pulse img,
+  .in-bangalore6-pulse img,
+  .in-bangalore3-pulse img,
+  .shopify-pulse img,
+  .magento-pulse img,
+  .joomla-pulse img,
+  .react-pulse img,
+  .node-js-pulse img,
+  .benefits-pulse img,
+  .creative-work-pulse img,
+  .our-client-pulse img {
     width: 30px;
-}
-.competitor-h1,.our-client-heading h1, .work-h1, .our-mission-h1, .contact-fill-up-in-box-up-text, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .testmonial-heading h1, .services-h1, .about-in-box-wraper-textbox-text, .our-ecommerce-in-box-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .in-bangalore6-h1, .social-media-marketing-competitors-h1, .in-bangalore-h1, .in-bangalore5-h1, .in-bangalore4-h1, .in-bangalore3-h1, .in-bangalore2-h1, .service-in-h1, .php-h1, .wordpress-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1{
+  }
+  .competitor-h1,
+  .our-client-heading h1,
+  .work-h1,
+  .our-mission-h1,
+  .contact-fill-up-in-box-up-text,
+  .about-company-in-box-wraper-textbox-text,
+  .blog-heading h1,
+  .testmonial-heading h1,
+  .services-h1,
+  .about-in-box-wraper-textbox-text,
+  .our-ecommerce-in-box-h1,
+  .seo-services-ani-box-in-box-h1,
+  .social-media-marketing-in-box-h1,
+  .in-bangalore6-h1,
+  .social-media-marketing-competitors-h1,
+  .in-bangalore-h1,
+  .in-bangalore5-h1,
+  .in-bangalore4-h1,
+  .in-bangalore3-h1,
+  .in-bangalore2-h1,
+  .service-in-h1,
+  .php-h1,
+  .wordpress-h1,
+  .shopify-h1,
+  .magento-h1,
+  .joomla-h1,
+  .react-h1,
+  .node-js-h1,
+  .professional-h1,
+  .benefits-h1,
+  .creative-work-heading h1 {
     font-size: 35px;
-}
-.service-in-box, .competitor-in-box, .about-company-in-box, .contact-fill-up-in-box, .consulation-in-box, .seo-services-ani-box-in-box, .social-media-marketing-competitors-in-box, .next-project-in-box, .social-media-marketing-in-box, .in-bangalore4-box, .in-bangalore6-box, .our-ecommerce-in-box, .in-bangalore5-box, .in-bangalore2-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box{
+  }
+  .service-in-box,
+  .competitor-in-box,
+  .about-company-in-box,
+  .contact-fill-up-in-box,
+  .consulation-in-box,
+  .seo-services-ani-box-in-box,
+  .social-media-marketing-competitors-in-box,
+  .next-project-in-box,
+  .social-media-marketing-in-box,
+  .in-bangalore4-box,
+  .in-bangalore6-box,
+  .our-ecommerce-in-box,
+  .in-bangalore5-box,
+  .in-bangalore2-box,
+  .best-company-in-box,
+  .php-box,
+  .wordpress-box,
+  .shopify-box,
+  .magento-box,
+  .joomla-box,
+  .react-box,
+  .node-js-box,
+  .professional-box,
+  .benefits-in-box,
+  .our-client-in-box {
     padding: 30px;
-}
-.down-box, .in-bangalore-down-box, .in-bangalore2-down-box, .in-bangalore3-down-box , .in-bangalore4-down-box , .in-bangalore5-down-box{
+  }
+  .down-box,
+  .in-bangalore-down-box,
+  .in-bangalore2-down-box,
+  .in-bangalore3-down-box,
+  .in-bangalore4-down-box,
+  .in-bangalore5-down-box {
     padding: 10px 20px;
-}
-.about-company-in-box-wraper-imgbox{
+  }
+  .about-company-in-box-wraper-imgbox {
     height: 400px;
     padding: 20px;
-}
-.work-in-box{
+  }
+  .work-in-box {
     padding: 35px 35px 60px 35px;
-}
-.about-company-heading{
+  }
+  .about-company-heading {
     margin-top: 10px;
-}
-.footer-child {
+  }
+  .footer-child {
     padding: 30px;
-}
-.development-services-in-Bangalore h1{
+  }
+  .development-services-in-Bangalore h1 {
     font-size: 50px;
-}
-.next-project-in-box-h1{
+  }
+  .next-project-in-box-h1 {
     font-size: 40px;
-}
-.seo-services-ani-box-in-box-wraper{
+  }
+  .seo-services-ani-box-in-box-wraper {
     gap: 20px;
     row-gap: 20px;
-}
-.seo-services-ani-box-in-box-wraper-in-box{
+  }
+  .seo-services-ani-box-in-box-wraper-in-box {
     padding: 20px;
-}
-.benefits-box{
+  }
+  .benefits-box {
     text-align: center;
-}
-.menu-icons{
+  }
+  .menu-icons {
     right: 30px;
-}
-.about-in-box-wraper-imgbox{
+  }
+  .about-in-box-wraper-imgbox {
     display: flex;
     align-items: center;
-}
-.hero-section-text{
+  }
+  .hero-section-text {
     margin-left: 30px;
-}
-.conta {
+  }
+  .conta {
     margin-top: -20px;
-}
-.splide .splide__track ul li{
+  }
+  .splide .splide__track ul li {
     font-size: 7rem;
-}
-.about-hero-section {
+  }
+  .about-hero-section {
     height: 550px;
-}
-.company-details-box{
+  }
+  .company-details-box {
     padding: 15px;
+  }
 }
-}
-
 
 /* 768px media screen end */
 
 /* 740 px start */
 
-@media screen and (max-width: 755px){
-    .best-company-in-box-wraper, .php-wraper, .in-bangalore5-wraper, .in-bangalore4-wraper, .in-bangalore3-wraper, .in-bangalore2-wraper, .in-bangalore-wraper, .wordpress-wraper, .shopify-wraper, .magento-wraper, .joomla-wraper, .react-wraper, .node-js-wraper{
-        grid-template-columns: 1fr;
-    }
-    .best-company-p, .php-p,.in-bangalore3-p, .in-bangalore-p, .in-bangalore5-p ,.in-bangalore4-p, .in-bangalore2-p, .wordpress-p, .shopify-p, .magento-p, .joomla-p, .react-p{
-        text-align: justify;
-    }
-    .competitor-h1,.our-client-heading h1, .in-bangalore5-h1, .blog-heading h1, .in-bangalore3-h1,.in-bangalore4-h1, .service-in-h1, .php-h1, .wordpress-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1{
-        font-size: 30px;
-    }
-    .wordpress-imgbox, .magento-imgbox, .react-imgbox , .in-bangalore-imgbox, .in-bangalore3-imgbox{
-        order: 1;
-    }
-    .footer-wraper{
-        grid-template-columns: 1fr 1fr;
-    }
-    .social-media-marketing-competitors-in-box-wraper{
-        grid-template-columns: 1fr;
-    }
-    .our-ecommerce-in-box-wraper, .social-media-marketing-in-box-wraper{
-        grid-template-columns: 1fr;
-    }
-    .next-project-in-box-btn-btn{
-        font-size: 12px;
-        width: 130px;
-        height: 40px;
-    }
-    .next-project-in-box-h1{
-        font-size: 35px;
-    }
-    .seo-services-ani-box-in-box-wraper{
-        grid-template-columns: 1fr;
-    }
-
-
+@media screen and (max-width: 755px) {
+  .best-company-in-box-wraper,
+  .php-wraper,
+  .in-bangalore5-wraper,
+  .in-bangalore4-wraper,
+  .in-bangalore3-wraper,
+  .in-bangalore2-wraper,
+  .in-bangalore-wraper,
+  .wordpress-wraper,
+  .shopify-wraper,
+  .magento-wraper,
+  .joomla-wraper,
+  .react-wraper,
+  .node-js-wraper {
+    grid-template-columns: 1fr;
+  }
+  .best-company-p,
+  .php-p,
+  .in-bangalore3-p,
+  .in-bangalore-p,
+  .in-bangalore5-p,
+  .in-bangalore4-p,
+  .in-bangalore2-p,
+  .wordpress-p,
+  .shopify-p,
+  .magento-p,
+  .joomla-p,
+  .react-p {
+    text-align: justify;
+  }
+  .competitor-h1,
+  .our-client-heading h1,
+  .in-bangalore5-h1,
+  .blog-heading h1,
+  .in-bangalore3-h1,
+  .in-bangalore4-h1,
+  .service-in-h1,
+  .php-h1,
+  .wordpress-h1,
+  .shopify-h1,
+  .magento-h1,
+  .joomla-h1,
+  .react-h1,
+  .node-js-h1,
+  .professional-h1,
+  .benefits-h1,
+  .creative-work-heading h1 {
+    font-size: 30px;
+  }
+  .wordpress-imgbox,
+  .magento-imgbox,
+  .react-imgbox,
+  .in-bangalore-imgbox,
+  .in-bangalore3-imgbox {
+    order: 1;
+  }
+  .footer-wraper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media-marketing-competitors-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .our-ecommerce-in-box-wraper,
+  .social-media-marketing-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .next-project-in-box-btn-btn {
+    font-size: 12px;
+    width: 130px;
+    height: 40px;
+  }
+  .next-project-in-box-h1 {
+    font-size: 35px;
+  }
+  .seo-services-ani-box-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media screen and (max-width: 640px){
-    .footer-box2{
-        padding: 0;
-    }
-    .benefits-box{
-        width: 100%;
-        height: auto;
-    }
-    .competitor-box-set{
-        height: auto !important;
-    }
-    .contact-name-haeding{
-        font-size: 30px;
-        padding: 0 20px;
-    }
-    .contact-coloum-text{
-        
-    }
-}
-
-/* 540px start */
-
-@media screen and (max-width: 580px){
-    .competitor-in-box-wraper {
-        grid-template-columns: 1fr;
-    }
-    .benefits-in-box-wraper{
-        grid-template-columns: 1fr;
-    }
-    .animation-heading-text span {
-        font-size: 45px;
-    }
-    .hero-section-text-main-heading , .testmonial-heading h1, .section-tectbox-h1, .about-in-box-wraper-textbox-text, .work-h1, .services-h1, .our-mission-h1{
-        font-size: 30px;
-    }
-    .about-in-box-wraper-textbox-text{
-        max-width: 400px;
-    }
-    .work-in-box-wraper {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-    }
-    .work-box-down-box-parent{
-        left: 0;
-        top: 0;
-    }
-    .pulse, .work-pulse, .services-pulse , .blog-pulse, .mission-pulse{
-        height: 50px;
-        width: 50px;
-        top: -4px;
-    }
-    .testimonial-pulse{
-        top: 0px;
-    }
-    .menu-icons {
-        right: 20px;
-    }
-    .pulse img, .work-pulse img, .blog-pulse img{
-        width: 30px;
-    }
-    .about-btn-btn, .banner-btn-btn, .services-btn-btn, .our-mission-btn-btn, .blog-btn-btn, .consulatio-btn-btn{
-        width: 120px;
-        height: 35px;
-        font-size: 12px;
-    }
-    .our-mission-img2{
-        margin-top: 30px;
-    }
-    .about-in-box-wraper-textbox-text-p{
-        padding: 10px 0 20px 0;
-    }
-    .header-icon-group{
-        margin-top: 30px;
-    }
-    .hero-section-text .hero-section-text-p{
-        max-width: 450px;
-    }
-    .hero-section .header-icon-group i{
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-    }
-    .main-header.sticky{
-        padding: 10px 20px;
-    }
-    .about, .work, .services, .our-mission, .best-company, .php, .wordpress, .shopify, .magento, .benefits, .joomla, .react, .node-js, .professional, .our-ecommerce, .in-bangalore, .in-bangalore2, .competitor, .consulation, .counter , .blog , .our-client , .about-company{
-        padding: 30px 20px;
-    }
-    .about-in-box-wraper, .our-mission-wraper{
-        grid-template-columns: 1fr;
-    }
-    .about-in-box-wraper-imgbox{
-        order: 2;
-    }
-    .services-in-box, .our-mission-in-box, .work-in-box, .our-ecommerce-in-box, .benefits-in-box, .professional-box, .competitor-in-box, .in-bangalore2-box, .best-company-in-box, .consulation-in-box, .counter-in-box, .blog-in-box, .our-client-in-box, .testimonials-section, .tesimonial-in-box , .creative-work{
-        padding: 30px 20px;
-    }
-    .service-flexbox{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .service-img, .service-div, .service-peragraph, .service-icon{
-        width: 100%;
-        justify-content: start;
-    }
-    .splide .splide__track ul li{
-        font-size: 5rem;
-    }
-    .conta{
-        display: none;
-    }
-    .our-mission-1stimg, .our-mission-1stimg img{
-        width: 100%;
-    }
-    .blog-box-wraper, .about-company-in-box-wraper{
-        grid-template-columns: 1fr;
-    }
-    .blog-box-in-text-order{
-        order: 2;
-    }
-    .blog-box-in-text-h1{
-        font-size: 25px;
-    }
-    .consulation-text {
-        font-size: 40px;
-    }
-    .consulation-heading{
-        font-size: 18px;
-    }
-    .hro {
-        padding: 0 20px;
-    }
-    .hover-reveal{
-        width: 200px;
-        height: 200px;
-    }
-    .company-details-wraper{
-        grid-template-columns: 1fr;
-
-    }
-    .company-details-box {
-        justify-content: start;
-        flex-wrap: wrap;
-    }
-    .competitor-box{
-        width: 100%;
-    }
-    
-
-    
+@media screen and (max-width: 640px) {
+  .footer-box2 {
+    padding: 0;
+  }
+  .benefits-box {
+    width: 100%;
+    height: auto;
+  }
+  .competitor-box-set {
+    height: auto !important;
+  }
+  .contact-name-haeding {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  .contact-coloum-text {
+  }
 }
 
 /* 540px start */
 
-@media screen and (max-width: 540px){
-    .hero-section-text{
-        margin-left: 30px;
-    }
+@media screen and (max-width: 580px) {
+  .competitor-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .benefits-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .animation-heading-text span {
+    font-size: 45px;
+  }
+  .hero-section-text-main-heading,
+  .testmonial-heading h1,
+  .section-tectbox-h1,
+  .about-in-box-wraper-textbox-text,
+  .work-h1,
+  .services-h1,
+  .our-mission-h1 {
+    font-size: 30px;
+  }
+  .about-in-box-wraper-textbox-text {
+    max-width: 400px;
+  }
+  .work-in-box-wraper {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .work-box-down-box-parent {
+    left: 0;
+    top: 0;
+  }
+  .pulse,
+  .work-pulse,
+  .services-pulse,
+  .blog-pulse,
+  .mission-pulse {
+    height: 50px;
+    width: 50px;
+    top: -4px;
+  }
+  .testimonial-pulse {
+    top: 0px;
+  }
+  .menu-icons {
+    right: 20px;
+  }
+  .pulse img,
+  .work-pulse img,
+  .blog-pulse img {
+    width: 30px;
+  }
+  .about-btn-btn,
+  .banner-btn-btn,
+  .services-btn-btn,
+  .our-mission-btn-btn,
+  .blog-btn-btn,
+  .consulatio-btn-btn {
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .our-mission-img2 {
+    margin-top: 30px;
+  }
+  .about-in-box-wraper-textbox-text-p {
+    padding: 10px 0 20px 0;
+  }
+  .header-icon-group {
+    margin-top: 30px;
+  }
+  .hero-section-text .hero-section-text-p {
+    max-width: 450px;
+  }
+  .hero-section .header-icon-group i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .main-header.sticky {
+    padding: 10px 20px;
+  }
+  .about,
+  .work,
+  .services,
+  .our-mission,
+  .best-company,
+  .php,
+  .wordpress,
+  .shopify,
+  .magento,
+  .benefits,
+  .joomla,
+  .react,
+  .node-js,
+  .professional,
+  .our-ecommerce,
+  .in-bangalore,
+  .in-bangalore2,
+  .competitor,
+  .consulation,
+  .counter,
+  .blog,
+  .our-client,
+  .about-company {
+    padding: 30px 20px;
+  }
+  .about-in-box-wraper,
+  .our-mission-wraper {
+    grid-template-columns: 1fr;
+  }
+  .about-in-box-wraper-imgbox {
+    order: 2;
+  }
+  .services-in-box,
+  .our-mission-in-box,
+  .work-in-box,
+  .our-ecommerce-in-box,
+  .benefits-in-box,
+  .professional-box,
+  .competitor-in-box,
+  .in-bangalore2-box,
+  .best-company-in-box,
+  .consulation-in-box,
+  .counter-in-box,
+  .blog-in-box,
+  .our-client-in-box,
+  .testimonials-section,
+  .tesimonial-in-box,
+  .creative-work {
+    padding: 30px 20px;
+  }
+  .service-flexbox {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service-img,
+  .service-div,
+  .service-peragraph,
+  .service-icon {
+    width: 100%;
+    justify-content: start;
+  }
+  .splide .splide__track ul li {
+    font-size: 5rem;
+  }
+  .conta {
+    display: none;
+  }
+  .our-mission-1stimg,
+  .our-mission-1stimg img {
+    width: 100%;
+  }
+  .blog-box-wraper,
+  .about-company-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .blog-box-in-text-order {
+    order: 2;
+  }
+  .blog-box-in-text-h1 {
+    font-size: 25px;
+  }
+  .consulation-text {
+    font-size: 40px;
+  }
+  .consulation-heading {
+    font-size: 18px;
+  }
+  .hro {
+    padding: 0 20px;
+  }
+  .hover-reveal {
+    width: 200px;
+    height: 200px;
+  }
+  .company-details-wraper {
+    grid-template-columns: 1fr;
+  }
+  .company-details-box {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .competitor-box {
+    width: 100%;
+  }
 }
 
+/* 540px start */
+
+@media screen and (max-width: 540px) {
+  .hero-section-text {
+    margin-left: 30px;
+  }
+}
 
 /* 430px mediascreen start */
 
-@media screen and (max-width: 430px){
-    .main-header{
-        padding: 20px 20px;
-    }
-    .main-header.sticky{
-        padding: 10px 20px;
-    }
-    .hero-section-text{
-        margin-left: 20px;
-    }
-    .hero-section-text-main-heading{
-        font-size: 30px;
-        max-width: 380px;
-    }
-    .hero-section-text{
-        top: 70%;
-    }
-    .header-icon-group{
-        margin-top: 20px;
-    }
-    .hero-section{
-        height: 90vh;
-    }
+@media screen and (max-width: 430px) {
+  .main-header {
+    padding: 20px 20px;
+  }
+  .main-header.sticky {
+    padding: 10px 20px;
+  }
+  .hero-section-text {
+    margin-left: 20px;
+  }
+  .hero-section-text-main-heading {
+    font-size: 30px;
+    max-width: 380px;
+  }
+  .hero-section-text {
+    top: 70%;
+  }
+  .header-icon-group {
+    margin-top: 20px;
+  }
+  .hero-section {
+    height: 90vh;
+  }
 
-    /* about start */
+  /* about start */
 
-    .about{
-        padding: 50px 20px;
-    }
-    .pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .about-in-box{
-        padding: 20px;
-    }
-    .about-in-box-wraper{
-        grid-template-columns: 1fr;
-    }
-    .about-in-box-wraper-imgbox img{
-        height: 300px;
-    }
-    .about-in-box-wraper-textbox-text{
-        font-size: 30px;
-    }
-    .about-in-box-wraper-textbox{
-        padding: 0;
-        text-align: center;
-    }
-    .about-btn-btn{
-        font-size: 13px;
-        height: 40px;
-        width: 130px;
-    }
-    .about-in-box-wraper-imgbox{
-        order: 2;
-    }
-    .about-btn{
-        display: flex;
-        justify-content: center;
-    }
+  .about {
+    padding: 50px 20px;
+  }
+  .pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .about-in-box {
+    padding: 20px;
+  }
+  .about-in-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .about-in-box-wraper-imgbox img {
+    height: 300px;
+  }
+  .about-in-box-wraper-textbox-text {
+    font-size: 30px;
+  }
+  .about-in-box-wraper-textbox {
+    padding: 0;
+    text-align: center;
+  }
+  .about-btn-btn {
+    font-size: 13px;
+    height: 40px;
+    width: 130px;
+  }
+  .about-in-box-wraper-imgbox {
+    order: 2;
+  }
+  .about-btn {
+    display: flex;
+    justify-content: center;
+  }
 
-    /* about end */
+  /* about end */
 
-    /* work start */
+  /* work start */
 
-    .work{
-        padding: 50px 20px; 
-    }
-    .work-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .work-h1{
-        font-size: 30px;
-    }
-    .work-in-box{
-        padding: 40px;
-    }
-    .work-in-box-wraper{
-        grid-template-columns: 1fr;
-        row-gap: 40px;
-    }
-    .work-box-h1{
-        font-size: 22px;
-    }
-    .work-heading-text{
-        font-size: 13px;
-    }
+  .work {
+    padding: 50px 20px;
+  }
+  .work-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .work-h1 {
+    font-size: 30px;
+  }
+  .work-in-box {
+    padding: 40px;
+  }
+  .work-in-box-wraper {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .work-box-h1 {
+    font-size: 22px;
+  }
+  .work-heading-text {
+    font-size: 13px;
+  }
 
-    /* work end */
+  /* work end */
 
-    /* services start */
+  /* services start */
 
-    .services{
-        padding: 50px 20px; 
-    }
-    .services-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .services-h1{
-        font-size: 30px;
-    }
-    .services-in-box{
-        padding: 20px;
-    }
-    .service-flexbox{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        row-gap: 10px;
-    }
-    .hover-reveal{
-        width: 150px;
-        height: 150px;
-    }
-    .service-img{
-        width: 100%;
-    }
-    .service-img img{
-        width: 60px;
-    }
-    .service-div{
-        width: 100%;
-    }
-    .service-peragraph{
-        width: 100%;
-    }
-    .service-icon{
-        display: contents;
-    }
-    .service-icon i{
-        font-size: 20px;
-    }
-    .services-nav{
-        padding: 0;
-    }
-    nav ul li .link{
-        padding: 2rem 0 1rem 0;
-    }
-    .services-btn-btn{
-        width: 130px;
-        height: 40px;
-        font-size: 13px;
-    }
-    .services-heading-text{
-        font-size: 13px;
-    }
-    /* services end */
+  .services {
+    padding: 50px 20px;
+  }
+  .services-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .services-h1 {
+    font-size: 30px;
+  }
+  .services-in-box {
+    padding: 20px;
+  }
+  .service-flexbox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+  }
+  .hover-reveal {
+    width: 150px;
+    height: 150px;
+  }
+  .service-img {
+    width: 100%;
+  }
+  .service-img img {
+    width: 60px;
+  }
+  .service-div {
+    width: 100%;
+  }
+  .service-peragraph {
+    width: 100%;
+  }
+  .service-icon {
+    display: contents;
+  }
+  .service-icon i {
+    font-size: 20px;
+  }
+  .services-nav {
+    padding: 0;
+  }
+  nav ul li .link {
+    padding: 2rem 0 1rem 0;
+  }
+  .services-btn-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .services-heading-text {
+    font-size: 13px;
+  }
+  /* services end */
 
-    /* text slider start */
+  /* text slider start */
 
-    .splide .splide__track ul li{
-        font-size: 3rem;
-    }
-    .splide .splide__track ul li img{
-        width: 2rem;
-        height: 2rem;
-    }
+  .splide .splide__track ul li {
+    font-size: 3rem;
+  }
+  .splide .splide__track ul li img {
+    width: 2rem;
+    height: 2rem;
+  }
 
-    /* text slidr end */
-    /* main mission start */
+  /* text slidr end */
+  /* main mission start */
 
-    .our-mission{
-        padding: 50px 20px; 
-    }
-    .mission-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .mission-pulse img{
-        width: 30px;
-        top: 20px;
-    }
-    .our-mission-in-box{
-        padding: 50px 20px;
-    }
-    .our-mission-h1{
-        font-size: 30px;
-    }
-    .our-mission-wraper{
-        grid-template-columns: 100%;
-    }
-    .our-mission-heading{
-        text-align: center;
-    }
-    .scrol .mission-div{
-        font-size: 13px;
-        padding: 5px 10px;
-    }
-    .our-mission-h1{
-        text-align: center;
-    }
-    .our-mission-btn{
-        display: flex;
-        justify-content: center;
-    }
-    .our-mission-btn-btn{
-        width: 130px;
-        height: 40px;
-        font-size: 13px;
-        margin-top: 20px;
-    }
-    .our-mission-img2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-    .our-mission-2ndimg{
-        display: none;
-    }
-    .conta{
-        display: none;
-    }
-    
-    /* our main mission end */
-
-    /* counter start */
-
-    .counter{
-        padding: 50px 20px;
-    }
-    .counter-in-box{
-        padding: 20px;
-    }
-
-    /* counter end */
-
-    /*  testimonial start */
-
-    .testimonials-section{
-        padding: 50px 20px;
-    }
-    .testimonial-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .testimonial-pulse img {
-        width: 30px;
-    }
-    .testmonial-heading h1{
-        font-size: 30px;
-    }
-    .tesimonial-in-box{
-        padding: 20px;
-    }
-    .our-mission-heading-text{
-        font-size: 13px;
-    }
-
-
-    /* testimonial end */
-
-    /* portfolio start */
-
-    .creative-work{
-        padding: 50px 20px;
-    }
-    .creative-work-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .creative-work-pulse img{
-        width: 30px;
-    }
-    .creative-work-in-box{
-        padding: 20px;
-    }
-    .creative-work-heading h1{
-        font-size: 30px;
-    }
-    .horizontal__item{
-        padding: 10px;
-    }
-    .horizontal__num img{
-        width: 250px;
-        height: 200px;
-    }
-    #horizontal{
-        padding: 50px 0 0 0 !important;
-    }
-    .testimonial-heading-text{
-        font-size: 13px;
-    }
-
-
-    /* creative work end */
-
-    /* our client start */
-
-    .our-client{
-        padding: 50px 20px;
-    }
-    .our-client-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .our-client-in-box{
-        padding: 20px;
-    }
-    
-    .our-client-pulse img {
+  .our-mission {
+    padding: 50px 20px;
+  }
+  .mission-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .mission-pulse img {
     width: 30px;
-    }
-    .our-client-heading h1{
-        font-size: 30px;
-    }
-    .creative-work-heading-text{
-        font-size: 13px;
-    }
+    top: 20px;
+  }
+  .our-mission-in-box {
+    padding: 50px 20px;
+  }
+  .our-mission-h1 {
+    font-size: 30px;
+  }
+  .our-mission-wraper {
+    grid-template-columns: 100%;
+  }
+  .our-mission-heading {
+    text-align: center;
+  }
+  .scrol .mission-div {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .our-mission-h1 {
+    text-align: center;
+  }
+  .our-mission-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .our-mission-btn-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  .our-mission-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .our-mission-2ndimg {
+    display: none;
+  }
+  .conta {
+    display: none;
+  }
 
-    /* our client end */
+  /* our main mission end */
 
-    /* vlog start */
+  /* counter start */
 
-    .blog{
-        padding: 50px 20px; 
-    }
-    .blog-pulse{
-        width: 60px;
-        height: 60px;
-        top: 20px;
-    }
-    .blog-pulse img {
-        width: 30px;
-    }
-    .blog-heading h1{
-        font-size: 30px;
-    }
-    .blog-in-box{
-        padding: 20px;
-    }
-    .blog-box-wraper{
-        grid-template-columns: 1fr;
-    }
-    .our-client-heading-text{
-        font-size: 13px;
-    }
+  .counter {
+    padding: 50px 20px;
+  }
+  .counter-in-box {
+    padding: 20px;
+  }
 
+  /* counter end */
 
-    /* vlog end */
+  /*  testimonial start */
 
-    /* footer start */
+  .testimonials-section {
+    padding: 50px 20px;
+  }
+  .testimonial-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .testimonial-pulse img {
+    width: 30px;
+  }
+  .testmonial-heading h1 {
+    font-size: 30px;
+  }
+  .tesimonial-in-box {
+    padding: 20px;
+  }
+  .our-mission-heading-text {
+    font-size: 13px;
+  }
 
-    .footer-wraper{
-        grid-template-columns: 1fr;
-    }
-    .footer-child{
-        padding: 50px 20px;
-    }
-    .footer-box2{
-        padding-left: 0px;
-    }
-    .footer-box-menu-heading{
-        padding-bottom: 20px;
-    }
-    .blog-heading-text{
-        font-size: 13px;
-    }
+  /* testimonial end */
+
+  /* portfolio start */
+
+  .creative-work {
+    padding: 50px 20px;
+  }
+  .creative-work-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .creative-work-pulse img {
+    width: 30px;
+  }
+  .creative-work-in-box {
+    padding: 20px;
+  }
+  .creative-work-heading h1 {
+    font-size: 30px;
+  }
+  .horizontal__item {
+    padding: 10px;
+  }
+  .horizontal__num img {
+    width: 250px;
+    height: 200px;
+  }
+  #horizontal {
+    padding: 50px 0 0 0 !important;
+  }
+  .testimonial-heading-text {
+    font-size: 13px;
+  }
+
+  /* creative work end */
+
+  /* our client start */
+
+  .our-client {
+    padding: 50px 20px;
+  }
+  .our-client-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .our-client-in-box {
+    padding: 20px;
+  }
+
+  .our-client-pulse img {
+    width: 30px;
+  }
+  .our-client-heading h1 {
+    font-size: 30px;
+  }
+  .creative-work-heading-text {
+    font-size: 13px;
+  }
+
+  /* our client end */
+
+  /* vlog start */
+
+  .blog {
+    padding: 50px 20px;
+  }
+  .blog-pulse {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .blog-pulse img {
+    width: 30px;
+  }
+  .blog-heading h1 {
+    font-size: 30px;
+  }
+  .blog-in-box {
+    padding: 20px;
+  }
+  .blog-box-wraper {
+    grid-template-columns: 1fr;
+  }
+  .our-client-heading-text {
+    font-size: 13px;
+  }
+
+  /* vlog end */
+
+  /* footer start */
+
+  .footer-wraper {
+    grid-template-columns: 1fr;
+  }
+  .footer-child {
+    padding: 50px 20px;
+  }
+  .footer-box2 {
+    padding-left: 0px;
+  }
+  .footer-box-menu-heading {
+    padding-bottom: 20px;
+  }
+  .blog-heading-text {
+    font-size: 13px;
+  }
 }
 
 /* 376px media screen end */

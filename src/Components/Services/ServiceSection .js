@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from '../../Constant/images';
+import PropTypes from 'prop-types';
 
 const ServiceSection = ({
   title,
@@ -16,9 +17,6 @@ const ServiceSection = ({
   return (
     <>
       <div>
-      
-        
-
         {imageSide === 'left' && (
           <section className="in-bangalore">
             <div className="in-bangalore-pulse">
@@ -37,19 +35,18 @@ const ServiceSection = ({
 
               {points.length > 0 && (
                 <div className="in-bangalore-down-box-parent">
-                <div className="in-bangalore-down-box">
-                  {points.map((text, index) => (
-                    <div className="in-bangalore-down-box-i-text" key={index}>
-                      <div className="in-bangalore-down-box-i">
-                        <img src={checkedImage} alt="" />
+                  <div className="in-bangalore-down-box">
+                    {points.map((text, index) => (
+                      <div className="in-bangalore-down-box-i-text" key={index}>
+                        <div className="in-bangalore-down-box-i">
+                          <img src={checkedImage} alt="" />
+                        </div>
+                        <div className="in-bangalore-down-box-text">{text}</div>
                       </div>
-                      <div className="in-bangalore-down-box-text">{text}</div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
               )}
-              
             </div>
           </section>
         )}
@@ -71,26 +68,41 @@ const ServiceSection = ({
               </div>
 
               {points.length > 0 && (
-                  <div className="in-bangalore2-down-box-parent">
+                <div className="in-bangalore2-down-box-parent">
                   <div className="in-bangalore2-down-box">
                     {points.map((text, index) => (
-                      <div className="in-bangalore2-down-box-i-text" key={index}>
+                      <div
+                        className="in-bangalore2-down-box-i-text"
+                        key={index}
+                      >
                         <div className="in-bangalore2-down-box-i">
                           <img src={checkedImage} alt="" />
                         </div>
-                        <div className="in-bangalore2-down-box-text">{text}</div>
+                        <div className="in-bangalore2-down-box-text">
+                          {text}
+                        </div>
                       </div>
                     ))}
                   </div>
                 </div>
               )}
-              
             </div>
           </section>
         )}
       </div>
     </>
   );
+};
+
+ServiceSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
+  altText: PropTypes.string.isRequired,
+  points: PropTypes.array.isRequired,
+  imageSide: PropTypes.string,
+  pulseImageSrc: PropTypes.string.isRequired,
+  pulseAltText: PropTypes.string.isRequired,
 };
 
 export default ServiceSection;

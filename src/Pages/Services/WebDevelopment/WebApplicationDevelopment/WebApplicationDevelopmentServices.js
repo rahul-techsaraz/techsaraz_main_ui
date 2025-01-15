@@ -1,15 +1,15 @@
-import React from 'react'
-import '../../../css/web-application-developmeent.css'
+import React from 'react';
+import '../../../css/web-application-developmeent.css';
 import ServiceSection from '../../../../Components/Services/ServiceSection ';
 import { webApplicationDevServicesConfig } from '../../../../Constant/config/servicesConfig';
 
 const WebApplicationDevelopmentServices = () => {
   return (
     <>
-    <section className="development-services-in-Bangalore">
-          <h1>Our web application development services in Bangalore</h1>
-        </section>
-{webApplicationDevServicesConfig.map((section) => (
+      <section className="development-services-in-Bangalore">
+        <h1>Our web application development services in Bangalore</h1>
+      </section>
+      {webApplicationDevServicesConfig.map((section) => (
         <ServiceSection
           key={section.id}
           title={section.title}
@@ -23,7 +23,7 @@ const WebApplicationDevelopmentServices = () => {
         />
       ))}
     </>
-  )
-}
+  );
+};
 
-export default WebApplicationDevelopmentServices
+export default WebApplicationDevelopmentServices;

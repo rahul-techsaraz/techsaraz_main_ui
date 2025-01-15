@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
   return (
@@ -24,7 +25,9 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
             categories.map((category, index) => (
               <Link key={index} to={category.link}>
                 <div className="category-short-box">
-                  <div className="category-short-box-heading">{category.name}</div>
+                  <div className="category-short-box-heading">
+                    {category.name}
+                  </div>
                   <div className="category-short-box-i">
                     <i className="fa-solid fa-arrow-right"></i>
                   </div>
@@ -53,7 +56,9 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
                       <div className="recent-post-box-user-icon">
                         <i className="fa-regular fa-user"></i>
                       </div>
-                      <div className="recent-post-box-user-text">by {post.author}</div>
+                      <div className="recent-post-box-user-text">
+                        by {post.author}
+                      </div>
                     </div>
                     <div className="recent-post-box-user-text-heading">
                       <Link to={post.link}>{post.heading}</Link>
@@ -87,4 +92,9 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
   );
 };
 
+BlogSidebar.propTypes = {
+  categories: PropTypes.array.isRequired,
+  recentPosts: PropTypes.array.isRequired,
+  tags: PropTypes.array.isRequired,
+};
 export default BlogSidebar;
