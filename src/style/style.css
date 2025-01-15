@@ -2343,12 +2343,12 @@ style attribute {
   opacity: 1;
 }
 .itemLeft {
-  left: max(calc(200px * 8), 100%);
+  left: max(calc(200px * 22), 100%);
   animation-name: scrollLeft;
 }
 
 .itemRight {
-  right: max(calc(200px * 8), calc(100% + 200px));
+  right: max(calc(200px * 22), calc(100% + 200px));
   animation-name: scrollRight;
 }
 
@@ -2356,58 +2356,155 @@ style attribute {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(30s / 22 * (22 - 1) * -1);
 }
 
 .item2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(30s / 22 * (22 - 2) * -1);
 }
 
 .item3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(30s / 22 * (22 - 3) * -1);
 }
 
 .item4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(30s / 22 * (22 - 4) * -1);
 }
 
 .item5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(30s / 22 * (22 - 5) * -1);
 }
 
 .item6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(30s / 22 * (22 - 6) * -1);
 }
 
 .item7 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  animation-delay: calc(30s / 22 * (22 - 7) * -1);
 }
 
 .item8 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  animation-delay: calc(30s / 22 * (22 - 8) * -1);
 }
 
+.item9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 9) * -1);
+}
+
+.item10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 10) * -1);
+}
+
+.item11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 11) * -1);
+}
+
+.item12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 12) * -1);
+}
+
+.item13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 13) * -1);
+}
+
+.item14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 14) * -1);
+}
+
+.item15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 15) * -1);
+}
+
+.item16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 16) * -1);
+}
+
+.item17 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 17) * -1);
+}
+
+.item18 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 18) * -1);
+}
+
+.item19 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 19) * -1);
+}
+
+.item20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 20) * -1);
+}
+
+.item21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 21) * -1);
+}
+
+.item22 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 22) * -1);
+}
 /* our client end */
 
 /* blog start */
@@ -13446,4 +13543,20 @@ svg {
     background-position: 140% 50%;
     transform: skew(-2deg);
   }
+}
+
+.swiper-button-prev-next-flex{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.testimonial-prev-button, .testimonial-next-button {
+  width: 50px;
+    height: 50px;
+    background-color: #fcf803;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 50%;
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
+
 import PropTypes from 'prop-types';
-=======
->>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
 
 const SocialMediaIcons = ({ icons }) => {
   return (
@@ -16,7 +14,7 @@ const SocialMediaIcons = ({ icons }) => {
     </div>
   );
 };
-
+// Dummy commit
 const LetterHeroBanner = ({
   headingText,
   socialIcons,
@@ -83,7 +81,7 @@ LetterHeroBanner.defaultProps = {
   subtitle: 'Where innovation meets expertise in web development',
   linkText: 'Tech SaraZ',
   linkUrl: '#',
-<<<<<<< HEAD
+
 };
 LetterHeroBanner.propTypes = {
   headingText: PropTypes.string.isRequired,
@@ -94,7 +92,6 @@ LetterHeroBanner.propTypes = {
 };
 SocialMediaIcons.propTypes = {
   icons: PropTypes.array.isRequired,
-=======
->>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
+
 };
 export default LetterHeroBanner;

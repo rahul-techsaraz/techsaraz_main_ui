@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Components/Header/Header';
@@ -11,19 +11,7 @@ import { ToastProvider } from './Context/ToastContext';
 import './style/style.css';
 import './style/home-media.css';
 
-=======
-import { Outlet, useLocation } from 'react-router-dom';
-import Header from './Components/Header/Header';
-import './style/style.css';
-import './style/home-media.css';
-import Footer from './Components/Footer/Footer';
-import ClientSection from './Pages/LandingPages/ClientSection';
-import BlogSection from './Pages/LandingPages/BlogSection';
-import { config, portfolio } from './Constant/config';
-import PortfolioSection from './Pages/LandingPages/PortfolioSection';
-import { useEffect, useRef, useState } from 'react';
-import { ToastProvider } from './Context/ToastContext';
->>>>>>> c6c8e139ca3e171495a5d464ef38c01faee01bc1
+
 function App() {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);

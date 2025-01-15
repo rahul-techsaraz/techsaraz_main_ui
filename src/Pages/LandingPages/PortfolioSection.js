@@ -6,7 +6,12 @@ import CustomSwiper from '../../Components/CustomSwiper/CustomSwiper';
 import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive';
 
 const PortfolioSection = ({ portfolios }) => {
-  console.log(portfolios);
+  const responsive = {
+    1220: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    }
+    }
   return (
     <section className="creative-work portfolio-section-start">
       <div className="creative-work-pulse">
@@ -31,11 +36,12 @@ const PortfolioSection = ({ portfolios }) => {
             <div className="containe">
               <div className="swiper-wrapper position-relative">
                 <CustomSwiper
-                  navigationNext=".courselist-button-next"
-                  navigationPrev=".courselist-button-prev"
+                  navigation={true}
+                  navigationNext=".testimonial-next-buttont"
+                  navigationPrev=".testimonial-prev-button"
                   noOfSlidesPerView={2}
                   isBreakPoint={true}
-                  breakPoint={SwiperResponsive()}
+                  breakPoint={SwiperResponsive(responsive)}
                 >
                   {portfolios.map((portfolio) => (
                     <swiper-slide key={portfolio.link}>
@@ -45,20 +51,26 @@ const PortfolioSection = ({ portfolios }) => {
                             <div className="swiper-slider-box-in-image">
                               <img src={portfolio.image} alt={portfolio.alt} />
                             </div>
-                            <h2 className="swiper-slider-h2-heading">
+                            <h3 className="swiper-slider-h2-heading">
                               {portfolio.title}
-                            </h2>
-                            <span className="swiper-slider-span">
+                            </h3>
+                            {/* <span className="swiper-slider-span">
                               {portfolio.description}
-                            </span>
+                            </span> */}
                           </div>
                         </Link>
                       </div>
                     </swiper-slide>
                   ))}
                 </CustomSwiper>
-                <div className="swiper-button-prev courselist-button-prev"></div>
-                <div className="swiper-button-next courselist-button-next"></div>
+                <div className="swiper-button-prev-next-flex">
+                  <div className="swiper-button-prev testimonial-prev-button">
+                    <i className="fa-solid fa-arrow-left"></i>
+                  </div>
+                  <div className="swiper-button-next testimonial-next-button">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </div>
+                  </div>
               </div>
             </div>
           </div>
