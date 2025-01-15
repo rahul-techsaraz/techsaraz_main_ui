@@ -23,7 +23,6 @@ const LetterSlider = () => {
 
       // Add the 'is-active' class to the current active slide
       if (activeSlide) {
-        console.log(activeSlide?.slide?.classList)
          activeSlide?.slide?.classList.add('is-active');
       }
 
@@ -34,7 +33,6 @@ const LetterSlider = () => {
 
       // Log the cloned slides (optional)
       clonedSlides.forEach((clonedSlide) => {
-        console.log('Cloned Slide:', clonedSlide);
       });
     });
 
@@ -42,7 +40,6 @@ const LetterSlider = () => {
     const initialSlides = splide.Components.Slides.get();
     const initialActiveSlide = initialSlides[splide.index];
     if (initialActiveSlide) {
-      console.log({initialActiveSlide})
       initialActiveSlide?.slide?.classList.add('is-active');
     }
   }, []);

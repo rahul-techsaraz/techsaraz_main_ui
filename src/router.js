@@ -105,6 +105,4 @@ export const appRouter = createBrowserRouter([
       { path: GRAPHICS_DESIGN, element: <GraphicsDesign /> },
     ],
   },
-],{
-  basename: '/newversion'
-});
+]);

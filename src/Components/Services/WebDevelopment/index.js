@@ -16,7 +16,6 @@ import {
 const MainWebDevelopmentSection = () => {
   const [headingText,setHeadingText] = useState('WEB DEVELOPMENT');
   const {pathname} = useLocation();
-  console.log(pathname)
   useEffect(() => {
     // Update heading text based on pathname
     if (pathname === '/services/web-development/web-application-development') {

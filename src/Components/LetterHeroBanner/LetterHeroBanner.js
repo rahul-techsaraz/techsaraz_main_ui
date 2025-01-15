@@ -14,8 +14,6 @@ const SocialMediaIcons = ({ icons }) => {
 };
 
 const LetterHeroBanner = ({ headingText, socialIcons, subtitle, linkText, linkUrl }) => {
-  const splitText = headingText.split("");
-  console.log(splitText)
   return (
     <div className="web-development-banner">
       {/* Social Media Icons Section */}

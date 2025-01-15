@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../../style/about.css';
 import '../../style/style.css';
 import user1Image from '../../images/user (1).png'
 import service4Image from '../../images/service-4.jpg'

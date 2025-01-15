@@ -5,7 +5,6 @@ import '../../Pages/css/web-development.css'
 const SlideBoxAnimations = ({ 
   slideAnimationData
 }) => {
-  console.log({slideAnimationData})
   return (
     <section className="our-ecommerce">
       <div className="our-ecommerce-in-box">

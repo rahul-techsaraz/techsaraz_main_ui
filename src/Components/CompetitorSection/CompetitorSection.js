@@ -16,7 +16,7 @@ const CompetitorSection = ({competitorData}) => {
         <div className="competitor-in-box">
           <h1 className="competitor-h1">{title}</h1>
           <p className="competitor-p">
-            T{description}
+            {description}
           </p>
           <div className="competitor-in-box-wraper">
             {boxes.map((item, index) => (

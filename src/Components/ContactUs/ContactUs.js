@@ -1,5 +1,4 @@
 import React from 'react';
-import './contact.css'
 import ContactHeroSection from './ContactHeroSection'
 import ContactForm from './ContactForm';
 

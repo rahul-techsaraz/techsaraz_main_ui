@@ -1,4 +1,5 @@
 import { constants } from "./constants";
+import { images } from "./images";
 
 export const config = {
     LandingPageServiceCatelogConfig: {
@@ -269,8 +270,8 @@ export const config = {
     LandingClientConfig: {
         clients: [
             {
-                imageUrl: constants.images.brewMyBrainsImage.imageURL,
-                alt:constants.images.brewMyBrainsImage.alt,
+                imageUrl: constants.images.healthMangersWorld.imageURL,
+                alt:constants.images.healthMangersWorld.alt,
             },
             {
                 imageUrl: constants.images.colonialClientImage.imageURL,
@@ -282,11 +283,12 @@ export const config = {
             },
             {
                 imageUrl: constants.images.qwikRealEstateImage.imageURL,
-                alt:constants.images.brewMyBrainsImage.alt,
-            },{
-                imageUrl: constants.images.brewMyBrainsImage.imageURL,
                 alt:constants.images.qwikRealEstateImage.alt,
             },
+            // {
+            //     imageUrl: constants.images.brewMyBrainsImage.imageURL,
+            //     alt:constants.images.brewMyBrainsImage.alt,
+            // },
             {
                 imageUrl: constants.images.socialBudhaImage.imageURL,
                 alt:constants.images.socialBudhaImage.alt,
@@ -335,16 +337,6 @@ export const config = {
                 postedDate: '27/09/2024',
                 updatedOn: '27/09/2024',
                 blogSummary: 'Clever strategy to maximize your reach',
-                blogDetailURL:'/blog'
-            },
-               {
-                blogImages: {
-                    imageURL: constants.images.blog1Image.imageURL,
-                    alt: constants.images.blog1Image.imageURL,
-                },
-                postedDate: 'APRIL 1, 2024',
-                updatedOn: 'APRIL 1, 2024',
-                blogSummary: 'Strategies For Effective Web Design By',
                 blogDetailURL:'/blog'
             },
 
@@ -421,3 +413,69 @@ export const customerRivew = [
       review: "Working with Tech SaraZ was extremely helpful for me, and Soni is so friendly and helped me with so many live projects. I am so much thankful and learned a lot here."
     }
   ];
+
+export const portfolio = [
+    {
+      title: "Brew My Brain",
+      description: "Web Development",
+      image: images.brewMyBrain,
+      alt: "Brew My Brain Image",
+      link: "https://asdepcongo.org/"
+    },
+    {
+      title: "C4 Plus Events",
+      description: "Web Development",
+      image: images.c4PlusEvents,
+      alt: "C4 Plus Events Image",
+      link: "https://c4plusevents.com/"
+    },
+    {
+      title: "Globally Village",
+      description: "Web Development",
+      image: images.globallyVillage,
+      alt: "Globally Village Image",
+      link: "https://globallyvillage.com/"
+    },
+    {
+      title: "Tritech",
+      description: "Web Development",
+      image: images.tritech,
+      alt: "Tritech Image",
+      link: "https://www.ttbspl.com/"
+    },
+    {
+      title: "Workwise Coach",
+      description: "Web Development",
+      image: images.workwise,
+      alt: "Workwise Image",
+      link: "https://workwisecoach.com/"
+    },
+    {
+      title: "Shine BrightX",
+      description: "Web Development",
+      image: images.shineBright1,
+      alt: "Shine Bright Image",
+      link: "https://shinebrightx.com/"
+    },
+    {
+      title: "Rakesh Rathod",
+      description: "Web Development",
+      image: images.rakeshRathod,
+      alt: "Rakesh Rathod Image",
+      link: "https://rakeshrathod27.com/"
+    },
+    {
+      title: "Halo Knowledge Academy",
+      description: "Web Development",
+      image: images.halo,
+      alt: "Halo Image",
+      link: "https://www.halo.co.in/"
+    },
+    {
+      title: "Persqft Avenu",
+      description: "Web Development",
+      image: images.persqftAvenu,
+      alt: "Persqft Avenu Image",
+      link: "https://persqftavenu.com/"
+    }
+  ]
