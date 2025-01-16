@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Alegreya', serif;
-}
+/* 
 .st0 {
   fill: #033d5a;
 }
@@ -31,11 +24,8 @@
   fill: #ff5100;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-/*  */
+
 
 .vlog-herosection {
   background-color: #000000;
@@ -45,7 +35,6 @@ html {
   display: grid;
   place-content: center;
   overflow: hidden;
-  /* margin-top: 75px; */
 }
 
 .vlog-herosection-h1 {
@@ -67,16 +56,6 @@ html {
   bottom: 0;
   width: 100%;
 }
-
-/* #gradient {
-    background: radial-gradient(#ff5100, transparent 50%);
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: -200px;
-    left: -200px;
-    transform: translate(200px, 200px);
-  } */
 
 .vlog-herosection-p {
   color: #c4cfde;
@@ -117,7 +96,6 @@ html {
   padding-top: 10px;
 }
 
-/* demo start */
 
 .fott {
   width: 100%;
@@ -153,9 +131,6 @@ html {
   }
 }
 
-/* vlog hero section end */
-
-/* vlog down section start */
 
 .blog-down-section {
   width: 100%;
@@ -169,12 +144,10 @@ html {
 }
 .blog-down-section-leftbox {
   width: 70%;
-  /* background-color: red; */
   border-radius: 20px;
 }
 .blog-down-section-rightbox {
   width: 30%;
-  /* background-color: #ff5100; */
   border: 1px solid #000000;
   padding: 30px 20px;
   border-radius: 20px;
@@ -302,7 +275,6 @@ html {
   }
 }
 
-/* pagination start */
 
 .paginaion {
   display: flex;
@@ -368,14 +340,7 @@ html {
 .paginaion .pagination-item:active {
   box-shadow: none;
 }
-/* .active{
-    color: #ffffff !important;
-    background-color: #ff5100 !important;
-    position: relative;
-    z-index: 99;
-  } */
 
-/* pagination end */
 
 .blog-down-section-rightbox-input-parent {
   position: relative;
@@ -393,7 +358,6 @@ html {
   outline: none;
   border: 0px;
   border: 2px solid #c4cfde;
-  /* box-shadow: 0 2px 3px #C4CFDE; */
 }
 .blog-down-section-rightbox-input-parent-search-i i {
   color: #ff5100;
@@ -498,7 +462,6 @@ html {
 .blog-tag-button {
   padding: 10px 20px;
   font-size: 16px;
-  /* background: #11151C; */
   background: linear-gradient(to right, #000, #11151c);
   color: #c4cfde;
   border: 0;
@@ -508,8 +471,7 @@ html {
   transition: 0.3s;
 }
 .blog-tag-button:hover {
-  /* border: 1px solid #ff5100; */
   color: #ff5100;
   background: linear-gradient(to right, #11151c, #000);
   transition: 0.3s;
-}
+} */

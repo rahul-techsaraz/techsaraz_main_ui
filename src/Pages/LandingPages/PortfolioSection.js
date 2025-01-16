@@ -63,7 +63,7 @@ const PortfolioSection = ({ portfolios }) => {
                     </swiper-slide>
                   ))}
                 </CustomSwiper>
-                <div className="swiper-button-prev-next-flex">
+                <div className="swiper-button-prev-next-flex portfolio-swiper-prev-next-button">
                   <div className="swiper-button-prev testimonial-prev-button">
                     <i className="fa-solid fa-arrow-left"></i>
                   </div>
