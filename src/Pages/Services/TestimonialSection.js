@@ -32,8 +32,9 @@ const TestimonialSection = () => {
 
         <div className="swiper-wrapper position-relative">
           <CustomSwiper
-            navigationNext=".courselist-button-next"
-            navigationPrev=".courselist-button-prev"
+            navigation={true}
+            navigationNext=".testimonial-next-button"
+            navigationPrev=".testimonial-prev-button"
             noOfSlidesPerView={2}
             isBreakPoint={true}
             breakPoint={SwiperResponsive()}
