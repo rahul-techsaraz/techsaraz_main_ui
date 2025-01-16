@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Components/Header/Header';
@@ -10,7 +9,6 @@ import { config, portfolio } from './Constant/config';
 import { ToastProvider } from './Context/ToastContext';
 import './style/style.css';
 import './style/home-media.css';
-
 
 function App() {
   const [mouseX, setMouseX] = useState(0);

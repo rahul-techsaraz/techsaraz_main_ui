@@ -353,25 +353,15 @@ svg {
   }
 }
 
-.plane {
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
 
-  -webkit-animation: paper-plane-soaring 4s forwards infinite;
-  -moz-animation: paper-plane-soaring 4s forwards infinite;
-  animation: paper-plane-soaring 4s forwards infinite;
-}
-@-webkit-keyframes paper-plane-soaring {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  40% {
-    -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    transform: rotate(15deg);
+
+
+  .contact-fill-up-in-box{
+    width: 100%;
+    padding: 50px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: .3s;
   }
   50% {
     -webkit-transform: rotate(15deg);
