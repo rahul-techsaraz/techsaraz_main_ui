@@ -3,12 +3,12 @@ import { register } from 'swiper/element/bundle';
 import PropTypes from 'prop-types';
 
 export default function CustomSwiper({
+  navigation,
+  navigationNext,
+  navigationPrev,
   noOfSlidesPerView,
   children,
   isBreakPoint,
-  navigationNext,
-  navigationPrev,
-  isPagination,
   breakPoint,
 }) {
   useEffect(() => {
@@ -17,9 +17,12 @@ export default function CustomSwiper({
 
   // Common swiper container props
   const commonProps = {
+    'navigation-next-el': navigationNext,
+    'navigation-prev-el': navigationPrev,
+    navigation: navigation,
     slidesPerView: noOfSlidesPerView,
     spaceBetween: 20,
-    autoplayDelay: 2000,
+    'autoplay-delay': 2000,
     pauseOnMouseEnter: true,
   };
 
@@ -29,10 +32,7 @@ export default function CustomSwiper({
         breakpoints: JSON.stringify(breakPoint),
       }
     : {
-        navigationNextEl: navigationNext,
-        navigationPrevEl: navigationPrev,
-        navigation: true,
-        ...(isPagination && { pagination: true }), // Conditionally add pagination
+        breakpoints: ''
       };
 
   return (
@@ -44,18 +44,13 @@ export default function CustomSwiper({
 
 // Prop validation
 CustomSwiper.propTypes = {
+  navigation: PropTypes.bool,
+  navigationPrev: PropTypes.string,
+  navigationNext: PropTypes.string,
   noOfSlidesPerView: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
   isBreakPoint: PropTypes.bool.isRequired,
-  navigationNext: PropTypes.string,
-  navigationPrev: PropTypes.string,
-  isPagination: PropTypes.bool,
   breakPoint: PropTypes.object,
 };
 
-CustomSwiper.defaultProps = {
-  navigationNext: '',
-  navigationPrev: '',
-  isPagination: false,
-  breakPoint: {},
-};
+
