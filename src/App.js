@@ -9,6 +9,7 @@ import { config, portfolio } from './Constant/config';
 import { ToastProvider } from './Context/ToastContext';
 import './style/style.css';
 import './style/home-media.css';
+import { extractBlogData } from './Utils/extarctBlogData';
 
 function App() {
   const [mouseX, setMouseX] = useState(0);
@@ -67,7 +68,9 @@ function App() {
       document.removeEventListener('mousemove', setCoords);
     };
   }, [update]); // `update` is now included as a dependency
-
+  useEffect(() => {
+    console.log(extractBlogData());
+  }, []);
   return (
     <ToastProvider>
       <div className="full-section">
