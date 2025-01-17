@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BlogPost from './BlogContent';
-import { Link } from 'react-router-dom';
 import {
   blogCategories,
   blogPosts,
@@ -10,12 +9,34 @@ import {
 import BlogSidebar from './BlogSideBar';
 
 const BlogMainConatainer = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 3;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = blogPosts.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(blogPosts.length / itemsPerPage);
+  
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+  
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
   return (
     <>
       <section className="blog-down-section">
         <div className="blog-down-section-layer">
           <div className="blog-down-section-leftbox">
-            {blogPosts.map((post) => (
+            {currentItems.map((post) => (
               <BlogPost
                 key={post.id}
                 image={post.image}
@@ -29,7 +50,20 @@ const BlogMainConatainer = () => {
             ))}
 
             <div className="paginaion">
-              <Link to="#" class="pagination-item">
+              <button className='pagination-item' onClick={handlePreviousPage} disabled={currentPage === 1}>Prev</button>
+              {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+                  <button
+                    key={page}
+                    onClick={() => handlePageChange(page)}
+                    disabled={page === currentPage}
+                    className='pagination-item'
+                  >
+                    {page}
+                  </button>
+                )
+              )}
+              <button className='pagination-item' onClick={handleNextPage} disabled={currentPage === totalPages}>Next</button>
+              {/* <Link to="#" class="pagination-item">
                 Prev
               </Link>
               <Link to="#" class="pagination-item active">
@@ -43,7 +77,7 @@ const BlogMainConatainer = () => {
               </Link>
               <Link to="#" class="pagination-item">
                 Next
-              </Link>
+              </Link> */}
             </div>
           </div>
           <BlogSidebar

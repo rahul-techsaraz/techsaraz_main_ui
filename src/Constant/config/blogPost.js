@@ -18,6 +18,7 @@ export const blogPosts = [
     paragraph:
       'Strategies for Effective Web Design by Our Agency. In the dynamic world of web design, where first impressions are currency and user experience reigns supreme, our agency has honed a repertoire of strategies that redefine digital landscapes...',
     readMoreLink: '/blog/technical-wizardry',
+    categorie: 'Business Solution'
   },
   {
     id: 2,
@@ -29,6 +30,55 @@ export const blogPosts = [
     paragraph:
       'UI design is crucial to enhancing user experience. In this post, we explore the best practices for designing intuitive and engaging user interfaces that captivate users...',
     readMoreLink: '/blog/how-to-create-beautiful-ui-designs',
+    categorie: 'Content Strategy'
+  },
+  {
+    id: 3,
+    image: blogs13Image, // Another blog image
+    author: 'Tech SaraZ',
+    date: 'March 5, 2023',
+    comments: 5,
+    heading: 'How to Create Beautiful UI Designs',
+    paragraph:
+      'UI design is crucial to enhancing user experience. In this post, we explore the best practices for designing intuitive and engaging user interfaces that captivate users...',
+    readMoreLink: '/blog/how-to-create-beautiful-ui-designs',
+    categorie: 'Digital Marketing'
+  },
+  {
+    id: 4,
+    image: blogs13Image, // Another blog image
+    author: 'Tech SaraZ',
+    date: 'March 5, 2023',
+    comments: 5,
+    heading: 'How to Create Beautiful UI Designs',
+    paragraph:
+      'UI design is crucial to enhancing user experience. In this post, we explore the best practices for designing intuitive and engaging user interfaces that captivate users...',
+    readMoreLink: '/blog/how-to-create-beautiful-ui-designs',
+    categorie: 'Software Design'
+  },
+  {
+    id: 5,
+    image: blogs13Image, // Another blog image
+    author: 'Tech SaraZ',
+    date: 'March 5, 2023',
+    comments: 5,
+    heading: 'How to Create Beautiful UI Designs',
+    paragraph:
+      'UI design is crucial to enhancing user experience. In this post, we explore the best practices for designing intuitive and engaging user interfaces that captivate users...',
+    readMoreLink: '/blog/how-to-create-beautiful-ui-designs',
+    categorie: 'Technology'
+  },
+  {
+    id: 6,
+    image: blogs13Image, // Another blog image
+    author: 'Tech SaraZ',
+    date: 'March 5, 2023',
+    comments: 5,
+    heading: 'How to Create Beautiful UI Designs',
+    paragraph:
+      'UI design is crucial to enhancing user experience. In this post, we explore the best practices for designing intuitive and engaging user interfaces that captivate users...',
+    readMoreLink: '/blog/how-to-create-beautiful-ui-designs',
+    categorie: 'Web Development'
   },
   // Add more blog posts as needed
 ];
