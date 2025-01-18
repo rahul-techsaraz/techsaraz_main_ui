@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
+const BlogSidebar = ({ categories = [], recentPosts = [], tags = [], setFilterOn }) => {
   return (
     <div className="blog-down-section-rightbox">
       {/* Search Section */}
@@ -23,8 +23,8 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
         <div className="category-all-short-box">
           {categories.length > 0 ? (
             categories.map((category, index) => (
-              <Link key={index} to={category.link}>
-                <div className="category-short-box">
+              // <Link key={index} to={category.link}>
+                <div key={index} className="category-short-box" onClick={()=>setFilterOn(category.name)}>
                   <div className="category-short-box-heading">
                     {category.name}
                   </div>
@@ -32,7 +32,7 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [] }) => {
                     <i className="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
-              </Link>
+              // </Link>
             ))
           ) : (
             <p>No categories available</p>
@@ -96,5 +96,6 @@ BlogSidebar.propTypes = {
   categories: PropTypes.array.isRequired,
   recentPosts: PropTypes.array.isRequired,
   tags: PropTypes.array.isRequired,
+  setFilterOn: PropTypes.func.isRequired,
 };
 export default BlogSidebar;

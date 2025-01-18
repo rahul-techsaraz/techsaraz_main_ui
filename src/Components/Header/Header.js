@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import LOGO from '..//../images/Tech-SaraZ-logo-300x99.webp';
 import Routes from '../../Constant/routes';
+import { PopUpContext } from '../../Context/ToastContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation()
   const {
     WEB_DEVELOPMENT,
     HOME,
@@ -23,9 +25,14 @@ const Header = () => {
     WEB_APPLICATION_DEVELOPMENT,
   } = Routes;
 
+  const {togalPopUp} = useContext(PopUpContext)
+
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
+  useEffect(()=>{
+    toggleMenu()
+  },[location])
   return (
     <header className="main-header">
       <nav className={`header-nav ${isMenuOpen ? 'active' : ''}`}>
@@ -115,14 +122,14 @@ const Header = () => {
           </li>
 
           <li className="humberger-menu-button">
-            <Link className="humberger-menu-button-btn-btn" to={CONTACT}>
+            <Link className="humberger-menu-button-btn-btn" onClick={()=>togalPopUp(true)}>
               CONTACT US
             </Link>
           </li>
         </ul>
 
         <div className="header-btn">
-          <Link className="header-btn-btn" to={CONTACT}>
+          <Link className="header-btn-btn" onClick={()=>togalPopUp(true)}>
             CONTACT US
           </Link>
         </div>

@@ -4,6 +4,7 @@ import Toast from '../Components/NotificationBar/Notification';
 
 // Create the Toast context
 const ToastContext = createContext();
+export const PopUpContext = createContext();
 
 // Custom Hook to use Toast context
 export const useToast = () => {

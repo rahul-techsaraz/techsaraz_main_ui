@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { constants } from '../../Constant/constants';
-import Routes from '../../Constant/routes';
+// import Routes from '../../Constant/routes';
+import { PopUpContext } from '../../Context/ToastContext';
 
 const HeroSection = () => {
+  const {togalPopUp} = useContext(PopUpContext)
   const { heroSectionMainSubText } = constants.landingPageText;
   const { facebook, instagram, linkedin, youtube, tweeter } =
     constants.socialLinks;
@@ -43,9 +45,10 @@ const HeroSection = () => {
         </h1>
         <p className="hero-section-text-p">{heroSectionMainSubText}</p>
         <div className="banner-btn">
-          <Link className="banner-btn-btn" to={Routes.CONTACT}>
-            ENQUIRE NOW
-          </Link>
+          {/* <Link className="banner-btn-btn" to={Routes.CONTACT}> */}
+          <button className="banner-btn-btn" onClick={()=>togalPopUp(true)}>ENQUIRE NOW</button>
+            
+          {/* </Link> */}
         </div>
         <div className="header-icon-group">
           <Link to={facebook} target='blank' className="header-icon-span">
