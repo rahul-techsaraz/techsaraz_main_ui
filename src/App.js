@@ -9,8 +9,11 @@ import { config, portfolio } from './Constant/config';
 import { ToastProvider } from './Context/ToastContext';
 import './style/style.css';
 import './style/home-media.css';
+import Popup from './Components/Popup/Popup';
+import { PopUpContext } from './Context/ToastContext';
 
 function App() {
+  const [isPopUp, setIsPopUp] = useState(true)
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
 
@@ -55,6 +58,8 @@ function App() {
     [mouseX, mouseY],
   ); // update depends on mouseX and mouseY
 
+  const togalPopUp = (flag)=> setIsPopUp(flag)
+
   // Set up mousemove event listener and start animation
   useEffect(() => {
     const follower = document.querySelector('#mouse-follower');
@@ -70,6 +75,8 @@ function App() {
 
   return (
     <ToastProvider>
+      <PopUpContext.Provider value={{isPopUp, togalPopUp}}>
+      <Popup />
       <div className="full-section">
         <div id="mouse-follower" style={{ position: 'fixed' }}></div>
         <Header />
@@ -79,6 +86,7 @@ function App() {
         <BlogSection blogs={config.BlogConfig.blogs} />
         <Footer />
       </div>
+      </PopUpContext.Provider>
     </ToastProvider>
   );
 }
