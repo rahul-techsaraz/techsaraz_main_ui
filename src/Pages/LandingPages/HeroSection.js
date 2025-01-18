@@ -29,20 +29,20 @@ const HeroSection = () => {
           </Link>
         </div>
         <div className="header-icon-group">
-          <Link to={facebook} className="header-icon-span">
-            <i className="fa-brands fa-facebook-f"></i>
+          <Link to={facebook} target='blank' className="header-icon-span">
+            <i className="fa-brands fa-facebook-f facebook-icon-style"></i>
           </Link>
-          <Link to={youtube} className="header-icon-span">
-            <i className="fa-brands fa-youtube"></i>
+          <Link to={youtube} target='blank' className="header-icon-span">
+            <i className="fa-brands fa-youtube youtube-icon-style"></i>
           </Link>
-          <Link to={linkedin} className="header-icon-span">
-            <i className="fa-brands fa-linkedin-in"></i>
+          <Link to={linkedin} target='blank' className="header-icon-span">
+            <i className="fa-brands fa-linkedin-in linkdin-icon-style"></i>
           </Link>
-          <Link to={tweeter} className="header-icon-span">
-            <i className="fa-brands fa-x-twitter"></i>
+          <Link to={tweeter} target='blank' className="header-icon-span">
+            <i className="fa-brands fa-x-twitter twitter-icon-style"></i>
           </Link>
-          <Link to={instagram} className="header-icon-span">
-            <i className="fa-brands fa-instagram"></i>
+          <Link to={instagram} target='blank' className="header-icon-span">
+            <i className="fa-brands fa-instagram instragram-icon-style"></i>
           </Link>
         </div>
       </div>

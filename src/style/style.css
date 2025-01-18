@@ -316,6 +316,9 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.fa-caret-down{
+  padding-left: 4px;
+}
 
 .nav-list li {
   /* line-height: 8rem; */
@@ -333,7 +336,8 @@ nav {
   display: block;
   color: #ffffff;
   padding: 15px 15px;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
   text-transform: uppercase;
   transition: color 650ms;
   -webkit-transition: color 650ms;
@@ -359,7 +363,7 @@ nav {
   border-top: 3px solid #0022ff;
   background-color: #000e26;
   z-index: 100;
-  top: 16rem;
+  top: 3rem;
   transition: all 250ms ease;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -389,7 +393,7 @@ nav {
   border-top: none;
   border-left: 3px solid #0022ff;
   top: 0;
-  left: 160%;
+  left: 105%;
 }
 
 .nav-list li:hover > .sub-menu {
@@ -581,18 +585,42 @@ header.sticky li a {
 }
 .header-icon-span {
   padding: 0 5px 0 0;
+  target:blank;
+  
 }
 .hero-section .header-icon-group i {
   width: 45px;
   height: 45px;
-  background: #11151c;
+  /* background: #11151c; */
   text-align: center;
   line-height: 45px;
   border-radius: 50%;
-  color: #bfff00;
-  border: 1px solid #bfff00;
   transition: 0.3s;
+  font-size: 20px;
 }
+
+.facebook-icon-style{
+  color: #ffffff;
+  background-color: #316FF6;
+}
+.youtube-icon-style{
+  color: #ffffff;
+  background-color: #FF0000;
+}
+.linkdin-icon-style{
+  color: #ffffff;
+  background-color: #0077B5;
+}
+.twitter-icon-style{
+  color:#ffffff;
+  background-color: #1DA1F2;
+}
+.instragram-icon-style{
+  color: #ffffff;
+  background-color: #C13584;
+}
+
+
 .header-icon-group i:hover {
   transform: translateY(-15px);
   transition: 0.3s;
@@ -1887,11 +1915,11 @@ nav ul li .link > img {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid #c4cfde;
+  border: 2px solid #c4cfde;
   background-color: #11151c;
 }
 .testimonial-card .test-card-body:hover {
-  background: #cac531;
+  background: #fdfbc8;
   /* background: -webkit-linear-gradient(to right,#CAC531, #F3F9A7); 
 background: linear-gradient(to right,#CAC531, #F3F9A7);  */
 
@@ -1901,10 +1929,12 @@ background: linear-gradient(to right,#CAC531, #F3F9A7);  */
 }
 .test-card-body:hover .quote i,
 .test-card-body:hover .quote h2,
-.test-card-body:hover .testimonial-p,
-.test-card-body:hover .ratings i {
+.test-card-body:hover .testimonial-p{
   color: #000;
   transition: 0.3s;
+}
+.test-card-body:hover .ratings i {
+  color: #fcad03;
 }
 .test-card-body:hover {
   border: 1px solid #ffffff;
@@ -1925,7 +1955,7 @@ background: linear-gradient(to right,#CAC531, #F3F9A7);  */
 }
 .test-card-body p {
   margin: 10px 0px 15px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   color: #c4cfde;
   transition: 0.3s;
@@ -2831,14 +2861,17 @@ footer {
 .icon-desin i {
   width: 45px;
   height: 45px;
-  background-color: #000000;
-  color: #bfff00;
+  /* background-color: #000000;
+  color: #bfff00; */
   text-align: center;
   line-height: 45px;
   border-radius: 50%;
   margin: 0 0px 2px 0;
 }
-
+.icon-group{
+  display: flex;
+  gap: 4px;
+}
 /*  */
 
 .footer-down {
@@ -3373,11 +3406,11 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.in-bangalore-box:hover .in-bangalore-down-box {
+/* .in-bangalore-box:hover .in-bangalore-down-box {
   background-color: #652ac9;
   box-shadow: 7px 10px 10px #000000;
   color: #11151c;
-}
+} */
 .in-bangalore-down-box-i-text {
   display: flex;
   gap: 7px;
@@ -4389,13 +4422,11 @@ footer {
 
 /* best-company start */
 
-.best-company-in-box:hover {
+/* .best-company-in-box:hover {
   border: 1px solid #5c75c7;
   transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
   background-color: #11151c;
-}
+} */
 
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
@@ -4624,13 +4655,6 @@ footer {
   /* background: url(./images/pattern.png);
   background-size:cover; */
 }
-.competitor-in-box:hover {
-  border: 1px solid #deb25f;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
 .competitor-span-circle {
   width: 40px;
   height: 40px;
@@ -4664,9 +4688,7 @@ footer {
   text-align: center;
   padding-bottom: 10px;
 }
-.competitor-in-box:hover {
-  color: #deb25f;
-}
+
 .competitor-p {
   color: #c4cfde;
   text-align: center;
@@ -6919,7 +6941,7 @@ padding: 0 20px;
   gap: 40px;
   row-gap: 40px;
 }
-.our-ecommerce-in-box-wraper-in-box {
+/* .our-ecommerce-in-box-wraper-in-box {
   width: 100%;
   padding: 40px;
   border: 1px solid #c4cfde;
@@ -6932,7 +6954,7 @@ padding: 0 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 .our-ecommerce-in-box-wraper-in-box:hover {
   border: 1px solid #ff634780;
 }
@@ -7406,7 +7428,7 @@ padding: 0 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  /* height: 300px; */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8348,6 +8370,7 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 50px;
   padding-bottom: 30px;
+  text-align: center;
 }
 .in-bangalore-box:hover .in-bangalore-h1 {
   color: #fa553c;
@@ -8356,10 +8379,6 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 17px;
   padding-bottom: 20px;
-}
-
-.in-bangalore-down-box-parent {
-  padding: 0 20px;
 }
 .in-bangalore-down-box {
   width: 100%;
@@ -8512,6 +8531,7 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 50px;
   padding-bottom: 30px;
+  text-align: center;
 }
 .in-bangalore2-box:hover .in-bangalore2-h1 {
   color: #72a5f7;
@@ -8520,10 +8540,6 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 17px;
   padding-bottom: 20px;
-}
-
-.in-bangalore2-down-box-parent {
-  padding: 0 20px;
 }
 .in-bangalore2-down-box {
   width: 100%;
@@ -10301,14 +10317,6 @@ font-family: 'Helvetica Neue';
 
 /* best-company start */
 
-.best-company-in-box:hover {
-  border: 1px solid #5c75c7;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
-
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
   height: 450px;
@@ -10586,7 +10594,7 @@ font-family: 'Helvetica Neue';
 .competitor-box {
   width: 30%;
   border: 1px solid #deb25f;
-  height: 350px;
+  height: auto;
   border-radius: 20px;
   padding: 40px 20px 20px;
   display: flex;
@@ -14218,4 +14226,421 @@ svg {
   color: #ff5100;
   background: linear-gradient(to right, #11151c, #000);
   transition: 0.3s;
+}
+
+
+/* all new name css start */
+
+/* web development css page start */
+
+.web-development-page-intro-section {
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+.web-development-page-intro-section:hover {
+  border: 1px solid #5c75c7;
+  transition: 0.1s ease-in-out;
+  border-radius: 20px;
+  background-color: #11151c;
+}
+
+/* web development php box start */
+
+.web-development-page-php-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-php-box-h1-heading{
+    color: #c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-php-box:hover .web-development-page-php-box-h1-heading{
+    color: #652ac9;
+}
+.web-development-page-pulse img{
+  width: 40px;
+}
+.web-development-page-pulse{
+  height: 75px;
+  width: 75px;
+  background: #2f0579;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #652ac9;
+}
+.web-development-page-pulse:before,
+.web-development-page-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #652ac9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-php-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-php-box:hover .web-development-page-php-box-down-circle{
+  background-color: #652ac9;
+    box-shadow: 7px 10px 10px #000000;
+    color: #11151c;
+}
+
+
+/* web development wordpress box start */
+
+.web-development-page-wordpress-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-wordpress-box-h1-heading{
+    color: #c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-wordpress-box:hover .web-development-page-wordpress-box-h1-heading{
+    color: #72a5f7;
+}
+.web-development-page-wordpress-pulse img{
+  width: 40px;
+}
+.web-development-page-wordpress-pulse{
+  height: 75px;
+  width: 75px;
+  background: #043583;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #72a5f7;
+}
+.web-development-page-wordpress-pulse:before,
+.web-development-page-wordpress-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#72a5f7;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-wordpress-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-wordpress-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-wordpress-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-wordpress-box:hover .web-development-page-wordpress-box-down-circle{
+  background-color: #72a5f7;
+    box-shadow: 7px 10px 10px #000000;
+    color: #11151c;
+}
+
+
+/* web development Shopify box start */
+
+.web-development-page-shopify-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-shopify-box-h1-heading{
+    color:#c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-shopify-box:hover .web-development-page-shopify-box-h1-heading{
+    color: #b110c9;
+}
+.web-development-page-shopify-pulse img{
+  width: 40px;
+}
+.web-development-page-shopify-pulse{
+  height: 75px;
+  width: 75px;
+  background: #51025e;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #b110c9;
+}
+.web-development-page-shopify-pulse:before,
+.web-development-page-shopify-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#b110c9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-shopify-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-shopify-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-shopify-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-shopify-box:hover .web-development-page-shopify-box-down-circle{
+  background-color: #b110c9;
+    box-shadow: 7px 10px 10px #000000;
+    color: #11151c;
+}
+
+
+/* web development magento box start */
+
+.web-development-page-magento-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-magento-box-h1-heading{
+    color:#c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-magento-box:hover .web-development-page-magento-box-h1-heading{
+    color: #c91045;
+}
+.web-development-page-magento-pulse img{
+  width: 40px;
+}
+.web-development-page-magento-pulse{
+  height: 75px;
+  width: 75px;
+  background: #680420;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #c91045;
+}
+.web-development-page-magento-pulse:before,
+.web-development-page-magento-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#c91045;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-magento-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-magento-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-magento-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-magento-box:hover .web-development-page-magento-box-down-circle{
+  background-color: #b110c9;
+    box-shadow: 7px 10px 10px #000000;
+    color: #c91045;
+}
+
+
+
+/* web development joomla box start */
+
+.web-development-page-joomla-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-joomla-box-h1-heading{
+    color:#c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-joomla-box:hover .web-development-page-joomla-box-h1-heading{
+    color: #0bb84a;
+}
+.web-development-page-joomla-pulse img{
+  width: 40px;
+}
+.web-development-page-joomla-pulse{
+  height: 75px;
+  width: 75px;
+  background: #056e2c;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #0bb84a;
+}
+.web-development-page-joomla-pulse:before,
+.web-development-page-joomla-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#0bb84a;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-joomla-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-joomla-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-joomla-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-joomla-box:hover .web-development-page-joomla-box-down-circle{
+  background-color: #b110c9;
+    box-shadow: 7px 10px 10px #000000;
+    color: #c91045;
 }
