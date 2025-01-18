@@ -23,7 +23,7 @@ const WorkSection = () => {
               </div>
               <h1 className="work-box-h1">Project Processing</h1>
               <p className="work-box-up-box-p">
-                Techsaraz delivers efficient project processing through
+                Tech SaraZ delivers efficient project processing through
                 strategic planning, expert execution, and cutting-edge
                 technology. We work closely with clients to ensure tailored
                 solutions that meet objectives and exceed expectations, ensuring
@@ -39,7 +39,7 @@ const WorkSection = () => {
               </div>
               <h1 className="work-box-h1">High Quality Products</h1>
               <p className="work-box-up-box-p">
-                Techsaraz offers high-quality products built with precision and
+                Tech SaraZ offers high-quality products built with precision and
                 innovation. We prioritize durability, performance, and customer
                 satisfaction, delivering reliable solutions that meet industry
                 standards and exceed client expectations for long-term success.
@@ -55,7 +55,7 @@ const WorkSection = () => {
                 </div>
                 <h1 className="work-box-h1">Quality Finished</h1>
                 <p className="work-box-up-box-p">
-                  Techsaraz ensures quality finished products through meticulous
+                  Tech SaraZ ensures quality finished products through meticulous
                   attention to detail, superior craftsmanship, and rigorous
                   testing. Our commitment to excellence guarantees reliable,
                   high-performance solutions that meet the highest standards of
