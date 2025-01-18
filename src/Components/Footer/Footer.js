@@ -50,19 +50,19 @@ const Footer = () => {
                 </div>
                 <div className="icon-group">
                   <span className="icon-desin">
-                    <i className="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f facebook-icon-style"></i>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram youtube-icon-style"></i>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter linkdin-icon-style"></i>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-x-twitter"></i>
+                    <i className="fa-brands fa-x-twitter twitter-icon-style"></i>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in instragram-icon-style"></i>
                   </span>
                 </div>
               </div>
