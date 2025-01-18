@@ -15,7 +15,7 @@ const ClientSection = ({ clients }) => {
           </button>
         </div>
         <div className="our-client-heading">
-          <h1 className="our-client-h1">Our clients</h1>
+          <h1 className="our-client-h1">Our Clients</h1>
         </div>
         <div className="wrapper">
           {clients.map((client, index) => (

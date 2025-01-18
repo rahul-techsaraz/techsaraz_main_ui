@@ -366,7 +366,13 @@
   .hero-section-text {
     margin-left: 60px;
   }
-
+  .hero_section_layer{
+    height: 60%;
+  }
+  .hero_section_layer:nth-child(7){
+    width: 110%;
+    background-repeat: no-repeat;
+  }
     .hero-section, .services-hero-section{
         height: 60vh;
     }
@@ -785,6 +791,15 @@
   .web-development-banner {
     height: 550px;
   }
+  .hero-section{
+    height: 70vh;
+  }
+  .header-icon-group{
+    margin-top: 50px;
+  }
+  .hero-section-text{
+    top: 66%;
+  }
   .contact-fill-up-in-box-fillup-wraper23 {
     display: grid;
     grid-template-columns: 1fr;
@@ -1046,6 +1061,9 @@
   .blog-down-section-rightbox{
     width: 100%;
   }
+  .best-company-in-box-wraper{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 768px media screen end */
@@ -1214,7 +1232,7 @@
     .main-header.sticky{
         padding: 10px 20px;
     }
-    .about, .work, .services, .our-mission, .best-company, .php, .wordpress, .shopify, .magento, .benefits, .joomla, .react, .node-js, .professional, .our-ecommerce, .in-bangalore, .in-bangalore2, .competitor, .consulation, .counter , .blog , .our-client , .about-company{
+    .about, .work, .services, .service-in,  .our-mission, .best-company, .php, .wordpress, .shopify, .magento, .benefits, .joomla, .react, .node-js, .professional, .our-ecommerce, .in-bangalore, .in-bangalore2, .competitor, .consulation, .counter , .blog , .our-client , .about-company{
         padding: 30px 20px;
     }
     .about-in-box-wraper, .our-mission-wraper{
@@ -1223,7 +1241,7 @@
     .about-in-box-wraper-imgbox{
         order: 2;
     }
-    .services-in-box, .our-mission-in-box, .work-in-box, .our-ecommerce-in-box, .benefits-in-box, .professional-box, .competitor-in-box, .in-bangalore2-box, .best-company-in-box, .consulation-in-box, .counter-in-box, .blog-in-box, .our-client-in-box, .testimonials-section, .tesimonial-in-box , .creative-work{
+    .services-in-box, .our-mission-in-box, .in-bangalore-box, .service-in-box, .work-in-box, .our-ecommerce-in-box, .benefits-in-box, .professional-box, .competitor-in-box, .in-bangalore2-box, .best-company-in-box, .consulation-in-box, .counter-in-box, .blog-in-box, .our-client-in-box, .testimonials-section, .tesimonial-in-box , .creative-work{
         padding: 30px 20px;
     }
     .service-flexbox{
@@ -1280,6 +1298,12 @@
     .about-company-in-box-wraper-textbox-text, .work-h1{
       font-size: 30px;
     }
+    .hero-section {
+      height: 80vh;
+  }
+  .hero_section_layer{
+    height: 54%;
+  }
     
 
     
@@ -1290,7 +1314,7 @@
 @media screen and (max-width: 540px) {
   .hero-section-text {
     margin-left: 30px;
-  }
+  }                                
   .blog-down-section-leftbox-1stbox-heading{
     font-size: 25px;
   }
@@ -1758,6 +1782,9 @@
 @media screen and (max-width: 376px) {
   .work-box-up-box-p {
     font-size: 15px;
+  }
+  .hero_section_layer{
+    height: 50%;
   }
 }
 
