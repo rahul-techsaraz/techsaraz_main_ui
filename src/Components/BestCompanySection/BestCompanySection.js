@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { images } from '../../Constant/images';
 import PropTypes from 'prop-types';
+import { PopUpContext } from '../../Context/ToastContext';
 
 const BestCompanySection = ({
   title = 'Welcome to Tech Saraz, your go-to web design company in Bangalore.',
@@ -11,9 +12,10 @@ const BestCompanySection = ({
     'Our team of web developers in Bangalore is enthusiastic about their craft. We design and build user-centric, responsive, secure, and SEO-optimized websites. At Tech Saraz, we’re not just another web development agency in Bangalore. But we are your partners in the journey to success. We listen, understand your goals, and collaborate to create a website that embodies your brand and vision. Our commitment continues after website delivery; we provide support and maintenance to ensure your website remains current and functions seamlessly.',
   ],
   buttonText = 'CONTACT US',
-  buttonLink = '/aboutus',
+  // buttonLink = '/aboutus',
 }) => {
   const { webDevelopmentMain768x587Image, smile1Image } = images;
+  const { togalPopUp } = useContext(PopUpContext);
   return (
     <section className="best-company">
       <div className="best-company-pulse">
@@ -35,7 +37,7 @@ const BestCompanySection = ({
         </div>
 
         <div className="best-company-btn">
-          <Link className="best-company-btn-btn" to={buttonLink}>
+          <Link className="best-company-btn-btn" onClick={()=>togalPopUp(true)}>
             {buttonText}
           </Link>
         </div>

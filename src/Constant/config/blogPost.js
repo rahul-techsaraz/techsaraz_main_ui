@@ -1,4 +1,5 @@
 import { images } from '../images';
+import {blogData} from './blogData'
 
 const {
   technicalWizardryOfOurWebDesignAgencyImage,
@@ -853,14 +854,23 @@ export const blogPosts = [
   // Add more blog posts as needed
 ];
 
-export const blogCategories = [
-  { name: 'Business Solution', link: '/category/business-solution' },
-  { name: 'Content Strategy', link: '/category/content-strategy' },
-  { name: 'Digital Marketing', link: '/category/digital-marketing' },
-  { name: 'Software Design', link: '/category/software-design' },
-  { name: 'Technology', link: '/category/technology' },
-  { name: 'Web Development', link: '/category/web-development' },
-];
+const filterCategorie = ()=>{
+    const categorie = []
+    const categories = blogData.map((data)=>(data.categorie))
+    for(let i = 0; i<categories.length; i++){
+        if(!categorie.includes(categories[i])){
+            if(categories[i]!==''){
+                categorie.push(categories[i])
+            }
+            
+        }
+    }
+    return categorie
+}
+
+export const blogCategories = filterCategorie().map((categorie)=>{
+    return { name: categorie, link: `/category/${categorie.split(' ').join('-').toLowerCase()}` }
+})
 
 export const blogRecentPosts = [
   {

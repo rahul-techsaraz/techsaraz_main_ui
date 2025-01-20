@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
-import Routes from '../../Constant/routes';
+import { PopUpContext } from '../../Context/ToastContext';
 
 const Mission = () => {
+  const { togalPopUp } = useContext(PopUpContext);
   return (
     <section className="our-mission">
       <div className="mission-pulse">
@@ -26,7 +27,7 @@ const Mission = () => {
               Automation
             </h1>
             <div className="our-mission-btn">
-              <Link className="our-mission-btn-btn" to={Routes.CONTACT}>
+              <Link className="our-mission-btn-btn" onClick={()=>togalPopUp(true)}>
                 CONTACT US
               </Link>
             </div>
