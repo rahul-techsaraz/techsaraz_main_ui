@@ -37,12 +37,15 @@ const Header = () => {
     <header className="main-header">
       <nav className={`header-nav ${isMenuOpen ? 'active' : ''}`}>
         <div className="menu-icons" onClick={toggleMenu}>
-          <i className={`fas fa-bars`}></i>
-          <i className={`fas fa-times `}></i>
+          <i className="fas fa-bars" />
+          <i className="fas fa-times" />
         </div>
-        <Link to={HOME} className="header-logo">
-          <img src={LOGO} alt="" />
+
+        {/* Logo */}
+        <Link to={navConfig[0].to} className="header-logo">
+          <img src={LOGO} alt="Tech SaraZ Logo" />
         </Link>
+
         <ul className="nav-list">
           <li>
             <Link to={HOME} className="">
@@ -128,6 +131,7 @@ const Header = () => {
           </li>
         </ul>
 
+        {/* Main Header Button */}
         <div className="header-btn">
           <Link className="header-btn-btn" onClick={()=>togalPopUp(true)}>
             CONTACT US

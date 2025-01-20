@@ -13,7 +13,7 @@ import Popup from './Components/Popup/Popup';
 import { PopUpContext } from './Context/ToastContext';
 
 function App() {
-  const [isPopUp, setIsPopUp] = useState(true)
+  const [isPopUp, setIsPopUp] = useState(true);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
 
@@ -58,7 +58,7 @@ function App() {
     [mouseX, mouseY],
   ); // update depends on mouseX and mouseY
 
-  const togalPopUp = (flag)=> setIsPopUp(flag)
+  const togalPopUp = (flag) => setIsPopUp(flag);
 
   // Set up mousemove event listener and start animation
   useEffect(() => {
@@ -72,20 +72,19 @@ function App() {
       document.removeEventListener('mousemove', setCoords);
     };
   }, [update]); // `update` is now included as a dependency
-
   return (
     <ToastProvider>
-      <PopUpContext.Provider value={{isPopUp, togalPopUp}}>
-      <Popup />
-      <div className="full-section">
-        <div id="mouse-follower" style={{ position: 'fixed' }}></div>
-        <Header />
-        <Outlet />
-        <PortfolioSection portfolios={portfolio} />
-        <ClientSection clients={config.LandingClientConfig.clients} />
-        <BlogSection blogs={config.BlogConfig.blogs} />
-        <Footer />
-      </div>
+      <PopUpContext.Provider value={{ isPopUp, togalPopUp }}>
+        <Popup />
+        <div className="full-section">
+          <div id="mouse-follower" style={{ position: 'fixed' }}></div>
+          <Header />
+          <Outlet />
+          <PortfolioSection portfolios={portfolio} />
+          <ClientSection clients={config.LandingClientConfig.clients} />
+          <BlogSection blogs={config.BlogConfig.blogs} />
+          <Footer />
+        </div>
       </PopUpContext.Provider>
     </ToastProvider>
   );
