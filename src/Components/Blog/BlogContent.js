@@ -62,7 +62,7 @@ BlogPost.propTypes = {
   image: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  comments: PropTypes.string.isRequired,
+  comments: PropTypes.number.isRequired,
   heading: PropTypes.string.isRequired,
   readMoreLink: PropTypes.string.isRequired,
   paragraph: PropTypes.string.isRequired,
