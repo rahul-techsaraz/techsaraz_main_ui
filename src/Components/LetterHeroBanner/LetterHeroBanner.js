@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -21,8 +21,27 @@ const LetterHeroBanner = ({
   linkText,
   linkUrl,
 }) => {
-  const splitText = headingText.split('');
-  console.log(splitText);
+  // const splitText = headingText.split('');
+  // console.log(headingText)
+  // console.log(splitText);
+  const headingTextSpliter = ()=>{
+    const heading = []
+    const splitHeading = headingText.split(' ')
+    if(splitHeading.length < 3){
+      return splitHeading.join(' ')
+    }else if(splitHeading.length == 3){
+      heading.push(splitHeading[0] + ' ' + splitHeading[1])
+      heading.push(splitHeading[2])
+      return heading
+    }else if(splitHeading.length > 3){
+      heading.push(splitHeading[0] + ' ' + splitHeading[1])
+      heading.push(splitHeading[2] + ' ' + splitHeading[3])
+      return heading
+    }
+  }
+  useEffect(()=>{
+    console.log(headingTextSpliter())
+  },[headingText])
   return (
     <div className="web-development-banner">
       {/* Social Media Icons Section */}
@@ -47,15 +66,39 @@ const LetterHeroBanner = ({
       <div className="about-hero-section-text">
         <div className="heading-bounce-animation">
           <h1 className="animation-heading-text">
-            {headingText.split('').map((letter, index) =>
-              letter === ' ' ? (
-                <br key={index} />
-              ) : (
-                <span key={index} className="animation-heading-span">
-                  {letter}
+            {headingText.split(' ').length < 3 &&
+              headingText.split('').map((letter, index) =>
+                letter === ' ' ? (
+                  <br key={index} />
+                ) : (
+                  <span key={index} className="animation-heading-span">
+                    {letter}
+                  </span>
+                )
+              )
+            }
+            {headingText.split(' ').length >= 3 &&
+              headingTextSpliter().map((letter, index)=>
+              letter.split('').map((l,i)=>
+                index === 1 && i===0 ? (
+                <>
+                <br key={i}/>
+                <span key={i} className="animation-heading-span">
+                    {l}
                 </span>
-              ),
-            )}
+                </>
+              ): 
+              l === ' ' ? (
+                <span key={i}>&nbsp;</span>
+              ) :
+              (
+                <span key={i} className="animation-heading-span">
+                    {l}
+                </span>
+              )
+              ))
+            }
+            
           </h1>
         </div>
       </div>

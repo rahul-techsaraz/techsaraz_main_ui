@@ -75,9 +75,10 @@ function App() {
   return (
     <ToastProvider>
       <PopUpContext.Provider value={{ isPopUp, togalPopUp }}>
-        <Popup />
+        
         <div className="full-section">
           <div id="mouse-follower" style={{ position: 'fixed' }}></div>
+          <Popup />
           <Header />
           <Outlet />
           <PortfolioSection portfolios={portfolio} />
