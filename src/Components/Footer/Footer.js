@@ -50,19 +50,19 @@ const Footer = () => {
                 </div>
                 <div className="icon-group">
                   <span className="icon-desin">
-                    <i className="fa-brands fa-facebook-f facebook-icon-style"></i>
+                  <a href="https://www.facebook.com/techsaraz06/" target='blank'><i className="fa-brands fa-facebook-f facebook-icon-style"></i></a>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-instagram youtube-icon-style"></i>
+                  <a href="https://www.youtube.com/@techsaraz" target='blank'><i className="fa-brands fa-instagram youtube-icon-style"></i></a>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-twitter linkdin-icon-style"></i>
+                  <a href="https://www.linkedin.com/company/tech-saraz/" target='blank'><i className="fa-brands fa-twitter linkdin-icon-style"></i></a>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-x-twitter twitter-icon-style"></i>
+                  <a href="https://x.com/TechSaraz" target='blank'><i className="fa-brands fa-x-twitter twitter-icon-style"></i></a>
                   </span>
                   <span className="icon-desin">
-                    <i className="fa-brands fa-linkedin-in instragram-icon-style"></i>
+                  <a href="https://www.instagram.com/techsaraz/" target='blank'><i className="fa-brands fa-linkedin-in instragram-icon-style"></i></a>
                   </span>
                 </div>
               </div>
