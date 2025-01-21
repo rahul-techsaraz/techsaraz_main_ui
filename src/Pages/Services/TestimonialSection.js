@@ -54,6 +54,7 @@ const TestimonialSection = () => {
                           : `${review?.review.slice(0, 100)}...`}
                       </p>
                       <span
+                        className='testimonial-read-more-button'
                         style={{ color: 'white', fontWeight: 500 }}
                         onClick={() => toggleReview(index)}
                       >

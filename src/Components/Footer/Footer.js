@@ -108,12 +108,16 @@ const Footer = () => {
             <div className="footer-box">
               <h3 className="footer-box-menu-heading">Contact Info</h3>
               <div className="phone">
+              <a href='tel:+917760231920' target="blank">
                 <i className="fa-solid fa-phone"></i>
                 <span className="phone-no">+917760231920</span>
+                </a>
               </div>
               <div className="phone">
+                <a href='tel:+919886958347' target="blank">
                 <i className="fa-solid fa-phone"></i>
                 <span className="phone-no">+919886958347</span>
+                </a>
               </div>
               <div className="phone">
                 <i className="fa-solid fa-envelope"></i>
