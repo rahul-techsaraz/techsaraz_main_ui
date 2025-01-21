@@ -175,8 +175,8 @@ const ContactHeroSection = () => {
             <div className="company-details-box-text">
               <h3 className="company-details-box-heading">Call Us Anytime</h3>
               <p className="company-details-box-p">
-                <span className="company-details-box-span">+917760231920</span>
-                <span className="company-details-box-span">+919886958347</span>
+              <a href='tel:+917760231920' target="blank"><span className="company-details-box-span">+917760231920</span></a>
+              <a href='tel:+919886958347' target="blank"><span className="company-details-box-span">+919886958347</span></a>
               </p>
             </div>
           </div>
