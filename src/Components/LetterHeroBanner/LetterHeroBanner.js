@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -39,9 +39,7 @@ const LetterHeroBanner = ({
       return heading
     }
   }
-  useEffect(()=>{
-    console.log(headingTextSpliter())
-  },[headingText])
+  
   return (
     <div className="web-development-banner">
       {/* Social Media Icons Section */}

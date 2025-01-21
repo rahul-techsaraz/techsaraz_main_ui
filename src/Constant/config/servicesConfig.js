@@ -78,6 +78,12 @@ export const serviceContentConfig = [
     ],
     pulseImageSrc: writingImage,
     pulseAltText: 'Writing Pulse',
+    classToggle: {
+      pulse : 'content-writing-page-blog-writing-box-pulse',
+      box : 'content-writing-page-blog-writing-box',
+      heading : 'content-writing-page-blog-writing-box-h1-heading',
+      downBox : 'content-writing-page-blog-writing-box-in-down',
+    }
   },
   {
     id: 2,
@@ -96,6 +102,12 @@ export const serviceContentConfig = [
     ],
     pulseImageSrc: contentwritingImage,
     pulseAltText: 'Content Writing Pulse',
+    classToggle: {
+      pulse : 'content-writing-page-website-content-writing-box-pulse',
+      box : 'content-writing-page-website-content-writing-box',
+      heading : 'content-writing-page-website-content-writing-box-h1-heading',
+      downBox : 'content-writing-page-website-content-writing-box-in-down',
+    }
   },
   {
     id: 3,
@@ -114,6 +126,12 @@ export const serviceContentConfig = [
     ],
     pulseImageSrc: contentMarketing1Image,
     pulseAltText: 'Marketing Pulse',
+    classToggle: {
+      pulse : 'content-writing-page-marketing-material-box-pulse',
+      box : 'content-writing-page-marketing-material-box',
+      heading : 'content-writing-page-marketing-material-box-h1-heading',
+      downBox : 'content-writing-page-marketing-material-box-in-down',
+    }
   },
   {
     id: 4,
@@ -132,6 +150,12 @@ export const serviceContentConfig = [
     ],
     pulseImageSrc: socialMediaManagementImage,
     pulseAltText: 'Social Media Pulse',
+    classToggle: {
+      pulse : 'content-writing-page-social-media-content-box-pulse',
+      box : 'content-writing-page-social-media-content-box',
+      heading : 'content-writing-page-social-media-content-box-h1-heading',
+      downBox : 'content-writing-page-social-media-content-box-in-down',
+    }
   },
 ];
 
@@ -153,6 +177,12 @@ export const serviceGraphicsDesignConfig = [
     ],
     pulseImageSrc: designtoolImage,
     pulseAltText: 'Design Pulse',
+    classToggle: {
+      pulse : 'graphics-design-logo-design-services-box-pulse',
+      box : 'graphics-design-logo-design-services-box',
+      heading : 'graphics-design-logo-design-services-box-h1-heading',
+      downBox : 'graphics-design-logo-design-services-box-in-down',
+    }
   },
   {
     id: 2,
@@ -171,6 +201,12 @@ export const serviceGraphicsDesignConfig = [
     ],
     pulseImageSrc: artImage,
     pulseAltText: 'Art Pulse',
+    classToggle: {
+      pulse : 'graphics-design-web-design-services-box-pulse',
+      box : 'graphics-design-web-design-services-box',
+      heading : 'graphics-design-web-design-services-box-h1-heading',
+      downBox : 'graphics-design-web-design-services-box-in-down',
+    }
   },
   {
     id: 3,
@@ -189,6 +225,12 @@ export const serviceGraphicsDesignConfig = [
     ],
     pulseImageSrc: brandingImage,
     pulseAltText: 'Branding Pulse',
+    classToggle: {
+      pulse : 'graphics-design-advertising-design-services-box-pulse',
+      box : 'graphics-design-advertising-design-services-box',
+      heading : 'graphics-design-advertising-design-services-box-h1-heading',
+      downBox : 'graphics-design-advertising-design-services-box-in-down',
+    }
   },
   {
     id: 4,
@@ -207,6 +249,12 @@ export const serviceGraphicsDesignConfig = [
     ],
     pulseImageSrc: branding1Image,
     pulseAltText: 'Branding Pulse',
+    classToggle: {
+      pulse : 'graphics-design-branding-design-services-box-pulse',
+      box : 'graphics-design-branding-design-services-box',
+      heading : 'graphics-design-branding-design-services-box-h1-heading',
+      downBox : 'graphics-design-branding-design-services-box-in-down',
+    }
   },
   {
     id: 5,
@@ -225,6 +273,12 @@ export const serviceGraphicsDesignConfig = [
     ],
     pulseImageSrc: renameImage,
     pulseAltText: 'Rename Pulse',
+    classToggle: {
+      pulse : 'graphics-design-branding-and-marketing-design-services-box-pulse',
+      box : 'graphics-design-branding-and-marketing-design-services-box',
+      heading : 'graphics-design-branding-and-marketing-design-services-box-h1-heading',
+      downBox : 'graphics-design-branding-and-marketing-design-services-box-in-down',
+    }
   },
 ];
 
@@ -249,6 +303,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: folderImage,
     pulseAltText: 'PHP Pulse',
+    classToggle: {
+      pulse : 'web-development-page-pulse',
+      box : 'web-development-page-php-box',
+      heading : 'web-development-page-php-box-h1-heading',
+      downBox : 'web-development-page-php-box-down-circle',
+    }
   },
   {
     id: 2,
@@ -270,6 +330,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: socialImage,
     pulseAltText: 'WordPress Pulse',
+    classToggle: {
+      pulse : 'web-development-page-wordpress-pulse',
+      box : 'web-development-page-wordpress-box',
+      heading : 'web-development-page-wordpress-box-h1-heading',
+      downBox : 'web-development-page-wordpress-box-down-circle',
+    }
   },
   {
     id: 3,
@@ -289,6 +355,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: shopifyImage,
     pulseAltText: 'Shopify Pulse',
+    classToggle: {
+      pulse : 'web-development-page-shopify-pulse',
+      box : 'web-development-page-shopify-box',
+      heading : 'web-development-page-shopify-box-h1-heading',
+      downBox : 'web-development-page-shopify-box-down-circle',
+    }
   },
   {
     id: 4,
@@ -308,6 +380,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: magentoImage,
     pulseAltText: 'Magento Pulse',
+    classToggle: {
+      pulse : 'web-development-page-magento-pulse',
+      box : 'web-development-page-magento-box',
+      heading : 'web-development-page-magento-box-h1-heading',
+      downBox : 'web-development-page-magento-box-down-circle',
+    }
   },
   {
     id: 5,
@@ -329,6 +407,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: joomlaLogoImage,
     pulseAltText: 'Joomla Pulse',
+    classToggle: {
+      pulse : 'web-development-page-joomla-pulse',
+      box : 'web-development-page-joomla-box',
+      heading : 'web-development-page-joomla-box-h1-heading',
+      downBox : 'web-development-page-joomla-box-down-circle',
+    }
   },
   {
     id: 6,
@@ -348,6 +432,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: atomImage,
     pulseAltText: 'React Pulse',
+    classToggle: {
+      pulse : 'web-development-page-react-pulse',
+      box : 'web-development-page-react-box',
+      heading : 'web-development-page-react-box-h1-heading',
+      downBox : 'web-development-page-react-box-down-circle',
+    }
   },
   {
     id: 7,
@@ -369,6 +459,12 @@ export const technologyServicesConfig = [
     ],
     pulseImageSrc: programingImage,
     pulseAltText: 'Node JS Pulse',
+    classToggle: {
+      pulse : 'web-development-page-node-js-pulse',
+      box : 'web-development-page-node-js-box',
+      heading : 'web-development-page-node-js-box-h1-heading',
+      downBox : 'web-development-page-node-js-box-down-circle',
+    }
   },
 ];
 
@@ -385,6 +481,12 @@ export const webApplicationDevServicesConfig = [
     pulseImageSrc: uiImage,
     pulseAltText: 'Pulse UI Image',
     points: [],
+    classToggle: {
+      pulse : 'web-application-development-mern-stack-development-section-box-pulse',
+      box : 'web-application-development-mern-stack-development-section-box',
+      heading : 'web-application-development-mern-stack-development-section-box-h1-heading',
+      downBox : 'web-application-development-mern-stack-development-section-box-in-down',
+    }
   },
   {
     id: 2,
@@ -398,6 +500,12 @@ export const webApplicationDevServicesConfig = [
     pulseImageSrc: ecommerceImage,
     pulseAltText: 'Pulse E-commerce Image',
     points: [],
+    classToggle: {
+      pulse : 'web-application-development-e-commerce-development-section-box-pulse',
+      box : 'web-application-development-e-commerce-development-section-box',
+      heading : 'web-application-development-e-commerce-development-section-box-h1-heading',
+      downBox : 'web-application-development-e-commerce-development-section-box-in-down',
+    }
   },
   {
     id: 3,
@@ -411,6 +519,12 @@ export const webApplicationDevServicesConfig = [
     pulseImageSrc: applicationImage,
     pulseAltText: 'Pulse Application Image',
     points: [],
+    classToggle: {
+      pulse : 'web-application-development-custom-application-development-section-box-pulse',
+      box : 'web-application-development-custom-application-development-section-box',
+      heading : 'web-application-development-custom-application-development-section-box-h1-heading',
+      downBox : 'web-application-development-custom-application-development-section-box-in-down',
+    }
   },
   {
     id: 4,
@@ -424,6 +538,12 @@ export const webApplicationDevServicesConfig = [
     pulseImageSrc: dashboardImage,
     pulseAltText: 'Pulse Dashboard Image',
     points: [],
+    classToggle: {
+      pulse : 'web-application-development-business-dashboard-and-api-section-box-pulse',
+      box : 'web-application-development-business-dashboard-and-api-section-box',
+      heading : 'web-application-development-business-dashboard-and-api-section-box-h1-heading',
+      downBox : 'web-application-development-business-dashboard-and-api-section-box-in-down',
+    }
   },
   {
     id: 5,
@@ -437,6 +557,12 @@ export const webApplicationDevServicesConfig = [
     pulseImageSrc: onlineBookingImage,
     pulseAltText: 'Pulse Online Booking Image',
     points: [],
+    classToggle: {
+      pulse : 'web-application-development-online-booking-platform-section-box-pulse',
+      box : 'web-application-development-online-booking-platform-section-box',
+      heading : 'web-application-development-online-booking-platform-section-box-h1-heading',
+      downBox : 'web-application-development-online-booking-platform-section-box-in-down',
+    }
   },
   {
     id: 6,
@@ -450,6 +576,12 @@ export const webApplicationDevServicesConfig = [
     pulseImageSrc: designtoolImage,
     pulseAltText: 'Pulse Design Tool Image',
     points: [],
+    classToggle: {
+      pulse : 'web-application-development-full-stack-development-section-box-pulse',
+      box : 'web-application-development-full-stack-development-section-box',
+      heading : 'web-application-development-full-stack-development-section-box-h1-heading',
+      downBox : 'web-application-development-full-stack-development-section-box-in-down',
+    }
   },
 ];
 
@@ -472,6 +604,12 @@ export const ecommerceServicesConfig = [
       'Seamless integration',
       'Optimize your business',
     ],
+    classToggle: {
+      pulse : 'e-commerce-development-page-shopify-e-commerce-development-section-box-pulse',
+      box : 'e-commerce-development-page-shopify-e-commerce-development-section-box',
+      heading : 'e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading',
+      downBox : 'e-commerce-development-page-shopify-e-commerce-development-section-box-in-down',
+    }
   },
   {
     id: 2,
@@ -490,6 +628,12 @@ export const ecommerceServicesConfig = [
       'Multi payment options',
       'Tax calculations',
     ],
+    classToggle: {
+      pulse : 'e-commerce-development-page-woo-commerce-development-section-box-pulse',
+      box : 'e-commerce-development-page-woo-commerce-development-section-box',
+      heading : 'e-commerce-development-page-woo-commerce-development-section-box-h1-heading',
+      downBox : 'e-commerce-development-page-woo-commerce-development-section-box-in-down',
+    }
   },
   {
     id: 3,
@@ -508,6 +652,12 @@ export const ecommerceServicesConfig = [
       'Multiple languages support',
       'Ecommerce development',
     ],
+    classToggle: {
+      pulse : 'e-commerce-development-page-magento-development-section-box-pulse',
+      box : 'e-commerce-development-page-magento-development-section-box',
+      heading : 'e-commerce-development-page-magento-development-section-box-h1-heading',
+      downBox : 'e-commerce-development-page-magento-development-section-box-box-in-down',
+    }
   },
 ];
 
@@ -530,6 +680,12 @@ export const uiuxServicesConfig = [
       'Seamless integration',
       'Optimize your business',
     ],
+    classToggle: {
+      pulse : 'ui-ux-design-page-ux-strategy-section-box-pulse',
+      box : 'ui-ux-design-page-ux-strategy-section-box',
+      heading : 'ui-ux-design-page-ux-strategy-section-box-h1-heading',
+      downBox : 'ui-ux-design-page-ux-strategy-section-box-in-down',
+    }
   },
   {
     id: 2,
@@ -548,6 +704,12 @@ export const uiuxServicesConfig = [
       'Multi payment options',
       'Tax calculations',
     ],
+    classToggle: {
+      pulse : 'ui-ux-design-page-ux-research-section-box-pulse',
+      box : 'ui-ux-design-page-ux-research-section-box',
+      heading : 'ui-ux-design-page-ux-research-section-box-h1-heading',
+      downBox : 'ui-ux-design-page-ux-research-section-box-in-down',
+    }
   },
   {
     id: 3,
@@ -566,6 +728,12 @@ export const uiuxServicesConfig = [
       'Ecommerce development',
       'Optimize your business',
     ],
+    classToggle: {
+      pulse : 'ui-ux-design-page-ui-design-section-box-pulse',
+      box : 'ui-ux-design-page-ui-design-section-box',
+      heading : 'ui-ux-design-page-ui-design-section-box-h1-heading',
+      downBox : 'ui-ux-design-page-ui-design-section-box-in-down',
+    }
   },
   {
     id: 4,
@@ -585,6 +753,12 @@ export const uiuxServicesConfig = [
       'Seamless integration',
       'Optimize your business',
     ],
+    classToggle: {
+      pulse : 'ui-ux-design-page-ux-design-section-box-pulse',
+      box : 'ui-ux-design-page-ux-design-section-box',
+      heading : 'ui-ux-design-page-ux-design-section-box-h1-heading',
+      downBox : 'ui-ux-design-page-ux-design-section-box-in-down',
+    }
   },
   {
     id: 5,
@@ -603,6 +777,12 @@ export const uiuxServicesConfig = [
       'Multi payment options',
       'Tax calculations',
     ],
+    classToggle: {
+      pulse : 'ui-ux-design-page-usability-testing-section-box-pulse',
+      box : 'ui-ux-design-page-usability-testing-section-box',
+      heading : 'ui-ux-design-page-usability-testing-section-box-h1-heading',
+      downBox : 'ui-ux-design-page-usability-testing-section-box-in-down',
+    }
   },
 ];
 
@@ -625,6 +805,12 @@ export const digitalMarketingServicesConfig = [
       'Seamless integration',
       'Optimize your business',
     ],
+    classToggle: {
+      pulse : 'digital-marketing-seo-services-pulse',
+      box : 'digital-marketing-seo-services-box',
+      heading : 'digital-marketing-seo-services-box-h1-heading',
+      downBox : 'digital-marketing-seo-services-box-in-down',
+    }
   },
   {
     id: 2,
@@ -643,5 +829,11 @@ export const digitalMarketingServicesConfig = [
       'Multi payment options',
       'Tax calculations',
     ],
+    classToggle: {
+      pulse : 'digital-marketing-page-social-media-marketing-pulse',
+      box : 'digital-marketing-page-social-media-marketing-box',
+      heading : 'digital-marketing-page-social-media-marketing-box-h1-heading',
+      downBox : 'digital-marketing-page-social-media-marketing-box-in-down',
+    }
   },
 ];

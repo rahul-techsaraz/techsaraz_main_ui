@@ -11,7 +11,7 @@ const AboutUs = () => {
   const { togalPopUp } = useContext(PopUpContext);
   return (
     <>
-      <ServicesHeroSection />
+      <ServicesHeroSection heading={'about us'}/>
 
       <section className="about-company">
         <div className="about-company-pulse about-page-company-pulse">
