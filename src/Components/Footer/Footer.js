@@ -1,16 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import '../../style/home-media.css';
 import LOGO from '../../images/Tech-SaraZ-logo-300x99.webp';
 import { Link } from 'react-router-dom';
 import Routes from '../../Constant/routes';
-import { PopUpContext } from '../../Context/ToastContext';
 
 const Footer = () => {
-  const { HOME, ABOUT_US, BLOG, SERVICES } = Routes;
+  const { HOME, ABOUT_US, BLOG, SERVICES, CONTACT } = Routes;
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const { togalPopUp } = useContext(PopUpContext);
   
-
   // This function handles the scroll logic
   const handleScroll = () => {
     if (
@@ -88,7 +85,7 @@ const Footer = () => {
                     <Link to={BLOG}>Blog</Link>
                   </li>
                   <li>
-                    <Link onClick={()=>togalPopUp(true)}>Contact</Link>
+                    <Link to={CONTACT}>Contact</Link>
                   </li>
                 </ul>
               </div>

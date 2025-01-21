@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Routes from '../../Constant/routes';
+import PropTypes from 'prop-types';
 
-const ServicesHeroSection = () => {
+const ServicesHeroSection = ({heading}) => {
   return (
     <div className="services-hero-section">
       <div className="hro">
         <div className="textBox">
-          <h1 className="section-tectbox-h1">services</h1>
+          <h1 className="section-tectbox-h1">{heading}</h1>
         </div>
         <div className="about-us-text-p">
           <p className="about-text-p1">
@@ -348,6 +349,10 @@ const ServicesHeroSection = () => {
       </div>
     </div>
   );
+};
+
+ServicesHeroSection.propTypes = {
+  heading : PropTypes.string.isRequired,
 };
 
 export default ServicesHeroSection;
