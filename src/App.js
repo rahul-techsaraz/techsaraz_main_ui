@@ -13,6 +13,7 @@ import Popup from './Components/Popup/Popup';
 import { PopUpContext } from './Context/ToastContext';
 import TagManager from 'react-gtm-module'
 import { useSetTitle } from './Hooks/useSetTitle';
+import WhatsUp from './Pages/LandingPages/WhatsUp';
 
 const tagManagerArgs = {
   gtmId: process.env.REACT_APP_GMT_ID,
@@ -102,6 +103,7 @@ function App() {
           <Popup />
           <Header />
           <Outlet />
+          <WhatsUp />
           {location.pathname !== "/blog" &&
           <>
           <PortfolioSection portfolios={portfolio} />

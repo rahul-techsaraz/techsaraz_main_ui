@@ -42,6 +42,12 @@ export const useSetTitle = () => {
             case '/services/graphics-design':
               document.querySelector('title').textContent = 'Graphics Design';
               break;
+            case '/blog':
+              document.querySelector('title').textContent = 'Blog';
+              break;
+            case '/contact':
+              document.querySelector('title').textContent = 'Contact';
+              break;
             // default:
             //   toastTypeClass = 'info'; // Default to info if no type is passed
           }

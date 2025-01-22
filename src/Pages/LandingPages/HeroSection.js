@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { constants } from '../../Constant/constants';
 // import Routes from '../../Constant/routes';
 import { PopUpContext } from '../../Context/ToastContext';
-import whatsappicon from '../../images/whatsapp-button-image.png'
 
 const HeroSection = () => {
   const {togalPopUp} = useContext(PopUpContext)
@@ -69,11 +68,6 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <Link to='https://wa.me/+917760231920' target='blank'>
-      <div className='whatsapp-button'>
-        <img src={whatsappicon} alt='whatsapp-icon'/>
-      </div>
-      </Link>
     </section>
   );
 };
