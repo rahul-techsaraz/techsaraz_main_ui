@@ -36,6 +36,7 @@ const ContentWriting = () => {
             pulseImageSrc={section.pulseImageSrc}
             pulseAltText={section.pulseAltText}
             imageSide={section.id % 2 === 0 ? 'right' : 'left'}
+            classesToToggle={section.classToggle}
           />
         ))}
       </div>

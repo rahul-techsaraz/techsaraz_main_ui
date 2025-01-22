@@ -657,7 +657,18 @@ header.sticky li a {
   height: 45px;
   color: #000000;
 }
-
+.whatsapp-button{
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  /* background:#25d366; */
+  z-index: 999999;
+  border: 1px solid #25d366;
+  /* border-radius: 50px; */
+  /* box-shadow: 2px 4px 8px #9796f0; */
+}
 .banner-btn-btn .banner-btn {
   color: black;
   min-height: 40px;
@@ -2369,21 +2380,25 @@ style attribute {
   animation-duration: 30s;
   animation-iteration-count: infinite;
 }
-.item1-img {
+.item1-img, .item2-img, .item3-img, .item4-img, .item5-img, .item6-img, .item7-img, .item8-img, .item9-img, .item10-img, .item11-img, .item12-img, .item13-img, .item14-img, .item15-img, .item16-img, .item17-img, .item18-img, .item19-img, .item20-img, .item21-img, .item22-img, .item23-img {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item1-img-img {
-  width: 140px;
+  width: 90%;
   /* filter: contrast(0%); */
   opacity: 1;
+  max-height: 90px;
 }
 .itemLeft {
-  left: max(calc(200px * 8), 100%);
+  left: max(calc(200px * 22), 100%);
   animation-name: scrollLeft;
 }
 
 .itemRight {
-  right: max(calc(200px * 8), calc(100% + 200px));
+  right: max(calc(200px * 22), calc(100% + 200px));
   animation-name: scrollRight;
 }
 
@@ -2391,56 +2406,141 @@ style attribute {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(30s / 22 * (22 - 1) * -1);
 }
 
 .item2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(30s / 22 * (22 - 2) * -1);
 }
 
 .item3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(30s / 22 * (22 - 3) * -1);
 }
 
 .item4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(30s / 22 * (22 - 4) * -1);
 }
 
 .item5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(30s / 22 * (22 - 5) * -1);
 }
 
 .item6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(30s / 22 * (22 - 6) * -1);
 }
 
 .item7 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  animation-delay: calc(30s / 22 * (22 - 7) * -1);
 }
 
 .item8 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  animation-delay: calc(30s / 22 * (22 - 8) * -1);
+}
+
+.item9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 9) * -1);
+}
+.item10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 10) * -1);
+}
+.item11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 11) * -1);
+}
+.item12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 12) * -1);
+}
+.item13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 13) * -1);
+}
+.item14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 14) * -1);
+}
+.item15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 15) * -1);
+}
+.item16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 16) * -1);
+}
+.item17 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 17) * -1);
+}
+.item18 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 18) * -1);
+}
+.item19 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 19) * -1);
+}
+.item20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 20) * -1);
+}
+.item21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 21) * -1);
+}
+.item22 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: calc(30s / 22 * (22 - 22) * -1);
 }
 
 /* our client end */
@@ -2770,6 +2870,10 @@ footer {
   padding-left: 5px;
   font-size: 17px;
   font-weight: 600;
+  color: #000000;
+}
+.phone i{
+  color: #000000;
 }
 
 .icon-desin i {
@@ -2781,6 +2885,7 @@ footer {
   line-height: 45px;
   border-radius: 50%;
   margin: 0 0px 2px 0;
+  cursor: pointer;
 }
 .icon-group{
   display: flex;
@@ -8284,7 +8389,7 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 50px;
   padding-bottom: 30px;
-  text-align: center;
+  /* text-align: center; */
 }
 .in-bangalore-box:hover .in-bangalore-h1 {
   color: #fa553c;
@@ -8382,13 +8487,12 @@ padding: 0 20px;
 .in-bangalore2-pulse img {
   width: 35px;
 }
-.in-bangalore2-box:hover {
+/* .in-bangalore2-box:hover {
   border: 1px solid #72a5f7;
   transition: 0.1s ease-in-out;
   border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
   background-color: #11151c;
-}
+} */
 .in-bangalore2-wraper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8445,11 +8549,11 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 50px;
   padding-bottom: 30px;
-  text-align: center;
+  /* text-align: center; */
 }
-.in-bangalore2-box:hover .in-bangalore2-h1 {
+/* .in-bangalore2-box:hover .in-bangalore2-h1 {
   color: #72a5f7;
-}
+} */
 .in-bangalore2-p {
   color: #c4cfde;
   font-size: 17px;
@@ -12879,7 +12983,7 @@ svg {
   animation-timing-function: linear;
 }
 
-@-webkit-keyframes paper-plane-scoping {
+@keyframes paper-plane-scoping {
   0% {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -12901,7 +13005,7 @@ svg {
   -moz-animation: paper-plane-soaring 4s forwards infinite;
   animation: paper-plane-soaring 4s forwards infinite;
 }
-@-webkit-keyframes paper-plane-soaring {
+@keyframes paper-plane-soaring {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -13031,7 +13135,7 @@ svg {
   animation-duration: 20.5s;
 }
 
-@-webkit-keyframes cloud-movement {
+@keyframes cloud-movement {
   0% {
     opacity: 0.1;
     -webkit-transform: translateX(300px);
@@ -13197,7 +13301,7 @@ svg {
 }
 .contact-fill-up-in-box-fillup-wraper23 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-top: 40px;
 }
@@ -13248,8 +13352,20 @@ svg {
   font-weight: 700;
   font-size: 18px;
   outline: #821248;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #11151c;
+}
+#contact-fill-up-in-box-fillup-services-input-child-box{
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  outline: #821248;
+  margin-bottom: 20px;
+  color: #6b6e74;
 }
 #contact-fill-up-in-box-fillup-textarea {
   width: 100%;
@@ -14145,7 +14261,7 @@ svg {
 
 /* all new name css start */
 
-/* web development css page start */
+/* ----------------------------------WEB DEVELOPMENT PAGE CSS START ------------------------------------ */
 
 .web-development-page-intro-section {
   width: 100%;
@@ -14154,7 +14270,6 @@ svg {
   border: 1px solid #000000;
   border-radius: 20px;
   position: relative;
-  overflow: hidden;
   background-size: cover;
 }
 .web-development-page-intro-section:hover {
@@ -14170,11 +14285,13 @@ svg {
   background-size: cover;
     border: 1px solid #000;
     border-radius: 20px;
-    overflow: hidden;
     padding: 50px;
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-php-box:hover{
+  border: 1px solid #652ac9;
 }
 .web-development-page-php-box-h1-heading{
     color: #c4cfde;
@@ -14249,11 +14366,13 @@ svg {
   background-size: cover;
     border: 1px solid #000;
     border-radius: 20px;
-    overflow: hidden;
     padding: 50px;
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-wordpress-box:hover{
+  border: 1px solid #72a5f7;
 }
 .web-development-page-wordpress-box-h1-heading{
     color: #c4cfde;
@@ -14328,11 +14447,13 @@ svg {
   background-size: cover;
     border: 1px solid #000;
     border-radius: 20px;
-    overflow: hidden;
     padding: 50px;
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-shopify-box:hover{
+  border: 1px solid #b110c9;
 }
 .web-development-page-shopify-box-h1-heading{
     color:#c4cfde;
@@ -14407,11 +14528,13 @@ svg {
   background-size: cover;
     border: 1px solid #000;
     border-radius: 20px;
-    overflow: hidden;
     padding: 50px;
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-magento-box:hover{
+  border: 1px solid #c91045;
 }
 .web-development-page-magento-box-h1-heading{
     color:#c4cfde;
@@ -14474,9 +14597,8 @@ svg {
     flex-wrap: wrap;
 }
 .web-development-page-magento-box:hover .web-development-page-magento-box-down-circle{
-  background-color: #b110c9;
+  background-color: #c91045;
     box-shadow: 7px 10px 10px #000000;
-    color: #c91045;
 }
 
 
@@ -14487,11 +14609,13 @@ svg {
   background-size: cover;
     border: 1px solid #000;
     border-radius: 20px;
-    overflow: hidden;
     padding: 50px;
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-joomla-box:hover{
+  border: 1px solid #0bb84a;
 }
 .web-development-page-joomla-box-h1-heading{
     color:#c4cfde;
@@ -14554,10 +14678,2386 @@ svg {
     flex-wrap: wrap;
 }
 .web-development-page-joomla-box:hover .web-development-page-joomla-box-down-circle{
-  background-color: #b110c9;
+  background-color: #0bb84a;
     box-shadow: 7px 10px 10px #000000;
-    color: #c91045;
 }
+
+
+
+/* web development react box start */
+
+.web-development-page-react-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-react-box:hover{
+  border: 1px solid #72a5f7;
+}
+.web-development-page-react-box-h1-heading{
+    color:#c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-react-box:hover .web-development-page-react-box-h1-heading{
+    color: #72a5f7;
+}
+.web-development-page-react-pulse img{
+  width: 40px;
+}
+.web-development-page-react-pulse{
+  height: 75px;
+  width: 75px;
+  background: #043583;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #72a5f7;
+}
+.web-development-page-react-pulse:before,
+.web-development-page-react-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#72a5f7;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-react-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-react-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-react-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-react-box:hover .web-development-page-react-box-down-circle{
+  background-color:#72a5f7;
+    box-shadow: 7px 10px 10px #000000;
+}
+
+
+
+/* web development node js box start */
+
+.web-development-page-node-js-box{
+  background-size: cover;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+    transition: .1s ease-in-out;
+    width: 100%;
+}
+.web-development-page-node-js-box:hover{
+  border: 1px solid #652ac9;
+}
+.web-development-page-node-js-box-h1-heading{
+    color:#c4cfde;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.web-development-page-node-js-box:hover .web-development-page-node-js-box-h1-heading{
+    color: #652ac9;
+}
+.web-development-page-node-js-pulse img{
+  width: 40px;
+}
+.web-development-page-node-js-pulse{
+  height: 75px;
+  width: 75px;
+  background: #2f0579;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #652ac9;
+}
+.web-development-page-node-js-pulse:before,
+.web-development-page-node-js-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#652ac9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-development-page-node-js-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-development-page-node-js-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+.web-development-page-node-js-box-down-circle{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web-development-page-node-js-box:hover .web-development-page-node-js-box-down-circle{
+  background-color:#652ac9;
+    box-shadow: 7px 10px 10px #000000;
+}
+
+
+/* ----------------------------------WEB DEVELOPMENT PAGE CSS END ------------------------------------ */
+
+
+/* --------------------------- DIGITAL MARKETING PAGE START --------------------*/
+
+/* INTRO SECTION START */
+
+.digital-marketing-page-intro-section{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+  background-size: cover;
+}
+.digital-marketing-page-intro-section:hover{
+  border: 1px solid #2a38c9;
+  transition: 0.1s ease-in-out;
+  border-radius: 20px;
+  background-color: #11151c;
+}
+.digital-marketing-page-intro-section-pulse img{
+  width: 40px;
+}
+.digital-marketing-page-intro-section-pulse{
+  height: 75px;
+  width: 75px;
+  background: #2f0579;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #2a38c9;
+}
+.digital-marketing-page-intro-section-pulse:before,
+.digital-marketing-page-intro-section-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#2a38c9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.digital-marketing-page-intro-section-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.digital-marketing-page-intro-section-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* INTRO SECTION END */
+
+
+/* DIGITAL MARKETING TECH SARAZ APART START */
+
+.digital-marketing-tech-saraz-apart-box{
+  width: 100%;
+  padding: 70px 100px;
+  background-color: #000;
+  position: relative;
+}
+.digital-marketing-tech-saraz-apart-box:hover{
+  border: 1px solid #deb25f;
+  transition: 0.1s ease-in-out;
+  border-radius: 20px;
+  background-color: #11151c;
+}
+.digital-marketing-tech-saraz-apart-box-h1-heading{
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 20px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #c4cfde;
+}
+.digital-marketing-tech-saraz-apart-box-h1-heading:hover{
+  color: #deb25f;
+}
+
+/* DIGITAL MARKETING TECH SARAZ APART END */
+
+/* DIGITAL MARKETING page SEO Services in Bangalore section start */
+
+.digital-marketing-seo-services-box{
+  width: 100%;
+    padding: 50px;
+    transition: 0.1s ease-in-out;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: relative;
+}
+.digital-marketing-seo-services-box:hover{
+  border: 1px solid #b110c9;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.digital-marketing-seo-services-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align:left;
+}
+.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-h1-heading{
+  color: #b110c9;
+}
+.digital-marketing-seo-services-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-in-down{
+  background-color: #b110c9;
+}
+.digital-marketing-seo-services-pulse img{
+  width: 40px;
+}
+.digital-marketing-seo-services-pulse{
+  height: 75px;
+  width: 75px;
+  background: #51025e;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #b110c9;
+}
+.digital-marketing-seo-services-pulse:before,
+.digital-marketing-seo-services-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#b110c9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.digital-marketing-seo-services-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.digital-marketing-seo-services-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* DIGITAL MARKETING page SEO Services in Bangalore section end */
+
+
+
+/* DIGITAL MARKETING page Social Media Marketing Services section start */
+
+.digital-marketing-page-social-media-marketing-box{
+  width: 100%;
+    padding: 50px;
+    transition: 0.1s ease-in-out;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: relative;
+}
+.digital-marketing-page-social-media-marketing-box:hover{
+  border: 1px solid #c91045;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.digital-marketing-page-social-media-marketing-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-h1-heading{
+  color: #c91045;
+}
+.digital-marketing-page-social-media-marketing-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-in-down{
+  background-color: #c91045;
+}
+.in-bangalore2-down-box-i{
+  display: flex;
+}
+.digital-marketing-page-social-media-marketing-pulse img{
+  width: 40px;
+}
+.digital-marketing-page-social-media-marketing-pulse{
+  height: 75px;
+  width: 75px;
+  background: #680420;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #c91045;
+}
+.digital-marketing-page-social-media-marketing-pulse:before,
+.digital-marketing-page-social-media-marketing-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#c91045;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.digital-marketing-page-social-media-marketing-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.digital-marketing-page-social-media-marketing-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* DIGITAL MARKETING page Social Media Marketing Services section end */
+
+
+/* DIGITAL MARKETING services  box  start*/
+
+.digital-marketing-page-services-box{
+  border: 1px solid #000000;
+}
+.digital-marketing-page-services-box{
+  border: 1px solid #1451d4;
+}
+.digital-marketing-page-services-box-h1-heading{
+  color: #c4cfde;
+}
+.digital-marketing-page-services-box-h1-heading:hover{
+  color: #1451d4;
+}
+
+/* DIGITAL MARKETING services  box  end*/
+
+/* --------------------------- DIGITAL MARKETING PAGE END --------------------*/
+
+
+/* --------------------------- CONTENT WRITING PAGE START --------------------*/
+
+/* Blog Writing Services Bangalore section start */
+
+.content-writing-page-blog-writing-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.content-writing-page-blog-writing-box:hover{
+  border: 1px solid #2a3fc9;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.content-writing-page-blog-writing-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.content-writing-page-blog-writing-box:hover .content-writing-page-blog-writing-box-h1-heading{
+  color: #2a3fc9;
+}
+.content-writing-page-blog-writing-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content-writing-page-blog-writing-box:hover .content-writing-page-blog-writing-box-in-down{
+  background-color: #2a3fc9;
+}
+.content-writing-page-blog-writing-box-pulse img{
+  width: 40px;
+}
+.content-writing-page-blog-writing-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #0a1a85;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #2a3fc9;
+}
+.content-writing-page-blog-writing-box-pulse:before,
+.content-writing-page-blog-writing-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#2a3fc9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.content-writing-page-blog-writing-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.content-writing-page-blog-writing-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* Blog Writing Services Bangalore section end */
+
+
+/* Website Content Writing section start */
+
+.content-writing-page-website-content-writing-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.content-writing-page-website-content-writing-box:hover{
+  border: 1px solid #72a5f7;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+}
+.content-writing-page-website-content-writing-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.content-writing-page-website-content-writing-box:hover .content-writing-page-website-content-writing-box-h1-heading{
+  color: #72a5f7;
+}
+.content-writing-page-website-content-writing-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content-writing-page-website-content-writing-box:hover .content-writing-page-website-content-writing-box-in-down{
+  background-color: #72a5f7;
+}
+.content-writing-page-website-content-writing-box-pulse img{
+  width: 40px;
+}
+.content-writing-page-website-content-writing-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #1c4993;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #72a5f7;
+}
+.content-writing-page-website-content-writing-box-pulse:before,
+.content-writing-page-website-content-writing-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #72a5f7;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.content-writing-page-website-content-writing-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.content-writing-page-website-content-writing-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* Website Content Writing section end */
+
+/* content writing page -marketing-material section start */
+
+.content-writing-page-marketing-material-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.content-writing-page-marketing-material-box:hover{
+  border: 1px solid #a2b6e1;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+}
+.content-writing-page-marketing-material-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.content-writing-page-marketing-material-box:hover .content-writing-page-marketing-material-box-h1-heading{
+  color:#a2b6e1;
+}
+.content-writing-page-marketing-material-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content-writing-page-marketing-material-box:hover .content-writing-page-marketing-material-box-in-down{
+  background-color: #a2b6e1;
+}
+.content-writing-page-marketing-material-box-pulse img{
+  width: 40px;
+}
+.content-writing-page-marketing-material-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #465381;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #a2b6e1;
+}
+.content-writing-page-marketing-material-box-pulse:before,
+.content-writing-page-marketing-material-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #a2b6e1;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.content-writing-page-marketing-material-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.content-writing-page-marketing-material-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* content writing page marketing-material section end */
+
+
+/* content writing page social media content section start */
+
+.content-writing-page-social-media-content-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.content-writing-page-social-media-content-box:hover{
+  border: 1px solid #d97390;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.content-writing-page-social-media-content-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.content-writing-page-social-media-content-box:hover .content-writing-page-social-media-content-box-h1-heading{
+  color:#d97390;
+}
+.content-writing-page-social-media-content-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content-writing-page-social-media-content-box:hover .content-writing-page-social-media-content-box-in-down{
+  background-color: #d97390;
+}
+.content-writing-page-social-media-content-box-pulse img{
+  width: 40px;
+}
+.content-writing-page-social-media-content-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #a73656;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #d97390;
+}
+.content-writing-page-social-media-content-box-pulse:before,
+.content-writing-page-social-media-content-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #d97390;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.content-writing-page-social-media-content-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.content-writing-page-social-media-content-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* content writing page social marketing content section end */
+
+/* --------------------------- CONTENT WRITING PAGE END --------------------*/
+
+
+/* ------------------------- GRAPHICS DESIGN PAGE START -------------------------------  */
+
+/*  GRAPHICS DESIGN PAGE LOGO DESIGN SERVICES section start */
+
+.graphics-design-logo-design-services-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.graphics-design-logo-design-services-box:hover{
+  border: 1px solid #dbb300;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.graphics-design-logo-design-services-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.graphics-design-logo-design-services-box:hover .graphics-design-logo-design-services-box-h1-heading{
+  color:#dbb300;
+}
+.graphics-design-logo-design-services-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.graphics-design-logo-design-services-box:hover .graphics-design-logo-design-services-box-in-down{
+  background-color: #dbb300;
+}
+.graphics-design-logo-design-services-box-pulse img{
+  width: 40px;
+}
+.graphics-design-logo-design-services-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #ab8c05;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #dbb300;
+}
+.graphics-design-logo-design-services-box-pulse:before,
+.graphics-design-logo-design-services-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #dbb300;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.graphics-design-logo-design-services-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.graphics-design-logo-design-services-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* GRAPHICS DESIGN page LOGO DESIGN section end */
+
+/*  GRAPHICS DESIGN PAGE WEB DESIGN SERVICES section start */
+
+.graphics-design-web-design-services-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.graphics-design-web-design-services-box:hover{
+  border: 1px solid #6a34c5;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.graphics-design-web-design-services-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.graphics-design-web-design-services-box:hover .graphics-design-web-design-services-box-h1-heading{
+  color:#6a34c5;
+}
+.graphics-design-web-design-services-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.graphics-design-web-design-services-box:hover .graphics-design-web-design-services-box-in-down{
+  background-color: #6a34c5;
+}
+.graphics-design-web-design-services-box-pulse img{
+  width: 40px;
+}
+.graphics-design-web-design-services-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #350783;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #6a34c5;
+}
+.graphics-design-web-design-services-box-pulse:before,
+.graphics-design-web-design-services-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #6a34c5;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.graphics-design-web-design-services-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.graphics-design-web-design-services-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* GRAPHICS DESIGN PAGE WEB DESIGN SERVICES section end*/
+
+/*  GRAPHICS DESIGN PAGE Advertising DESIGN SERVICES section start */
+
+.graphics-design-advertising-design-services-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.graphics-design-advertising-design-services-box:hover{
+  border: 1px solid #0349e1;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.graphics-design-advertising-design-services-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.graphics-design-advertising-design-services-box:hover .graphics-design-advertising-design-services-box-h1-heading{
+  color:#0349e1;
+}
+.graphics-design-advertising-design-services-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.graphics-design-advertising-design-services-box:hover .graphics-design-advertising-design-services-box-in-down{
+  background-color: #0349e1;
+}
+.graphics-design-advertising-design-services-box-pulse img{
+  width: 40px;
+}
+.graphics-design-advertising-design-services-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #073495;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #0349e1;
+}
+.graphics-design-advertising-design-services-box-pulse:before,
+.graphics-design-advertising-design-services-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #0349e1;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.graphics-design-advertising-design-services-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.graphics-design-advertising-design-services-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* GRAPHICS DESIGN PAGE Advertising DESIGN SERVICES section end*/
+
+/*  GRAPHICS DESIGN PAGE branding DESIGN SERVICES section start */
+
+.graphics-design-branding-design-services-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.graphics-design-branding-design-services-box:hover{
+  border: 1px solid #002eff;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.graphics-design-branding-design-services-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.graphics-design-branding-design-services-box:hover .graphics-design-branding-design-services-box-h1-heading{
+  color:#002eff;
+}
+.graphics-design-branding-design-services-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.graphics-design-branding-design-services-box:hover .graphics-design-branding-design-services-box-in-down{
+  background-color: #0349e1;
+}
+.graphics-design-branding-design-services-box-pulse img{
+  width: 40px;
+}
+.graphics-design-branding-design-services-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #041d8f;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #002eff;
+}
+.graphics-design-branding-design-services-box-pulse:before,
+.graphics-design-branding-design-services-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #002eff;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.graphics-design-branding-design-services-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.graphics-design-branding-design-services-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* GRAPHICS DESIGN PAGE BRANDING DESIGN SERVICES section end*/
+
+/*  GRAPHICS DESIGN PAGE branding & MARKETING DESIGN SERVICES section start */
+
+.graphics-design-branding-and-marketing-design-services-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.graphics-design-branding-and-marketing-design-services-box:hover{
+  border: 1px solid #6277d9;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.graphics-design-branding-and-marketing-design-services-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.graphics-design-branding-and-marketing-design-services-box:hover .graphics-design-branding-and-marketing-design-services-box-h1-heading{
+  color:#6277d9;
+}
+.graphics-design-branding-and-marketing-design-services-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.graphics-design-branding-and-marketing-design-services-box:hover .graphics-design-branding-and-marketing-design-services-box-in-down{
+  background-color: #6277d9;
+}
+.graphics-design-branding-and-marketing-design-services-box-pulse img{
+  width: 40px;
+}
+.graphics-design-branding-and-marketing-design-services-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #041d8f;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #6277d9;
+}
+.graphics-design-branding-and-marketing-design-services-box-pulse:before,
+.graphics-design-branding-and-marketing-design-services-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#6277d9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.graphics-design-branding-and-marketing-design-services-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.graphics-design-branding-and-marketing-design-services-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* GRAPHICS DESIGN PAGE BRANDING & MARKETING DESIGN SERVICES section end*/
+
+/* --------------------------- GRAPHICS DESIGN PAGE END --------------------*/
+
+
+/* --------------------------- WEB APPLICATION DEVELOPMENT PAGE START --------------------*/
+
+/*  web application development MERN stack development section start */
+
+.web-application-development-mern-stack-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.web-application-development-mern-stack-development-section-box:hover{
+  border: 1px solid #fa553c;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.web-application-development-mern-stack-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.web-application-development-mern-stack-development-section-box:hover .web-application-development-mern-stack-development-section-box-h1-heading{
+  color:#fa553c;
+}
+.web-application-development-mern-stack-development-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web-application-development-mern-stack-development-section-box-in-down:hover{
+  color: #fa553c;
+}
+.web-application-development-mern-stack-development-section-box-pulse img{
+  width: 40px;
+}
+.web-application-development-mern-stack-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background: #6e1103;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #fa553c;
+}
+.web-application-development-mern-stack-development-section-box-pulse:before,
+.web-application-development-mern-stack-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#fa553c;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-application-development-mern-stack-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-application-development-mern-stack-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* web application development MERN stack development section start end*/
+
+
+/*  web application development page MERN stack development section start */
+
+.web-application-development-e-commerce-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.web-application-development-e-commerce-development-section-box:hover{
+  border: 1px solid #274aed;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.web-application-development-e-commerce-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.web-application-development-e-commerce-development-section-box:hover .web-application-development-e-commerce-development-section-box-h1-heading{
+  color:#274aed;
+}
+.web-application-development-e-commerce-development-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web-application-development-e-commerce-development-section-box-in-down:hover{
+  color: #274aed;
+}
+.web-application-development-e-commerce-development-section-box-pulse img{
+  width: 40px;
+}
+.web-application-development-e-commerce-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#0623a7;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #274aed;
+}
+.web-application-development-e-commerce-development-section-box-pulse:before,
+.web-application-development-e-commerce-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#274aed;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-application-development-e-commerce-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-application-development-e-commerce-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* web application development page e-commerce development section start end*/
+
+
+/*  web application development page CUSTOM APPLICATION development section start */
+
+.web-application-development-custom-application-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.web-application-development-custom-application-development-section-box:hover{
+  border: 1px solid #3659fb;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.web-application-development-custom-application-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.web-application-development-custom-application-development-section-box:hover .web-application-development-custom-application-development-section-box-h1-heading{
+  color:#3659fb;
+}
+.web-application-development-custom-application-development-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web-application-development-custom-application-development-section-box-in-down:hover{
+  color: #3659fb;
+}
+.web-application-development-custom-application-development-section-box-pulse img{
+  width: 40px;
+}
+.web-application-development-custom-application-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#092295;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #3659fb;
+}
+.web-application-development-custom-application-development-section-box-pulse:before,
+.web-application-development-custom-application-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#3659fb;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-application-development-custom-application-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-application-development-custom-application-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* web application development page e-commerce development section start end*/
+
+
+/*  web application development page Business dashboard and API integration development section start */
+
+.web-application-development-business-dashboard-and-api-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.web-application-development-business-dashboard-and-api-section-box:hover{
+  border: 1px solid #3a79e7;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.web-application-development-business-dashboard-and-api-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.web-application-development-business-dashboard-and-api-section-box:hover .web-application-development-business-dashboard-and-api-section-box-h1-heading{
+  color:#3a79e7;
+}
+.web-application-development-business-dashboard-and-api-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web-application-development-business-dashboard-and-api-section-box-in-down:hover{
+  color: #3a79e7;
+}
+.web-application-development-business-dashboard-and-api-section-box-pulse img{
+  width: 40px;
+}
+.web-application-development-business-dashboard-and-api-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#083689;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #3a79e7;
+}
+.web-application-development-business-dashboard-and-api-section-box-pulse:before,
+.web-application-development-business-dashboard-and-api-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#3a79e7;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-application-development-business-dashboard-and-api-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-application-development-business-dashboard-and-api-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* web application development page e-commerce development section start end*/
+
+/*  web application development page online booking platfrom  section start */
+
+.web-application-development-online-booking-platform-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.web-application-development-online-booking-platform-section-box:hover{
+  border: 1px solid #6396f1;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.web-application-development-online-booking-platform-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.web-application-development-online-booking-platform-section-box:hover .web-application-development-online-booking-platform-section-box-h1-heading{
+  color:#6396f1;
+}
+.web-application-development-online-booking-platform-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web-application-development-online-booking-platform-section-box-in-down:hover{
+  color: #3a79e7;
+}
+.web-application-development-online-booking-platform-section-box-pulse img{
+  width: 40px;
+}
+.web-application-development-online-booking-platform-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#17479d;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #6396f1;
+}
+.web-application-development-online-booking-platform-section-box-pulse:before,
+.web-application-development-online-booking-platform-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#6396f1;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-application-development-online-booking-platform-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-application-development-online-booking-platform-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* web application development page Full Stack Development section start end*/
+
+/*  web application development page Full Stack Development  section start */
+
+.web-application-development-full-stack-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.web-application-development-full-stack-development-section-box:hover{
+  border: 1px solid #370fe5;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.web-application-development-full-stack-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.web-application-development-full-stack-development-section-box:hover .web-application-development-full-stack-development-section-box-h1-heading{
+  color:#370fe5;
+}
+.web-application-development-full-stack-development-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.web-application-development-full-stack-development-section-box-in-down:hover{
+  color: #370fe5;
+}
+.web-application-development-full-stack-development-section-box-pulse img{
+  width: 40px;
+}
+.web-application-development-full-stack-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#1f0591;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #370fe5;
+}
+.web-application-development-full-stack-development-section-box-pulse:before,
+.web-application-development-full-stack-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#370fe5;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.web-application-development-full-stack-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.web-application-development-full-stack-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* web application development page Full Stack Development section start end*/
+
+
+
+
+/* --------------------------- WEB APPLICATION DEVELOPMENT PAGE END --------------------*/
+
+
+/* --------------------------- E-COMMERCE DEVELOPMENT PAGE START --------------------*/
+
+
+/* e-commerce-development page Shopify e-commerce Development  section start */
+
+.e-commerce-development-page-shopify-e-commerce-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box:hover{
+  border: 1px solid #2b2aeb;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box:hover .e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading{
+  color:#2b2aeb;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box:hover .e-commerce-development-page-shopify-e-commerce-development-section-box-in-down{
+  background-color: #2b2aeb;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img{
+  width: 40px;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#0d0c8f;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #2b2aeb;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-pulse:before,
+.e-commerce-development-page-shopify-e-commerce-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#2b2aeb;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.e-commerce-development-page-shopify-e-commerce-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/*e-commerce-development page Shopify e-commerce section start end*/
+
+
+/*  e-commerce-development page woo commerce Development  section start */
+
+.e-commerce-development-page-woo-commerce-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.e-commerce-development-page-woo-commerce-development-section-box:hover{
+  border: 1px solid #1e4cc7;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.e-commerce-development-page-woo-commerce-development-section-box:hover .e-commerce-development-page-woo-commerce-development-section-box-h1-heading{
+  color: #1e4cc7;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.e-commerce-development-page-woo-commerce-development-section-box:hover .e-commerce-development-page-woo-commerce-development-section-box-in-down{
+  background-color: #2b2aeb;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-pulse img{
+  width: 40px;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#06277e;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #1e4cc7;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-pulse:before,
+.e-commerce-development-page-woo-commerce-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#1e4cc7;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.e-commerce-development-page-woo-commerce-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* e-commerce-development page woo-commerce Development section start end*/
+
+
+
+/*  e-commerce-development page magento Development  section start */
+
+.e-commerce-development-page-magento-development-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.e-commerce-development-page-magento-development-section-box:hover{
+  border: 1px solid #d70707;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.e-commerce-development-page-magento-development-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.e-commerce-development-page-magento-development-section-box:hover .e-commerce-development-page-magento-development-section-box-h1-heading{
+  color: #d70707;
+}
+.e-commerce-development-page-magento-development-section-box-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.e-commerce-development-page-magento-development-section-box:hover .e-commerce-development-page-magento-development-section-box-box-in-down{
+  background-color: #d70707;
+}
+.e-commerce-development-page-magento-development-section-box-pulse img{
+  width: 40px;
+}
+.e-commerce-development-page-magento-development-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#780404;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #d70707;
+}
+.e-commerce-development-page-magento-development-section-box-pulse:before,
+.e-commerce-development-page-magento-development-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#d70707;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.e-commerce-development-page-magento-development-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.e-commerce-development-page-magento-development-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/* e-commerce-development page MAGENTO Development section start end*/
+
+/* --------------------------- E-COMMERCE DEVELOPMENT PAGE END --------------------*/
+
+
+/* --------------------------- UI UX  DESIGN  PAGE START --------------------*/
+
+/*  UI UX DESIGN  PAGE UX Strategy  section start */
+
+.ui-ux-design-page-ux-strategy-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.ui-ux-design-page-ux-strategy-section-box:hover{
+  border: 1px solid #652ac9;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.ui-ux-design-page-ux-strategy-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.ui-ux-design-page-ux-strategy-section-box:hover .ui-ux-design-page-ux-strategy-section-box-h1-heading{
+  color: #652ac9;
+}
+.ui-ux-design-page-ux-strategy-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ui-ux-design-page-ux-strategy-section-box:hover .ui-ux-design-page-ux-strategy-section-box-in-down{
+  background-color: #652ac9;
+}
+.ui-ux-design-page-ux-strategy-section-box-pulse img{
+  width: 40px;
+}
+.ui-ux-design-page-ux-strategy-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#280564;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #652ac9;
+}
+.ui-ux-design-page-ux-strategy-section-box-pulse:before,
+.ui-ux-design-page-ux-strategy-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#652ac9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.ui-ux-design-page-ux-strategy-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.ui-ux-design-page-ux-strategy-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/*  UI UX DESIGN  PAGE UX Strategy  section end*/
+
+
+/*  UI UX DESIGN  PAGE UX Research section start */
+
+.ui-ux-design-page-ux-research-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.ui-ux-design-page-ux-research-section-box:hover{
+  border: 1px solid #392ac9;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.ui-ux-design-page-ux-research-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.ui-ux-design-page-ux-research-section-box:hover .ui-ux-design-page-ux-research-section-box-h1-heading{
+  color: #392ac9;
+}
+.ui-ux-design-page-ux-research-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ui-ux-design-page-ux-research-section-box:hover .ui-ux-design-page-ux-research-section-box-in-down{
+  background-color: #652ac9;
+}
+.ui-ux-design-page-ux-research-section-box-pulse img{
+  width: 40px;
+}
+.ui-ux-design-page-ux-research-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#12068b;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #392ac9;
+}
+.ui-ux-design-page-ux-research-section-box-pulse:before,
+.ui-ux-design-page-ux-research-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#392ac9;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.ui-ux-design-page-ux-research-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.ui-ux-design-page-ux-research-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/*  UI UX DESIGN  PAGE UX Research  section end*/
+
+
+/*  UI UX DESIGN  PAGE UI Design section start */
+
+.ui-ux-design-page-ui-design-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.ui-ux-design-page-ui-design-section-box:hover{
+  border: 1px solid #038f26;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.ui-ux-design-page-ui-design-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.ui-ux-design-page-ui-design-section-box:hover .ui-ux-design-page-ui-design-section-box-h1-heading{
+  color: #038f26;
+}
+.ui-ux-design-page-ui-design-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ui-ux-design-page-ui-design-section-box:hover .ui-ux-design-page-ui-design-section-box-in-down{
+  background-color: #038f26;
+}
+.ui-ux-design-page-ui-design-section-box-pulse img{
+  width: 40px;
+}
+.ui-ux-design-page-ui-design-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#045418;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #038f26;
+}
+.ui-ux-design-page-ui-design-section-box-pulse:before,
+.ui-ux-design-page-ui-design-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#038f26;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.ui-ux-design-page-ui-design-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.ui-ux-design-page-ui-design-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/*  UI UX DESIGN  PAGE UI Design  section end*/
+
+
+/*  UI UX DESIGN  PAGE UX Design section start */
+
+.ui-ux-design-page-ux-design-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.ui-ux-design-page-ux-design-section-box:hover{
+  border: 1px solid #261cef;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    background-color: #11151c;
+}
+.ui-ux-design-page-ux-design-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.ui-ux-design-page-ux-design-section-box:hover .ui-ux-design-page-ux-design-section-box-h1-heading{
+  color: #261cef;
+}
+.ui-ux-design-page-ux-design-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ui-ux-design-page-ux-design-section-box:hover .ui-ux-design-page-ux-design-section-box-in-down{
+  background-color: #261cef;
+}
+.ui-ux-design-page-ux-design-section-box-pulse img{
+  width: 40px;
+}
+.ui-ux-design-page-ux-design-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#0e06ab;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #261cef;
+}
+.ui-ux-design-page-ux-design-section-box-pulse:before,
+.ui-ux-design-page-ux-design-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#261cef;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.ui-ux-design-page-ux-design-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.ui-ux-design-page-ux-design-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/*  UI UX DESIGN  PAGE UX Design  section end*/
+
+/*  UI UX DESIGN  PAGE Usability Testing section start */
+
+.ui-ux-design-page-usability-testing-section-box{
+  width: 100%;
+  padding: 50px;
+  transition: 0.1s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+.ui-ux-design-page-usability-testing-section-box:hover{
+  border: 1px solid #cf0577;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+}
+.ui-ux-design-page-usability-testing-section-box-h1-heading{
+  color: #c4cfde;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.ui-ux-design-page-usability-testing-section-box:hover .ui-ux-design-page-usability-testing-section-box-h1-heading{
+  color: #cf0577;
+}
+.ui-ux-design-page-usability-testing-section-box-in-down{
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ui-ux-design-page-usability-testing-section-box:hover .ui-ux-design-page-usability-testing-section-box-in-down{
+  background-color: #cf0577;
+}
+.ui-ux-design-page-usability-testing-section-box-pulse img{
+  width: 40px;
+}
+.ui-ux-design-page-usability-testing-section-box-pulse{
+  height: 75px;
+  width: 75px;
+  background:#8b0450;
+  position: absolute;
+  left: 15%;
+  top:33px;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 99;
+  border: 2px solid #cf0577;
+}
+.ui-ux-design-page-usability-testing-section-box-pulse:before,
+.ui-ux-design-page-usability-testing-section-box-pulse:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#cf0577;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.ui-ux-design-page-usability-testing-section-box-pulse:before{
+  animation: pulse 2s ease-out infinite;
+}
+.ui-ux-design-page-usability-testing-section-box-pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+  100%{
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+/*  UI UX DESIGN  PAGE Usability Testing  section end*/
+
+
+
+/* --------------------------- UI UX  DESIGN  PAGE END --------------------*/
+
+
+
 
 /* Pop Up Css */
 
@@ -14569,7 +17069,7 @@ svg {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 99999;
-  background: #80808069;
+  background: #000000a8;
 }
 
 .login-popup .box {
@@ -14638,7 +17138,7 @@ svg {
 }
 .popup-hr{
   width: 40%;
-  border: 1px solid #050557;
+  border: 1px solid #c4cfde;
   margin: 10px 0 30px 0;
 
 }
@@ -14668,12 +17168,12 @@ svg {
   width: 50%;
   padding:20px;
   border: 1px solid #050557;
+  background-color: #000;
 }
 
 .login-popup .box .popup-form .popup-heading {
-  color: #000000;
+  color: #c4cfde;
   font-size: 23px;
-  color: #050557;
 }
 .login-popup .box .popup-form .form-control {
   height: 45px;
@@ -14682,17 +17182,13 @@ svg {
   padding: 0 5px;
   font-size: 15px;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 2px solid #c4cfde;
   box-shadow: 0 2px 5px #555555;
-  background-color: #050557;
+  background-color: #11151c;
   outline: none;
 }
-.form-group
 .login-popup .box .popup-form .form-control:focus {
   outline: none;
-}
-::placeholder{
-  color: #ffffff;
 }
 .login-popup .box .popup-form .pop-up-btn {
   width: 100%;
@@ -14711,20 +17207,25 @@ svg {
 
 .login-popup .box .popup-form .close {
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 0px;
   font-size: 30px;
   cursor: pointer;
   background-color: red;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #w3review {
   width: 100%;
   margin-top: 20px;
   padding: 0 5px;
   outline: none;
-  border: 2px solid #ffffff;
+  border: 2px solid #c4cfde;
   box-shadow: 0 2px 5px #555555;
-  background-color: #050557;
+  background-color: #11151c;
   color: #ffffff;
   outline: none;
   font-size: 15px;
@@ -14734,9 +17235,9 @@ svg {
   width: 100%;
   height: 45px;
   outline: none;
-  border: 2px solid #ffffff;
+  border: 2px solid #c4cfde;
   box-shadow: 0 2px 5px #555555;
-  background-color: #050557;
+  background-color: #11151c;
   color: #ffffff;
   font-size: 15px;
 }
@@ -14753,4 +17254,14 @@ svg {
       flex: 0 0 100%;
       max-width: 100%;
   }
+}
+
+.test-card-body:hover .testimonial-read-more-button{
+  color: #000 !important;
+}
+.whatsapp-button img{
+  width: 100%;
+}
+.company-details-box-span{
+  color: #fff;
 }

@@ -157,7 +157,7 @@ const Header = () => {
         {/* Main Header Button */}
         <div className="header-btn">
           <Link className="header-btn-btn" onClick={() => togalPopUp(true)}>
-            CONTACT US
+            Get a Quote
           </Link>
         </div>
       </nav>

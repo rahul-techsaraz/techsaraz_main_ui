@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../../style/style.css';
 import user1Image from '../../images/user (1).png';
 import service4Image from '../../images/service-4.jpg';
 import ServicesHeroSection from '../../Pages/Services/ServicesHeroSection';
 import WorkSection from '../../Pages/LandingPages/WorkSection';
-import Routes from '../../Constant/routes';
+import { PopUpContext } from '../../Context/ToastContext';
 
 const AboutUs = () => {
-  const { CONTACT } = Routes;
+  const { togalPopUp } = useContext(PopUpContext);
   return (
     <>
-      <ServicesHeroSection />
+      <ServicesHeroSection heading={'about us'}/>
 
       <section className="about-company">
         <div className="about-company-pulse about-page-company-pulse">
@@ -48,7 +48,7 @@ const AboutUs = () => {
                 are in the safest hands.
               </p>
               <div className="about-company-btn">
-                <Link className="about-company-btn-btn" to={CONTACT}>
+                <Link className="about-company-btn-btn" onClick={()=>togalPopUp(true)}>
                   CONTACT US
                 </Link>
               </div>

@@ -116,9 +116,20 @@
   .professional-h1,
   .benefits-h1,
   .creative-work-heading h1,
-  .in-bangalore-h1 {
+  .in-bangalore-h1,
+  .web-development-page-php-box-h1-heading,
+  .web-development-page-wordpress-box-h1-heading,
+  .web-development-page-shopify-box-h1-heading,
+  .web-development-page-magento-box-h1-heading,
+  .web-development-page-joomla-box-h1-heading,
+  .web-development-page-react-box-h1-heading,
+  .web-development-page-node-js-box-h1-heading {
     font-size: 45px;
   }
+  .web-development-page-joomla-box, 
+  .web-development-page-react-box,
+  .web-development-page-magento-box,
+  .web-development-page-node-js-box,
   .service-in-box,
   .in-bangalore2-box,
   .about-in-box,
@@ -146,7 +157,11 @@
   .node-js-box,
   .professional-box,
   .benefits-in-box,
-  .our-client-in-box {
+  .our-client-in-box ,
+  .web-development-page-php-box,
+  .web-development-page-wordpress-box,
+  .web-development-page-shopify-box
+  {
     padding: 45px;
   }
   .benefits-in-box-wraper,
@@ -177,7 +192,14 @@
   .in-bangalore-down-box,
   .in-bangalore3-down-box,
   .in-bangalore4-down-box,
-  .in-bangalore2-down-box {
+  .in-bangalore2-down-box,
+  .web-development-page-php-box-down-circle,
+  .web-development-page-wordpress-box-down-circle,
+  .web-development-page-shopify-box-down-circle,
+  .web-development-page-magento-box-down-circle,
+  .web-development-page-joomla-box-down-circle,
+  .web-development-page-react-box-down-circle,
+  .web-development-page-node-js-box-down-circle {
     font-size: 17px;
     justify-content: center;
     column-gap: 15px;
@@ -508,19 +530,19 @@
     .best-company, .competitor, .work, .contact-fill-up, .company-details, .blog-down-section, .consulation, .about-company, .our-mission, .services, .social-media-marketing, .seo-services-ani-box, .next-project, .social-media-marketing-competitors, .our-ecommerce, .in-bangalore6, .in-bangalore3, .in-bangalore5,.in-bangalore4, .in-bangalore, .in-bangalore2, .service-in, .php, .wordpress, .shopify, .magento, .joomla, .react, .node-js, .professional, .benefits, .creative-work, .our-client{
         padding: 50px;
     }
-    .competitor-h1, .service-in-h1, .testmonial-heading h1, .contact-fill-up-in-box-up-text, .work-h1, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .about-in-box-wraper-textbox-text, .in-bangalore3-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .our-ecommerce-in-box-h1, .social-media-marketing-competitors-h1, .in-bangalore6-h1, .in-bangalore4-h1, .in-bangalore2-h1 ,.php-h1, .wordpress-h1, .in-bangalore-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1{
+    .competitor-h1, .web-development-page-wordpress-box-h1-heading, .web-development-page-shopify-box-h1-heading, .web-development-page-php-box-h1-heading, .service-in-h1, .testmonial-heading h1, .contact-fill-up-in-box-up-text, .work-h1, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .about-in-box-wraper-textbox-text, .in-bangalore3-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .our-ecommerce-in-box-h1, .social-media-marketing-competitors-h1, .in-bangalore6-h1, .in-bangalore4-h1, .in-bangalore2-h1 ,.php-h1, .wordpress-h1, .in-bangalore-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1{
         font-size: 40px;
     }
-    .service-in-box, .competitor-in-box, .next-project-in-box, .consulation-in-box, .work-in-box, .tesimonial-in-box, .seo-services-ani-box-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .benefits-in-box, .in-bangalore5-box, .in-bangalore6-box, .in-bangalore-box, .in-bangalore4-box, .in-bangalore3-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box{
+    .service-in-box, .web-development-page-php-box, .web-development-page-shopify-box, .web-development-page-wordpress-box, .competitor-in-box, .next-project-in-box, .consulation-in-box, .work-in-box, .tesimonial-in-box, .seo-services-ani-box-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .benefits-in-box, .in-bangalore5-box, .in-bangalore6-box, .in-bangalore-box, .in-bangalore4-box, .in-bangalore3-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box{
         padding: 35px;
     }
-    .best-company-pulse, .in-bangalore-pulse, .work-pulse, .about-company-pulse, .about-company-pulse, .blog-pulse, .mission-pulse, .testimonial-pulse, .services-pulse, .in-bangalore5-pulse, .pulse, .social-media-marketing-competitors-pulse, .in-bangalore6-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .in-bangalore2-pulse ,.competitor-pulse, .php-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse{
+    .best-company-pulse, .web-development-page-wordpress-pulse, .web-development-page-shopify-pulse, .web-development-page-pulse, .in-bangalore-pulse, .work-pulse, .about-company-pulse, .about-company-pulse, .blog-pulse, .mission-pulse, .testimonial-pulse, .services-pulse, .in-bangalore5-pulse, .pulse, .social-media-marketing-competitors-pulse, .in-bangalore6-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .in-bangalore2-pulse ,.competitor-pulse, .php-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse{
         height: 65px;
         width: 65px;
         top: 17px;
         left: 10%;
     }
-    .best-company-pulse img , .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
+    .best-company-pulse img , .web-development-page-magento-pulse img, .web-development-page-wordpress-pulse img, .web-development-page-shopify-pulse img, .web-development-page-pulse img, .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
         width: 35px;
     }
     .best-company-p, .service-in-p, .in-bangalore6-p, .in-bangalore5-p, .php-p, .in-bangalore4-p, .in-bangalore3-p, .in-bangalore-p, .in-bangalore2-p, .wordpress-p, .shopify-p, .magento-p, .joomla-p, .react-p, .node-js-p, .professional-p{
@@ -782,7 +804,9 @@
   .company-details-wraper {
     grid-template-columns: 1fr 1fr;
   }
-
+  .our-ecommerce-in-box-wraper-in-box{
+    padding: 30px;
+  }
 }
 
 /* 768px media screen  start */
@@ -977,7 +1001,8 @@
   .node-js-box,
   .professional-box,
   .benefits-in-box,
-  .our-client-in-box {
+  .our-client-in-box,
+  .web-development-page-php-box {
     padding: 30px;
   }
   .down-box,
@@ -988,6 +1013,10 @@
   .in-bangalore5-down-box {
     padding: 10px 20px;
   }
+
+  .service-in-box, .competitor-in-box, .next-project-in-box, .consulation-in-box, .work-in-box, .tesimonial-in-box, .seo-services-ani-box-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .benefits-in-box, .in-bangalore5-box, .in-bangalore6-box, .in-bangalore-box, .in-bangalore4-box, .in-bangalore3-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box {
+    padding: 30px;
+}
   .about-company-in-box-wraper-imgbox {
     height: 400px;
     padding: 20px;
@@ -1063,6 +1092,10 @@
   }
   .best-company-in-box-wraper{
     grid-template-columns: 1fr;
+  }
+  .whatsapp-button{
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -1318,6 +1351,26 @@
   .blog-down-section-leftbox-1stbox-heading{
     font-size: 25px;
   }
+  .astronaut {
+    width: 60%;
+}
+.best-company-in-box-wraper-imgbox img, .about-in-box-wraper-imgbox img, .in-bangalore-imgbox img, .in-bangalore6-imgbox img, .in-bangalore5-imgbox img, .in-bangalore3-imgbox img, .in-bangalore4-imgbox img, .in-bangalore2-imgbox img, .php-imgbox img, .wordpress-imgbox img, .shopify-imgbox img, .magento-imgbox img, .joomla-imgbox img, .react-imgbox img {
+  height: 300px;
+}
+.best-company-in-box-wraper, .php-wraper, .in-bangalore5-wraper, .in-bangalore4-wraper, .in-bangalore3-wraper, .in-bangalore2-wraper, .in-bangalore-wraper, .wordpress-wraper, .shopify-wraper, .magento-wraper, .joomla-wraper, .react-wraper, .node-js-wraper {
+grid-template-columns: 1fr;
+column-gap: 0px;
+  row-gap:0px;
+}
+.about-us-text-p {
+  left: 20px;
+}
+.competitor-h1, .our-client-heading h1, .work-h1, .our-mission-h1, .contact-fill-up-in-box-up-text, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .testmonial-heading h1, .services-h1, .about-in-box-wraper-textbox-text, .our-ecommerce-in-box-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .in-bangalore6-h1, .social-media-marketing-competitors-h1, .in-bangalore-h1, .in-bangalore5-h1, .in-bangalore4-h1, .in-bangalore3-h1, .in-bangalore2-h1, .service-in-h1, .php-h1, .wordpress-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1 {
+  font-size: 30px;
+}
+.our-ecommerce-in-box-wraper-in-box {
+  padding: 20px;
+}
 }
 
 /* 420px mediascreen start */
@@ -1777,6 +1830,7 @@
     height: 45px;
     font-size: 16px;
   }
+
 }
 
 @media screen and (max-width: 376px) {
@@ -1786,6 +1840,9 @@
   .hero_section_layer{
     height: 50%;
   }
+  .competitor-h1, .our-client-heading h1, .work-h1, .our-mission-h1, .contact-fill-up-in-box-up-text, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .testmonial-heading h1, .services-h1, .about-in-box-wraper-textbox-text, .our-ecommerce-in-box-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .in-bangalore6-h1, .social-media-marketing-competitors-h1, .in-bangalore-h1, .in-bangalore5-h1, .in-bangalore4-h1, .in-bangalore3-h1, .in-bangalore2-h1, .service-in-h1, .php-h1, .wordpress-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1 {
+    font-size: 26px;
+}
 }
 
 /* 376px media screen end */

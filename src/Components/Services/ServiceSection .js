@@ -11,6 +11,7 @@ const ServiceSection = ({
   imageSide = 'left', // can be 'left' or 'right'
   pulseImageSrc,
   pulseAltText,
+  classesToToggle,
 }) => {
   const { checkedImage } = images;
 
@@ -19,23 +20,23 @@ const ServiceSection = ({
       <div>
         {imageSide === 'left' && (
           <section className="in-bangalore">
-            <div className="in-bangalore-pulse">
+            <div className={classesToToggle.pulse}>
               <img src={pulseImageSrc} alt={pulseAltText} />
             </div>
-            <div className="in-bangalore-box">
+            <div className={classesToToggle.box}>
               <div className="in-bangalore-wraper">
                 <div className="in-bangalore-imgbox">
                   <img src={imageSrc} alt={altText} />
                 </div>
                 <div className="in-bangalore-textbox">
-                  <h1 className="in-bangalore-h1">{title}</h1>
+                  <h1 className={classesToToggle.heading}>{title}</h1>
                   <p className="in-bangalore-p">{description}</p>
                 </div>
               </div>
 
               {points.length > 0 && (
                 <div className="in-bangalore-down-box-parent">
-                  <div className="in-bangalore-down-box">
+                  <div className={classesToToggle.downBox}>
                     {points.map((text, index) => (
                       <div className="in-bangalore-down-box-i-text" key={index}>
                         <div className="in-bangalore-down-box-i">
@@ -53,13 +54,13 @@ const ServiceSection = ({
 
         {imageSide !== 'left' && (
           <section className="in-bangalore2">
-            <div className="in-bangalore2-pulse">
+            <div className={classesToToggle.pulse}>
               <img src={pulseImageSrc} alt={pulseAltText} />
             </div>
-            <div className="in-bangalore2-box">
+            <div className={classesToToggle.box}>
               <div className="in-bangalore2-wraper">
                 <div className="in-bangalore2-textbox">
-                  <h1 className="in-bangalore2-h1">{title}</h1>
+                  <h1 className={classesToToggle.heading}>{title}</h1>
                   <p className="in-bangalore2-p">{description}</p>
                 </div>
                 <div className="in-bangalore2-imgbox">
@@ -69,7 +70,7 @@ const ServiceSection = ({
 
               {points.length > 0 && (
                 <div className="in-bangalore2-down-box-parent">
-                  <div className="in-bangalore2-down-box">
+                  <div className={classesToToggle.downBox}>
                     {points.map((text, index) => (
                       <div
                         className="in-bangalore2-down-box-i-text"
@@ -103,6 +104,7 @@ ServiceSection.propTypes = {
   imageSide: PropTypes.string,
   pulseImageSrc: PropTypes.string.isRequired,
   pulseAltText: PropTypes.string.isRequired,
+  classesToToggle: PropTypes.object.isRequired,
 };
 
 export default ServiceSection;
