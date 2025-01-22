@@ -2380,13 +2380,17 @@ style attribute {
   animation-duration: 30s;
   animation-iteration-count: infinite;
 }
-.item1-img {
+.item1-img, .item2-img, .item3-img, .item4-img, .item5-img, .item6-img, .item7-img, .item8-img, .item9-img, .item10-img, .item11-img, .item12-img, .item13-img, .item14-img, .item15-img, .item16-img, .item17-img, .item18-img, .item19-img, .item20-img, .item21-img, .item22-img, .item23-img {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item1-img-img {
-  width: 140px;
+  width: 90%;
   /* filter: contrast(0%); */
   opacity: 1;
+  max-height: 90px;
 }
 .itemLeft {
   left: max(calc(200px * 22), 100%);
@@ -13297,7 +13301,7 @@ svg {
 }
 .contact-fill-up-in-box-fillup-wraper23 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-top: 40px;
 }
@@ -13348,8 +13352,20 @@ svg {
   font-weight: 700;
   font-size: 18px;
   outline: #821248;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #11151c;
+}
+#contact-fill-up-in-box-fillup-services-input-child-box{
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  outline: #821248;
+  margin-bottom: 20px;
+  color: #6b6e74;
 }
 #contact-fill-up-in-box-fillup-textarea {
   width: 100%;
@@ -14274,6 +14290,9 @@ svg {
     transition: .1s ease-in-out;
     width: 100%;
 }
+.web-development-page-php-box:hover{
+  border: 1px solid #652ac9;
+}
 .web-development-page-php-box-h1-heading{
     color: #c4cfde;
     font-size: 50px;
@@ -14351,6 +14370,9 @@ svg {
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-wordpress-box:hover{
+  border: 1px solid #72a5f7;
 }
 .web-development-page-wordpress-box-h1-heading{
     color: #c4cfde;
@@ -14430,6 +14452,9 @@ svg {
     transition: .1s ease-in-out;
     width: 100%;
 }
+.web-development-page-shopify-box:hover{
+  border: 1px solid #b110c9;
+}
 .web-development-page-shopify-box-h1-heading{
     color:#c4cfde;
     font-size: 50px;
@@ -14508,6 +14533,9 @@ svg {
     transition: .1s ease-in-out;
     width: 100%;
 }
+.web-development-page-magento-box:hover{
+  border: 1px solid #c91045;
+}
 .web-development-page-magento-box-h1-heading{
     color:#c4cfde;
     font-size: 50px;
@@ -14569,9 +14597,8 @@ svg {
     flex-wrap: wrap;
 }
 .web-development-page-magento-box:hover .web-development-page-magento-box-down-circle{
-  background-color: #b110c9;
+  background-color: #c91045;
     box-shadow: 7px 10px 10px #000000;
-    color: #c91045;
 }
 
 
@@ -14586,6 +14613,9 @@ svg {
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-joomla-box:hover{
+  border: 1px solid #0bb84a;
 }
 .web-development-page-joomla-box-h1-heading{
     color:#c4cfde;
@@ -14648,9 +14678,8 @@ svg {
     flex-wrap: wrap;
 }
 .web-development-page-joomla-box:hover .web-development-page-joomla-box-down-circle{
-  background-color: #b110c9;
+  background-color: #0bb84a;
     box-shadow: 7px 10px 10px #000000;
-    color: #c91045;
 }
 
 
@@ -14665,6 +14694,9 @@ svg {
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-react-box:hover{
+  border: 1px solid #72a5f7;
 }
 .web-development-page-react-box-h1-heading{
     color:#c4cfde;
@@ -14729,7 +14761,6 @@ svg {
 .web-development-page-react-box:hover .web-development-page-react-box-down-circle{
   background-color:#72a5f7;
     box-shadow: 7px 10px 10px #000000;
-    color: #c91045;
 }
 
 
@@ -14744,6 +14775,9 @@ svg {
     position: relative;
     transition: .1s ease-in-out;
     width: 100%;
+}
+.web-development-page-node-js-box:hover{
+  border: 1px solid #652ac9;
 }
 .web-development-page-node-js-box-h1-heading{
     color:#c4cfde;
@@ -14808,7 +14842,6 @@ svg {
 .web-development-page-node-js-box:hover .web-development-page-node-js-box-down-circle{
   background-color:#652ac9;
     box-shadow: 7px 10px 10px #000000;
-    color: #c91045;
 }
 
 
@@ -14930,7 +14963,7 @@ svg {
   padding-bottom: 30px;
   text-align:left;
 }
-.digital-marketing-seo-services-box-h1-heading:hover{
+.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-h1-heading{
   color: #b110c9;
 }
 .digital-marketing-seo-services-box-in-down{
@@ -14943,8 +14976,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.digital-marketing-seo-services-box-in-down:hover{
-  color: #b110c9;
+.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-in-down{
+  background-color: #b110c9;
 }
 .digital-marketing-seo-services-pulse img{
   width: 40px;
@@ -15014,7 +15047,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.digital-marketing-page-social-media-marketing-box-h1-heading:hover{
+.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-h1-heading{
   color: #c91045;
 }
 .digital-marketing-page-social-media-marketing-box-in-down{
@@ -15027,10 +15060,13 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.digital-marketing-page-social-media-marketing-box-in-down:hover{
-  color: #c91045;
+.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-in-down{
+  background-color: #c91045;
 }
-.digital-marketing-page-social-media-marketing img{
+.in-bangalore2-down-box-i{
+  display: flex;
+}
+.digital-marketing-page-social-media-marketing-pulse img{
   width: 40px;
 }
 .digital-marketing-page-social-media-marketing-pulse{
@@ -15119,7 +15155,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.content-writing-page-blog-writing-box-h1-heading:hover{
+.content-writing-page-blog-writing-box:hover .content-writing-page-blog-writing-box-h1-heading{
   color: #2a3fc9;
 }
 .content-writing-page-blog-writing-box-in-down{
@@ -15132,91 +15168,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content-writing-page-blog-writing-box-in-down:hover{
-  color: #2a3fc9;
-}
-.content-writing-page-blog-writing-box-pulse img{
-  width: 40px;
-}
-.content-writing-page-blog-writing-box-pulse{
-  height: 75px;
-  width: 75px;
-  background: #0a1a85;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #2a3fc9;
-}
-.content-writing-page-blog-writing-box-pulse:before,
-.content-writing-page-blog-writing-box-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#2a3fc9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.content-writing-page-blog-writing-box-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.content-writing-page-blog-writing-box-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-/* Blog Writing Services Bangalore section end */
-
-
-/* Blog Writing Services Bangalore section start */
-
-.content-writing-page-blog-writing-box{
-  width: 100%;
-  padding: 50px;
-  transition: 0.1s ease-in-out;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  position: relative;
-}
-.content-writing-page-blog-writing-box:hover{
-  border: 1px solid #2a3fc9;
-    transition: 0.1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151c;
-}
-.content-writing-page-blog-writing-box-h1-heading{
-  color: #c4cfde;
-  font-size: 50px;
-  padding-bottom: 30px;
-  text-align: left;
-}
-.content-writing-page-blog-writing-box-h1-heading:hover{
-  color: #2a3fc9;
-}
-.content-writing-page-blog-writing-box-in-down{
-  width: 100%;
-  padding: 10px 40px;
-  background-color: transparent;
-  border-radius: 20px;
-  border: 2px solid #ffffff;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.content-writing-page-blog-writing-box-in-down:hover{
-  color: #2a3fc9;
+.content-writing-page-blog-writing-box:hover .content-writing-page-blog-writing-box-in-down{
+  background-color: #2a3fc9;
 }
 .content-writing-page-blog-writing-box-pulse img{
   width: 40px;
@@ -15277,7 +15230,6 @@ svg {
   border: 1px solid #72a5f7;
     transition: 0.1s ease-in-out;
     border-radius: 20px;
-    background-color: #11151c;
 }
 .content-writing-page-website-content-writing-box-h1-heading{
   color: #c4cfde;
@@ -15285,7 +15237,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.content-writing-page-website-content-writing-box-h1-heading:hover{
+.content-writing-page-website-content-writing-box:hover .content-writing-page-website-content-writing-box-h1-heading{
   color: #72a5f7;
 }
 .content-writing-page-website-content-writing-box-in-down{
@@ -15298,8 +15250,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content-writing-page-website-content-writing-box-in-down:hover{
-  color: #72a5f7;
+.content-writing-page-website-content-writing-box:hover .content-writing-page-website-content-writing-box-in-down{
+  background-color: #72a5f7;
 }
 .content-writing-page-website-content-writing-box-pulse img{
   width: 40px;
@@ -15359,7 +15311,6 @@ svg {
   border: 1px solid #a2b6e1;
     transition: 0.1s ease-in-out;
     border-radius: 20px;
-    background-color: #11151c;
 }
 .content-writing-page-marketing-material-box-h1-heading{
   color: #c4cfde;
@@ -15367,7 +15318,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.content-writing-page-marketing-material-box-h1-heading:hover{
+.content-writing-page-marketing-material-box:hover .content-writing-page-marketing-material-box-h1-heading{
   color:#a2b6e1;
 }
 .content-writing-page-marketing-material-box-in-down{
@@ -15380,8 +15331,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content-writing-page-marketing-material-box-in-down:hover{
-  color: #a2b6e1;
+.content-writing-page-marketing-material-box:hover .content-writing-page-marketing-material-box-in-down{
+  background-color: #a2b6e1;
 }
 .content-writing-page-marketing-material-box-pulse img{
   width: 40px;
@@ -15450,7 +15401,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.content-writing-page-social-media-content-box-h1-heading:hover{
+.content-writing-page-social-media-content-box:hover .content-writing-page-social-media-content-box-h1-heading{
   color:#d97390;
 }
 .content-writing-page-social-media-content-box-in-down{
@@ -15463,8 +15414,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content-writing-page-social-media-content-box-in-down:hover{
-  color: #d97390;
+.content-writing-page-social-media-content-box:hover .content-writing-page-social-media-content-box-in-down{
+  background-color: #d97390;
 }
 .content-writing-page-social-media-content-box-pulse img{
   width: 40px;
@@ -15537,7 +15488,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.graphics-design-logo-design-services-box-h1-heading:hover{
+.graphics-design-logo-design-services-box:hover .graphics-design-logo-design-services-box-h1-heading{
   color:#dbb300;
 }
 .graphics-design-logo-design-services-box-in-down{
@@ -15550,8 +15501,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.graphics-design-logo-design-services-box-in-down:hover{
-  color: #dbb300;
+.graphics-design-logo-design-services-box:hover .graphics-design-logo-design-services-box-in-down{
+  background-color: #dbb300;
 }
 .graphics-design-logo-design-services-box-pulse img{
   width: 40px;
@@ -15619,7 +15570,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.graphics-design-web-design-services-box-h1-heading:hover{
+.graphics-design-web-design-services-box:hover .graphics-design-web-design-services-box-h1-heading{
   color:#6a34c5;
 }
 .graphics-design-web-design-services-box-in-down{
@@ -15632,8 +15583,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.graphics-design-web-design-services-box-in-down:hover{
-  color: #6a34c5;
+.graphics-design-web-design-services-box:hover .graphics-design-web-design-services-box-in-down{
+  background-color: #6a34c5;
 }
 .graphics-design-web-design-services-box-pulse img{
   width: 40px;
@@ -15701,7 +15652,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.graphics-design-advertising-design-services-box-h1-heading:hover{
+.graphics-design-advertising-design-services-box:hover .graphics-design-advertising-design-services-box-h1-heading{
   color:#0349e1;
 }
 .graphics-design-advertising-design-services-box-in-down{
@@ -15714,8 +15665,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.graphics-design-advertising-design-services-box-in-down:hover{
-  color: #0349e1;
+.graphics-design-advertising-design-services-box:hover .graphics-design-advertising-design-services-box-in-down{
+  background-color: #0349e1;
 }
 .graphics-design-advertising-design-services-box-pulse img{
   width: 40px;
@@ -15783,7 +15734,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.graphics-design-branding-design-services-box-h1-heading:hover{
+.graphics-design-branding-design-services-box:hover .graphics-design-branding-design-services-box-h1-heading{
   color:#002eff;
 }
 .graphics-design-branding-design-services-box-in-down{
@@ -15796,8 +15747,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.graphics-design-branding-design-services-box-in-down:hover{
-  color: #0349e1;
+.graphics-design-branding-design-services-box:hover .graphics-design-branding-design-services-box-in-down{
+  background-color: #0349e1;
 }
 .graphics-design-branding-design-services-box-pulse img{
   width: 40px;
@@ -15865,7 +15816,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.graphics-design-branding-and-marketing-design-services-box-h1-heading:hover{
+.graphics-design-branding-and-marketing-design-services-box:hover .graphics-design-branding-and-marketing-design-services-box-h1-heading{
   color:#6277d9;
 }
 .graphics-design-branding-and-marketing-design-services-box-in-down{
@@ -15878,8 +15829,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.graphics-design-branding-and-marketing-design-services-box-in-down:hover{
-  color: #6277d9;
+.graphics-design-branding-and-marketing-design-services-box:hover .graphics-design-branding-and-marketing-design-services-box-in-down{
+  background-color: #6277d9;
 }
 .graphics-design-branding-and-marketing-design-services-box-pulse img{
   width: 40px;
@@ -15952,7 +15903,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.web-application-development-mern-stack-development-section-box-h1-heading:hover{
+.web-application-development-mern-stack-development-section-box:hover .web-application-development-mern-stack-development-section-box-h1-heading{
   color:#fa553c;
 }
 .web-application-development-mern-stack-development-section-box-in-down{
@@ -16035,7 +15986,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.web-application-development-e-commerce-development-section-box-h1-heading:hover{
+.web-application-development-e-commerce-development-section-box:hover .web-application-development-e-commerce-development-section-box-h1-heading{
   color:#274aed;
 }
 .web-application-development-e-commerce-development-section-box-in-down{
@@ -16118,7 +16069,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.web-application-development-custom-application-development-section-box-h1-heading:hover{
+.web-application-development-custom-application-development-section-box:hover .web-application-development-custom-application-development-section-box-h1-heading{
   color:#3659fb;
 }
 .web-application-development-custom-application-development-section-box-in-down{
@@ -16201,7 +16152,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.web-application-development-business-dashboard-and-api-section-box-h1-heading:hover{
+.web-application-development-business-dashboard-and-api-section-box:hover .web-application-development-business-dashboard-and-api-section-box-h1-heading{
   color:#3a79e7;
 }
 .web-application-development-business-dashboard-and-api-section-box-in-down{
@@ -16283,7 +16234,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.web-application-development-online-booking-platform-section-box-h1-heading:hover{
+.web-application-development-online-booking-platform-section-box:hover .web-application-development-online-booking-platform-section-box-h1-heading{
   color:#6396f1;
 }
 .web-application-development-online-booking-platform-section-box-in-down{
@@ -16365,7 +16316,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.web-application-development-full-stack-development-section-box-h1-heading:hover{
+.web-application-development-full-stack-development-section-box:hover .web-application-development-full-stack-development-section-box-h1-heading{
   color:#370fe5;
 }
 .web-application-development-full-stack-development-section-box-in-down{
@@ -16456,7 +16407,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading:hover{
+.e-commerce-development-page-shopify-e-commerce-development-section-box:hover .e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading{
   color:#2b2aeb;
 }
 .e-commerce-development-page-shopify-e-commerce-development-section-box-in-down{
@@ -16469,8 +16420,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.e-commerce-development-page-shopify-e-commerce-development-section-box-in-down:hover{
-  color: #2b2aeb;
+.e-commerce-development-page-shopify-e-commerce-development-section-box:hover .e-commerce-development-page-shopify-e-commerce-development-section-box-in-down{
+  background-color: #2b2aeb;
 }
 .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img{
   width: 40px;
@@ -16539,7 +16490,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.e-commerce-development-page-woo-commerce-development-section-box-h1-heading:hover{
+.e-commerce-development-page-woo-commerce-development-section-box:hover .e-commerce-development-page-woo-commerce-development-section-box-h1-heading{
   color: #1e4cc7;
 }
 .e-commerce-development-page-woo-commerce-development-section-box-in-down{
@@ -16552,8 +16503,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.e-commerce-development-page-woo-commerce-development-section-box-in-down:hover{
-  color: #2b2aeb;
+.e-commerce-development-page-woo-commerce-development-section-box:hover .e-commerce-development-page-woo-commerce-development-section-box-in-down{
+  background-color: #2b2aeb;
 }
 .e-commerce-development-page-woo-commerce-development-section-box-pulse img{
   width: 40px;
@@ -16623,7 +16574,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.e-commerce-development-page-magento-development-section-box-h1-heading:hover{
+.e-commerce-development-page-magento-development-section-box:hover .e-commerce-development-page-magento-development-section-box-h1-heading{
   color: #d70707;
 }
 .e-commerce-development-page-magento-development-section-box-box-in-down{
@@ -16636,8 +16587,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.e-commerce-development-page-magento-development-section-box-in-down:hover{
-  color: #d70707;
+.e-commerce-development-page-magento-development-section-box:hover .e-commerce-development-page-magento-development-section-box-box-in-down{
+  background-color: #d70707;
 }
 .e-commerce-development-page-magento-development-section-box-pulse img{
   width: 40px;
@@ -16710,7 +16661,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.ui-ux-design-page-ux-strategy-section-box-h1-heading:hover{
+.ui-ux-design-page-ux-strategy-section-box:hover .ui-ux-design-page-ux-strategy-section-box-h1-heading{
   color: #652ac9;
 }
 .ui-ux-design-page-ux-strategy-section-box-in-down{
@@ -16723,8 +16674,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.ui-ux-design-page-ux-strategy-section-box-in-down:hover{
-  color: #652ac9;
+.ui-ux-design-page-ux-strategy-section-box:hover .ui-ux-design-page-ux-strategy-section-box-in-down{
+  background-color: #652ac9;
 }
 .ui-ux-design-page-ux-strategy-section-box-pulse img{
   width: 40px;
@@ -16732,7 +16683,7 @@ svg {
 .ui-ux-design-page-ux-strategy-section-box-pulse{
   height: 75px;
   width: 75px;
-  background:#780404;
+  background:#280564;
   position: absolute;
   left: 15%;
   top:33px;
@@ -16793,7 +16744,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.ui-ux-design-page-ux-research-section-box-h1-heading:hover{
+.ui-ux-design-page-ux-research-section-box:hover .ui-ux-design-page-ux-research-section-box-h1-heading{
   color: #392ac9;
 }
 .ui-ux-design-page-ux-research-section-box-in-down{
@@ -16806,8 +16757,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.ui-ux-design-page-ux-research-section-box-in-down:hover{
-  color: #652ac9;
+.ui-ux-design-page-ux-research-section-box:hover .ui-ux-design-page-ux-research-section-box-in-down{
+  background-color: #652ac9;
 }
 .ui-ux-design-page-ux-research-section-box-pulse img{
   width: 40px;
@@ -16876,7 +16827,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.ui-ux-design-page-ui-design-section-box-h1-heading:hover{
+.ui-ux-design-page-ui-design-section-box:hover .ui-ux-design-page-ui-design-section-box-h1-heading{
   color: #038f26;
 }
 .ui-ux-design-page-ui-design-section-box-in-down{
@@ -16889,8 +16840,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.ui-ux-design-page-ui-design-section-box-in-down:hover{
-  color: #038f26;
+.ui-ux-design-page-ui-design-section-box:hover .ui-ux-design-page-ui-design-section-box-in-down{
+  background-color: #038f26;
 }
 .ui-ux-design-page-ui-design-section-box-pulse img{
   width: 40px;
@@ -16959,7 +16910,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.ui-ux-design-page-ux-design-section-box-h1-heading:hover{
+.ui-ux-design-page-ux-design-section-box:hover .ui-ux-design-page-ux-design-section-box-h1-heading{
   color: #261cef;
 }
 .ui-ux-design-page-ux-design-section-box-in-down{
@@ -16972,8 +16923,8 @@ svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.ui-ux-design-page-ux-design-section-box-in-down:hover{
-  color: #261cef;
+.ui-ux-design-page-ux-design-section-box:hover .ui-ux-design-page-ux-design-section-box-in-down{
+  background-color: #261cef;
 }
 .ui-ux-design-page-ux-design-section-box-pulse img{
   width: 40px;
@@ -17030,10 +16981,9 @@ svg {
   position: relative;
 }
 .ui-ux-design-page-usability-testing-section-box:hover{
-  border: 1px solid #261cef;
+  border: 1px solid #cf0577;
     transition: 0.1s ease-in-out;
     border-radius: 20px;
-    background-color: #cf0577;
 }
 .ui-ux-design-page-usability-testing-section-box-h1-heading{
   color: #c4cfde;
@@ -17041,7 +16991,7 @@ svg {
   padding-bottom: 30px;
   text-align: left;
 }
-.ui-ux-design-page-usability-testing-section-box-h1-heading:hover{
+.ui-ux-design-page-usability-testing-section-box:hover .ui-ux-design-page-usability-testing-section-box-h1-heading{
   color: #cf0577;
 }
 .ui-ux-design-page-usability-testing-section-box-in-down{
@@ -17051,11 +17001,12 @@ svg {
   border-radius: 20px;
   border: 2px solid #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
-.ui-ux-design-page-usability-testing-section-box-in-down:hover{
-  color: #cf0577;
+.ui-ux-design-page-usability-testing-section-box:hover .ui-ux-design-page-usability-testing-section-box-in-down{
+  background-color: #cf0577;
 }
 .ui-ux-design-page-usability-testing-section-box-pulse img{
   width: 40px;
