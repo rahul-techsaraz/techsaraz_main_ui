@@ -12,6 +12,7 @@ import './style/home-media.css';
 import Popup from './Components/Popup/Popup';
 import { PopUpContext } from './Context/ToastContext';
 import TagManager from 'react-gtm-module'
+import { useSetTitle } from './Hooks/useSetTitle';
 
 const tagManagerArgs = {
   gtmId: process.env.REACT_APP_GMT_ID,
@@ -23,7 +24,7 @@ function App() {
   const [isPopUp, setIsPopUp] = useState(true);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
-  
+  const {titleSetter} = useSetTitle();
   const location = useLocation();
 
   window.dataLayer.push({
@@ -33,7 +34,7 @@ function App() {
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(location.pathname)
+    titleSetter(location.pathname)
   }, [location]);
 
   // Refs to store the follower position
