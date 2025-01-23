@@ -7,7 +7,7 @@ import Routes from '../../Constant/routes';
 const Footer = () => {
   const { HOME, ABOUT_US, BLOG, SERVICES, CONTACT } = Routes;
   const [showScrollTop, setShowScrollTop] = useState(false);
-  
+
   // This function handles the scroll logic
   const handleScroll = () => {
     if (
@@ -50,19 +50,38 @@ const Footer = () => {
                 </div>
                 <div className="icon-group">
                   <span className="icon-desin">
-                  <a href="https://www.facebook.com/techsaraz06/" target='blank'><i className="fa-brands fa-facebook-f facebook-icon-style"></i></a>
+                    <a
+                      href="https://www.facebook.com/techsaraz06/"
+                      target="blank"
+                    >
+                      <i className="fa-brands fa-facebook-f facebook-icon-style"></i>
+                    </a>
                   </span>
                   <span className="icon-desin">
-                  <a href="https://www.youtube.com/@techsaraz" target='blank'><i className="fa-brands fa-instagram youtube-icon-style"></i></a>
+                    <a href="https://www.youtube.com/@techsaraz" target="blank">
+                      <i className="fa-brands fa-instagram youtube-icon-style"></i>
+                    </a>
                   </span>
                   <span className="icon-desin">
-                  <a href="https://www.linkedin.com/company/tech-saraz/" target='blank'><i className="fa-brands fa-twitter linkdin-icon-style"></i></a>
+                    <a
+                      href="https://www.linkedin.com/company/tech-saraz/"
+                      target="blank"
+                    >
+                      <i className="fa-brands fa-linkdin linkdin-icon-style"></i>
+                    </a>
                   </span>
                   <span className="icon-desin">
-                  <a href="https://x.com/TechSaraz" target='blank'><i className="fa-brands fa-x-twitter twitter-icon-style"></i></a>
+                    <a href="https://x.com/TechSaraz" target="blank">
+                      <i className="fa-brands fa-x-twitter twitter-icon-style"></i>
+                    </a>
                   </span>
                   <span className="icon-desin">
-                  <a href="https://www.instagram.com/techsaraz/" target='blank'><i className="fa-brands fa-linkedin-in instragram-icon-style"></i></a>
+                    <a
+                      href="https://www.instagram.com/techsaraz/"
+                      target="blank"
+                    >
+                      <i className="fa-brands fa-instgram-in instragram-icon-style"></i>
+                    </a>
                   </span>
                 </div>
               </div>
@@ -105,15 +124,15 @@ const Footer = () => {
             <div className="footer-box">
               <h3 className="footer-box-menu-heading">Contact Info</h3>
               <div className="phone">
-              <a href='tel:+917760231920' target="blank">
-                <i className="fa-solid fa-phone"></i>
-                <span className="phone-no">+917760231920</span>
+                <a href="tel:+917760231920" target="blank">
+                  <i className="fa-solid fa-phone"></i>
+                  <span className="phone-no">+917760231920</span>
                 </a>
               </div>
               <div className="phone">
-                <a href='tel:+919886958347' target="blank">
-                <i className="fa-solid fa-phone"></i>
-                <span className="phone-no">+919886958347</span>
+                <a href="tel:+919886958347" target="blank">
+                  <i className="fa-solid fa-phone"></i>
+                  <span className="phone-no">+919886958347</span>
                 </a>
               </div>
               <div className="phone">
