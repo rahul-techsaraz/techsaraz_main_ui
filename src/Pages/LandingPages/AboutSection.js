@@ -22,7 +22,7 @@ const AboutSection = () => {
           <div className="about-in-box-wraper-textbox">
             <div className="about-heading">
               <button className="about-heading-text">
-                ABOUT US<span className="span-circle"></span>
+                ABOUT US<span className="about-section-span-round"></span>
               </button>
             </div>
             <div className="about-in-box-wraper-textbox-text">

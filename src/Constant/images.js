@@ -107,6 +107,29 @@ import rakeshRathod from '../images/Rakesh-Rathod.jpg';
 import halo from '../images/Halo.webp';
 import persqftAvenu from '../images/Persqft-Avenu.jpg';
 import customerCare from '../images/customer-care.png';
+import asdepcongoOrg from '../images/asdepcongo-org-1024x768desktop-8fa038.jpg';
+import c4carpentergroupCom from '../images/c4carpentergroup-com-1024x768desktop-471a40.jpg';
+import c4investcapitalCom from '../images/c4investcapital-com-1024x768desktop-c4974f.jpg';
+import c4pluseventsCom from '../images/c4plusevents-com-1024x768desktop-4478a8.jpg';
+import captainronsfishandscubaCom from '../images/captainronsfishandscuba-com-1024x768desktop-b1bb63.jpg';
+import careergridsCom from '../images/careergrids-com-1024x768desktop-cdd636.jpg';
+import casablancaconstructionsCom from '../images/casablancaconstructions-com-1024x768desktop-3feb60.jpg';
+import cosmatyIn from '../images/cosmaty-in-1024x768desktop-b7283d.jpg';
+import eternalgranitemkpCom from '../images/eternalgranitemkp-com-1024x768desktop-c2d438.jpg';
+import florencecollegeIn from '../images/florencecollege-in-1024x768desktop-5993ef.jpg';
+import globallyvillageCom from '../images/globallyvillage-com-1024x768desktop-244775.jpg';
+import haloCoIn from '../images/halo-co-in-1024x768desktop-39c1b4.jpg';
+import healimpiloCom from '../images/healimpilo-com-1024x768desktop-092520.jpg';
+import krityamCom from '../images/krityam-com-1024x768desktop-476263.jpg';
+import orangepaperIn from '../images/orangepaper-in-1024x768desktop-462dc3.jpg';
+import rebootmyreCom from '../images/rebootmyre-com-1024x768desktop-7110bc.jpg';
+import scholarsEdutechsarazCom from '../images/scholars-edutechsaraz-com-1024x768desktop-f13b8d.jpg';
+import shinebrightxCom from '../images/shinebrightx-com-1024x768desktop-308a65.jpg';
+import thebrandsmasterCom from '../images/thebrandsmaster-com-1024x768desktop-70ec1c.jpg';
+import thecontentcommunityCom from '../images/thecontentcommunity-com-1024x768desktop-ffab2b.jpg';
+import thehundredpercentofficialCom from '../images/thehundredpercentofficial-com-1024x768desktop-d31548.jpg';
+import ttbsplCom from '../images/ttbspl-com-1024x768desktop-d2b4aa.jpg';
+import techSarazPopUpLogo from '../images/Tech-SaraZ-logo-300x99.webp'
 
 export const images = {
   repairToolImage,
@@ -218,4 +241,27 @@ export const images = {
   halo,
   persqftAvenu,
   customerCare,
+  asdepcongoOrg,
+  c4carpentergroupCom,
+  c4investcapitalCom,
+  c4pluseventsCom,
+  captainronsfishandscubaCom,
+  careergridsCom,
+  casablancaconstructionsCom,
+  cosmatyIn,
+  eternalgranitemkpCom,
+  florencecollegeIn,
+  globallyvillageCom,
+  haloCoIn,
+  healimpiloCom,
+  krityamCom,
+  orangepaperIn,
+  rebootmyreCom,
+  scholarsEdutechsarazCom,
+  shinebrightxCom,
+  thebrandsmasterCom,
+  thecontentcommunityCom,
+  thehundredpercentofficialCom,
+  ttbsplCom,
+  techSarazPopUpLogo,
 };

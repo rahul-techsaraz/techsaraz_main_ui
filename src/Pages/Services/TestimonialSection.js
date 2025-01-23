@@ -32,8 +32,9 @@ const TestimonialSection = () => {
 
         <div className="swiper-wrapper position-relative">
           <CustomSwiper
-            navigationNext=".courselist-button-next"
-            navigationPrev=".courselist-button-prev"
+            navigation={true}
+            navigationNext=".testimonial-next-button"
+            navigationPrev=".testimonial-prev-button"
             noOfSlidesPerView={2}
             isBreakPoint={true}
             breakPoint={SwiperResponsive()}
@@ -53,6 +54,7 @@ const TestimonialSection = () => {
                           : `${review?.review.slice(0, 100)}...`}
                       </p>
                       <span
+                        className='testimonial-read-more-button'
                         style={{ color: 'white', fontWeight: 500 }}
                         onClick={() => toggleReview(index)}
                       >
@@ -81,11 +83,13 @@ const TestimonialSection = () => {
               </swiper-slide>
             ))}
           </CustomSwiper>
-          <div className="swiper-button-prev courselist-button-prev">
-            {/* <img src={leftArrow} alt="" /> */}
+          <div className="swiper-button-prev-next-flex">
+          <div className="swiper-button-prev testimonial-prev-button">
+            <i className="fa-solid fa-arrow-left"></i>
           </div>
-          <div className="swiper-button-next courselist-button-next">
-            {/* <img src={rightArrow} alt="" /> */}
+          <div className="swiper-button-next testimonial-next-button">
+            <i className="fa-solid fa-arrow-right"></i>
+          </div>
           </div>
         </div>
         {/* </div> */}

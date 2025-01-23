@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../../style/style.css';
 import user1Image from '../../images/user (1).png';
 import service4Image from '../../images/service-4.jpg';
-import ServicesHeroSection from '../../Pages/Services/ServicesHeroSection';
+// import ServicesHeroSection from '../../Pages/Services/ServicesHeroSection';
 import WorkSection from '../../Pages/LandingPages/WorkSection';
-import Routes from '../../Constant/routes';
+import { PopUpContext } from '../../Context/ToastContext';
+import AboutHeroSection from '../../Pages/Services/AboutHeroSection';
 
 const AboutUs = () => {
-  const { CONTACT } = Routes;
+  const { togalPopUp } = useContext(PopUpContext);
   return (
     <>
-      <ServicesHeroSection />
+      {/* <ServicesHeroSection heading={'about us'}/> */}
+      <AboutHeroSection />
 
       <section className="about-company">
-        <div className="about-company-pulse">
+        <div className="about-company-pulse about-page-company-pulse">
           <img src={user1Image} alt="" />
         </div>
         <div className="about-company-in-box">
@@ -48,7 +50,7 @@ const AboutUs = () => {
                 are in the safest hands.
               </p>
               <div className="about-company-btn">
-                <Link className="about-company-btn-btn" to={CONTACT}>
+                <Link className="about-company-btn-btn" onClick={()=>togalPopUp(true)}>
                   CONTACT US
                 </Link>
               </div>

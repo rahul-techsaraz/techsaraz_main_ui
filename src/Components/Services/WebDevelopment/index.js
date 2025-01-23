@@ -23,7 +23,7 @@ const MainWebDevelopmentSection = () => {
     } else if (pathname === '/services/web-development/wordpress-development') {
       setHeadingText('WORDPRESS DEVELOPMENT');
     } else if (pathname === '/services/web-development/e-commerce') {
-      setHeadingText('E COMMERCE');
+      setHeadingText('E-COMMERCE');
     } else if (pathname === '/services/web-development/ui-ux-design') {
       setHeadingText('UIUX DESIGN');
     } else {

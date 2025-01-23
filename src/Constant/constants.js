@@ -32,6 +32,28 @@ import blogImage1 from '../images/Web-designing-–-The-best-way-to-create-profe
 import blogImage2 from '../images/How-to-choose-the-Best-web-development-Company.webp';
 import blogImage3 from '../images/cover.jpeg';
 import healthMangersWorld from '../images/Health-Mangers-world.webp';
+import asdepcongo from '../images/asdepcongo.webp';
+import brandMaster from '../images/Brand Master.png';
+import c4Carpenter from '../images/C4Carpenter.png';
+import c4investcapital from '../images/C4investcapital.png';
+import c4PlusEvents from '../images/C4Plus Events.webp';
+import captainRonsFishandScuba from '../images/Captain-Rons-Fish-and-Scuba.webp';
+import career from '../images/Career.webp';
+import casablanca from '../images/Casablanca.webp';
+import cosmaty from '../images/Cosmaty-logo.png';
+import eternalGranite from '../images/Eternal_Granite_logo.webp';
+import florenece from '../images/Florenece.png';
+import globallyVillage from '../images/Globally Village.webp';
+import haloTechnologies from '../images/halo-technologies-300x82.webp';
+import healimpilo from '../images/Healimpilo.webp';
+import krityam from '../images/Krityam.webp';
+import orangePaper from '../images/OrangePaper.webp';
+import reboot from '../images/reboot.png';
+import scholar from '../images/Scholar.png';
+import shineBright from '../images/ShineBright.png';
+import tcc from '../images/TCC.png';
+import theHundredPercent from '../images/TheHundredPercent.webp';
+import tritechLogo from '../images/Tritech-Logo.webp'
 
 export const constants = {
   images: {
@@ -171,6 +193,94 @@ export const constants = {
       imageURL: blogImage3,
       alt: 'Blog Image 3',
     },
+    asdepcongo: {
+      imageURL: asdepcongo,
+      alt: 'asdepcongo Image'
+    },
+    brandMaster: {
+      imageURL: brandMaster,
+      alt: 'Brand Master Image'
+    },
+    c4Carpenter: {
+      imageURL: c4Carpenter,
+      alt: 'C4Carpenter Image'
+    },
+    c4investcapital: {
+      imageURL: c4investcapital,
+      alt: 'C4investcapital Image'
+    },
+    c4PlusEvents: {
+      imageURL: c4PlusEvents,
+      alt: 'C4PlusEvents Image'
+    },
+    captainRonsFishandScuba: {
+      imageURL: captainRonsFishandScuba,
+      alt: 'Captain Rons Fishand Scuba Image'
+    },
+    career: {
+      imageURL: career,
+      alt: 'career Image'
+    },
+    casablanca: {
+      imageURL: casablanca,
+      alt: 'Casablanca Image'
+    },
+    cosmaty: {
+      imageURL: cosmaty,
+      alt: 'Cosmaty Image'
+    },
+    eternalGranite: {
+      imageURL: eternalGranite,
+      alt: 'Eternal Granite Image'
+    },
+    florenece: {
+      imageURL: florenece,
+      alt: 'Florenece Image'
+    },
+    globallyVillage: {
+      imageURL: globallyVillage,
+      alt: 'GloballyVillage Image'
+    },
+    haloTechnologies: {
+      imageURL: haloTechnologies,
+      alt: 'HaloTechnologies Image'
+    },
+    healimpilo: {
+      imageURL: healimpilo,
+      alt: 'Healimpilo Image'
+    },
+    krityam: {
+      imageURL: krityam,
+      alt: 'Krityam Image'
+    },
+    orangePaper: {
+      imageURL: orangePaper,
+      alt: 'OrangePaper Image'
+    },
+    reboot: {
+      imageURL: reboot,
+      alt: 'Reboot Image'
+    },
+    scholar: {
+      imageURL: scholar,
+      alt: 'Scholar Image'
+    },
+    shineBright: {
+      imageURL: shineBright,
+      alt: 'ShineBright Image'
+    },
+    tcc: {
+      imageURL: tcc,
+      alt: 'TCC Image'
+    },
+    theHundredPercent: {
+      imageURL: theHundredPercent,
+      alt: 'TheHundredPercent Image'
+    },
+    tritechLogo: {
+      imageURL: tritechLogo,
+      alt: 'TritechLogo Image'
+    },
   },
   socialIcons: [
     'facebook-f',
@@ -197,7 +307,7 @@ export const constants = {
     linkUrl: '#',
   },
   landingPageText: {
-    heroSectionMainSubText: `At Techsaraz, we deliver innovative technology services tailored to attract and engage your ideal customers. Our expert solutions help you grow, connect with your audience, and stand out in a competitive market. Let's unlock your business’s true potential together`,
+    heroSectionMainSubText: `At Tech SaraZ, we deliver innovative technology services tailored to attract and engage your ideal customers. Our expert solutions help you grow, connect with your audience, and stand out in a competitive market. Let's unlock your business’s true potential together`,
     aboutSectionDescription:
       'Tech SaraZ is a software company based in Bangalore that specializes in top-notch digital Marketing and web design. In our fast-paced digital world, it’s crucial to make your products or services shine brighter than the rest. We’re here to support those with big dreams and a relentless drive to succeed in their online businesses by providing our unmatched services. A well-designed website is the key to drawing in and keeping customers in this digital era. We at Tech SaraZ grasp this essential fact, and our work ranges from creating the most inventive and user-friendly websites to effectively marketing business online. A top-tier website and extraordinary marketing services can act as the spark that sends business soaring. Our experienced professionals are committed to ensuring your online presence isn’t just another face in the crowd but a standout player that grabs attention and fuels business growth. With Tech SaraZ, you can be confident that your digital marketing needs are in the safest hands.',
   },

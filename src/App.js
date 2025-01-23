@@ -9,16 +9,33 @@ import { config, portfolio } from './Constant/config';
 import { ToastProvider } from './Context/ToastContext';
 import './style/style.css';
 import './style/home-media.css';
+import Popup from './Components/Popup/Popup';
+import { PopUpContext } from './Context/ToastContext';
+import TagManager from 'react-gtm-module';
+import { useSetTitle } from './Hooks/useSetTitle';
+import WhatsUp from './Pages/LandingPages/WhatsUp';
+
+const tagManagerArgs = {
+  gtmId: process.env.REACT_APP_GMT_ID,
+};
+
+TagManager.initialize(tagManagerArgs);
 
 function App() {
+  const [isPopUp, setIsPopUp] = useState(true);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
-
+  const { titleSetter } = useSetTitle();
   const location = useLocation();
+
+  window.dataLayer.push({
+    event: 'pageview',
+  });
 
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
+    titleSetter(location.pathname);
   }, [location]);
 
   // Refs to store the follower position
@@ -55,6 +72,8 @@ function App() {
     [mouseX, mouseY],
   ); // update depends on mouseX and mouseY
 
+  const togalPopUp = (flag) => setIsPopUp(flag);
+
   // Set up mousemove event listener and start animation
   useEffect(() => {
     const follower = document.querySelector('#mouse-follower');
@@ -68,17 +87,32 @@ function App() {
     };
   }, [update]); // `update` is now included as a dependency
 
+  // Set up beforeunload event listener
+  useEffect(() => {
+    if (mouseY < 1) {
+      togalPopUp(true);
+    }
+  }, [mouseY]);
+
   return (
     <ToastProvider>
-      <div className="full-section">
-        <div id="mouse-follower" style={{ position: 'fixed' }}></div>
-        <Header />
-        <Outlet />
-        <PortfolioSection portfolios={portfolio} />
-        <ClientSection clients={config.LandingClientConfig.clients} />
-        <BlogSection blogs={config.BlogConfig.blogs} />
-        <Footer />
-      </div>
+      <PopUpContext.Provider value={{ isPopUp, togalPopUp }}>
+        <div className="full-section">
+          <div id="mouse-follower" style={{ position: 'fixed' }}></div>
+          <Popup />
+          <Header />
+          <Outlet />
+          <WhatsUp />
+          {location.pathname !== '/blog' && (
+            <>
+              <PortfolioSection portfolios={portfolio} />
+              <ClientSection clients={config.LandingClientConfig.clients} />
+              <BlogSection blogs={config.BlogConfig.blogs} />
+            </>
+          )}
+          <Footer />
+        </div>
+      </PopUpContext.Provider>
     </ToastProvider>
   );
 }
