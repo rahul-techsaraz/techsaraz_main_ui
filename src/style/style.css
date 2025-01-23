@@ -17315,8 +17315,8 @@ svg {
   width: 300px;
   z-index: 3;
 }
-.clouds {
-  animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
+.planet-cloud {
+  animation: rotate-day 50s linear infinite, spin-planet-cloud 100s ease infinite;
   background-image: url(../images/2k_earth_clouds.jpg);
   background-size: 200%;
   border-radius: 50%;    
@@ -17347,7 +17347,7 @@ svg {
   0% { background-position: calc(120% + 120px) 0; }
   100% { background-position: calc(-80% + 120px) 0; }
 }
-@keyframes spin-clouds {
+@keyframes spin-planet-cloud {
   0% { transform: rotate(0deg); }
   50% { transform: rotate(20deg); }
   100% { transform: rotate(0deg); }

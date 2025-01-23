@@ -31,7 +31,7 @@ const AboutHeroSection = () => {
         <div className='planet-container'>
           <div className='night'></div>
           <div className='day'></div>
-          <div className='clouds'></div>
+          <div className='planet-cloud'></div>
           <div className='inner-shadow'></div>
         </div>
       </div>
