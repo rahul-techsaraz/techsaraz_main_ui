@@ -2372,7 +2372,7 @@ style attribute {
 .itemRight {
   width: 180px;
   height: 100px;
-  background-color: #000000;
+  background-color: #8b4267;
   border: 2px solid #ffffff;
   border-radius: 20px;
   position: absolute;
@@ -8398,6 +8398,7 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 17px;
   padding-bottom: 20px;
+  text-align: justify;
 }
 .in-bangalore-down-box {
   width: 100%;
@@ -8558,6 +8559,7 @@ padding: 0 20px;
   color: #c4cfde;
   font-size: 17px;
   padding-bottom: 20px;
+  text-align: justify;
 }
 .in-bangalore2-down-box {
   width: 100%;
@@ -10381,6 +10383,7 @@ font-family: 'Helvetica Neue';
   color: #c4cfde;
   font-size: 17px;
   padding-bottom: 20px;
+  text-align: justify;
 }
 
 /* .about-btn{
