@@ -12,7 +12,7 @@ import './style/home-media.css';
 import Popup from './Components/Popup/Popup';
 import { PopUpContext } from './Context/ToastContext';
 import TagManager from 'react-gtm-module';
-import { useSetTitle } from './hooks/useSetTitle';
+import { useSetTitle } from './Hooks/useSetTitle';
 import WhatsUp from './Pages/LandingPages/WhatsUp';
 
 const tagManagerArgs = {
