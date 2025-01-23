@@ -59,7 +59,7 @@ const Footer = () => {
                   </span>
                   <span className="icon-desin">
                     <a href="https://www.youtube.com/@techsaraz" target="blank">
-                      <i className="fa-brands fa-instagram youtube-icon-style"></i>
+                    <i className="fa-brands fa-youtube youtube-icon-style"></i>
                     </a>
                   </span>
                   <span className="icon-desin">
