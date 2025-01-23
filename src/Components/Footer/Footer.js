@@ -63,12 +63,7 @@ const Footer = () => {
                     </a>
                   </span>
                   <span className="icon-desin">
-                    <a
-                      href="https://www.linkedin.com/company/tech-saraz/"
-                      target="blank"
-                    >
-                      <i className="fa-brands fa-linkdin linkdin-icon-style"></i>
-                    </a>
+                  <a href="https://www.linkedin.com/company/tech-saraz/" target='blank'><i className="fa-brands fa-linkedin-in linkdin-icon-style"></i></a>
                   </span>
                   <span className="icon-desin">
                     <a href="https://x.com/TechSaraz" target="blank">
@@ -76,12 +71,7 @@ const Footer = () => {
                     </a>
                   </span>
                   <span className="icon-desin">
-                    <a
-                      href="https://www.instagram.com/techsaraz/"
-                      target="blank"
-                    >
-                      <i className="fa-brands fa-instgram-in instragram-icon-style"></i>
-                    </a>
+                  <a href="https://www.instagram.com/techsaraz/" target='blank'><i className="fa-brands fa-instagram instragram-icon-style"></i></a>
                   </span>
                 </div>
               </div>
