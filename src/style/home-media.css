@@ -40,9 +40,9 @@
   .main-header.sticky {
     padding: 10px 70px;
   }
-  .hero-section-text {
+  /* .hero-section-text {
     margin-left: 70px;
-  }
+  } */
   .main-header .header-logo img {
     width: 140px;
   }
@@ -478,22 +478,22 @@
   .services-hero-section {
     height: 60vh;
   }
-  .hero-section-text {
+  /* .hero-section-text {
     margin-left: 60px;
   }
   .hero_section_layer{
     height: 60%;
-  }
+  } */
   .hero_section_layer:nth-child(7){
     width: 110%;
     background-repeat: no-repeat;
   }
-    .hero-section, .services-hero-section{
+     .services-hero-section{
         height: 60vh;
     }
-    .hero-section-text{
+    /* .hero-section-text{
         margin-left: 60px;
-    }
+    } */
 
      /* about start */
     .about{
@@ -832,6 +832,7 @@
 
   .nav-list a {
     padding: 15px 20px;
+    color: #fff;
   }
   .web-development-banner {
     height: 650px;
@@ -1164,7 +1165,7 @@
   .web-development-banner {
     height: 550px;
   }
-  .hero-section{
+  /* .hero-section{
     height: 70vh;
   }
   .header-icon-group{
@@ -1172,7 +1173,7 @@
   }
   .hero-section-text{
     top: 66%;
-  }
+  } */
   .contact-fill-up-in-box-fillup-wraper23 {
     display: grid;
     grid-template-columns: 1fr;
@@ -1573,9 +1574,9 @@
     display: flex;
     align-items: center;
   }
-  .hero-section-text {
+  /* .hero-section-text {
     margin-left: 30px;
-  }
+  } */
   .conta {
     margin-top: -20px;
   }
@@ -1986,7 +1987,8 @@
     .about-in-box-wraper-textbox-text-p{
         padding: 10px 0 20px 0;
     }
-    .header-icon-group{
+  
+    /* .header-icon-group{
         margin-top: 30px;
     }
     .hero-section-text .hero-section-text-p{
@@ -1997,10 +1999,10 @@
         width: 40px;
         height: 40px;
         line-height: 40px;
-    }
-    .main-header.sticky{
+    } */
+    /* .main-header.sticky{
         padding: 10px 20px;
-    }
+    } */
     .about, .work, .services, .service-in,  .our-mission, .best-company, .php, .wordpress, .shopify, .magento, .benefits, .joomla, .react, .node-js, .professional, .our-ecommerce, .in-bangalore, .in-bangalore2, .competitor, .consulation, .counter , .blog , .our-client , .about-company{
         padding: 30px 20px;
     }
@@ -2081,9 +2083,9 @@
 /* 540px start */
 
 @media screen and (max-width: 540px) {
-  .hero-section-text {
+  /* .hero-section-text {
     margin-left: 30px;
-  }                                
+  }                                 */
   .blog-down-section-leftbox-1stbox-heading{
     font-size: 25px;
   }
@@ -2119,13 +2121,13 @@ column-gap: 0px;
 /* 420px mediascreen start */
 
 @media screen and (max-width: 430px) {
-  .main-header {
+  /* .main-header {
     padding: 20px 20px;
   }
   .main-header.sticky {
     padding: 10px 20px;
-  }
-  .hero-section-text {
+  } */
+  /* .hero-section-text {
     margin-left: 20px;
   }
   .hero-section-text-main-heading {
@@ -2140,7 +2142,7 @@ column-gap: 0px;
   }
   .hero-section {
     height: 90vh;
-  }
+  } */
   .contact-fill-up-in-box-up-text{
     font-size: 30px;
   }
@@ -2641,9 +2643,9 @@ column-gap: 0px;
   .work-box-up-box-p {
     font-size: 15px;
   }
-  .hero_section_layer{
+  /* .hero_section_layer{
     height: 50%;
-  }
+  } */
   .competitor-h1, .our-client-heading h1, .work-h1, .our-mission-h1, .contact-fill-up-in-box-up-text, .about-company-in-box-wraper-textbox-text, .blog-heading h1, .testmonial-heading h1, .services-h1, .about-in-box-wraper-textbox-text, .our-ecommerce-in-box-h1, .seo-services-ani-box-in-box-h1, .social-media-marketing-in-box-h1, .in-bangalore6-h1, .social-media-marketing-competitors-h1, .in-bangalore-h1, .in-bangalore5-h1, .in-bangalore4-h1, .in-bangalore3-h1, .in-bangalore2-h1, .service-in-h1, .php-h1, .wordpress-h1, .shopify-h1, .magento-h1, .joomla-h1, .react-h1, .node-js-h1, .professional-h1, .benefits-h1, .creative-work-heading h1 {
     font-size: 26px;
 }

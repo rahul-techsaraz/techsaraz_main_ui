@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './header.css';
 import LOGO from '..//../images/Tech-SaraZ-logo-300x99.webp';
 import Routes from '../../Constant/routes';
 import { PopUpContext } from '../../Context/ToastContext';

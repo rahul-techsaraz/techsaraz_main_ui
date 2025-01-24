@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+  }
+  body{
+    background-color: #000 !important;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+
+:root{
+    --bg-color:#fff;
+    --text-link:#0071d0;
+    --text-color:#000;
+    --facebook-icon-color:#316FF6;
+    --youtube-icon-color:#FF0000;
+    --linkdin-icon-color:#0077B5;
+    --twitter-icon-color:#1DA1F2;
+    --instragram-icon-color:#C13584;
+    --whatsapp-color:#25d366;
+
+}
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 14px;
+}
