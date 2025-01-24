@@ -139,6 +139,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div className="footer-down"><span className='footer-down-text-bold'>Tech Saraz </span> © 2025.All Rights Reserved.</div>
       {showScrollTop && (
         <div id="scroll-top" onClick={scrollToTop}>
           <button id="btn" className="scroll-top-button-22">
