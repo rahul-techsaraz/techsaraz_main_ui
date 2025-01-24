@@ -1050,6 +1050,10 @@
     height: auto;
   }
 
+  .planet-container{
+    width: 270px;
+    height: 270px;
+  }
   .company-details-wraper {
     grid-template-columns: 1fr 1fr;
   }
@@ -1529,6 +1533,10 @@
   .service-in-box, .competitor-in-box, .next-project-in-box, .consulation-in-box, .work-in-box, .tesimonial-in-box, .seo-services-ani-box-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .benefits-in-box, .in-bangalore5-box, .in-bangalore6-box, .in-bangalore-box, .in-bangalore4-box, .in-bangalore3-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box {
     padding: 30px;
 }
+.planet-container {
+  width: 250px;
+  height: 250px;
+}
   .about-company-in-box-wraper-imgbox {
     height: 400px;
     padding: 20px;
@@ -1934,6 +1942,11 @@
     padding: 30px 20px;
 }
 
+
+.planet-container {
+  width: 200px;
+  height: 200px;
+}
 
 
   /* --------------------------------------------------------------------------------------------------- */
