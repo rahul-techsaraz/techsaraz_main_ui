@@ -10,6 +10,7 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [services, setServices] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
@@ -118,8 +119,8 @@ const ContactForm = () => {
                     onChange={(e) => setPhone(e.target.value)}
                   /> */}
 
-<select name="cars" id="contact-fill-up-in-box-fillup-services-input-child-box" value={phone}
-                    onChange={(e) => setPhone(e.target.value)}>
+<div className='select-wraper'>
+<select name="cars" id="contact-fill-up-in-box-fillup-services-input-child-box" value={services}
     <option value="Select Services">Select Services</option>
     <option value="Web Development">Web Development</option>
     <option value="Web Application Development">Web Application Development</option>
@@ -133,6 +134,8 @@ const ContactForm = () => {
     <option value="Mobile App Development">Mobile App Development</option>
     <option value="Software Development">Software Development</option>
   </select>
+  </div>
+
                   
                 </div>
 

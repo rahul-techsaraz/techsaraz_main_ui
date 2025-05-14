@@ -130,7 +130,32 @@
   .web-development-page-react-box-h1-heading,
   .web-development-page-node-js-box-h1-heading,
   .digital-marketing-seo-services-box-h1-heading,
-  .digital-marketing-page-social-media-marketing-box-h1-heading{
+  .digital-marketing-page-social-media-marketing-box-h1-heading,
+  .content-writing-page-blog-writing-box-h1-heading,
+  .content-writing-page-website-content-writing-box-h1-heading,
+  .content-writing-page-marketing-material-box-h1-heading,
+  .content-writing-page-social-media-content-box-h1-heading,
+  .graphics-design-logo-design-services-box-h1-heading,
+  .graphics-design-web-design-services-box-h1-heading,
+  .graphics-design-advertising-design-services-box-h1-heading,
+  .graphics-design-branding-design-services-box-h1-heading,
+  .graphics-design-branding-and-marketing-design-services-box-h1-heading,
+  .web-application-development-mern-stack-development-section-box-h1-heading,
+  .web-application-development-e-commerce-development-section-box-h1-heading,
+  .web-application-development-custom-application-development-section-box-h1-heading,
+  .web-application-development-business-dashboard-and-api-section-box-h1-heading,
+  .web-application-development-online-booking-platform-section-box-h1-heading,
+  .web-application-development-full-stack-development-section-box-h1-heading,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-woo-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-magento-development-section-box-h1-heading,
+  .ui-ux-design-page-ux-strategy-section-box-h1-heading,
+  .ui-ux-design-page-ux-research-section-box-h1-heading,
+  .ui-ux-design-page-ui-design-section-box-h1-heading,
+  .ui-ux-design-page-ux-design-section-box-h1-heading,
+  .ui-ux-design-page-usability-testing-section-box-h1-heading
+  {
+
     font-size: 45px;
   }
 
@@ -142,7 +167,30 @@
   .web-development-page-wordpress-box,
   .web-development-page-shopify-box,
   .digital-marketing-seo-services-box,
-  .digital-marketing-page-social-media-marketing-box
+  .digital-marketing-page-social-media-marketing-box,
+  .content-writing-page-blog-writing-box,
+  .content-writing-page-website-content-writing-box,
+  .content-writing-page-marketing-material-box,
+  .content-writing-page-social-media-content-box,
+  .graphics-design-logo-design-services-box,
+  .graphics-design-web-design-services-box,
+  .graphics-design-advertising-design-services-box,
+  .graphics-design-branding-design-services-box,
+  .graphics-design-branding-and-marketing-design-services-box,
+  .web-application-development-mern-stack-development-section-box,
+  .web-application-development-e-commerce-development-section-box,
+  .web-application-development-custom-application-development-section-box,
+  .web-application-development-business-dashboard-and-api-section-box,
+  .web-application-development-online-booking-platform-section-box,
+  .web-application-development-full-stack-development-section-box,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box,
+  .e-commerce-development-page-woo-commerce-development-section-box,
+  .e-commerce-development-page-magento-development-section-box,
+  .ui-ux-design-page-ux-strategy-section-box,
+  .ui-ux-design-page-ux-research-section-box,
+  .ui-ux-design-page-ui-design-section-box,
+  .ui-ux-design-page-ux-design-section-box,
+  .ui-ux-design-page-usability-testing-section-box
   {
     padding: 45px;
   }
@@ -155,7 +203,24 @@
   .web-development-page-react-box-down-circle,
   .web-development-page-node-js-box-down-circle,
   .digital-marketing-page-social-media-marketing-box-in-down,
-  .digital-marketing-seo-services-box-in-down {
+  .digital-marketing-seo-services-box-in-down,
+  .content-writing-page-blog-writing-box-in-down,
+  .content-writing-page-website-content-writing-box-in-down,
+  .content-writing-page-marketing-material-box-in-down,
+  .content-writing-page-social-media-content-box-in-down ,
+  .graphics-design-logo-design-services-box-in-down,
+  .graphics-design-web-design-services-box-in-down,
+  .graphics-design-advertising-design-services-box-in-down,
+  .graphics-design-branding-design-services-box-in-down,
+  .graphics-design-branding-and-marketing-design-services-box-in-down,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-in-down,
+  .e-commerce-development-page-woo-commerce-development-section-box-in-down,
+  .e-commerce-development-page-magento-development-section-box-box-in-down,
+  .ui-ux-design-page-ux-strategy-section-box-in-down,
+  .ui-ux-design-page-ux-research-section-box-in-down,
+  .ui-ux-design-page-ui-design-section-box-in-down,
+  .ui-ux-design-page-ux-design-section-box-in-down,
+  .ui-ux-design-page-usability-testing-section-box-in-down{
     font-size: 17px;
     justify-content: center;
     column-gap: 15px;
@@ -386,6 +451,10 @@
   .company-details-wraper{
     grid-template-columns: 1fr 1fr;
   }
+  .development-services-in-Bangalore h1{
+    font-size: 55px;
+  }
+
   
 }
 
@@ -513,7 +582,34 @@
     .web-development-page-shopify-box-h1-heading,
      .web-development-page-php-box-h1-heading,
      .web-development-page-react-box-h1-heading, 
-     .web-development-page-node-js-box-h1-heading{
+     .web-development-page-node-js-box-h1-heading,
+     .digital-marketing-seo-services-box-h1-heading,
+     .digital-marketing-page-social-media-marketing-box-h1-heading,
+     .our-client-heading h1,
+     .content-writing-page-blog-writing-box-h1-heading,
+     .content-writing-page-website-content-writing-box-h1-heading,
+     .content-writing-page-marketing-material-box-h1-heading,
+     .content-writing-page-social-media-content-box-h1-heading,
+     .graphics-design-logo-design-services-box-h1-heading,
+  .graphics-design-web-design-services-box-h1-heading,
+  .graphics-design-advertising-design-services-box-h1-heading,
+  .graphics-design-branding-design-services-box-h1-heading,
+  .graphics-design-branding-and-marketing-design-services-box-h1-heading,
+  .web-application-development-mern-stack-development-section-box-h1-heading,
+  .web-application-development-e-commerce-development-section-box-h1-heading,
+  .web-application-development-custom-application-development-section-box-h1-heading,
+  .web-application-development-business-dashboard-and-api-section-box-h1-heading,
+  .web-application-development-online-booking-platform-section-box-h1-heading,
+  .web-application-development-full-stack-development-section-box-h1-heading,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-woo-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-magento-development-section-box-h1-heading,
+  .ui-ux-design-page-ux-strategy-section-box-h1-heading,
+  .ui-ux-design-page-ux-research-section-box-h1-heading,
+  .ui-ux-design-page-ui-design-section-box-h1-heading,
+  .ui-ux-design-page-ux-design-section-box-h1-heading,
+  .ui-ux-design-page-usability-testing-section-box-h1-heading{
+
       font-size: 40px;
      }
 
@@ -523,6 +619,108 @@
        .web-development-page-react-box,
        .web-development-page-node-js-box,
        .web-development-page-joomla-box,
+       .web-development-page-magento-box,
+       .digital-marketing-seo-services-box,
+       .digital-marketing-page-social-media-marketing-box,
+       .content-writing-page-blog-writing-box,
+       .content-writing-page-website-content-writing-box,
+       .content-writing-page-marketing-material-box,
+       .content-writing-page-social-media-content-box,
+       .graphics-design-logo-design-services-box,
+  .graphics-design-web-design-services-box,
+  .graphics-design-advertising-design-services-box,
+  .graphics-design-branding-design-services-box,
+  .graphics-design-branding-and-marketing-design-services-box,
+  .web-application-development-mern-stack-development-section-box,
+  .web-application-development-e-commerce-development-section-box,
+  .web-application-development-custom-application-development-section-box,
+  .web-application-development-business-dashboard-and-api-section-box,
+  .web-application-development-online-booking-platform-section-box,
+  .web-application-development-full-stack-development-section-box,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box,
+  .e-commerce-development-page-woo-commerce-development-section-box,
+  .e-commerce-development-page-magento-development-section-box,
+  .ui-ux-design-page-ux-strategy-section-box,
+  .ui-ux-design-page-ux-research-section-box,
+  .ui-ux-design-page-ui-design-section-box,
+  .ui-ux-design-page-ux-design-section-box,
+  .ui-ux-design-page-usability-testing-section-box{
+        padding: 35px;
+       }
+
+       .web-development-page-magento-pulse,
+      .web-development-page-joomla-pulse,
+       .web-development-page-wordpress-pulse,
+        .web-development-page-shopify-pulse,
+        .web-development-page-react-pulse,
+        .web-development-page-node-js-pulse,
+        .web-development-page-pulse,
+        .digital-marketing-seo-services-pulse,
+        .digital-marketing-page-social-media-marketing-pulse,
+        .content-writing-page-blog-writing-box-pulse,
+        .content-writing-page-website-content-writing-box-pulse,
+        .content-writing-page-marketing-material-box-pulse,
+        .content-writing-page-social-media-content-box-pulse,
+        .graphics-design-logo-design-services-box-pulse,
+        .graphics-design-web-design-services-box-pulse,
+        .graphics-design-advertising-design-services-box-pulse,
+        .graphics-design-branding-design-services-box-pulse,
+        .graphics-design-branding-and-marketing-design-services-box-pulse,
+        .web-application-development-mern-stack-development-section-box-pulse,
+        .web-application-development-e-commerce-development-section-box-pulse,
+        .web-application-development-custom-application-development-section-box-pulse,
+        .web-application-development-business-dashboard-and-api-section-box-pulse,
+        .web-application-development-online-booking-platform-section-box-pulse,
+        .web-application-development-full-stack-development-section-box-pulse,
+        .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse,
+        .e-commerce-development-page-woo-commerce-development-section-box-pulse,
+        .e-commerce-development-page-magento-development-section-box-pulse,
+        .ui-ux-design-page-ux-strategy-section-box-pulse,
+        .ui-ux-design-page-ux-research-section-box-pulse,
+        .ui-ux-design-page-ui-design-section-box-pulse,
+        .ui-ux-design-page-ux-design-section-box-pulse,
+        .ui-ux-design-page-usability-testing-section-box-pulse{
+          height: 65px;
+          width: 65px;
+          top: 17px;
+          left: 10%;
+        }
+
+        .web-development-page-magento-pulse img,
+      .web-development-page-joomla-pulse img,
+       .web-development-page-wordpress-pulse img,
+        .web-development-page-shopify-pulse img,
+        .web-development-page-react-pulse img,
+        .web-development-page-node-js-pulse img,
+         .web-development-page-pulse img,
+         .digital-marketing-seo-services-pulse img,
+         .digital-marketing-page-social-media-marketing-pulse img,
+         .content-writing-page-blog-writing-box-pulse img,
+         .content-writing-page-website-content-writing-box-pulse img,
+         .content-writing-page-marketing-material-box-pulse img,
+         .content-writing-page-social-media-content-box-pulse img,
+         .graphics-design-logo-design-services-box-pulse img,
+         .graphics-design-web-design-services-box-pulse img,
+         .graphics-design-advertising-design-services-box-pulse img,
+         .graphics-design-branding-design-services-box-pulse img,
+         .graphics-design-branding-and-marketing-design-services-box-pulse img,
+         .web-application-development-mern-stack-development-section-box-pulse img,
+         .web-application-development-e-commerce-development-section-box-pulse img,
+         .web-application-development-custom-application-development-section-box-pulse img,
+         .web-application-development-business-dashboard-and-api-section-box-pulse img,
+         .web-application-development-online-booking-platform-section-box-pulse img,
+         .web-application-development-full-stack-development-section-box-pulse img,
+         .e-commerce-development-page-magento-development-section-box-pulse img,
+         .e-commerce-development-page-woo-commerce-development-section-box-pulse img,
+         .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img,
+         .ui-ux-design-page-ux-strategy-section-box-pulse img,
+         .ui-ux-design-page-ux-research-section-box-pulse img,
+         .ui-ux-design-page-ui-design-section-box-pulse img,
+         .ui-ux-design-page-ux-design-section-box-pulse img,
+         .ui-ux-design-page-usability-testing-section-box-pulse img{
+          width: 35px;
+         }
+
        .web-development-page-magento-box{
         padding: 35px;
        }
@@ -585,6 +783,7 @@
         padding: 50px;
     }
     .competitor-h1,
+
      .web-development-page-wordpress-box-h1-heading,
       .web-development-page-joomla-box-h1-heading,
        .web-development-page-magento-box-h1-heading,
@@ -600,6 +799,7 @@
         padding: 35px;
     }
     .best-company-pulse,
+     .in-bangalore-pulse, .work-pulse, .about-company-pulse, .about-company-pulse, .blog-pulse, .mission-pulse, .testimonial-pulse, .services-pulse, .in-bangalore5-pulse, .pulse, .social-media-marketing-competitors-pulse, .in-bangalore6-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .in-bangalore2-pulse ,.competitor-pulse, .php-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse{
      .web-development-page-magento-pulse,
       .web-development-page-joomla-pulse,
        .web-development-page-wordpress-pulse,
@@ -613,6 +813,7 @@
         left: 10%;
     }
     .best-company-pulse img ,
+      .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
      .web-development-page-magento-pulse img,
       .web-development-page-joomla-pulse img,
        .web-development-page-wordpress-pulse img,
@@ -620,6 +821,7 @@
         .web-development-page-react-pulse img,
         .web-development-page-node-js-pulse img,
          .web-development-page-pulse img, .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
+
         width: 35px;
     }
     .best-company-p, .service-in-p, .in-bangalore6-p, .in-bangalore5-p, .php-p, .in-bangalore4-p, .in-bangalore3-p, .in-bangalore-p, .in-bangalore2-p, .wordpress-p, .shopify-p, .magento-p, .joomla-p, .react-p, .node-js-p, .professional-p{
@@ -878,13 +1080,113 @@
     height: auto;
   }
 
+  .planet-container{
+    width: 270px;
+    height: 270px;
+  }
+
   .company-details-wraper {
     grid-template-columns: 1fr 1fr;
   }
   .our-ecommerce-in-box-wraper-in-box{
     padding: 30px;
   }
+  .icon-desin i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
 }
+
+
+/* 855px start */
+
+@media screen and (max-width: 855px){
+  .web-development-page-wordpress-box-h1-heading,
+  .web-development-page-joomla-box-h1-heading,
+   .web-development-page-magento-box-h1-heading,
+    .web-development-page-shopify-box-h1-heading,
+     .web-development-page-php-box-h1-heading,
+     .web-development-page-react-box-h1-heading, 
+     .web-development-page-node-js-box-h1-heading,
+     .digital-marketing-seo-services-box-h1-heading,
+     .digital-marketing-page-social-media-marketing-box-h1-heading,
+     .our-client-heading h1,
+     .content-writing-page-blog-writing-box-h1-heading,
+     .content-writing-page-website-content-writing-box-h1-heading,
+     .content-writing-page-marketing-material-box-h1-heading,
+     .content-writing-page-social-media-content-box-h1-heading,
+     .graphics-design-logo-design-services-box-h1-heading,
+  .graphics-design-web-design-services-box-h1-heading,
+  .graphics-design-advertising-design-services-box-h1-heading,
+  .graphics-design-branding-design-services-box-h1-heading,
+  .graphics-design-branding-and-marketing-design-services-box-h1-heading,
+  .web-application-development-mern-stack-development-section-box-h1-heading,
+  .web-application-development-e-commerce-development-section-box-h1-heading,
+  .web-application-development-custom-application-development-section-box-h1-heading,
+  .web-application-development-business-dashboard-and-api-section-box-h1-heading,
+  .web-application-development-online-booking-platform-section-box-h1-heading,
+  .web-application-development-full-stack-development-section-box-h1-heading,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-woo-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-magento-development-section-box-h1-heading,
+  .ui-ux-design-page-ux-strategy-section-box-h1-heading,
+  .ui-ux-design-page-ux-research-section-box-h1-heading,
+  .ui-ux-design-page-ui-design-section-box-h1-heading,
+  .ui-ux-design-page-ux-design-section-box-h1-heading,
+  .ui-ux-design-page-usability-testing-section-box-h1-heading{
+      font-size: 32px;
+      padding-bottom: 20px;
+     }
+
+
+
+     .competitor-h1,
+     .our-client-heading h1,
+     .work-h1,
+     .our-mission-h1,
+     .contact-fill-up-in-box-up-text,
+     .about-company-in-box-wraper-textbox-text,
+     .blog-heading h1,
+     .testmonial-heading h1,
+     .services-h1,
+     .about-in-box-wraper-textbox-text,
+     .our-ecommerce-in-box-h1,
+     .seo-services-ani-box-in-box-h1,
+     .social-media-marketing-in-box-h1,
+     .in-bangalore6-h1,
+     .social-media-marketing-competitors-h1,
+     .in-bangalore-h1,
+     .in-bangalore5-h1,
+     .in-bangalore4-h1,
+     .in-bangalore3-h1,
+     .in-bangalore2-h1,
+     .service-in-h1,
+     .php-h1,
+     .wordpress-h1,
+     .shopify-h1,
+     .magento-h1,
+     .joomla-h1,
+     .react-h1,
+     .node-js-h1,
+     .professional-h1,
+     .benefits-h1,
+     .creative-work-heading h1,
+     .web-development-page-php-box-h1-heading,
+     .web-development-page-wordpress-box-h1-heading,
+     .web-development-page-shopify-box-h1-heading,
+     .web-development-page-joomla-box-h1-heading,
+     .web-development-page-magento-box-h1-heading,
+     .web-development-page-react-box-h1-heading,
+     .web-development-page-node-js-box-h1-heading,
+     .digital-marketing-seo-services-box-h1-heading,
+     .digital-marketing-page-social-media-marketing-box-h1-heading{
+       font-size: 32px;
+       padding-bottom: 20px;
+     }
+}
+  
+
 
 /* 768px media screen  start */
 
@@ -1036,6 +1338,11 @@
   .web-development-page-magento-pulse img,
   .web-development-page-joomla-pulse img,
   .web-development-page-react-pulse img,
+  .web-development-page-node-js-pulse img,
+  .e-commerce-development-page-magento-development-section-box-pulse img,
+         .e-commerce-development-page-woo-commerce-development-section-box-pulse img,
+         .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img{
+=======
   .web-development-page-node-js-pulse img{
     width: 30px;
   }
@@ -1069,6 +1376,10 @@
   .node-js-h1,
   .professional-h1,
   .benefits-h1,
+  .creative-work-heading h1
+  {
+    font-size: 32px;
+=======
   .creative-work-heading h1,
   .web-development-page-php-box-h1-heading,
   .web-development-page-wordpress-box-h1-heading,
@@ -1122,6 +1433,13 @@
   .in-bangalore5-down-box {
     padding: 10px 20px;
   }
+  .animation-heading-text{
+    line-height: 60px;
+  }
+
+
+
+  /* --------------------------------------------------------------------------------------------------------- */
 
   .web-development-page-php-box-down-circle,
   .web-development-page-wordpress-box-down-circle,
@@ -1129,6 +1447,139 @@
   .web-development-page-magento-box-down-circle,
   .web-development-page-joomla-box-down-circle,
   .web-development-page-react-box-down-circle,
+  .web-development-page-node-js-box-down-circle,
+  .digital-marketing-page-social-media-marketing-box-in-down,
+  .content-writing-page-blog-writing-box-in-down,
+  .content-writing-page-website-content-writing-box-in-down,
+  .content-writing-page-marketing-material-box-in-down,
+  .content-writing-page-social-media-content-box-in-down,
+  .graphics-design-logo-design-services-box-in-down,
+  .graphics-design-web-design-services-box-in-down,
+  .graphics-design-advertising-design-services-box-in-down,
+  .graphics-design-branding-design-services-box-in-down,
+  .graphics-design-branding-and-marketing-design-services-box-in-down,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-in-down,
+  .e-commerce-development-page-woo-commerce-development-section-box-in-down,
+  .e-commerce-development-page-magento-development-section-box-box-in-down,
+  .ui-ux-design-page-ux-strategy-section-box-in-down,
+  .ui-ux-design-page-ux-research-section-box-in-down,
+  .ui-ux-design-page-ui-design-section-box-in-down,
+  .ui-ux-design-page-ux-design-section-box-in-down,
+  .ui-ux-design-page-usability-testing-section-box-in-down{
+    padding: 10px 20px;
+  }
+
+  .web-development-page-php-box,
+  .web-development-page-wordpress-box,
+  .web-development-page-shopify-box,
+  .web-development-page-magento-box,
+  .web-development-page-joomla-box,
+  .web-development-page-react-box,
+  .web-development-page-node-js-box,
+  .digital-marketing-seo-services-box,
+  .digital-marketing-page-social-media-marketing-box,
+  .content-writing-page-blog-writing-box,
+  .content-writing-page-website-content-writing-box,
+  .content-writing-page-marketing-material-box,
+  .content-writing-page-social-media-content-box,
+  .graphics-design-logo-design-services-box,
+  .graphics-design-web-design-services-box,
+  .graphics-design-advertising-design-services-box,
+  .graphics-design-branding-design-services-box,
+  .graphics-design-branding-and-marketing-design-services-box,
+  .web-application-development-mern-stack-development-section-box,
+  .web-application-development-e-commerce-development-section-box,
+  .web-application-development-custom-application-development-section-box,
+  .web-application-development-business-dashboard-and-api-section-box,
+  .web-application-development-online-booking-platform-section-box,
+  .web-application-development-full-stack-development-section-box,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box,
+  .e-commerce-development-page-woo-commerce-development-section-box,
+  .e-commerce-development-page-magento-development-section-box,
+  .ui-ux-design-page-ux-strategy-section-box,
+  .ui-ux-design-page-ux-research-section-box,
+  .ui-ux-design-page-ui-design-section-box,
+  .ui-ux-design-page-ux-design-section-box,
+  .ui-ux-design-page-usability-testing-section-box
+   {
+    padding: 30px;
+  }
+
+  .digital-marketing-seo-services-pulse,
+  .digital-marketing-page-social-media-marketing-pulse,
+  .content-writing-page-blog-writing-box-pulse,
+  .content-writing-page-website-content-writing-box-pulse,
+  .content-writing-page-marketing-material-box-pulse,
+  .content-writing-page-social-media-content-box-pulse,
+  .graphics-design-logo-design-services-box-pulse,
+        .graphics-design-web-design-services-box-pulse,
+        .graphics-design-advertising-design-services-box-pulse,
+        .graphics-design-branding-design-services-box-pulse,
+        .graphics-design-branding-and-marketing-design-services-box-pulse,
+        .web-application-development-mern-stack-development-section-box-pulse,
+        .web-application-development-e-commerce-development-section-box-pulse,
+        .web-application-development-custom-application-development-section-box-pulse,
+        .web-application-development-business-dashboard-and-api-section-box-pulse,
+        .web-application-development-online-booking-platform-section-box-pulse,
+        .web-application-development-full-stack-development-section-box-pulse,
+        .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse,
+        .e-commerce-development-page-woo-commerce-development-section-box-pulse,
+        .e-commerce-development-page-magento-development-section-box-pulse,
+        .ui-ux-design-page-ux-strategy-section-box-pulse,
+        .ui-ux-design-page-ux-research-section-box-pulse,
+        .ui-ux-design-page-ui-design-section-box-pulse,
+        .ui-ux-design-page-ux-design-section-box-pulse,
+        .ui-ux-design-page-usability-testing-section-box-pulse{
+    height: 60px;
+    width: 60px;
+    top: 0px;
+  }
+
+  .web-development-page-pulse img,
+  .web-development-page-wordpress-pulse img,
+  .web-development-page-shopify-pulse img,
+  .web-development-page-magento-pulse img,
+  .web-development-page-joomla-pulse img,
+  .web-development-page-react-pulse img,
+  .web-development-page-node-js-pulse img,
+  .digital-marketing-page-social-media-marketing-pulse img,
+  .digital-marketing-seo-services-pulse img,
+  .content-writing-page-blog-writing-box-pulse img,
+  .content-writing-page-website-content-writing-box-pulse img,
+  .content-writing-page-marketing-material-box-pulse img,
+  .content-writing-page-social-media-content-box-pulse img,
+  .graphics-design-logo-design-services-box-pulse img,
+         .graphics-design-web-design-services-box-pulse img,
+         .graphics-design-advertising-design-services-box-pulse img,
+         .graphics-design-branding-design-services-box-pulse img,
+         .graphics-design-branding-and-marketing-design-services-box-pulse img,
+         .web-application-development-mern-stack-development-section-box-pulse img,
+         .web-application-development-e-commerce-development-section-box-pulse img,
+         .web-application-development-custom-application-development-section-box-pulse img,
+         .web-application-development-business-dashboard-and-api-section-box-pulse img,
+         .web-application-development-online-booking-platform-section-box-pulse img,
+         .web-application-development-full-stack-development-section-box-pulse img,
+         .e-commerce-development-page-magento-development-section-box-pulse img,
+         .e-commerce-development-page-woo-commerce-development-section-box-pulse img,
+         .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img,
+         .ui-ux-design-page-ux-strategy-section-box-pulse img,
+         .ui-ux-design-page-ux-research-section-box-pulse img,
+         .ui-ux-design-page-ui-design-section-box-pulse img,
+         .ui-ux-design-page-ux-design-section-box-pulse img,
+         .ui-ux-design-page-usability-testing-section-box-pulse img{
+    width: 30px;
+  }
+
+  /* ------------------------------------------------------------------------------------------------------------ */
+
+  .service-in-box, .competitor-in-box, .next-project-in-box, .consulation-in-box, .work-in-box, .tesimonial-in-box, .seo-services-ani-box-in-box, .social-media-marketing-in-box, .social-media-marketing-competitors-in-box, .our-ecommerce-in-box, .benefits-in-box, .in-bangalore5-box, .in-bangalore6-box, .in-bangalore-box, .in-bangalore4-box, .in-bangalore3-box, .best-company-in-box, .php-box, .wordpress-box, .shopify-box, .magento-box, .joomla-box, .react-box, .node-js-box, .professional-box, .benefits-in-box, .our-client-in-box {
+    padding: 30px;
+}
+.planet-container {
+  width: 250px;
+  height: 250px;
+}
+=======
   .web-development-page-node-js-box-down-circle{
     padding: 10px 20px;
   }
@@ -1316,6 +1767,10 @@
     .about-in-box-wraper-imgbox img{
         width: 100%;
     }
+    #scroll-top{
+      height: 45px;
+      width: 45px;
+    }
 }
 
 /* 540px start */
@@ -1333,12 +1788,218 @@
     .hero-section-text-main-heading , .testmonial-heading h1, .section-tectbox-h1, .about-in-box-wraper-textbox-text, .work-h1, .services-h1, .our-mission-h1{
         font-size: 30px;
     }
+
+    /* --------------------------------------------------------------------------------------------- */
   .web-development-page-php-box-h1-heading, 
   .web-development-page-wordpress-box-h1-heading,
   .web-development-page-shopify-box-h1-heading,
   .web-development-page-joomla-box-h1-heading,
   .web-development-page-magento-box-h1-heading,
   .web-development-page-react-box-h1-heading,
+  .web-development-page-node-js-box-h1-heading,
+  .content-writing-page-blog-writing-box-h1-heading,
+  .content-writing-page-website-content-writing-box-h1-heading,
+  .content-writing-page-marketing-material-box-h1-heading,
+  .content-writing-page-social-media-content-box-h1-heading,
+  .graphics-design-logo-design-services-box-h1-heading,
+  .graphics-design-web-design-services-box-h1-heading,
+  .graphics-design-advertising-design-services-box-h1-heading,
+  .graphics-design-branding-design-services-box-h1-heading,
+  .graphics-design-branding-and-marketing-design-services-box-h1-heading,
+  .web-application-development-mern-stack-development-section-box-h1-heading,
+  .web-application-development-e-commerce-development-section-box-h1-heading,
+  .web-application-development-custom-application-development-section-box-h1-heading,
+  .web-application-development-business-dashboard-and-api-section-box-h1-heading,
+  .web-application-development-online-booking-platform-section-box-h1-heading,
+  .web-application-development-full-stack-development-section-box-h1-heading,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-woo-commerce-development-section-box-h1-heading,
+  .e-commerce-development-page-magento-development-section-box-h1-heading,
+  .ui-ux-design-page-ux-strategy-section-box-h1-heading,
+  .ui-ux-design-page-ux-research-section-box-h1-heading,
+  .ui-ux-design-page-ui-design-section-box-h1-heading,
+  .ui-ux-design-page-ux-design-section-box-h1-heading,
+  .ui-ux-design-page-usability-testing-section-box-h1-heading {
+    font-size: 30px;
+  }
+
+  .web-development-page-php-box,
+  .web-development-page-wordpress-box,
+  .web-development-page-shopify-box,
+  .web-development-page-magento-box,
+  .web-development-page-joomla-box,
+  .web-development-page-react-box,
+  .web-development-page-node-js-box,
+  .content-writing-page-blog-writing-box,
+  .graphics-design-logo-design-services-box,
+  .graphics-design-web-design-services-box,
+  .graphics-design-advertising-design-services-box,
+  .graphics-design-branding-design-services-box,
+  .graphics-design-branding-and-marketing-design-services-box,
+  .web-application-development-mern-stack-development-section-box,
+  .web-application-development-e-commerce-development-section-box,
+  .web-application-development-custom-application-development-section-box,
+  .web-application-development-business-dashboard-and-api-section-box,
+  .web-application-development-online-booking-platform-section-box,
+  .web-application-development-full-stack-development-section-box,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box,
+  .e-commerce-development-page-woo-commerce-development-section-box,
+  .e-commerce-development-page-magento-development-section-box,
+  .ui-ux-design-page-ux-strategy-section-box,
+  .ui-ux-design-page-ux-research-section-box,
+  .ui-ux-design-page-ui-design-section-box,
+  .ui-ux-design-page-ux-design-section-box,
+  .ui-ux-design-page-usability-testing-section-box
+   {
+    padding: 30px 20px;
+  }
+
+
+  .digital-marketing-seo-services-pulse,
+  .digital-marketing-page-social-media-marketing-pulse,
+  .content-writing-page-blog-writing-box-pulse,
+  .content-writing-page-website-content-writing-box-pulse,
+  .content-writing-page-marketing-material-box-pulse,
+  .graphics-design-logo-design-services-box-pulse,
+        .graphics-design-web-design-services-box-pulse,
+        .graphics-design-advertising-design-services-box-pulse,
+        .graphics-design-branding-design-services-box-pulse,
+        .graphics-design-branding-and-marketing-design-services-box-pulse,
+        .web-application-development-mern-stack-development-section-box-pulse,
+        .web-application-development-e-commerce-development-section-box-pulse,
+        .web-application-development-custom-application-development-section-box-pulse,
+        .web-application-development-business-dashboard-and-api-section-box-pulse,
+        .web-application-development-online-booking-platform-section-box-pulse,
+        .web-application-development-full-stack-development-section-box-pulse,
+        .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse,
+        .e-commerce-development-page-woo-commerce-development-section-box-pulse,
+        .e-commerce-development-page-magento-development-section-box-pulse,
+        .ui-ux-design-page-ux-strategy-section-box-pulse,
+        .ui-ux-design-page-ux-research-section-box-pulse,
+        .ui-ux-design-page-ui-design-section-box-pulse,
+        .ui-ux-design-page-ux-design-section-box-pulse,
+        .ui-ux-design-page-usability-testing-section-box-pulse{
+    height: 50px;
+    width: 50px;
+    top: 5px;
+  }
+
+
+
+  .best-company-pulse,
+  .competitor-pulse,
+  .work-pulse,
+  .about-company-pulse,
+  .blog-pulse,
+  .testimonial-pulse,
+  .mission-pulse,
+  .services-pulse,
+  .php-pulse,
+  .pulse,
+  .in-bangalore6-pulse,
+  .social-media-marketing-competitors-pulse,
+  .in-bangalore2-pulse,
+  .in-bangalore-pulse,
+  .in-bangalore5-pulse,
+  .in-bangalore4-pulse,
+  .in-bangalore3-pulse,
+  .wordpress-pulse,
+  .shopify-pulse,
+  .magento-pulse,
+  .joomla-pulse,
+  .react-pulse,
+  .node-js-pulse,
+  .benefits-pulse,
+  .creative-work-pulse,
+  .our-client-pulse,
+  .web-development-page-pulse,
+  .web-development-page-wordpress-pulse,
+  .web-development-page-shopify-pulse,
+  .web-development-page-magento-pulse,
+  .web-development-page-joomla-pulse,
+  .web-development-page-react-pulse,
+  .web-development-page-node-js-pulse,
+  .content-writing-page-social-media-content-box-pulse {
+    height:50px;
+    width: 50px;
+    top: 5px;
+  }
+
+
+  .best-company-pulse img,
+  .competitor-pulse img,
+  .blog-pulse img,
+  .about-company-pulse img,
+  .testimonial-pulse img,
+  .mission-pulse img,
+  .services-pulse img,
+  .work-pulse img,
+  .php-pulse img,
+  .in-bangalore6-pulse img,
+  .in-bangalore3-pulse img,
+  .shopify-pulse img,
+  .magento-pulse img,
+  .joomla-pulse img,
+  .react-pulse img,
+  .node-js-pulse img,
+  .benefits-pulse img,
+  .creative-work-pulse img,
+  .our-client-pulse img,
+  .web-development-page-pulse img,
+  .web-development-page-wordpress-pulse img,
+  .web-development-page-shopify-pulse img,
+  .web-development-page-magento-pulse img,
+  .web-development-page-joomla-pulse img,
+  .web-development-page-react-pulse img,
+  .web-development-page-node-js-pulse img,
+  .digital-marketing-seo-services-pulse img,
+  .digital-marketing-page-social-media-marketing-pulse img,
+  .content-writing-page-blog-writing-box-pulse img,
+  .content-writing-page-website-content-writing-box-pulse img,
+  .content-writing-page-marketing-material-box-pulse img,
+  .content-writing-page-social-media-content-box-pulse img,
+  .graphics-design-logo-design-services-box-pulse img,
+         .graphics-design-web-design-services-box-pulse img,
+         .graphics-design-advertising-design-services-box-pulse img,
+         .graphics-design-branding-design-services-box-pulse img,
+         .graphics-design-branding-and-marketing-design-services-box-pulse img,
+         .web-application-development-mern-stack-development-section-box-pulse img,
+         .web-application-development-e-commerce-development-section-box-pulse img,
+         .web-application-development-custom-application-development-section-box-pulse img,
+         .web-application-development-business-dashboard-and-api-section-box-pulse img,
+         .web-application-development-online-booking-platform-section-box-pulse img,
+         .web-application-development-full-stack-development-section-box-pulse img,
+         .e-commerce-development-page-magento-development-section-box-pulse img,
+         .e-commerce-development-page-woo-commerce-development-section-box-pulse img,
+         .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img,
+         .ui-ux-design-page-ux-strategy-section-box-pulse img,
+         .ui-ux-design-page-ux-research-section-box-pulse img,
+         .ui-ux-design-page-ui-design-section-box-pulse img,
+         .ui-ux-design-page-ux-design-section-box-pulse img,
+         .ui-ux-design-page-usability-testing-section-box-pulse img{
+    width: 25px;
+  }
+
+  .web-development-page-php-box, 
+  .web-development-page-wordpress-box, 
+  .web-development-page-shopify-box,
+   .web-development-page-magento-box,
+    .web-development-page-joomla-box, 
+    .web-development-page-react-box, 
+    .web-development-page-node-js-box, 
+    .digital-marketing-seo-services-box,
+     .digital-marketing-page-social-media-marketing-box {
+    padding: 30px 20px;
+}
+
+
+.planet-container {
+  width: 200px;
+  height: 200px;
+}
+
+
+  /* --------------------------------------------------------------------------------------------------- */
   .web-development-page-node-js-box-h1-heading {
     font-size: 30px;
   }
@@ -1356,6 +2017,7 @@
     .pulse, .work-pulse, .services-pulse , .blog-pulse, .mission-pulse{
         height: 50px;
         width: 50px;
+        top: 5px;
         top: 6px;
     }
     .testimonial-pulse{
@@ -1514,7 +2176,9 @@ column-gap: 0px;
 .our-ecommerce-in-box-wraper-in-box {
   padding: 20px;
 }
+
 }
+
 
 /* 420px mediascreen start */
 
@@ -1545,7 +2209,60 @@ column-gap: 0px;
     font-size: 30px;
   }
 
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  .competitor-h1, 
+  .our-client-heading h1,
+   .work-h1, .our-mission-h1,
+    .contact-fill-up-in-box-up-text,
+    .about-company-in-box-wraper-textbox-text,
+     .blog-heading h1, 
+     .testmonial-heading h1, 
+     .services-h1,
+      .about-in-box-wraper-textbox-text, 
+      .our-ecommerce-in-box-h1, 
+      .seo-services-ani-box-in-box-h1,
+       .social-media-marketing-in-box-h1, 
+       .in-bangalore6-h1,
+        .social-media-marketing-competitors-h1,
+         .in-bangalore-h1, .in-bangalore5-h1,
+          .in-bangalore4-h1,
+           .in-bangalore3-h1,
+            .in-bangalore2-h1, 
+            .service-in-h1, 
+            .php-h1, 
+            .wordpress-h1,
+             .shopify-h1, 
+             .magento-h1,
+              .joomla-h1, 
+              .react-h1,
+               .node-js-h1,
+                .professional-h1, 
+                .benefits-h1,
+                 .creative-work-heading h1,
+                  .web-development-page-php-box-h1-heading,
+    .web-development-page-wordpress-box-h1-heading,
+    .web-development-page-shopify-box-h1-heading,
+    .web-development-page-joomla-box-h1-heading,
+  .web-development-page-magento-box-h1-heading,
+  .web-development-page-react-box-h1-heading,
+  .web-development-page-node-js-box-h1-heading,
+  .digital-marketing-seo-services-box-h1-heading,
+  .digital-marketing-page-social-media-marketing-box-h1-heading {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
   /* about start */
+
+
+
 
   .about {
     padding: 50px 20px;

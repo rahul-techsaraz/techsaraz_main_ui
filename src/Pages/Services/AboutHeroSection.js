@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom'
 import Routes from '../../Constant/routes'
 
 const AboutHeroSection = () => {
+
+
   
   return (
     <div className="services-hero-section">
+  
+  
       <div className="hro">
         <div className="textBox">
           <h1 className="section-tectbox-h1">About Us</h1>
@@ -35,6 +39,7 @@ const AboutHeroSection = () => {
           <div className='inner-shadow'></div>
         </div>
       </div>
+
     </div>
   )
 }

@@ -28,8 +28,8 @@ const CounterSection = () => {
   };
 
   useEffect(() => {
-    incrementCounter(setHappyClients, 445, 5); // Example target value for Happy Clients
-    incrementCounter(setCompleteProjects, 518, 8); // Example target value for Complete Projects
+    incrementCounter(setHappyClients, 445, 2); // Example target value for Happy Clients
+    incrementCounter(setCompleteProjects, 518, 1); // Example target value for Complete Projects
     incrementCounter(setYearsOfExperience, 8, 2); // Example target value for Years of Experience
     incrementCounter(setWinningAwards, 25, 5); // Example target value for Winning Awards
   }, []);

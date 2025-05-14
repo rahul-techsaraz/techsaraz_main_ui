@@ -59,7 +59,9 @@ const Footer = () => {
                   </span>
                   <span className="icon-desin">
                     <a href="https://www.youtube.com/@techsaraz" target="blank">
-                      <i className="fa-brands fa-instagram youtube-icon-style"></i>
+
+                    <i className="fa-brands fa-youtube youtube-icon-style"></i>
+
                     </a>
                   </span>
                   <span className="icon-desin">
@@ -139,6 +141,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div className="footer-down"><span className='footer-down-text-bold'>Tech Saraz </span> © 2025.All Rights Reserved.</div>
       {showScrollTop && (
         <div id="scroll-top" onClick={scrollToTop}>
           <button id="btn" className="scroll-top-button-22">
