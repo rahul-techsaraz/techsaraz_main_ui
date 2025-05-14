@@ -8564,6 +8564,7 @@ padding: 0 20px;
   font-size: 17px;
   padding-bottom: 20px;
   text-align: justify;
+
 }
 .in-bangalore2-down-box {
   width: 100%;
@@ -17360,9 +17361,7 @@ svg {
   100% { transform: rotate(0deg); }
 }
 
-/* Earth Animation end */
 
-/* canvas section contact us start */
 
 canvas {
   opacity: 0.5;
@@ -17384,4 +17383,4 @@ canvas {
   background-color: #000;
 }
 
-/* canvas section about end */
+
