@@ -29,13 +29,14 @@ export const ToastProvider = ({ children }) => {
   return (
     <ToastContext.Provider value={{ showToast }}>
       {children}
-      {toastVisible && <Toast
-        type={toastType}
-        message={toastMessage}
-        isVisible={toastVisible}
-        onClose={() => setToastVisible(false)}
-      />}
-      
+      {toastVisible && (
+        <Toast
+          type={toastType}
+          message={toastMessage}
+          isVisible={toastVisible}
+          onClose={() => setToastVisible(false)}
+        />
+      )}
     </ToastContext.Provider>
   );
 };

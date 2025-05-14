@@ -294,8 +294,8 @@ export const config = {
         alt: constants.images.c4investcapital.alt,
       },
       {
-          imageUrl: constants.images.c4PlusEvents.imageURL,
-          alt:constants.images.c4PlusEvents.alt,
+        imageUrl: constants.images.c4PlusEvents.imageURL,
+        alt: constants.images.c4PlusEvents.alt,
       },
       {
         imageUrl: constants.images.captainRonsFishandScuba.imageURL,
@@ -316,40 +316,52 @@ export const config = {
       {
         imageUrl: constants.images.eternalGranite.imageURL,
         alt: constants.images.eternalGranite.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.florenece.imageURL,
         alt: constants.images.florenece.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.globallyVillage.imageURL,
         alt: constants.images.globallyVillage.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.haloTechnologies.imageURL,
         alt: constants.images.haloTechnologies.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.healimpilo.imageURL,
         alt: constants.images.healimpilo.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.krityam.imageURL,
         alt: constants.images.krityam.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.orangePaper.imageURL,
         alt: constants.images.orangePaper.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.reboot.imageURL,
         alt: constants.images.reboot.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.scholar.imageURL,
         alt: constants.images.scholar.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.shineBright.imageURL,
         alt: constants.images.shineBright.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.tcc.imageURL,
         alt: constants.images.tcc.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.theHundredPercent.imageURL,
         alt: constants.images.theHundredPercent.alt,
-      },{
+      },
+      {
         imageUrl: constants.images.tritechLogo.imageURL,
         alt: constants.images.tritechLogo.alt,
       },
@@ -510,123 +522,122 @@ export const portfolio = [
     link: 'https://captainronsfishandscuba.com/',
   },
   {
-    title: "Career Grids",
+    title: 'Career Grids',
     description: 'Web Development',
     image: images.careergridsCom,
-    alt: "Career Grids Image",
+    alt: 'Career Grids Image',
     link: 'https://careergrids.com/',
   },
   {
-    title: "Casa Blanca Constructions",
+    title: 'Casa Blanca Constructions',
     description: 'Web Development',
     image: images.casablancaconstructionsCom,
-    alt: "Casa Blanca Constructions Image",
+    alt: 'Casa Blanca Constructions Image',
     link: 'https://www.casablancaconstructions.com/',
   },
   {
-    title: "Cosmaty",
+    title: 'Cosmaty',
     description: 'Web Development',
     image: images.cosmatyIn,
-    alt: "Cosmaty Image",
+    alt: 'Cosmaty Image',
     link: 'https://cosmaty.in/',
   },
   {
-    title: "Eternal Granite",
+    title: 'Eternal Granite',
     description: 'Web Development',
     image: images.eternalgranitemkpCom,
-    alt: "Eternal Granite Image",
+    alt: 'Eternal Granite Image',
     link: 'https://eternalgranitemkp.com/',
   },
   {
-    title: "Florence College",
+    title: 'Florence College',
     description: 'Web Development',
     image: images.florencecollegeIn,
-    alt: "Florence College Image",
+    alt: 'Florence College Image',
     link: 'https://florencecollege.in/',
   },
   {
-    title: "Globally Village",
+    title: 'Globally Village',
     description: 'Web Development',
     image: images.globallyvillageCom,
-    alt: "Globally Village Image",
+    alt: 'Globally Village Image',
     link: 'https://globallyvillage.com/',
   },
   {
-    title: "Halo Technologies",
+    title: 'Halo Technologies',
     description: 'Web Development',
     image: images.haloCoIn,
-    alt: "Halo Technologies Image",
+    alt: 'Halo Technologies Image',
     link: 'https://www.halo.co.in/',
   },
   {
-    title: "Healimpilo",
+    title: 'Healimpilo',
     description: 'Web Development',
     image: images.healimpiloCom,
-    alt: "Healimpilo Image",
+    alt: 'Healimpilo Image',
     link: 'https://healimpilo.com/',
   },
   {
-    title: "Krityam",
+    title: 'Krityam',
     description: 'Web Development',
     image: images.krityamCom,
-    alt: "Krityam Image",
+    alt: 'Krityam Image',
     link: 'https://krityam.com/',
   },
   {
-    title: "Orange Paper",
+    title: 'Orange Paper',
     description: 'Web Development',
     image: images.orangepaperIn,
-    alt: "Orange Paper Image",
+    alt: 'Orange Paper Image',
     link: 'https://orangepaper.in/',
   },
   {
-    title: "Rebootmyre",
+    title: 'Rebootmyre',
     description: 'Web Development',
     image: images.rebootmyreCom,
-    alt: "Rebootmyre Image",
+    alt: 'Rebootmyre Image',
     link: 'https://rebootmyre.com/',
   },
   {
-    title: "Scholars Academy",
+    title: 'Scholars Academy',
     description: 'Web Development',
     image: images.scholarsEdutechsarazCom,
-    alt: "Scholars Academy Image",
+    alt: 'Scholars Academy Image',
     link: 'https://scholars.edutechsaraz.com/',
   },
   {
-    title: "Shine Brightx",
+    title: 'Shine Brightx',
     description: 'Web Development',
     image: images.shinebrightxCom,
-    alt: "Shine Brightx Image",
+    alt: 'Shine Brightx Image',
     link: 'https://shinebrightx.com/',
   },
   {
-    title: "The Brands Master",
+    title: 'The Brands Master',
     description: 'Web Development',
     image: images.thebrandsmasterCom,
-    alt: "The Brands Master Image",
+    alt: 'The Brands Master Image',
     link: 'https://thebrandsmaster.com/',
   },
   {
-    title: "The Content Community",
+    title: 'The Content Community',
     description: 'Web Development',
     image: images.thecontentcommunityCom,
-    alt: "The Content Community Image",
+    alt: 'The Content Community Image',
     link: 'https://thecontentcommunity.com/',
   },
   {
-    title: "The Hundred Percent Official",
+    title: 'The Hundred Percent Official',
     description: 'Web Development',
     image: images.thehundredpercentofficialCom,
-    alt: "The Hundred Percent Official Image",
+    alt: 'The Hundred Percent Official Image',
     link: 'https://www.thehundredpercentofficial.com/',
   },
   {
-    title: "ttbspl",
+    title: 'ttbspl',
     description: 'Web Development',
     image: images.ttbsplCom,
-    alt: "ttbspl Image",
+    alt: 'ttbspl Image',
     link: 'https://www.ttbspl.com/',
   },
-  
 ];

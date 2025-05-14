@@ -11,16 +11,19 @@ import CustomPagination from '../../Utils/CustomComponents/CustomPagination';
 
 const BlogMainConatainer = () => {
   const [filterOn, setFilterOn] = useState('');
-  const [currentItems, setCurrentItems] = useState([])
-  const [filterdeData, setFilteredData] =useState([])
+  const [currentItems, setCurrentItems] = useState([]);
+  const [filterdeData, setFilteredData] = useState([]);
 
-  useEffect(()=>{
-    if(filterOn){
-      setFilteredData(blogPosts.filter((data)=>data.categorie.toLowerCase()===filterOn.toLowerCase()))
+  useEffect(() => {
+    if (filterOn) {
+      setFilteredData(
+        blogPosts.filter(
+          (data) => data.categorie.toLowerCase() === filterOn.toLowerCase(),
+        ),
+      );
     }
-    
-  },[filterOn])
-  
+  }, [filterOn]);
+
   return (
     <>
       <section className="blog-down-section">

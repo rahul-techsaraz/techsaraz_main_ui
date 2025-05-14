@@ -10,8 +10,8 @@ const PortfolioSection = ({ portfolios }) => {
     1220: {
       slidesPerView: 3,
       spaceBetween: 50,
-    }
-    }
+    },
+  };
   return (
     <section className="creative-work portfolio-section-start">
       <div className="creative-work-pulse">
@@ -46,7 +46,7 @@ const PortfolioSection = ({ portfolios }) => {
                   {portfolios.map((portfolio) => (
                     <swiper-slide key={portfolio.link}>
                       <div className="swiper-slide position-relative">
-                        <Link to={portfolio.link} target='blank'>
+                        <Link to={portfolio.link} target="blank">
                           <div className="swiper-slide swiper-slide-portfolio">
                             <div className="swiper-slider-box-in-image">
                               <img src={portfolio.image} alt={portfolio.alt} />
@@ -70,7 +70,7 @@ const PortfolioSection = ({ portfolios }) => {
                   <div className="swiper-button-next testimonial-next-button">
                     <i className="fa-solid fa-arrow-right"></i>
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
           </div>

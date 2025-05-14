@@ -53,7 +53,7 @@ import scholar from '../images/Scholar.png';
 import shineBright from '../images/ShineBright.png';
 import tcc from '../images/TCC.png';
 import theHundredPercent from '../images/TheHundredPercent.webp';
-import tritechLogo from '../images/Tritech-Logo.webp'
+import tritechLogo from '../images/Tritech-Logo.webp';
 
 export const constants = {
   images: {
@@ -195,91 +195,91 @@ export const constants = {
     },
     asdepcongo: {
       imageURL: asdepcongo,
-      alt: 'asdepcongo Image'
+      alt: 'asdepcongo Image',
     },
     brandMaster: {
       imageURL: brandMaster,
-      alt: 'Brand Master Image'
+      alt: 'Brand Master Image',
     },
     c4Carpenter: {
       imageURL: c4Carpenter,
-      alt: 'C4Carpenter Image'
+      alt: 'C4Carpenter Image',
     },
     c4investcapital: {
       imageURL: c4investcapital,
-      alt: 'C4investcapital Image'
+      alt: 'C4investcapital Image',
     },
     c4PlusEvents: {
       imageURL: c4PlusEvents,
-      alt: 'C4PlusEvents Image'
+      alt: 'C4PlusEvents Image',
     },
     captainRonsFishandScuba: {
       imageURL: captainRonsFishandScuba,
-      alt: 'Captain Rons Fishand Scuba Image'
+      alt: 'Captain Rons Fishand Scuba Image',
     },
     career: {
       imageURL: career,
-      alt: 'career Image'
+      alt: 'career Image',
     },
     casablanca: {
       imageURL: casablanca,
-      alt: 'Casablanca Image'
+      alt: 'Casablanca Image',
     },
     cosmaty: {
       imageURL: cosmaty,
-      alt: 'Cosmaty Image'
+      alt: 'Cosmaty Image',
     },
     eternalGranite: {
       imageURL: eternalGranite,
-      alt: 'Eternal Granite Image'
+      alt: 'Eternal Granite Image',
     },
     florenece: {
       imageURL: florenece,
-      alt: 'Florenece Image'
+      alt: 'Florenece Image',
     },
     globallyVillage: {
       imageURL: globallyVillage,
-      alt: 'GloballyVillage Image'
+      alt: 'GloballyVillage Image',
     },
     haloTechnologies: {
       imageURL: haloTechnologies,
-      alt: 'HaloTechnologies Image'
+      alt: 'HaloTechnologies Image',
     },
     healimpilo: {
       imageURL: healimpilo,
-      alt: 'Healimpilo Image'
+      alt: 'Healimpilo Image',
     },
     krityam: {
       imageURL: krityam,
-      alt: 'Krityam Image'
+      alt: 'Krityam Image',
     },
     orangePaper: {
       imageURL: orangePaper,
-      alt: 'OrangePaper Image'
+      alt: 'OrangePaper Image',
     },
     reboot: {
       imageURL: reboot,
-      alt: 'Reboot Image'
+      alt: 'Reboot Image',
     },
     scholar: {
       imageURL: scholar,
-      alt: 'Scholar Image'
+      alt: 'Scholar Image',
     },
     shineBright: {
       imageURL: shineBright,
-      alt: 'ShineBright Image'
+      alt: 'ShineBright Image',
     },
     tcc: {
       imageURL: tcc,
-      alt: 'TCC Image'
+      alt: 'TCC Image',
     },
     theHundredPercent: {
       imageURL: theHundredPercent,
-      alt: 'TheHundredPercent Image'
+      alt: 'TheHundredPercent Image',
     },
     tritechLogo: {
       imageURL: tritechLogo,
-      alt: 'TritechLogo Image'
+      alt: 'TritechLogo Image',
     },
   },
   socialIcons: [
