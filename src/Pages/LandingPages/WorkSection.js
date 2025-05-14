@@ -55,11 +55,11 @@ const WorkSection = () => {
                 </div>
                 <h1 className="work-box-h1">Quality Finished</h1>
                 <p className="work-box-up-box-p">
-                  Tech SaraZ ensures quality finished products through meticulous
-                  attention to detail, superior craftsmanship, and rigorous
-                  testing. Our commitment to excellence guarantees reliable,
-                  high-performance solutions that meet the highest standards of
-                  quality.
+                  Tech SaraZ ensures quality finished products through
+                  meticulous attention to detail, superior craftsmanship, and
+                  rigorous testing. Our commitment to excellence guarantees
+                  reliable, high-performance solutions that meet the highest
+                  standards of quality.
                 </p>
               </div>
             </div>

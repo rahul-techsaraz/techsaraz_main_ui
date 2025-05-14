@@ -59,13 +59,16 @@ const Footer = () => {
                   </span>
                   <span className="icon-desin">
                     <a href="https://www.youtube.com/@techsaraz" target="blank">
-
-                    <i className="fa-brands fa-youtube youtube-icon-style"></i>
-
+                      <i className="fa-brands fa-youtube youtube-icon-style"></i>
                     </a>
                   </span>
                   <span className="icon-desin">
-                  <a href="https://www.linkedin.com/company/tech-saraz/" target='blank'><i className="fa-brands fa-linkedin-in linkdin-icon-style"></i></a>
+                    <a
+                      href="https://www.linkedin.com/company/tech-saraz/"
+                      target="blank"
+                    >
+                      <i className="fa-brands fa-linkedin-in linkdin-icon-style"></i>
+                    </a>
                   </span>
                   <span className="icon-desin">
                     <a href="https://x.com/TechSaraz" target="blank">
@@ -73,7 +76,12 @@ const Footer = () => {
                     </a>
                   </span>
                   <span className="icon-desin">
-                  <a href="https://www.instagram.com/techsaraz/" target='blank'><i className="fa-brands fa-instagram instragram-icon-style"></i></a>
+                    <a
+                      href="https://www.instagram.com/techsaraz/"
+                      target="blank"
+                    >
+                      <i className="fa-brands fa-instagram instragram-icon-style"></i>
+                    </a>
                   </span>
                 </div>
               </div>
@@ -141,7 +149,10 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="footer-down"><span className='footer-down-text-bold'>Tech Saraz </span> © 2025.All Rights Reserved.</div>
+      <div className="footer-down">
+        <span className="footer-down-text-bold">Tech Saraz </span> © 2025.All
+        Rights Reserved.
+      </div>
       {showScrollTop && (
         <div id="scroll-top" onClick={scrollToTop}>
           <button id="btn" className="scroll-top-button-22">

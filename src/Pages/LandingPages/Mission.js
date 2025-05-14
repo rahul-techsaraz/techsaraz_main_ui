@@ -27,7 +27,10 @@ const Mission = () => {
               Automation
             </h1>
             <div className="our-mission-btn">
-              <Link className="our-mission-btn-btn" onClick={()=>togalPopUp(true)}>
+              <Link
+                className="our-mission-btn-btn"
+                onClick={() => togalPopUp(true)}
+              >
                 CONTACT US
               </Link>
             </div>

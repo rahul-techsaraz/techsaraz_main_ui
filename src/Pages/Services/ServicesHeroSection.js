@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Routes from '../../Constant/routes';
 import PropTypes from 'prop-types';
 
-const ServicesHeroSection = ({heading}) => {
+const ServicesHeroSection = ({ heading }) => {
   return (
     <div className="services-hero-section">
       <div className="hro">
@@ -352,7 +352,7 @@ const ServicesHeroSection = ({heading}) => {
 };
 
 ServicesHeroSection.propTypes = {
-  heading : PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
 };
 
 export default ServicesHeroSection;

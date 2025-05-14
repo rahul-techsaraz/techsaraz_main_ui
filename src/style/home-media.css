@@ -574,6 +574,7 @@
   }
 
 
+
   /* ----------------------------------------------------------------------------------- */
   
   .web-development-page-wordpress-box-h1-heading,
@@ -799,7 +800,7 @@
         padding: 35px;
     }
     .best-company-pulse,
-     .in-bangalore-pulse, .work-pulse, .about-company-pulse, .about-company-pulse, .blog-pulse, .mission-pulse, .testimonial-pulse, .services-pulse, .in-bangalore5-pulse, .pulse, .social-media-marketing-competitors-pulse, .in-bangalore6-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .in-bangalore2-pulse ,.competitor-pulse, .php-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse{
+     .in-bangalore-pulse, .work-pulse, .about-company-pulse, .about-company-pulse, .blog-pulse, .mission-pulse, .testimonial-pulse, .services-pulse, .in-bangalore5-pulse, .pulse, .social-media-marketing-competitors-pulse, .in-bangalore6-pulse, .in-bangalore4-pulse, .in-bangalore3-pulse, .in-bangalore2-pulse ,.competitor-pulse, .php-pulse, .wordpress-pulse, .shopify-pulse, .magento-pulse, .joomla-pulse, .react-pulse, .node-js-pulse, .benefits-pulse, .creative-work-pulse, .our-client-pulse
      .web-development-page-magento-pulse,
       .web-development-page-joomla-pulse,
        .web-development-page-wordpress-pulse,
@@ -813,7 +814,7 @@
         left: 10%;
     }
     .best-company-pulse img ,
-      .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img{
+      .in-bangalore2-pulse img, .about-company-pulse img, .about-company-pulse img, .blog-pulse img, .services-pulse img, .testimonial-pulse img, .mission-pulse img, .work-pulse img, .pulse img,  .competitor-pulse img, .social-media-marketing-competitors-pulse img,  .php-pulse img, .shopify-pulse img, .magento-pulse img, .joomla-pulse img, .react-pulse img, .node-js-pulse img, .benefits-pulse img, .creative-work-pulse img, .our-client-pulse img
      .web-development-page-magento-pulse img,
       .web-development-page-joomla-pulse img,
        .web-development-page-wordpress-pulse img,
@@ -1340,10 +1341,8 @@
   .web-development-page-react-pulse img,
   .web-development-page-node-js-pulse img,
   .e-commerce-development-page-magento-development-section-box-pulse img,
-         .e-commerce-development-page-woo-commerce-development-section-box-pulse img,
-         .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img{
-=======
-  .web-development-page-node-js-pulse img{
+  .e-commerce-development-page-woo-commerce-development-section-box-pulse img,
+  .e-commerce-development-page-shopify-e-commerce-development-section-box-pulse img{
     width: 30px;
   }
   .competitor-h1,
@@ -1379,7 +1378,7 @@
   .creative-work-heading h1
   {
     font-size: 32px;
-=======
+  }
   .creative-work-heading h1,
   .web-development-page-php-box-h1-heading,
   .web-development-page-wordpress-box-h1-heading,
@@ -1579,7 +1578,6 @@
   width: 250px;
   height: 250px;
 }
-=======
   .web-development-page-node-js-box-down-circle{
     padding: 10px 20px;
   }

@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const BlogSidebar = ({ categories = [], recentPosts = [], tags = [], setFilterOn }) => {
+const BlogSidebar = ({
+  categories = [],
+  recentPosts = [],
+  tags = [],
+  setFilterOn,
+}) => {
   return (
     <div className="blog-down-section-rightbox">
       {/* Search Section */}
@@ -24,14 +29,18 @@ const BlogSidebar = ({ categories = [], recentPosts = [], tags = [], setFilterOn
           {categories.length > 0 ? (
             categories.map((category, index) => (
               // <Link key={index} to={category.link}>
-                <div key={index} className="category-short-box" onClick={()=>setFilterOn(category.name)}>
-                  <div className="category-short-box-heading">
-                    {category.name}
-                  </div>
-                  <div className="category-short-box-i">
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
+              <div
+                key={index}
+                className="category-short-box"
+                onClick={() => setFilterOn(category.name)}
+              >
+                <div className="category-short-box-heading">
+                  {category.name}
                 </div>
+                <div className="category-short-box-i">
+                  <i className="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
               // </Link>
             ))
           ) : (

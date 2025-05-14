@@ -50,7 +50,10 @@ const AboutUs = () => {
                 are in the safest hands.
               </p>
               <div className="about-company-btn">
-                <Link className="about-company-btn-btn" onClick={()=>togalPopUp(true)}>
+                <Link
+                  className="about-company-btn-btn"
+                  onClick={() => togalPopUp(true)}
+                >
                   CONTACT US
                 </Link>
               </div>

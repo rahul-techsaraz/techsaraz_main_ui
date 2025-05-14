@@ -8,7 +8,7 @@ import TestimonialSection from '../../Pages/Services/TestimonialSection';
 const Services = () => {
   return (
     <>
-      <ServicesHeroSection heading={'services'}/>
+      <ServicesHeroSection heading={'services'} />
       <ServicesOffer />
       <Consultation />
       <TestimonialSection />

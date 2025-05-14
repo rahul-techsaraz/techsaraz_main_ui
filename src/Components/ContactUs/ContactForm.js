@@ -119,27 +119,37 @@ const ContactForm = () => {
                     onChange={(e) => setPhone(e.target.value)}
                   /> */}
 
-<div className='select-wraper'>
-<select name="cars" id="contact-fill-up-in-box-fillup-services-input-child-box" value={services}
-    <option value="Select Services">Select Services</option>
-    <option value="Web Development">Web Development</option>
-    <option value="Web Application Development">Web Application Development</option>
-    <option value="E-Commerce">E-Commerce</option>
-    <option value="Ui & Ux Design">Ui & Ux Design</option>
-    <option value="Digital Marketing">Digital Marketing</option>
-    <option value="Content Writing">Content Writing</option>
-    <option value="Graphics Design">Graphics Design</option>
-
-    <option value="Ecommerce Development">Ecommerce Development</option>
-    <option value="Mobile App Development">Mobile App Development</option>
-    <option value="Software Development">Software Development</option>
-  </select>
-  </div>
-
-                  
+                  <div className="select-wraper">
+                    <select
+                      name="cars"
+                      id="contact-fill-up-in-box-fillup-services-input-child-box"
+                      value={services}
+                      onChange={(e) => setServices(e.target.value)}
+                    >
+                      <option value="Select Services">Select Services</option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="Web Application Development">
+                        Web Application Development
+                      </option>
+                      <option value="E-Commerce">E-Commerce</option>
+                      <option value="Ui & Ux Design">Ui & Ux Design</option>
+                      <option value="Digital Marketing">
+                        Digital Marketing
+                      </option>
+                      <option value="Content Writing">Content Writing</option>
+                      <option value="Graphics Design">Graphics Design</option>
+                      <option value="Ecommerce Development">
+                        Ecommerce Development
+                      </option>
+                      <option value="Mobile App Development">
+                        Mobile App Development
+                      </option>
+                      <option value="Software Development">
+                        Software Development
+                      </option>
+                    </select>
+                  </div>
                 </div>
-
-
               </div>
 
               <textarea

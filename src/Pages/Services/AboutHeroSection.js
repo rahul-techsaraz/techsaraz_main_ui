@@ -1,15 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Routes from '../../Constant/routes'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Routes from '../../Constant/routes';
 
 const AboutHeroSection = () => {
-
-
-  
   return (
     <div className="services-hero-section">
-  
-  
       <div className="hro">
         <div className="textBox">
           <h1 className="section-tectbox-h1">About Us</h1>
@@ -31,17 +26,16 @@ const AboutHeroSection = () => {
         </div>
       </div>
 
-      <div className='animate-center'>
-        <div className='planet-container'>
-          <div className='night'></div>
-          <div className='day'></div>
-          <div className='planet-cloud'></div>
-          <div className='inner-shadow'></div>
+      <div className="animate-center">
+        <div className="planet-container">
+          <div className="night"></div>
+          <div className="day"></div>
+          <div className="planet-cloud"></div>
+          <div className="inner-shadow"></div>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default AboutHeroSection
+export default AboutHeroSection;

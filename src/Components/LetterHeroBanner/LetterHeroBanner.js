@@ -24,22 +24,22 @@ const LetterHeroBanner = ({
   // const splitText = headingText.split('');
   // console.log(headingText)
   // console.log(splitText);
-  const headingTextSpliter = ()=>{
-    const heading = []
-    const splitHeading = headingText.split(' ')
-    if(splitHeading.length < 3){
-      return splitHeading.join(' ')
-    }else if(splitHeading.length == 3){
-      heading.push(splitHeading[0] + ' ' + splitHeading[1])
-      heading.push(splitHeading[2])
-      return heading
-    }else if(splitHeading.length > 3){
-      heading.push(splitHeading[0] + ' ' + splitHeading[1])
-      heading.push(splitHeading[2] + ' ' + splitHeading[3])
-      return heading
+  const headingTextSpliter = () => {
+    const heading = [];
+    const splitHeading = headingText.split(' ');
+    if (splitHeading.length < 3) {
+      return splitHeading.join(' ');
+    } else if (splitHeading.length == 3) {
+      heading.push(splitHeading[0] + ' ' + splitHeading[1]);
+      heading.push(splitHeading[2]);
+      return heading;
+    } else if (splitHeading.length > 3) {
+      heading.push(splitHeading[0] + ' ' + splitHeading[1]);
+      heading.push(splitHeading[2] + ' ' + splitHeading[3]);
+      return heading;
     }
-  }
-  
+  };
+
   return (
     <div className="web-development-banner">
       {/* Social Media Icons Section */}
@@ -72,31 +72,27 @@ const LetterHeroBanner = ({
                   <span key={index} className="animation-heading-span">
                     {letter}
                   </span>
-                )
-              )
-            }
+                ),
+              )}
             {headingText.split(' ').length >= 3 &&
-              headingTextSpliter().map((letter, index)=>
-              letter.split('').map((l,i)=>
-                index === 1 && i===0 ? (
-                <>
-                <br key={i}/>
-                <span key={i} className="animation-heading-span">
-                    {l}
-                </span>
-                </>
-              ): 
-              l === ' ' ? (
-                <span key={i}>&nbsp;</span>
-              ) :
-              (
-                <span key={i} className="animation-heading-span">
-                    {l}
-                </span>
-              )
-              ))
-            }
-            
+              headingTextSpliter().map((letter, index) =>
+                letter.split('').map((l, i) =>
+                  index === 1 && i === 0 ? (
+                    <>
+                      <br key={i} />
+                      <span key={i} className="animation-heading-span">
+                        {l}
+                      </span>
+                    </>
+                  ) : l === ' ' ? (
+                    <span key={i}>&nbsp;</span>
+                  ) : (
+                    <span key={i} className="animation-heading-span">
+                      {l}
+                    </span>
+                  ),
+                ),
+              )}
           </h1>
         </div>
       </div>

@@ -54,7 +54,7 @@ const TestimonialSection = () => {
                           : `${review?.review.slice(0, 100)}...`}
                       </p>
                       <span
-                        className='testimonial-read-more-button'
+                        className="testimonial-read-more-button"
                         style={{ color: 'white', fontWeight: 500 }}
                         onClick={() => toggleReview(index)}
                       >
@@ -71,7 +71,8 @@ const TestimonialSection = () => {
                     </main>
                     <div className="profile">
                       <div className="profile-image">
-                        <img src={review.profileImage} alt="" />
+                        {console.log(review?.profileImage)}
+                        <img src={review?.profileImage} alt="Profile Image" />
                       </div>
                       <div className="profile-desc">
                         <span>{review.name}</span>
@@ -84,12 +85,12 @@ const TestimonialSection = () => {
             ))}
           </CustomSwiper>
           <div className="swiper-button-prev-next-flex">
-          <div className="swiper-button-prev testimonial-prev-button">
-            <i className="fa-solid fa-arrow-left"></i>
-          </div>
-          <div className="swiper-button-next testimonial-next-button">
-            <i className="fa-solid fa-arrow-right"></i>
-          </div>
+            <div className="swiper-button-prev testimonial-prev-button">
+              <i className="fa-solid fa-arrow-left"></i>
+            </div>
+            <div className="swiper-button-next testimonial-next-button">
+              <i className="fa-solid fa-arrow-right"></i>
+            </div>
           </div>
         </div>
         {/* </div> */}

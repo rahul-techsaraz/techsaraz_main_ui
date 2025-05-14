@@ -32,7 +32,7 @@ export default function CustomSwiper({
         breakpoints: JSON.stringify(breakPoint),
       }
     : {
-        breakpoints: ''
+        breakpoints: '',
       };
 
   return (
@@ -52,5 +52,3 @@ CustomSwiper.propTypes = {
   isBreakPoint: PropTypes.bool.isRequired,
   breakPoint: PropTypes.object,
 };
-
-

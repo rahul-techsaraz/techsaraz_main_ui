@@ -129,7 +129,7 @@ import thebrandsmasterCom from '../images/thebrandsmaster-com-1024x768desktop-70
 import thecontentcommunityCom from '../images/thecontentcommunity-com-1024x768desktop-ffab2b.jpg';
 import thehundredpercentofficialCom from '../images/thehundredpercentofficial-com-1024x768desktop-d31548.jpg';
 import ttbsplCom from '../images/ttbspl-com-1024x768desktop-d2b4aa.jpg';
-import techSarazPopUpLogo from '../images/Tech-SaraZ-logo-300x99.webp'
+import techSarazPopUpLogo from '../images/Tech-SaraZ-logo-300x99.webp';
 
 export const images = {
   repairToolImage,

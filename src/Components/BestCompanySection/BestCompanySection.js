@@ -37,7 +37,10 @@ const BestCompanySection = ({
         </div>
 
         <div className="best-company-btn">
-          <Link className="best-company-btn-btn" onClick={()=>togalPopUp(true)}>
+          <Link
+            className="best-company-btn-btn"
+            onClick={() => togalPopUp(true)}
+          >
             {buttonText}
           </Link>
         </div>
