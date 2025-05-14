@@ -25,7 +25,16 @@
 }
 
 
-
+.vlog-herosection-p {
+  color: #c4cfde;
+  position: absolute;
+  z-index: 99;
+  top: 130px;
+  padding: 0 100px;
+}
+.vlog-hero-section-top-p {
+  padding-bottom: 10px;
+}
 
 .vlog-herosection {
   background-color: #000000;
