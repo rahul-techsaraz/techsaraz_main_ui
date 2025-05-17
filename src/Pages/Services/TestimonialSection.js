@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-// import { images } from '../../Constant/images';
+import { images } from '../../Constant/images';
 import CustomSwiper from '../../Components/CustomSwiper/CustomSwiper';
 import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive';
 import { customerRivew } from '../../Constant/config';
 
 const TestimonialSection = () => {
-  // const { quotesImage } = images;
+  const { quotesImage } = images;
   const [expandedReviews, setExpandedReviews] = useState({});
 
   const toggleReview = (index) => {
@@ -17,21 +17,17 @@ const TestimonialSection = () => {
 
   return (
     <div className="testimonials-section">
-      {/* <div className="testimonial-pulse">
+      <div className="testimonial-pulse">
         <img src={quotesImage} alt="" />
-      </div> */}
+      </div>
       <div className="tesimonial-in-box">
-
-        <div className="top-heading text-center">
-              <button className="top-heading-text">
-               TESTIMONIAL
-                <span className="top-section-span-round"></span>
-              </button>
-            </div>
-
-
+        <div className="testimonial-heading">
+          <button className="testimonial-heading-text">
+            TESTIMONIAL<span className="testimonial-span-circle"></span>
+          </button>
+        </div>
         <div className="testmonial-heading">
-          <h1 className="testmonial-h1">What <span className='heading-text-color-change-span'>Clients</span>  Say</h1>
+          <h1 className="testmonial-h1">What Clients Say</h1>
         </div>
 
         <div className="swiper-wrapper position-relative">

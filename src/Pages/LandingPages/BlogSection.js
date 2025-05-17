@@ -1,24 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-// import { constants } from '../../Constant/constants';
+import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 
 const BlogSection = ({ blogs }) => {
-  // const { earthImage } = constants.images;
+  const { earthImage } = constants.images;
   return (
     <section className="blog">
-      {/* <div className="blog-pulse">
+      <div className="blog-pulse">
         <img src={earthImage.imageURL} alt={earthImage.alt} />
-      </div> */}
+      </div>
       <div className="blog-in-box">
-        <div className="top-heading text-center">
-              <button className="top-heading-text text-stroke-color2">
-                NEWS & LATEST UPDATES
-                <span className="top-section-span-round"></span>
-              </button>
+        <div className="blog-heading">
+          <button className="blog-heading-text">
+            NEWS & LATEST UPDATES<span className="blog-span-circle"></span>
+          </button>
         </div>
         <div className="blog-heading">
-          <h1 className="blog-h1">Our latest <span className='heading-text-color-change-span'>news & articles</span>  from the blog</h1>
+          <h1 className="blog-h1">Our latest news & articles from the blog</h1>
         </div>
         {blogs.map((blog, index) => (
           <div className="blog-box" key={index}>
@@ -39,7 +38,7 @@ const BlogSection = ({ blogs }) => {
                 </div>
                 <div className="blog-box-in-text-h1">{blog.blogSummary}</div>
                 <div className="blog-btn">
-                  <Link className="blog-btn-btn-btn" to={blog.blogDetailURL}>
+                  <Link className="blog-btn-btn" to={blog.blogDetailURL}>
                     READ MORE
                   </Link>
                 </div>

@@ -8,6 +8,9 @@ const AboutSection = () => {
   const { aboutSectionDescription } = constants.landingPageText;
   return (
     <section className="about">
+      <div className="pulse">
+        <img src={images.user1Image.imageURL} alt={images.user1Image.alt} />
+      </div>
       <div className="about-in-box">
         <div className="about-in-box-wraper">
           <div className="about-in-box-wraper-imgbox">
@@ -17,20 +20,19 @@ const AboutSection = () => {
             />
           </div>
           <div className="about-in-box-wraper-textbox">
-            <div className="top-heading">
-              <button className="top-heading-text">
-                <span className='heading-1st-text'>ABOUT US <span className='heading-text2'>ABOUT US</span></span>
-                <span className="top-section-span-round"></span>
+            <div className="about-heading">
+              <button className="about-heading-text">
+                ABOUT US<span className="about-section-span-round"></span>
               </button>
             </div>
             <div className="about-in-box-wraper-textbox-text">
-              WE ARE MORE THAN JUST AN <span className='heading-text-color-change-span'>IT COMPANY</span>
+              WE ARE MORE THAN JUST AN IT COMPANY
             </div>
-            <p className="paragraph-p pb pt">
+            <p className="about-in-box-wraper-textbox-text-p">
               {aboutSectionDescription}
             </p>
             <div className="about-btn">
-              <Link className="section-btn-btn" to={Routes.ABOUT_US}>
+              <Link className="about-btn-btn" to={Routes.ABOUT_US}>
                 KNOW MORE
               </Link>
             </div>

@@ -21,7 +21,7 @@ const ServicesSection = ({ services }) => {
             <span className="services-span-circle"></span>
           </button>
         </div>
-        <h1 className="services-h1"><span className='heading-text-color-change-span'>Services</span> We Provide</h1>
+        <h1 className="services-h1">Services We Provide</h1>
         <nav className="services-nav">
           <ul>
             {services.map((service) => (
@@ -32,7 +32,6 @@ const ServicesSection = ({ services }) => {
                       <div className="service-flexbox">
                         <div className="service-img">
                           <img
-                            // src={service.serviceImage.imageUrl}
                             src={service.serviceImage.imageUrl}
                             alt={service.serviceImage.alt}
                           />
