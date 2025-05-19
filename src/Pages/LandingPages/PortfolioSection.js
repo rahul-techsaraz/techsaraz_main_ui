@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-import { constants } from '../../Constant/constants';
+// import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 import CustomSwiper from '../../Components/CustomSwiper/CustomSwiper';
 import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive';
@@ -14,21 +14,30 @@ const PortfolioSection = ({ portfolios }) => {
   };
   return (
     <section className="creative-work portfolio-section-start">
-      <div className="creative-work-pulse">
+      {/* <div className="creative-work-pulse">
         <img
           src={constants.images.marketImage.imageURL}
           alt={constants.images.marketImage.alt}
         />
-      </div>
+      </div> */}
       <div className="creative-work-in-box">
-        <div className="creative-work-heading">
+        {/* <div className="creative-work-heading">
           <button className="creative-work-heading-text">
             Portfolio<span className="creative-work-span-circle"></span>
           </button>
+        </div> */}
+
+        <div className="top-heading text-center">
+              <button className="top-heading-text text-stroke-color2">
+                Portfolio
+                <span className="top-section-span-round"></span>
+              </button>
         </div>
+
+
         <div className="creative-work-heading">
           <h1 className="creative-work-h1">
-            Our Latest Work For Our Best Customer
+            Our Latest Work For <span className='heading-text-color-change-span'>Our Best Customer</span> 
           </h1>
         </div>
         <div className="loc">
