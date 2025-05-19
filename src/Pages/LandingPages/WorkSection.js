@@ -1,20 +1,21 @@
 import React from 'react';
-import { constants } from '../../Constant/constants';
+// import { constants } from '../../Constant/constants';
 
 const WorkSection = () => {
-  const { images } = constants;
+  // const { images } = constants;
   return (
     <section className="work">
-      <div className="work-pulse">
+      {/* <div className="pulse">
         <img src={images.timeImage.imageURL} alt={images.timeImage.alt} />
-      </div>
+      </div> */}
       <div className="work-in-box">
-        <div className="work-heading">
-          <button className="work-heading-text">
-            WORK PROCESS<span className="work-span-circle"></span>
-          </button>
+        <div className="top-heading text-center">
+              <button className="top-heading-text text-stroke-color2">
+                WORK PROCESS
+                <span className="top-section-span-round"></span>
+              </button>
         </div>
-        <h1 className="work-h1">Follow 3 Easy Work Steps</h1>
+        <h1 className="work-h1">Follow <span className='heading-text-color-change-span'>3 Easy</span> Work Steps</h1>
         <div className="work-in-box-wraper">
           <div className="work-box-down-box">
             <div className="work-box-up-box">
