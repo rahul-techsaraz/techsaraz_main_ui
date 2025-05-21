@@ -39,6 +39,11 @@ const ServicesOffer = () => {
                OUR SERVICES
                 <span className="top-section-span-round"></span>
               </button>
+        <div className="top-heading text-center">
+              <button className="top-heading-text">
+               OUR SERVICES
+                <span className="top-section-span-round"></span>
+              </button>
         </div>
         <h1 className="services-h1">Services <span className='heading-text-color-change-span'>We Provide</span> </h1>
         <div className='services-grid-box-main-box'>
@@ -255,6 +260,7 @@ const ServicesOffer = () => {
             {/* </li> */}
           {/* </ul>
         </nav> */}
+      </div>
       </div>
     </section>
   );
