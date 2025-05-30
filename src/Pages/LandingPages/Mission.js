@@ -22,7 +22,7 @@ const Mission = () => {
                 <span className="top-section-span-round"></span>
               </button>
              </div>
-            <h1 className="our-mission-h1">
+            <h1 className="full-heading-text-color-change-span">
               Our Mission Is To Look After The Financial Best Interests <span className='heading-text-color-change-span'>With Automation</span>
             </h1>
             <div className="our-mission-btn">

@@ -16,9 +16,6 @@ const AboutUs = () => {
       <AboutHeroSection />
 
       <section className="about-company">
-        {/* <div className="about-company-pulse about-page-company-pulse">
-          <img src={user1Image} alt="" />
-        </div> */}
         <div className="about-company-in-box">
           <div className="about-company-in-box-wraper">
             <div className="about-company-in-box-wraper-textbox">
@@ -29,13 +26,6 @@ const AboutUs = () => {
                 <span className="top-section-span-round"></span>
               </button>
              </div>
-
-
-              {/* <div className="about-company-heading">
-                <button className="about-company-heading-text">
-                  ABOUT COMPANY<span className="span-circle"></span>
-                </button>
-              </div> */}
               <div className="about-company-in-box-wraper-textbox-text">
                 Welcome to Tech SaraZ
               </div>
@@ -58,7 +48,7 @@ const AboutUs = () => {
                 SaraZ, you can be confident that your digital marketing needs
                 are in the safest hands.
               </p>
-              <div className="about-company-btn">
+              <div className="about-company-btn pt">
                 <Link
                   className="section-btn-btn"
                   onClick={() => togalPopUp(true)}
@@ -75,6 +65,52 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <section className='our-vission-mission-section'>
+      <div className='our-vission-mission-section-container'>
+        <div className='our-vission-mission-section-heading-box'>
+          <div className='our-vission-mission-section-heading-box-text'>
+            <div className="top-heading">
+              <button className="top-heading-text">
+                mission & vission 
+                <span className="top-section-span-round"></span>
+              </button>
+            </div>
+            <div className="full-heading-text-color-change-span">
+              our <span className='heading-text-color-change-span'>mission and vission</span> statment
+            </div>
+            <p className='paragraph-p pt'>Tech SaraZ is a software company based in Bangalore that specializes in top-notch digital Marketing and web design. In our fast-paced digital world, it’s crucial to make your products or services shine brighter than the rest. We’re here to support those with big dreams and a relentless drive to succeed in their online businesses by providing our unmatched services.</p>
+          </div>
+          <div className='our-vission-mission-section-heading-box-empty'></div>
+        </div>
+        <div className='our-vission-mission-section-main-box'>
+          <div className='our-vission-mission-section-left-box'>
+          <div className='our-vision-section-box'>
+            <div className='our-vision-section-box-img-parent'><div className='our-vision-section-box-img'></div></div>
+            <div className='our-vision-section-box-text-group'>
+              <h3>vision</h3>
+              <hr className='our-vision-section-box-text-group-hr-line'/>
+              <p className='paragraph-p'>Tech SaraZ is a software company based in Bangalore that specializes in top-notch digital Marketing and web design.
+                 In our fast-paced digital world,
+                 it’s crucial to make your products or services shine brighter than the rest.</p>
+            </div>
+          </div>
+          <div className='our-mission-section-box'>
+            <div className='our-vision-section-box-img-parent'><div className='our-mission-section-box-img'></div></div>
+            <div className='our-vision-section-box-text-group'>
+              <h3>mission</h3>
+              <hr className='our-vision-section-box-text-group-hr-line'/>
+              <p className='paragraph-p'>Tech SaraZ is a software company based in Bangalore that specializes in top-notch digital Marketing and web design.
+                 In our fast-paced digital world,
+                 it’s crucial to make your products or services shine brighter than the rest.</p>
+            </div>
+          </div>
+          </div>
+          <div className='our-vission-mission-section-right-box'>
+          <div className='our-vission-mission-section-img-box'></div>
+          </div>
+        </div>
+      </div>
+    </section>
       <WorkSection />
     </>
   );

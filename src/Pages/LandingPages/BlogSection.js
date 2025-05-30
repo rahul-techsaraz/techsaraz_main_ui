@@ -18,7 +18,7 @@ const BlogSection = ({ blogs }) => {
               </button>
         </div>
         <div className="blog-heading">
-          <h1 className="blog-h1">Our latest <span className='heading-text-color-change-span'>news & articles</span>  from the blog</h1>
+          <h1 className="full-heading-text-color-change-span max-w-600">Our latest <span className='heading-text-color-change-span'>news & articles</span>  from the blog</h1>
         </div>
         {blogs.map((blog, index) => (
           <div className="blog-box" key={index}>

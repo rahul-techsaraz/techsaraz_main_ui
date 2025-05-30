@@ -1,5 +1,5 @@
 import user1Image from '../images/user (1).png';
-import homeFont1Image from '../images/home-font (1).png';
+import homeFont1Image from '../images/about-01.jpg';
 import timeImage from '../images/time.png';
 import repairToolImage from '../images/repair-tool.png';
 import oneImage from '../images/1.png';

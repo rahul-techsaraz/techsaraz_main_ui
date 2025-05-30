@@ -36,7 +36,7 @@ const PortfolioSection = ({ portfolios }) => {
 
 
         <div className="creative-work-heading">
-          <h1 className="creative-work-h1">
+          <h1 className="full-heading-text-color-change-span max-w-600">
             Our Latest Work For <span className='heading-text-color-change-span'>Our Best Customer</span> 
           </h1>
         </div>

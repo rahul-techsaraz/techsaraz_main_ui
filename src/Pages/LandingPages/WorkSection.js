@@ -15,7 +15,7 @@ const WorkSection = () => {
                 <span className="top-section-span-round"></span>
               </button>
         </div>
-        <h1 className="work-h1">Follow <span className='heading-text-color-change-span'>3 Easy</span> Work Steps</h1>
+        <h1 className="full-heading-text-color-change-span text-center">Follow <span className='heading-text-color-change-span'>3 Easy</span> Work Steps</h1>
         <div className="work-in-box-wraper">
           <div className="work-box-down-box">
             <div className="work-box-up-box">

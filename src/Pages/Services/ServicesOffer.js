@@ -5,7 +5,6 @@ import Routes from '../../Constant/routes';
 
 const ServicesOffer = () => {
   const {
-    repairToolImage,
     machineLearning,
     oneImage,
     // serviceimg1Image,
@@ -30,9 +29,6 @@ const ServicesOffer = () => {
   } = Routes;
   return (
     <section className="services">
-      <div className="services-pulse">
-        <img src={repairToolImage} alt="" />
-      </div>
       <div className="services-in-box">
         <div className="top-heading text-center">
               <button className="top-heading-text">
@@ -40,7 +36,7 @@ const ServicesOffer = () => {
                 <span className="top-section-span-round"></span>
               </button>
         </div>
-        <h1 className="services-h1">Services <span className='heading-text-color-change-span'>We Provide</span> </h1>
+        <h1 className="full-heading-text-color-change-span text-center">Services <span className='heading-text-color-change-span'>We Provide</span> </h1>
         <div className='services-grid-box-main-box'>
         {/* <nav className="services-nav">
           <ul className='services-grid-main-box'> */}

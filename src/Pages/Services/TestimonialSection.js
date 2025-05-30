@@ -31,7 +31,7 @@ const TestimonialSection = () => {
 
 
         <div className="testmonial-heading">
-          <h1 className="testmonial-h1">What <span className='heading-text-color-change-span'>Clients</span>  Say</h1>
+          <h1 className="full-heading-text-color-change-span text-center pb">What <span className='heading-text-color-change-span'>Clients</span>  Say</h1>
         </div>
 
         <div className="swiper-wrapper position-relative">
