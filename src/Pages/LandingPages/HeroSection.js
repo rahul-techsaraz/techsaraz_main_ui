@@ -38,10 +38,13 @@ const HeroSection = () => {
   // }, []);
   return (
     <section className="hero-section">
+      <div className='right-animation-on-1'></div>
+      <div className='right-animation-on-2'></div>
+      <div className='right-animation-on-3'></div>
       <div className='hero-section-wraper'>
       <div className="hero-section-text">
         <h1 className="hero-section-text-main-heading">
-          IT Solutions <span className='heading-text-color-change-span'>& Business</span>  {' '}
+          IT Solutions <span className='header-heading-text-color-change-span'>& Business</span>  {' '}
           <br />
           Services Company
         </h1>
