@@ -4,15 +4,14 @@ import Routes from '../../Constant/routes';
 
 const AboutHeroSection = () => {
   return (
-    <div className="services-hero-section">
-  
-  
+    <div className="about-hero-section">
       <div className="hro">
         <div className="textBox">
-          <h1 className="section-tectbox-h1">About Us</h1>
+          <h1 className="hero-section-tectbox-h1">About Us</h1>
         </div>
-        <div className="about-us-text-p">
-          <p className="about-text-p1">
+
+        <div className="hero-section-top-text">
+          <p className="hero-section-top-text-text-p1">
             Welcome to{' '}
             <Link to={Routes.HOME} className="tech-saraz-animation">
               <span className="tech-saraz-name-animation"></span>
@@ -22,10 +21,11 @@ const AboutHeroSection = () => {
               Tech SaraZ
             </Link>
           </p>
-          <p className="about-text-p2">
+          <p className="hero-section-top-down-p-text">
             Where innovation meets expertise in web development
           </p>
         </div>
+
       </div>
 
       <div className="animate-center">

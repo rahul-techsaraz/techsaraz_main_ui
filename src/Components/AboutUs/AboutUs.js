@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../../style/style.css';
-import user1Image from '../../images/user (1).png';
+// import user1Image from '../../images/user (1).png';
 import service4Image from '../../images/service-4.jpg';
 // import ServicesHeroSection from '../../Pages/Services/ServicesHeroSection';
 import WorkSection from '../../Pages/LandingPages/WorkSection';
@@ -16,21 +16,30 @@ const AboutUs = () => {
       <AboutHeroSection />
 
       <section className="about-company">
-        <div className="about-company-pulse about-page-company-pulse">
+        {/* <div className="about-company-pulse about-page-company-pulse">
           <img src={user1Image} alt="" />
-        </div>
+        </div> */}
         <div className="about-company-in-box">
           <div className="about-company-in-box-wraper">
             <div className="about-company-in-box-wraper-textbox">
-              <div className="about-company-heading">
+
+             <div className="top-heading">
+              <button className="top-heading-text">
+                ABOUT COMPANY 
+                <span className="top-section-span-round"></span>
+              </button>
+             </div>
+
+
+              {/* <div className="about-company-heading">
                 <button className="about-company-heading-text">
                   ABOUT COMPANY<span className="span-circle"></span>
                 </button>
-              </div>
+              </div> */}
               <div className="about-company-in-box-wraper-textbox-text">
                 Welcome to Tech SaraZ
               </div>
-              <p className="about-company-in-box-wraper-textbox-text-p">
+              <p className="about-company-in-box-wraper-textbox-text-p paragraph-p">
                 Tech SaraZ is a software company based in Bangalore that
                 specializes in top-notch digital Marketing and web design. In
                 our fast-paced digital world, it’s crucial to make your products
@@ -51,7 +60,7 @@ const AboutUs = () => {
               </p>
               <div className="about-company-btn">
                 <Link
-                  className="about-company-btn-btn"
+                  className="section-btn-btn"
                   onClick={() => togalPopUp(true)}
                 >
                   CONTACT US
