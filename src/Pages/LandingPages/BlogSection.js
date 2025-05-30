@@ -39,7 +39,7 @@ const BlogSection = ({ blogs }) => {
                 </div>
                 <div className="blog-box-in-text-h1">{blog.blogSummary}</div>
                 <div className="blog-btn">
-                  <Link className="blog-btn-btn-btn" to={blog.blogDetailURL}>
+                  <Link className="button-btn-btn2" to={blog.blogDetailURL}>
                     READ MORE
                   </Link>
                 </div>
