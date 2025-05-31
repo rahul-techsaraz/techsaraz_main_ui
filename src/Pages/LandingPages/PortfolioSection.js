@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-// import { constants } from '../../Constant/constants';
+import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 import CustomSwiper from '../../Components/CustomSwiper/CustomSwiper';
 import { SwiperResponsive } from '../../Components/CustomSwiper/SwiperResponsive';
@@ -28,7 +28,11 @@ const PortfolioSection = ({ portfolios }) => {
         </div> */}
 
         <div className="top-heading text-center">
-              <button className="top-heading-text text-stroke-color2">
+              <button className="top-heading-text text-stroke-color2 justify-center">
+                <img
+              src={constants.images.headingIconImage.imageURL}
+              alt={constants.images.headingIconImage.imageURL}
+            />
                 Portfolio
                 <span className="top-section-span-round"></span>
               </button>
@@ -36,7 +40,7 @@ const PortfolioSection = ({ portfolios }) => {
 
 
         <div className="creative-work-heading">
-          <h1 className="creative-work-h1">
+          <h1 className="full-heading-text-color-change-span max-w-600">
             Our Latest Work For <span className='heading-text-color-change-span'>Our Best Customer</span> 
           </h1>
         </div>

@@ -13,7 +13,7 @@ const Consultation = () => {
             </div>
             <div className="consulation-text">NEED A CONSULTATION?</div>
             <div className="consulatio-btn">
-              <Link className="consulatio-btn-btn" to={Routes.CONTACT}>
+              <Link className="button-btn-btn2" to={Routes.CONTACT}>
                 CONTACT US
               </Link>
             </div>

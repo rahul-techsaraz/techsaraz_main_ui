@@ -130,6 +130,7 @@ import thecontentcommunityCom from '../images/thecontentcommunity-com-1024x768de
 import thehundredpercentofficialCom from '../images/thehundredpercentofficial-com-1024x768desktop-d31548.jpg';
 import ttbsplCom from '../images/ttbspl-com-1024x768desktop-d2b4aa.jpg';
 import techSarazPopUpLogo from '../images/Tech-SaraZ-logo-300x99.webp';
+import headingIconImage from '../images/subtitle-icon.png';
 
 export const images = {
   repairToolImage,
@@ -264,4 +265,5 @@ export const images = {
   thehundredpercentofficialCom,
   ttbsplCom,
   techSarazPopUpLogo,
+  headingIconImage,
 };
