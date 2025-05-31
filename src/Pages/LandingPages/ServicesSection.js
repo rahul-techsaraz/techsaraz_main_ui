@@ -16,12 +16,16 @@ const ServicesSection = ({ services }) => {
       </div>
       <div className="services-in-box">
         <div className="services-heading">
-          <button className="services-heading-text">
+          <button className="services-heading-text justify-center">
+            <img
+              src={images.headingIconImage.imageURL}
+              alt={images.headingIconImage.imageURL}
+            />
             OUR SERVICES
             <span className="services-span-circle"></span>
           </button>
         </div>
-        <h1 className="services-h1"><span className='heading-text-color-change-span'>Services</span> We Provide</h1>
+        <h1 className="full-heading-text-color-change-span text-center"><span className='heading-text-color-change-span'>Services</span> We Provide</h1>
         <nav className="services-nav">
           <ul>
             {services.map((service) => (

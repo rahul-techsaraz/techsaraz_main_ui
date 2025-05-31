@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-// import { constants } from '../../Constant/constants';
+import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 
 const BlogSection = ({ blogs }) => {
-  // const { earthImage } = constants.images;
+  const { headingIconImage } = constants.images;
   return (
     <section className="blog">
       {/* <div className="blog-pulse">
@@ -12,13 +12,14 @@ const BlogSection = ({ blogs }) => {
       </div> */}
       <div className="blog-in-box">
         <div className="top-heading text-center">
-              <button className="top-heading-text text-stroke-color2">
+              <button className="top-heading-text text-stroke-color2 justify-center">
+                <img src={headingIconImage.imageURL} alt={headingIconImage.alt} />
                 NEWS & LATEST UPDATES
                 <span className="top-section-span-round"></span>
               </button>
         </div>
         <div className="blog-heading">
-          <h1 className="blog-h1">Our latest <span className='heading-text-color-change-span'>news & articles</span>  from the blog</h1>
+          <h1 className="full-heading-text-color-change-span max-w-600">Our latest <span className='heading-text-color-change-span'>news & articles</span>  from the blog</h1>
         </div>
         {blogs.map((blog, index) => (
           <div className="blog-box" key={index}>

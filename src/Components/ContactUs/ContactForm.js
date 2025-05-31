@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { images } from '../../Constant/images';
+// import { images } from '../../Constant/images';
 import { useToast } from '../../Context/ToastContext';
 import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const { showToast } = useToast();
-  const { supportImage } = images;
+  // const { supportImage } = images;
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -50,18 +50,19 @@ const ContactForm = () => {
   return (
     <>
       <section className="contact-fill-up">
-        <div className="about-company-pulse">
+        {/* <div className="about-company-pulse">
           <img src={supportImage} alt="Support" />
-        </div>
+        </div> */}
         <div className="contact-fill-up-in-box">
           <div className="contact-fill-up-in-box-textbox">
-            <div className="contact-heading">
-              <button className="contact-heading-text">
-                CONTACT WITH US!<span className="contact-circle"></span>
+             <div className="top-heading">
+              <button className="top-heading-text justify-center">
+                CONTACT WITH US! 
+                <span className="top-section-span-round"></span>
               </button>
-            </div>
-            <div className="contact-fill-up-in-box-up-text">
-              Have Any Questions?
+             </div>
+              <div className="full-heading-text-color-change-span">
+              Have Any<span className='heading-text-color-change-span'> Questions?</span>
             </div>
             <p className="contact-fill-up-in-box-up-p">
               Enthusiastically disintermediate one-to-one leadership via

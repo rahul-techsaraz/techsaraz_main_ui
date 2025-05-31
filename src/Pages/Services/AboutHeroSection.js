@@ -4,12 +4,12 @@ import Routes from '../../Constant/routes';
 
 const AboutHeroSection = () => {
   return (
+    <>
     <div className="about-hero-section">
-      <div className="hro">
-        <div className="textBox">
-          <h1 className="hero-section-tectbox-h1">About Us</h1>
+      <div className="all-hero-section-wraper">
+        <div className="herosection-heading-h1">
+          <h1 className="hero-section-textbox-h1">About Us</h1>
         </div>
-
         <div className="hero-section-top-text">
           <p className="hero-section-top-text-text-p1">
             Welcome to{' '}
@@ -25,19 +25,9 @@ const AboutHeroSection = () => {
             Where innovation meets expertise in web development
           </p>
         </div>
-
       </div>
-
-      <div className="animate-center">
-        <div className="planet-container">
-          <div className="night"></div>
-          <div className="day"></div>
-          <div className="planet-cloud"></div>
-          <div className="inner-shadow"></div>
-        </div>
-      </div>
-
     </div>
+    </>
   );
 };
 
