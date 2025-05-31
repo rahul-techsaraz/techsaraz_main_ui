@@ -7,17 +7,15 @@ const Mission = () => {
   const { togalPopUp } = useContext(PopUpContext);
   return (
     <section className="our-mission">
-      {/* <div className="mission-pulse">
-        <img
-          src={constants.images.launchImage.imageURL}
-          alt={constants.images.launchImage.alt}
-        />
-      </div> */}
       <div className="our-mission-in-box">
         <div className="our-mission-wraper">
           <div className="our-mission-text">
              <div className="top-heading">
               <button className="top-heading-text text-stroke-color2">
+                 <img
+                src={constants.images.headingIconImage.imageURL}
+                alt={constants.images.headingIconImage.imageURL}
+              />
                OUR MAIN MISSION
                 <span className="top-section-span-round"></span>
               </button>
@@ -25,7 +23,7 @@ const Mission = () => {
             <h1 className="full-heading-text-color-change-span">
               Our Mission Is To Look After The Financial Best Interests <span className='heading-text-color-change-span'>With Automation</span>
             </h1>
-            <div className="our-mission-btn">
+            <div className="our-mission-btn pt">
               <Link
                 className="section-btn-btn"
                 onClick={() => togalPopUp(true)}

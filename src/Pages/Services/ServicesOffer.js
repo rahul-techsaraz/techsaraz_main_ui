@@ -17,6 +17,7 @@ const ServicesOffer = () => {
     service4Image,
     pentool2Image,
     pexelsfabianwiktor3471423Image,
+    headingIconImage,
   } = images;
 
   const {
@@ -31,19 +32,19 @@ const ServicesOffer = () => {
     <section className="services">
       <div className="services-in-box">
         <div className="top-heading text-center">
-              <button className="top-heading-text">
+              <button className="top-heading-text justify-center">
+                <img src={headingIconImage} alt="" />
+                {/* <img
+              src={images.headingIconImage.imageURL}
+              alt={images.headingIconImage.imageURL}
+            /> */}
                OUR SERVICES
                 <span className="top-section-span-round"></span>
               </button>
         </div>
         <h1 className="full-heading-text-color-change-span text-center">Services <span className='heading-text-color-change-span'>We Provide</span> </h1>
         <div className='services-grid-box-main-box'>
-        {/* <nav className="services-nav">
-          <ul className='services-grid-main-box'> */}
-            {/* <li> */}
               <Link to={WEB_DEVELOPMENT} className='services-box-parents'>
-                {/* <div className="link">
-                  <div className="link-span"> */}
                     <div className="service-flexbox">
                       <div className="service-img">
                         <img src={machineLearning} alt="" />
@@ -63,20 +64,10 @@ const ServicesOffer = () => {
                         <i className="fa-solid fa-arrow-right-long"></i>
                       </div>
                     </div>
-                  {/* </div> */}
-
-{/*                   
-                  <img src={oneImage} alt="" height="25" />
-                  <div className="hover-reveal image01">
-                    <img className="hidden-img" src={serviceimg1Image} alt="" />
-                  </div> */}
+                    </Link>
 
 
-                {/* </div> */}
-              </Link>
-            {/* </li> */}
 
-            {/* <li> */}
               <Link to={`${WEB_DEVELOPMENT}/${ECOMMERCE_DEVELOPMENT}`} className='services-box-parents'>
                 <div className="link">
                   <div className="link-span">
@@ -106,9 +97,9 @@ const ServicesOffer = () => {
                   </div>
                 </div>
               </Link>
-            {/* </li> */}
 
-            {/* <li> */}
+
+
               <Link to={`${WEB_DEVELOPMENT}/${UI_UX_DESIGN}`} className='services-box-parents2'>
                 <div className="link">
                   <div className="link-span">
@@ -138,9 +129,9 @@ const ServicesOffer = () => {
                   </div>
                 </div>
               </Link>
-            {/* </li> */}
 
-            {/* <li> */}
+
+
               <Link to={`${DIGITAL_MARKETING}`} className='services-box-parents2'>
                 <div className="link">
                   <div className="link-span">
@@ -175,9 +166,9 @@ const ServicesOffer = () => {
                   </div>
                 </div>
               </Link>
-            {/* </li> */}
 
-            {/* <li> */}
+
+
               <Link to={`${DIGITAL_MARKETING}/${CONTENT_WRITING}`} className='services-box-parents'>
                 <div className="link">
                   <div className="link-span">
@@ -207,9 +198,7 @@ const ServicesOffer = () => {
                   </div>
                 </div>
               </Link>
-            {/* </li> */}
 
-            {/* <li> */}
               <Link to={GRAPHICS_DESIGN} className='services-box-parents'>
                 <div className="link">
                   <div className="link-span">
@@ -246,11 +235,6 @@ const ServicesOffer = () => {
 
               </div>
 
-
-
-            {/* </li> */}
-          {/* </ul>
-        </nav> */}
       </div>
     </section>
   );

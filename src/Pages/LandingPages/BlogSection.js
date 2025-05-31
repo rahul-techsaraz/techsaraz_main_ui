@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-// import { constants } from '../../Constant/constants';
+import { constants } from '../../Constant/constants';
 import { Link } from 'react-router-dom';
 
 const BlogSection = ({ blogs }) => {
-  // const { earthImage } = constants.images;
+  const { headingIconImage } = constants.images;
   return (
     <section className="blog">
       {/* <div className="blog-pulse">
@@ -12,7 +12,8 @@ const BlogSection = ({ blogs }) => {
       </div> */}
       <div className="blog-in-box">
         <div className="top-heading text-center">
-              <button className="top-heading-text text-stroke-color2">
+              <button className="top-heading-text text-stroke-color2 justify-center">
+                <img src={headingIconImage.imageURL} alt={headingIconImage.alt} />
                 NEWS & LATEST UPDATES
                 <span className="top-section-span-round"></span>
               </button>

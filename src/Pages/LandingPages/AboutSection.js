@@ -13,6 +13,10 @@ const AboutSection = () => {
            <div className="about-in-box-wraper-textbox">
             <div className="top-heading">
               <button className="top-heading-text">
+                 <img
+              src={images.headingIconImage.imageURL}
+              alt={images.headingIconImage.imageURL}
+            />
                 ABOUT US 
                 <span className="top-section-span-round"></span>
               </button>

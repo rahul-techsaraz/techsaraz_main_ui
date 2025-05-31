@@ -1,5 +1,6 @@
 import user1Image from '../images/user (1).png';
 import homeFont1Image from '../images/about-01.jpg';
+import headingIconImage from '../images/subtitle-icon.png'
 import timeImage from '../images/time.png';
 import repairToolImage from '../images/repair-tool.png';
 import oneImage from '../images/1.png';
@@ -64,6 +65,10 @@ export const constants = {
     homeFont1Image: {
       imageURL: homeFont1Image,
       alt: 'Home font 1 image',
+    },
+    headingIconImage: {
+      imageURL: headingIconImage,
+      alt: 'Home font 2 image',
     },
     timeImage: {
       imageURL: timeImage,

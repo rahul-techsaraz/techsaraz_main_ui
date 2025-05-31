@@ -16,7 +16,11 @@ const ServicesSection = ({ services }) => {
       </div>
       <div className="services-in-box">
         <div className="services-heading">
-          <button className="services-heading-text">
+          <button className="services-heading-text justify-center">
+            <img
+              src={images.headingIconImage.imageURL}
+              alt={images.headingIconImage.imageURL}
+            />
             OUR SERVICES
             <span className="services-span-circle"></span>
           </button>
