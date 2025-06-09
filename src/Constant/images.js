@@ -131,6 +131,8 @@ import thehundredpercentofficialCom from '../images/thehundredpercentofficial-co
 import ttbsplCom from '../images/ttbspl-com-1024x768desktop-d2b4aa.jpg';
 import techSarazPopUpLogo from '../images/Tech-SaraZ-logo-300x99.webp';
 import headingIconImage from '../images/subtitle-icon.png';
+import clientTrust from '../images/client-trust-img.avif';
+
 
 export const images = {
   repairToolImage,
@@ -266,4 +268,5 @@ export const images = {
   ttbsplCom,
   techSarazPopUpLogo,
   headingIconImage,
+  clientTrust,
 };

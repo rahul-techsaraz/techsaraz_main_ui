@@ -14,13 +14,13 @@ const BestCompanySection = ({
   buttonText = 'CONTACT US',
   // buttonLink = '/aboutus',
 }) => {
-  const { webDevelopmentMain768x587Image, smile1Image } = images;
+  const { webDevelopmentMain768x587Image} = images;
   const { togalPopUp } = useContext(PopUpContext);
   return (
     <section className="best-company">
-      <div className="best-company-pulse">
+      {/* <div className="best-company-pulse">
         <img src={smile1Image} alt="Smiling face" />
-      </div>
+      </div> */}
       <div className="best-company-in-box">
         <div className="best-company-in-box-wraper">
           <div className="best-company-in-box-wraper-textbox">
@@ -38,7 +38,7 @@ const BestCompanySection = ({
 
         <div className="best-company-btn">
           <Link
-            className="best-company-btn-btn"
+            className="section-btn-btn"
             onClick={() => togalPopUp(true)}
           >
             {buttonText}

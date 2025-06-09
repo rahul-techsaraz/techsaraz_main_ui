@@ -6,17 +6,17 @@ import Routes from '../../Constant/routes';
 const ServicesOffer = () => {
   const {
     machineLearning,
-    oneImage,
+    // oneImage,
     // serviceimg1Image,
     campaignImage,
-    serviceimg2Image,
+    // serviceimg2Image,
     graphicdesignerImage,
     digitalartImage,
-    pexelsolly3756679Image,
+    // pexelsolly3756679Image,
     write1Image,
-    service4Image,
+    // service4Image,
     pentool2Image,
-    pexelsfabianwiktor3471423Image,
+    // pexelsfabianwiktor3471423Image,
     headingIconImage,
   } = images;
 
@@ -60,9 +60,9 @@ const ServicesOffer = () => {
                           user experience in an intuitive interface.
                         </p>
                       </div>
-                      <div className="service-icon">
+                      {/* <div className="service-icon">
                         <i className="fa-solid fa-arrow-right-long"></i>
-                      </div>
+                      </div> */}
                     </div>
                     </Link>
 
@@ -86,21 +86,21 @@ const ServicesOffer = () => {
                           design to enhance customers shopping experience.
                         </p>
                       </div>
-                      <div className="service-icon">
+                      {/* <div className="service-icon">
                         <i className="fa-solid fa-arrow-right-long"></i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
-                  <img src={oneImage} alt="" height="25" />
+                  {/* <img src={oneImage} alt="" height="25" />
                   <div className="hover-reveal image01">
                     <img className="hidden-img" src={serviceimg2Image} alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </Link>
 
 
 
-              <Link to={`${WEB_DEVELOPMENT}/${UI_UX_DESIGN}`} className='services-box-parents2'>
+              <Link to={`${WEB_DEVELOPMENT}/${UI_UX_DESIGN}`} className='services-box-parents'>
                 <div className="link">
                   <div className="link-span">
                     <div className="service-flexbox">
@@ -118,21 +118,21 @@ const ServicesOffer = () => {
                           user experience and boost engagement.
                         </p>
                       </div>
-                      <div className="service-icon">
+                      {/* <div className="service-icon">
                         <i className="fa-solid fa-arrow-right-long"></i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
-                  <img src={oneImage} alt="" height="25" />
+                  {/* <img src={oneImage} alt="" height="25" />
                   <div className="hover-reveal image01">
                     <img className="hidden-img" src={service4Image} alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </Link>
 
 
 
-              <Link to={`${DIGITAL_MARKETING}`} className='services-box-parents2'>
+              <Link to={`${DIGITAL_MARKETING}`} className='services-box-parents'>
                 <div className="link">
                   <div className="link-span">
                     <div className="service-flexbox">
@@ -151,19 +151,19 @@ const ServicesOffer = () => {
                           them into your loyal customers.
                         </p>
                       </div>
-                      <div className="service-icon">
+                      {/* <div className="service-icon">
                         <i className="fa-solid fa-arrow-right-long"></i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
-                  <img src={oneImage} alt="" height="25" />
+                  {/* <img src={oneImage} alt="" height="25" />
                   <div className="hover-reveal image01">
                     <img
                       className="hidden-img"
                       src={pexelsolly3756679Image}
                       alt=""
                     />
-                  </div>
+                  </div> */}
                 </div>
               </Link>
 
@@ -187,15 +187,15 @@ const ServicesOffer = () => {
                           and bolstering your brand image.
                         </p>
                       </div>
-                      <div className="service-icon">
+                      {/* <div className="service-icon">
                         <i className="fa-solid fa-arrow-right-long"></i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
-                  <img src={oneImage} alt="" height="25" />
+                  {/* <img src={oneImage} alt="" height="25" />
                   <div className="hover-reveal image01">
                     <img className="hidden-img" src={service4Image} alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </Link>
 
@@ -217,19 +217,19 @@ const ServicesOffer = () => {
                           communicate your brand message.
                         </p>
                       </div>
-                      <div className="service-icon">
+                      {/* <div className="service-icon">
                         <i className="fa-solid fa-arrow-right-long"></i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
-                  <img src={oneImage} alt="" height="25" />
+                  {/* <img src={oneImage} alt="" height="25" />
                   <div className="hover-reveal image01">
                     <img
                       className="hidden-img"
                       src={pexelsfabianwiktor3471423Image}
                       alt=""
                     />
-                  </div>
+                  </div> */}
                 </div>
               </Link>
 
