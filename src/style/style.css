@@ -1701,7 +1701,7 @@ style attribute {
 .itemRight {
   width: 180px;
   height: 100px;
-  background: radial-gradient(circle,rgba(115, 162, 209, 1) 0%, rgba(227, 242, 255, 1) 100%);
+  background: radial-gradient(circle, rgb(153 187 221) 0%, rgb(224 235 247) 68%, rgb(255 255 255) 100%);
   border-radius: 20px;
   position: absolute;
   animation-timing-function: linear;
@@ -2769,6 +2769,9 @@ footer {
   font-weight: 700;
   font-size: 18px;
   border: 1px solid var(--border-color);
+}
+.contact-fill-up-in-box-fillup-phone-input input:focus{
+  outline: 2px solid var(--border-color);
 }
 .contact-fill-up-in-box-fillup-name-input input:focus{
   outline: 2px solid var(--border-color);
