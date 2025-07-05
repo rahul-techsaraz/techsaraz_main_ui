@@ -19,10 +19,10 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp # or ftp, ftps – use what Hostinger supports
-          port: ${{ secrets.FTP_PORT }}
+          server: ftp://82.25.124.251
+          username: u450361634.techsaraz.in
+          password: NewVision@2025
+          protocol: ftp
+          port: 21
           local-dir: ./build/
           server-dir: /public_html/
