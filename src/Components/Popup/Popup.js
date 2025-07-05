@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { PopUpContext, useToast } from '../../Context/ToastContext';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
+import { constants } from '../../Constant/constants';
 
 const Popup = () => {
   const { isPopUp, togalPopUp } = useContext(PopUpContext);
@@ -11,39 +12,34 @@ const Popup = () => {
   const [service, setService] = useState('');
   const [comment, setComment] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     e.stopPropagation();
     if (!name || !email || !phone || !comment) {
       showToast('error', 'All fields are mandatory!');
       return;
     }
-    const templateParams = {
-      name: name,
-      email: email,
-      message: `Hi I have query regarding ${comment}. You can contact me on ${phone} or ${email}`,
-      services: service,
-    };
-    emailjs
-      .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_EMAILJS_USER_ID,
-      )
-      .then(() => {
-        showToast(
-          'success',
-          'The email has been sent successfully. The team will connect with you shortly.',
-        );
-      })
-      .catch((error) => {
-        if (process.env.NODE_ENV !== 'production') {
-          console.error(error);
-        }
-        showToast('error', 'Something went wrong. Please try again!');
-      });
-    togalPopUp(false);
+    const payload = {
+      toEmail: process.env.REACT_APP_TO_EMAIL,
+      subject: process.env.REACT_APP_SUBJECT,
+      fromEmail: process.env.REACT_APP_FROM_EMAIL,
+      fromEmailName: process.env.REACT_APP_FROM_EMAIL_NAME,
+      htmlTemplate: `<!DOCTYPE html>             <html>             <head><meta charset='UTF-8' /><title>Your OTP Code</title></head>             <body style='font-family:Arial,sans-serif;background:#f4f6f8;padding:20px;>             <div style='max-width:500px;margin:auto;background:#fff;padding:30px;text-align:center;border-radius:8px;'>       <h2>name: ${name} </h2>    <p>Hi I have query regarding ${comment}. You can contact me on ${phone} or ${email}</p>                 </div>             </body>             </html>`
+    }
+    const response = await fetch(constants?.apiUrl?.SEND_MAIL,{
+      method: constants?.apiMethod?.POST,
+      headers: {...constants?.apiHeader?.JSON, 'Authorization': process.env.REACT_APP_AUTHORIZATION},
+      body: JSON.stringify(payload)
+    })
+    if(response?.status === constants?.apiResponse?.SUCCESS_CODE){
+      showToast('success', 'Thanks for your query. we will respond soon');
+      togalPopUp(false);
+      setComment('');
+      setEmail('');
+      setName('');
+      setPhone('');
+      setService('');
+    }
   };
 
   return (
