@@ -1,35 +1,20 @@
-name: Deploy React App to Hostinger
+name: Test SSH Connection to Hostinger
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  test-ssh:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build React app
-        run: npm run build
-
-      - name: Upload build folder via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Test SSH Connection
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.HOSTINGER_SERVER_IP }}
           username: ${{ secrets.HOSTINGER_SERVER_USER }}
           port: ${{ secrets.HOSTINGER_SERVER_PORT }}
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
-          source: 'build/*'
-          target: '/home/u450361634/public_html/'
+          script: |
+            whoami
+            ls -al /home/${{ secrets.HOSTINGER_SERVER_USER }}/public_html
