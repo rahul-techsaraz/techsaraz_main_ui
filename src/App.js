@@ -22,10 +22,6 @@ function App() {
   const { titleSetter } = useSetTitle();
   const location = useLocation();
 
-  window.dataLayer.push({
-    event: 'pageview',
-  });
-
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,9 +85,16 @@ function App() {
   }, [mouseY]);
   useEffect(() => {
     const tagManagerArgs = {
-      gtmId: process.env.REACT_APP_GMT_ID,
+      gtmId: process.env.REACT_APP_GTM_ID, // Corrected variable name
     };
     TagManager.initialize(tagManagerArgs);
+
+    // Wait for GTM to initialize before pushing to dataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+      });
+    }
   }, []);
   return (
     <ToastProvider>
