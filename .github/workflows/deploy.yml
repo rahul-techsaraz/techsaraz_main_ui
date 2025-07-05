@@ -24,7 +24,7 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Upload build folder to Hostinger via SCP
+      - name: Upload build folder via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOSTINGER_SERVER_IP }}
