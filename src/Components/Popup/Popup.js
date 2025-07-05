@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { PopUpContext, useToast } from '../../Context/ToastContext';
-// import emailjs from 'emailjs-com';
 import { constants } from '../../Constant/constants';
 
 const Popup = () => {

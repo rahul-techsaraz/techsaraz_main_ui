@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 // import { images } from '../../Constant/images';
 import { useToast } from '../../Context/ToastContext';
-// import emailjs from 'emailjs-com';
-// import { constants } from '../../Constant/constants';
+import { constants } from '../../Constant/constants';
 
 const ContactForm = () => {
   const { showToast } = useToast();
@@ -21,31 +20,6 @@ const ContactForm = () => {
       showToast('error', 'All fields are mandatory!');
       return;
     }
-    // const templateParams = {
-    //   name: name,
-    //   email: email,
-    //   message: `Hi I have query regarding ${message}. You can contact me on ${phone} or ${email}`,
-    // };
-    // emailjs
-    //   .send(
-    //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
-    //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-    //     templateParams,
-    //     process.env.REACT_APP_EMAILJS_USER_ID,
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result);
-    //       showToast(
-    //         'success',
-    //         'The email has been sent successfully. The team will connect with you shortly.',
-    //       );
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       showToast('error', 'Something went wrong. Please try again!');
-    //     },
-    //   );
     const payload = {
       toEmail: process.env.REACT_APP_TO_EMAIL,
       subject: process.env.REACT_APP_SUBJECT,
