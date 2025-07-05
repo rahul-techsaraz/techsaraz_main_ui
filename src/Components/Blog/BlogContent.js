@@ -48,7 +48,7 @@ const BlogPost = ({
       <p className="blog-down-section-leftbox-1stbox-paragraph">{paragraph}</p>
       <div className="blog-down-section-leftbox-1stbox-btn">
         <Link
-          className="blog-down-section-leftbox-1stbox-btn-btn"
+          className="button-btn-btn2"
           to={readMoreLink}
         >
           READ MORE

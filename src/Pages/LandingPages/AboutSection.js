@@ -8,34 +8,36 @@ const AboutSection = () => {
   const { aboutSectionDescription } = constants.landingPageText;
   return (
     <section className="about">
-      <div className="pulse">
-        <img src={images.user1Image.imageURL} alt={images.user1Image.alt} />
-      </div>
       <div className="about-in-box">
         <div className="about-in-box-wraper">
+           <div className="about-in-box-wraper-textbox">
+            <div className="top-heading">
+              <button className="top-heading-text">
+                 <img
+              src={images.headingIconImage.imageURL}
+              alt={images.headingIconImage.imageURL}
+            />
+                ABOUT US 
+                <span className="top-section-span-round"></span>
+              </button>
+            </div>
+            <div className="full-heading-text-color-change-span">
+              WE ARE MORE THAN JUST AN <span className='heading-text-color-change-span'>IT COMPANY</span>
+            </div>
+            <p className="paragraph-p pb pt">
+              {aboutSectionDescription}
+            </p>
+            <div className="about-btn">
+              <Link className="section-btn-btn" to={Routes.ABOUT_US}>
+                KNOW MORE
+              </Link>
+            </div>
+          </div>
           <div className="about-in-box-wraper-imgbox">
             <img
               src={images.homeFont1Image.imageURL}
               alt={images.homeFont1Image.imageURL}
             />
-          </div>
-          <div className="about-in-box-wraper-textbox">
-            <div className="about-heading">
-              <button className="about-heading-text">
-                ABOUT US<span className="about-section-span-round"></span>
-              </button>
-            </div>
-            <div className="about-in-box-wraper-textbox-text">
-              WE ARE MORE THAN JUST AN IT COMPANY
-            </div>
-            <p className="about-in-box-wraper-textbox-text-p">
-              {aboutSectionDescription}
-            </p>
-            <div className="about-btn">
-              <Link className="about-btn-btn" to={Routes.ABOUT_US}>
-                KNOW MORE
-              </Link>
-            </div>
           </div>
         </div>
       </div>

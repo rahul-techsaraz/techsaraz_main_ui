@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import { images } from '../../Constant/images';
 
 const ClientSection = ({ clients }) => {
+  const { headingIconImage } = images;
   return (
     <section className="our-client">
-      <div className="our-client-pulse">
-        <img src={images.customerCare} alt="Customer Care Image" />
-      </div>
-      <div className="our-client-in-box">
+      <div className="our-client-in-box"> 
         <div className="our-client-heading">
-          <button className="our-client-heading-text">
-            Clients<span className="our-client-span-circle"></span>
+          <button className="our-client-heading-text justify-center">
+            <img src={headingIconImage} alt="" />
+            Clients
           </button>
         </div>
+
         <div className="our-client-heading">
           <h1 className="our-client-h1">Our Clients</h1>
         </div>

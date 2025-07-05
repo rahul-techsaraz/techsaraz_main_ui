@@ -14,21 +14,34 @@ const PortfolioSection = ({ portfolios }) => {
   };
   return (
     <section className="creative-work portfolio-section-start">
-      <div className="creative-work-pulse">
+      {/* <div className="creative-work-pulse">
         <img
           src={constants.images.marketImage.imageURL}
           alt={constants.images.marketImage.alt}
         />
-      </div>
+      </div> */}
       <div className="creative-work-in-box">
-        <div className="creative-work-heading">
+        {/* <div className="creative-work-heading">
           <button className="creative-work-heading-text">
             Portfolio<span className="creative-work-span-circle"></span>
           </button>
+        </div> */}
+
+        <div className="top-heading text-center">
+              <button className="top-heading-text text-stroke-color2 justify-center">
+                <img
+              src={constants.images.headingIconImage.imageURL}
+              alt={constants.images.headingIconImage.imageURL}
+            />
+                Portfolio
+                <span className="top-section-span-round"></span>
+              </button>
         </div>
+
+
         <div className="creative-work-heading">
-          <h1 className="creative-work-h1">
-            Our Latest Work For Our Best Customer
+          <h1 className="full-heading-text-color-change-span max-w-600">
+            Our Latest Work For <span className='heading-text-color-change-span'>Our Best Customer</span> 
           </h1>
         </div>
         <div className="loc">

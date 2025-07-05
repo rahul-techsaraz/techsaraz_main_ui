@@ -1,16 +1,16 @@
 import repairToolImage from '../images/repair-tool.png';
-import machineLearning from '../images/machine-learning.png';
+import machineLearning from '../images/services-web-development-img.png';
 import oneImage from '../images/1.png';
 import serviceimg1Image from '../images/service-img-1.jpg';
-import campaignImage from '../images/campaign.png';
+import campaignImage from '../images/service-ecommerce-img.png';
 import serviceimg2Image from '../images/service-img-2.jpg';
-import graphicdesignerImage from '../images/graphic-designer.png';
+import graphicdesignerImage from '../images/services-ui-design-img.png';
 import serviceimg4Image from '../images/service-img-4.jpg';
-import digitalartImage from '../images/digital-art.png';
+import digitalartImage from '../images/services-digitalmarketing-img.png';
 import pexelsolly3756679Image from '../images/pexels-olly-3756679.jpg';
-import write1Image from '../images/write (1).png';
+import write1Image from '../images/services-content-writing-img.png';
 import service4Image from '../images/service-4.jpg';
-import pentool2Image from '../images/pen-tool (2).png';
+import pentool2Image from '../images/services-graphics-img.png';
 import pexelsfabianwiktor3471423Image from '../images/pexels-fabianwiktor-3471423.jpg';
 import quotesImage from '../images/quotes.png';
 import pexelsnkhajotia1516680Image from '../images/pexels-nkhajotia-1516680.jpg';
@@ -85,10 +85,10 @@ import blogs13Image from '../images/blog-s-1-3.jpg';
 import howAgecisPutsYourAudienceFirstInEveryWebsiteProject from '../images/how-agecis-puts-your-audience-first-in-every-website-project.jpg';
 import ensuresYourWebsiteRisesToTheTopOfSearchRankingsImage from '../images/ensures-your-website-rises-to-the-top-of-search-rankings.jpg';
 import strategiesForEffectiveWebDesignByOurAgencyImage from '../images/strategies-for-effective-web-design-by-our-agency.jpg';
-import serviceImage from '../images/service.png';
-import workFromHome3image from '../images/work-from-home (3).png';
-import expertiseImage from '../images/expertise.png';
-import sportsTrophyImage from '../images/sports-trophy.png';
+import serviceImage from '../images/counter1.png';
+import workFromHome3image from '../images/counter2.png';
+import expertiseImage from '../images/counter3.png';
+import sportsTrophyImage from '../images/counter4.png';
 import applicationImage from '../images/application.png';
 import dashboardImage from '../images/dashboard.png';
 import onlineBookingImage from '../images/online-booking.png';
@@ -130,6 +130,7 @@ import thecontentcommunityCom from '../images/thecontentcommunity-com-1024x768de
 import thehundredpercentofficialCom from '../images/thehundredpercentofficial-com-1024x768desktop-d31548.jpg';
 import ttbsplCom from '../images/ttbspl-com-1024x768desktop-d2b4aa.jpg';
 import techSarazPopUpLogo from '../images/Tech-SaraZ-logo-300x99.webp';
+import headingIconImage from '../images/subtitle-icon.png';
 
 export const images = {
   repairToolImage,
@@ -264,4 +265,5 @@ export const images = {
   thehundredpercentofficialCom,
   ttbsplCom,
   techSarazPopUpLogo,
+  headingIconImage,
 };

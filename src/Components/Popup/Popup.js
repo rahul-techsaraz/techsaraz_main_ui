@@ -116,7 +116,8 @@ const Popup = () => {
         <div className="popup-form">
           <div className="popup-child-box">
             <div className="close" onClick={() => togalPopUp(false)}>
-              &times;
+              <i className="fa-solid fa-xmark"></i>
+              {/* &times; */}
             </div>
             <h1 className="popup-heading">Get a Free Quote Now</h1>
             <form>

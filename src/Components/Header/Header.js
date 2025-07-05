@@ -156,7 +156,7 @@ const Header = () => {
 
         {/* Main Header Button */}
         <div className="header-btn">
-          <Link className="header-btn-btn" onClick={() => togalPopUp(true)}>
+          <Link className="button-btn-btn2" onClick={() => togalPopUp(true)}>
             Get a Quote
           </Link>
         </div>
