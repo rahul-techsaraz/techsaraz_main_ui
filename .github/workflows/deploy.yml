@@ -1,20 +1,31 @@
-name: Test SSH Connection to Hostinger
+name: 🚀 Deploy React app via FTP
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
-  test-ssh:
+  ftp-deploy:
+    name: Upload build via FTP
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test SSH Connection
-        uses: appleboy/ssh-action@v1.0.0
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          host: ${{ secrets.HOSTINGER_SERVER_IP }}
-          username: ${{ secrets.HOSTINGER_SERVER_USER }}
-          port: ${{ secrets.HOSTINGER_SERVER_PORT }}
-          key: ${{ secrets.HOSTINGER_SSH_KEY }}
-          script: |
-            whoami
-            ls -al /home/${{ secrets.HOSTINGER_SERVER_USER }}/public_html
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          protocol: ftp # or ftp or sftp
+          local-dir: ./build
+          server-dir: /public_html/
