@@ -22,7 +22,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp # or ftp, ftps – use what Hostinger supports
+          protocol: ftp # or ftp, ftps – use what Hostinger supports
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./build/
           server-dir: /public_html/
