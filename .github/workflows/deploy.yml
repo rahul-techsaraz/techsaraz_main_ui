@@ -19,7 +19,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp://82.25.124.251
+          server: 82.25.124.251
           username: u450361634.techsaraz.in
           password: NewVision@2025
           protocol: ftp
