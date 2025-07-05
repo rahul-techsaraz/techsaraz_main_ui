@@ -15,12 +15,6 @@ import TagManager from 'react-gtm-module';
 import { useSetTitle } from './Hooks/useSetTitle';
 import WhatsUp from './Pages/LandingPages/WhatsUp';
 
-const tagManagerArgs = {
-  gtmId: process.env.REACT_APP_GMT_ID,
-};
-
-TagManager.initialize(tagManagerArgs);
-
 function App() {
   const [isPopUp, setIsPopUp] = useState(true);
   const [mouseX, setMouseX] = useState(0);
@@ -93,7 +87,12 @@ function App() {
       togalPopUp(true);
     }
   }, [mouseY]);
-
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: process.env.REACT_APP_GMT_ID,
+    };
+    TagManager.initialize(tagManagerArgs);
+  }, []);
   return (
     <ToastProvider>
       <PopUpContext.Provider value={{ isPopUp, togalPopUp }}>
