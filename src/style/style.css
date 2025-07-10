@@ -364,7 +364,9 @@ a {
 .web-development-page-magento-box-h1-heading,
 .web-development-page-joomla-box-h1-heading,
 .web-development-page-react-box-h1-heading,
-.web-development-page-node-js-box-h1-heading{
+.web-development-page-node-js-box-h1-heading,
+.digital-marketing-seo-services-box-h1-heading,
+.digital-marketing-page-social-media-marketing-box-h1-heading{
     color:var(--heading-color);
     font-size: 50px;
     padding-bottom: 30px;
@@ -376,7 +378,9 @@ a {
 .web-development-page-php-box-down-circle,
 .web-development-page-joomla-box-down-circle,
 .web-development-page-react-box-down-circle,
-.web-development-page-node-js-box-down-circle{
+.web-development-page-node-js-box-down-circle,
+.digital-marketing-seo-services-box-in-down,
+.digital-marketing-page-social-media-marketing-box-in-down{
     width: 100%;
     padding: 10px 40px;
     background-color: var(--background-color1);
@@ -12100,170 +12104,12 @@ padding: 0 20px;
 
 /* DIGITAL MARKETING page SEO Services in Bangalore section start */
 
-.digital-marketing-seo-services-box{
-  width: 100%;
-    padding: 50px;
-    transition: 0.1s ease-in-out;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    position: relative;
-}
-.digital-marketing-seo-services-box:hover{
-  border: 1px solid #b110c9;
-    transition: 0.1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151c;
-}
-.digital-marketing-seo-services-box-h1-heading{
-  color: #c4cfde;
-  font-size: 50px;
-  padding-bottom: 30px;
-  text-align:left;
-}
-.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-h1-heading{
-  color: #b110c9;
-}
-.digital-marketing-seo-services-box-in-down{
-  width: 100%;
-  padding: 10px 40px;
-  background-color: transparent;
-  border-radius: 20px;
-  border: 2px solid #ffffff;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-in-down{
-  background-color: #b110c9;
-}
-.digital-marketing-seo-services-pulse img{
-  width: 40px;
-}
-.digital-marketing-seo-services-pulse{
-  height: 75px;
-  width: 75px;
-  background: #51025e;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #b110c9;
-}
-.digital-marketing-seo-services-pulse:before,
-.digital-marketing-seo-services-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#b110c9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.digital-marketing-seo-services-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.digital-marketing-seo-services-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
 /* DIGITAL MARKETING page SEO Services in Bangalore section end */
 
 
 
 /* DIGITAL MARKETING page Social Media Marketing Services section start */
 
-.digital-marketing-page-social-media-marketing-box{
-  width: 100%;
-    padding: 50px;
-    transition: 0.1s ease-in-out;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    position: relative;
-}
-.digital-marketing-page-social-media-marketing-box:hover{
-  border: 1px solid #c91045;
-    transition: 0.1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151c;
-}
-.digital-marketing-page-social-media-marketing-box-h1-heading{
-  color: #c4cfde;
-  font-size: 50px;
-  padding-bottom: 30px;
-  text-align: left;
-}
-.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-h1-heading{
-  color: #c91045;
-}
-.digital-marketing-page-social-media-marketing-box-in-down{
-  width: 100%;
-  padding: 10px 40px;
-  background-color: transparent;
-  border-radius: 20px;
-  border: 2px solid #ffffff;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-in-down{
-  background-color: #c91045;
-}
-.in-bangalore2-down-box-i{
-  display: flex;
-}
-.digital-marketing-page-social-media-marketing-pulse img{
-  width: 40px;
-}
-.digital-marketing-page-social-media-marketing-pulse{
-  height: 75px;
-  width: 75px;
-  background: #680420;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #c91045;
-}
-.digital-marketing-page-social-media-marketing-pulse:before,
-.digital-marketing-page-social-media-marketing-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#c91045;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.digital-marketing-page-social-media-marketing-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.digital-marketing-page-social-media-marketing-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
 
 /* DIGITAL MARKETING page Social Media Marketing Services section end */
 
