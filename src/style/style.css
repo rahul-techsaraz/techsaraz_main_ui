@@ -24,6 +24,9 @@ a {
   --icon-color:#ffffff;
   --icon-background-color:#004687;
   --icon-hover-color:#191970;
+  --icon-color2:#004687;
+
+
   --border-color:#004687;
 
   --main-background-color1:#ffffff;
@@ -290,6 +293,106 @@ a {
   padding: 0 100px;
   background-color: var(--linier-gradient-bg-color);
 }
+
+/* ANIMATED BORDER CSS START */
+
+.border-animation {
+  height: 3px;
+  width: 120px;
+  background-color: rgb(186, 198, 255);
+  position:relative;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.border-animation-border::after {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 10px;
+  content: '';
+  background: rgb(1, 81, 255);
+  animation: first 7000ms infinite -5s linear;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px 10px #fff;
+}
+
+@keyframes first {
+  from {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  
+  50% {
+    left: 110%; 
+    transform: translateX(110%);
+  }
+  
+  to {
+    left: 110%;
+  }
+  
+}
+
+
+
+/* ALL SERVICES COMMON CSS START */
+
+
+.all-services-wraper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.all-services-optionbox-container{
+  width: 100%;
+  padding: 70px 100px;
+  background-color: var(--main-background-color2);
+  position: relative;
+}
+.all-services-optionbox-container2{
+  width: 100%;
+  padding: 70px 100px;
+  background-color: var(--main-background-color1);
+  position: relative;
+}
+.web-development-page-shopify-box-h1-heading, 
+.web-development-page-php-box-h1-heading,
+.web-development-page-wordpress-box-h1-heading,
+.web-development-page-magento-box-h1-heading,
+.web-development-page-joomla-box-h1-heading,
+.web-development-page-react-box-h1-heading,
+.web-development-page-node-js-box-h1-heading,
+.digital-marketing-seo-services-box-h1-heading,
+.digital-marketing-page-social-media-marketing-box-h1-heading{
+    color:var(--heading-color);
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.web-development-page-magento-box-down-circle,
+.web-development-page-shopify-box-down-circle,
+.web-development-page-wordpress-box-down-circle,
+.web-development-page-php-box-down-circle,
+.web-development-page-joomla-box-down-circle,
+.web-development-page-react-box-down-circle,
+.web-development-page-node-js-box-down-circle,
+.digital-marketing-seo-services-box-in-down,
+.digital-marketing-page-social-media-marketing-box-in-down{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: var(--background-color1);
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
 
 /* ----------------root end--------------- */
 
@@ -1093,18 +1196,13 @@ nav ul li .link {
 .service-flexbox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 .services-box-parents{
   width: 100%;
-  height: 400px;
+  padding: 70px 20px;
   border: 1px solid rgb(238, 238, 238);
-  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .services-box-parents:hover{
   background-color: var(--background-color1);
@@ -1121,15 +1219,9 @@ nav ul li .link {
 }
 .services-box-parents2{
   width: 100%;
-  height: 400px;
   border: 1px solid rgb(238, 238, 238);
-  padding: 20px;
+  padding: 70px 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services-box-parents2:hover{
-  border: 1px solid var(--background-color1);
 }
 .service-img {
   width: 100%;
@@ -1166,7 +1258,6 @@ nav ul li .link {
 }
 .service-icon {
   width: 100%;
-  display: flex;
   display: flex;
   justify-content: center;
 }
@@ -1545,6 +1636,22 @@ nav ul li .link > img {
   font-size: 15px;
   color: var(--p-color);
 }
+.swiper-button-prev-next-flex{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.testimonial-prev-button, .testimonial-next-button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--icon-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 /* testimonial end */
 
@@ -1716,9 +1823,11 @@ style attribute {
 }
 .item1-img-img {
   width: 90%;
-  /* filter: contrast(0%); */
   opacity: 1;
   max-height: 90px;
+}
+.item5-img img{
+  filter: grayscale(1);
 }
 .itemLeft {
   left: max(calc(200px * 22), 100%);
@@ -2233,7 +2342,7 @@ footer {
   gap: 15px;
   padding: 40px 20px;
   border: 1px solid var(--color-white);
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 .our-vision-section-box-img{
   width: 50px;
@@ -2298,7 +2407,96 @@ footer {
 
 /* OUR VISSION MISSION END */
 
-/* OUR SERVICES SECTION START */
+/* OUR CLIENT TRUST SECTION START */
+
+.client-trust{
+  width: 100%;
+  padding: 70px 100px;
+  background-color: var(--main-background-color1);
+}
+.client-trust-in-text-imgbox{
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+.client-trust-in-textbox{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.client-trust-textbox-child{
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+.client-trust-textbox-child:hover {
+  background-color: var(--background-color1);
+}
+.client-trust-textbox-child h1{
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: #8298ac;
+}
+.client-trust-textbox-child:hover .client-trust-textbox-child-h1{
+  color: var(--text-color-white);
+}
+.client-trust-textbox-child:hover .client-trust-textbox-child-h3{
+  color: var(--text-color-white);
+}
+.client-trust-in-imgbox{
+  width: 40%;
+}
+.client-trust-in-imgbox img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.client-trust-in-imgbox-clienttrust-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* OUR CLIENT TRUST SECTION END */
+
+/* BUILDS TOGETHER SECTION START */
+
+.builds-together{
+  width: 100%;
+  background: url('../images/banner-image-1005.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.builds-together-child-grid-container{
+  background-color: var(--linier-gradient-bg-color);
+  padding:100px;
+}
+.builds-together-child-text-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.color-white{
+  color: var(--text-color-white);
+}
+.heading-text-color-change-span-span{
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent !important;
+}
+.builds-together-para{
+  padding: 15px 0 30px;
+}
+
+/* BUILDS TOGETHER SECTION END */
+
+/* OUR SERVICES PAGE SECTION START */
 
 .services-hero-section {
   height: 90vh;
@@ -2315,7 +2513,7 @@ footer {
 
 
 
-/* OUR SERVICES SECTION END */
+/* OUR SERVICES PAGE SECTION END */
 
 /* consulation start */
 
@@ -2648,13 +2846,19 @@ footer {
 
 
 .layerrr {
-  background-color: #000000;
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
+  background: url(../images/banner-image-1007.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contact-hero-wraper{
+  width: 100%;
+  height: 100%;
+  background-color: var(--linier-gradient-bg-color);
+  padding: 0 100px;
 }
 .company-details {
   width: 100%;
@@ -2809,57 +3013,6 @@ footer {
   justify-content: center;
 }
 
-.contact-us-btn-btn {
-  position: relative;
-  background: linear-gradient(
-    -90deg,
-    #ee7752,
-    #e73c7e,
-    #23a6d5,
-    #23d5ab,
-    #ee7752
-  );
-  background-size: 400% 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
-  border-radius: 50px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  padding: 0;
-  margin: 0;
-  animation: Gradient 4s ease infinite;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 45px;
-  color: #000;
-  margin-top: 20px;
-}
-
-.contact-us-btn-btn .contact-us-btn {
-  color: black;
-  min-height: 40px;
-  padding: 0 1.618em;
-  border-radius: inherit;
-  background-size: inherit;
-  background-image: inherit;
-  animation: Gradient 8s ease infinite;
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: overlay;
-  font-family: 'Helvetica Neue';
-}
-
-@keyframes Gradient {
-  50% {
-    background-position: 140% 50%;
-    transform: skew(-2deg);
-  }
-}
-
 
 /* CONTACT US PAGE END */
 
@@ -2873,29 +3026,30 @@ footer {
   /* --point-gap-width: calc(var(--gird-width) * 4);
   --point-gap-height: calc(var(--gird-height) * 4); */
 }
+
+/* WEB DEVELOPMENT HEROSECTION START */
+
+.web-development-banner {
+  width: 100%;
+  height: 90vh;
+  background: url('../images/web-development-banner-img-1002.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* WEB DEVELOPMENT HEROSECTION END */
+
+/* BEST COMPANY CSS START */
 .best-company {
   width: 100%;
   padding: 70px 100px;
-  background-color: #000;
+  background-color:var(--main-background-color1);
   position: relative;
 }
 .best-company-in-box {
   width: 100%;
-  padding: 50px;
-  transition: 0.1s ease-in-out;
-  border: 1px solid #000000;
-  border-radius: 20px;
   position: relative;
-  overflow: hidden;
-  background-size: cover;
-}
-.best-company-pulse img {
-  width: 35px;
-}
-.best-company-in-box:hover {
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  background-color: #11151c;
 }
 .best-company-in-box-wraper {
   display: grid;
@@ -2910,15 +3064,10 @@ footer {
 .best-company-in-box-wraper-textbox {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
-.best-company-in-box:hover .best-company-in-box-wraper-textbox-text {
-  color: #cc8dfc;
-  transition: 0.5s ease-in-out;
-}
 .best-company-in-box-wraper-textbox-text {
-  color: #c4cfde;
+  color: var(--p-color);
   font-size: 50px;
   font-weight: 700;
   max-width: 500px;
@@ -2935,29 +3084,177 @@ footer {
   font-size: 15px;
   letter-spacing: 1px;
 }
-.span-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
 .best-company-in-box-wraper-textbox-text-p {
   color: #c4cfde;
   padding: 10px 0 30px 0;
 }
 .best-company-p {
-  color: #c4cfde;
+  color: var(--p-color);
   font-size: 17px;
   padding-bottom: 20px;
+  font-weight: 500;
+  text-align: justify;
 }
+
+/* BEST COMPANY CSS END */
+
+/* COMPETITOR SECTION START */
+
+.competitor {
+  width: 100%;
+  padding: 70px 100px;
+  background-color: var(--main-background-color2);
+  position: relative;
+}
+.competitor-h1 {
+  color: var(--heading-color);
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 20px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.competitor-p {
+  color: var(--p-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+}
+.competitor-in-box-wraper {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.competitor-box {
+  width: 30%;
+  border: 1px solid var(--border-color);
+  height: 350px;
+  border-radius: 20px;
+  padding: 40px 20px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.3s;
+}
+.competitor-box-i {
+  font-size: 25px;
+  color: var(--icon-color);
+  width: 50px;
+  height: 50px;
+  background-color: var(--icon-background-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.competitor-box:hover .competitor-box-i {
+  background-color: var(--color-white);
+  color: var(--icon-color2);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.competitor-box:hover{
+  background-color: var(--background-color1);
+}
+.competitor-box:hover .competitor-box-i i {
+  color: var(--icon-color2);
+}
+.competitor-box-h1 {
+  color: var(--heading-color);
+  font-size: 25px;
+  transition: 0.3s;
+  text-align: center;
+}
+.competitor-box-p {
+  color: var(--p-color);
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.competitor-box:hover .competitor-box-h1 {
+  color: var(--text-color-white) !important;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.competitor-box:hover .competitor-box-p {
+  color: var(--text-color-white);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+
+
+/* COMPETITOR SECTION END */
+
+/* SERVICES-IN SECTION START */
+
+.service-in {
+  width: 100%;
+  padding: 70px 100px;
+  background-color: var(--main-background-color1);
+  position: relative;
+}
+.service-in-h1 {
+  font-size: 50px;
+  color: var(--heading-color);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.service-in-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service-in-box:hover .service-in-text {
+  color: #2d4085;
+  transition: 0.5s ease-in-out;
+}
+.service-in-text {
+  color: var(--p-color);
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 500px;
+  padding-top: 20px;
+  transition: 0.5s ease-in-out;
+}
+.best-company-heading-text {
+  position: relative;
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  z-index: 9;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.best-company-in-box-wraper-textbox-text-p {
+  color: #c4cfde;
+  padding: 10px 0 30px 0;
+}
+.service-in-p {
+  color: var(--p-color);
+  font-size: 17px;
+  padding-bottom: 20px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+/* SERVICES-IN SECTION END */
+
+/* PHP SECTION START */
+
 .in-bangalore {
   width: 100%;
   padding: 70px 100px;
-  background-color: #000;
+  background-color: var(--main-background-color2);
   position: relative;
 }
 .in-bangalore2 {
@@ -2976,26 +3273,43 @@ footer {
   overflow: hidden;
   background-size: cover;
 }
-.competitor {
-  width: 100%;
-  padding: 70px 100px;
-  background-color: #000;
-  position: relative;
-}
+
+/* IN BANGALORE PHP SECTION END */
+
+/* WORDPRESS SECTION START */
+/* WORDPRESS SECTION END */
+
+/* SHOPIFY SECTION START */
+
+/* SHOPIFY SECTION END */
+
+
+/* MAGENTO SECTION START */
+
+
+/* MAGENTO SECTION END */
+
+
+
+/* web development joomla box start */
+
+
+
+/* web development react box start */
+
+
+/* web development node js box start */
+
+
+
+/* ----------------------------------WEB DEVELOPMENT PAGE CSS END ------------------------------------ */
+
 
 /* content writing css start */
 
 .best-company-pulse img {
   width: 35px;
 }
-.best-company-in-box:hover {
-  border: 1px solid #2a8fc9;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
-
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
   height: 450px;
@@ -3037,11 +3351,6 @@ footer {
 .best-company-in-box-wraper-textbox-text-p {
   color: #c4cfde;
   padding: 10px 0 30px 0;
-}
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
 }
 
 .best-company-btn {
@@ -3225,11 +3534,6 @@ footer {
 }
 .in-bangalore-box:hover .in-bangalore-h1 {
   color: #652ac9;
-}
-.in-bangalore-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
 }
 
 .in-bangalore-down-box {
@@ -3918,13 +4222,6 @@ footer {
 
 /* web-development-banner start */
 
-.web-development-banner {
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-  position: relative;
-}
-
 .content-writing-banner-animation {
   position: absolute;
   overflow: hidden;
@@ -4236,12 +4533,6 @@ footer {
 
 /* best-company start */
 
-/* .best-company-in-box:hover {
-  border: 1px solid #5c75c7;
-  transition: 0.1s ease-in-out;
-  background-color: #11151c;
-} */
-
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
   height: 450px;
@@ -4283,11 +4574,6 @@ footer {
 .best-company-in-box-wraper-textbox-text-p {
   color: #c4cfde;
   padding: 10px 0 30px 0;
-}
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
 }
 
 /* .about-btn{
@@ -4408,77 +4694,8 @@ footer {
 /* about end */
 
 /* competitor start */
-
-.competitor-pulse img {
-  width: 40px;
-}
-.competitor-pulse {
-  height: 75px;
-  width: 75px;
-  /* background: linear-gradient(
-      #8a82fb,
-      #9b40d7
-  ); */
-  background: #795003;
-  position: absolute;
-  /* margin: auto; */
-  /* left: 0; */
-  left: 15%;
-  top: 33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #deb25f;
-}
-.competitor-pulse:before,
-.competitor-pulse:after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #deb25f;
-  border-radius: 50%;
-  /* z-index: -1; */
-  opacity: 0.7;
-}
-.competitor-pulse:before {
-  animation: pulse 2s ease-out infinite;
-}
-.competitor-pulse:after {
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse {
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
 .competitor-in-box {
   width: 100%;
-  /* height: 550px; */
-  padding: 50px;
-  transition: 0.1s ease-in-out;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-  /* background: url(./images/pattern.png);
-  background-size:cover; */
-}
-.competitor-span-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #deb25f;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
 }
 .competitor-heading {
   text-align: center;
@@ -4493,96 +4710,8 @@ footer {
   font-size: 15px;
   letter-spacing: 1px;
 }
-.competitor-h1 {
-  color: #c4cfde;
-  font-size: 50px;
-  font-weight: 700;
-  padding-top: 20px;
-  transition: 0.5s ease-in-out;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.competitor-p {
-  color: #c4cfde;
-  text-align: center;
-}
-.competitor-in-box-wraper {
-  display: flex;
-
-  column-gap: 30px;
-  row-gap: 30px;
-  margin-top: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.competitor-box {
-  width: 30%;
-  border: 1px solid #deb25f;
-  height: 350px;
-  border-radius: 20px;
-  padding: 40px 20px 20px;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
-  gap: 15px;
-  transition: 0.3s;
-}
-.competitor-box:hover {
-  box-shadow: 10px 10px 10px #000000;
-  background-color: #deb25f;
-  /* border-radius: 20px 20px 10px 20px; */
-  transform: translateY(-10px);
-  transition: 0.3s;
-}
-.competitor-box:hover .competitor-box-i {
-  background-color: #000000;
-  color: #deb25f;
-  transform: translateY(-10px);
-  transition: 0.3s;
-}
 .competitor-box:hover .competitor-box-i i {
   rotate: 360deg;
-  transition: 0.3s;
-}
-.competitor-box:hover .competitor-box-i i {
-  background-color: #000;
-  color: #deb25f;
-}
-
-.competitor-box-i {
-  font-size: 25px;
-  color: #000000;
-  width: 50px;
-  height: 50px;
-  background-color: #deb25f;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-.competitor-box-h1 {
-  color: #c4cfde;
-  font-size: 25px;
-  transition: 0.3s;
-  text-align: center;
-}
-.competitor-box:hover .competitor-box-h1 {
-  color: #000000 !important;
-  transform: translateY(-10px);
-  transition: 0.3s;
-}
-.competitor-box-p {
-  color: #c4cfde;
-  text-align: center;
-  transition: 0.3s;
-  font-weight: 500;
-}
-.competitor-box:hover .competitor-box-p {
-  color: #000;
-  transform: translateY(-10px);
   transition: 0.3s;
 }
 
@@ -4616,78 +4745,6 @@ footer {
 
 /* competitor end */
 
-/* service-in start */
-
-.service-in {
-  width: 100%;
-  padding: 70px 100px;
-  background-color: #000;
-  position: relative;
-}
-.service-in-box {
-  width: 100%;
-  /* height: 550px; */
-  padding: 50px;
-  transition: 0.1s ease-in-out;
-  border: 1px solid #0c9179;
-  border-radius: 20px;
-  background-color: #11151c;
-}
-
-/* .service-in-box:hover{
-    border: 1px solid #0c9179;
-    transition: .1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151C;
-} */
-.service-in-h1 {
-  font-size: 50px;
-  color: #0c9179;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.service-in-textbox {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
-.service-in-box:hover .service-in-text {
-  color: #2d4085;
-  transition: 0.5s ease-in-out;
-}
-.service-in-text {
-  color: #c4cfde;
-  font-size: 50px;
-  font-weight: 700;
-  max-width: 500px;
-  padding-top: 20px;
-  transition: 0.5s ease-in-out;
-}
-.best-company-heading-text {
-  position: relative;
-  background: transparent;
-  border: 0;
-  color: #ffffff;
-  z-index: 9;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-.best-company-in-box-wraper-textbox-text-p {
-  color: #c4cfde;
-  padding: 10px 0 30px 0;
-}
-.service-in-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
-  text-align: justify;
-}
-
-/* services in end */
 
 /* php start */
 
@@ -6240,14 +6297,6 @@ padding: 0 20px;
 .best-company-pulse img {
   width: 35px;
 }
-.best-company-in-box:hover {
-  border: 1px solid #f6ff00;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
-
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
   height: 450px;
@@ -6290,12 +6339,6 @@ padding: 0 20px;
   color: #c4cfde;
   padding: 10px 0 30px 0;
 }
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
-}
-
 .best-company-btn {
   display: flex;
   justify-content: center;
@@ -6472,12 +6515,6 @@ padding: 0 20px;
 .in-bangalore-box:hover .in-bangalore-h1 {
   color: #b110c9;
 }
-.in-bangalore-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
-}
-
 .in-bangalore-down-box {
   width: 100%;
   padding: 10px 40px;
@@ -6832,13 +6869,6 @@ padding: 0 20px;
 
 /* best-company start */
 
-.best-company-in-box:hover {
-  border: 1px solid #2c8243;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
 
 .best-company-in-box:hover .best-company-in-box-wraper-textbox-text {
   color: #2c8243;
@@ -6876,11 +6906,6 @@ padding: 0 20px;
 .best-company-in-box-wraper-textbox-text-p {
   color: #c4cfde;
   padding: 10px 0 30px 0;
-}
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
 }
 .best-company-btn {
   display: flex;
@@ -7893,14 +7918,6 @@ padding: 0 20px;
 
 /* best-company start */
 
-.best-company-in-box:hover {
-  border: 1px solid #2a8fc9;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
-
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
   height: 400px;
@@ -7942,11 +7959,6 @@ padding: 0 20px;
 .best-company-in-box-wraper-textbox-text-p {
   color: #c4cfde;
   padding: 10px 0 30px 0;
-}
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
 }
 .best-company-btn {
   display: flex;
@@ -8138,12 +8150,6 @@ padding: 0 20px;
 }
 .in-bangalore-box:hover .in-bangalore-h1 {
   color: #fa553c;
-}
-.in-bangalore-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
-  text-align: justify;
 }
 .in-bangalore-down-box {
   width: 100%;
@@ -9218,14 +9224,6 @@ padding: 0 20px;
 
 /* wordpress development start */
 
-.best-company-in-box:hover {
-  border: 1px solid #2a8fc9;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
-
 .best-company-in-box-wraper-imgbox img {
   width: 100%;
   height: 400px;
@@ -9267,11 +9265,6 @@ padding: 0 20px;
 .best-company-in-box-wraper-textbox-text-p {
   color: #c4cfde;
   padding: 10px 0 30px 0;
-}
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
 }
 .best-company-btn {
   display: flex;
@@ -9327,53 +9320,7 @@ padding: 0 20px;
   }
 }
 
-.best-company-pulse img {
-  width: 40px;
-}
-.best-company-pulse {
-  height: 75px;
-  width: 75px;
-  /* background: linear-gradient(
-      #8a82fb,
-      #407ed7
-  ); */
-  background: #044164;
-  position: absolute;
-  /* margin: auto; */
-  left: 15%;
-  top: 33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #2a8fc9;
-}
-.best-company-pulse:before,
-.best-company-pulse:after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #2a8fc9;
-  border-radius: 50%;
-  /* z-index: -1; */
-  opacity: 0.7;
-}
-.best-company-pulse:before {
-  animation: pulse 2s ease-out infinite;
-}
-.best-company-pulse:after {
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse {
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
+
 
 /* best company end */
 
@@ -9669,19 +9616,13 @@ font-family: 'Helvetica Neue';
 
 /* web-development-banner start */
 
-.web-development-banner {
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-  position: relative;
-}
 
 .content-writing-banner-animation {
   position: absolute;
   overflow: hidden;
   width: 100%;
   min-height: 100vh;
-  background: #000;
+  background: var(--color-white);
   /* background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
 }
 
@@ -10026,210 +9967,11 @@ font-family: 'Helvetica Neue';
   color: #c4cfde;
   padding: 10px 0 30px 0;
 }
-.best-company-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
-  text-align: justify;
-}
-
-/* .about-btn{
-    width: 150px;
-    height: 45px;
-    border: 0;
-} */
-
-/*  */
-
-/* .about-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-.best-company-btn {
-  display: flex;
-  justify-content: center;
-}
-.best-company-btn-btn {
-  position: relative;
-  background: linear-gradient(
-    -90deg,
-    #ee7752,
-    #e73c7e,
-    #23a6d5,
-    #23d5ab,
-    #ee7752
-  );
-  background-size: 400% 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
-  border-radius: 50px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  padding: 0;
-  margin: 0;
-  animation: Gradient 4s ease infinite;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 45px;
-  color: #000;
-}
-
-.best-company-btn-btn .about-btn {
-  color: black;
-  min-height: 40px;
-  padding: 0 1.618em;
-  border-radius: inherit;
-  background-size: inherit;
-  background-image: inherit;
-  animation: Gradient 8s ease infinite;
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: overlay;
-  font-family: 'Helvetica Neue';
-}
-
-@keyframes Gradient {
-  50% {
-    background-position: 140% 50%;
-    transform: skew(-2deg);
-  }
-}
-
-.best-company-pulse img {
-  width: 40px;
-}
-.best-company-pulse {
-  height: 75px;
-  width: 75px;
-  /* background: linear-gradient(
-        #8a82fb,
-        #407ed7
-    ); */
-  background: #10067d;
-  position: absolute;
-  /* margin: auto; */
-  left: 15%;
-  top: 33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #5c75c7;
-}
-.best-company-pulse:before,
-.best-company-pulse:after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #5c75c7;
-  border-radius: 50%;
-  /* z-index: -1; */
-  opacity: 0.7;
-}
-.best-company-pulse:before {
-  animation: pulse 2s ease-out infinite;
-}
-.best-company-pulse:after {
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse {
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
 
 /* about end */
 
 /* competitor start */
 
-.competitor-pulse img {
-  width: 40px;
-}
-.competitor-pulse {
-  height: 75px;
-  width: 75px;
-  /* background: linear-gradient(
-      #8a82fb,
-      #9b40d7
-  ); */
-  background: #795003;
-  position: absolute;
-  /* margin: auto; */
-  /* left: 0; */
-  left: 15%;
-  top: 33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #deb25f;
-}
-.competitor-pulse:before,
-.competitor-pulse:after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #deb25f;
-  border-radius: 50%;
-  /* z-index: -1; */
-  opacity: 0.7;
-}
-.competitor-pulse:before {
-  animation: pulse 2s ease-out infinite;
-}
-.competitor-pulse:after {
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse {
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
-.competitor-in-box {
-  width: 100%;
-  /* height: 550px; */
-  padding: 50px;
-  transition: 0.1s ease-in-out;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-  /* background: url(./images/pattern.png);
-  background-size:cover; */
-}
-.competitor-in-box:hover {
-  border: 1px solid #deb25f;
-  transition: 0.1s ease-in-out;
-  border-radius: 20px;
-  /* background: linear-gradient(to right bottom, #212428, #16181c); */
-  background-color: #11151c;
-}
-.competitor-span-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #deb25f;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
 .competitor-heading {
   text-align: center;
 }
@@ -10243,89 +9985,11 @@ font-family: 'Helvetica Neue';
   font-size: 15px;
   letter-spacing: 1px;
 }
-.competitor-h1 {
-  color: #c4cfde;
-  font-size: 50px;
-  font-weight: 700;
-  padding-top: 20px;
-  transition: 0.5s ease-in-out;
-  text-align: center;
-  padding-bottom: 10px;
-}
 .competitor-in-box:hover {
   color: #deb25f;
 }
-.competitor-p {
-  color: #c4cfde;
-  text-align: center;
-}
-.competitor-box {
-  width: 30%;
-  border: 1px solid #deb25f;
-  height: auto;
-  border-radius: 20px;
-  padding: 40px 20px 20px;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
-  gap: 15px;
-  transition: 0.3s;
-}
-.competitor-box:hover {
-  box-shadow: 10px 10px 10px #000000;
-  background-color: #deb25f;
-  /* border-radius: 20px 20px 10px 20px; */
-  transform: translateY(-10px);
-  transition: 0.3s;
-}
-.competitor-box:hover .competitor-box-i {
-  background-color: #000000;
-  color: #deb25f;
-  transform: translateY(-10px);
-  transition: 0.3s;
-}
 .competitor-box:hover .competitor-box-i i {
   rotate: 360deg;
-  transition: 0.3s;
-}
-.competitor-box:hover .competitor-box-i i {
-  background-color: #000;
-  color: #deb25f;
-}
-
-.competitor-box-i {
-  font-size: 25px;
-  color: #000000;
-  width: 50px;
-  height: 50px;
-  background-color: #deb25f;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-.competitor-box-h1 {
-  color: #c4cfde;
-  font-size: 25px;
-  transition: 0.3s;
-  text-align: center;
-}
-.competitor-box:hover .competitor-box-h1 {
-  color: #000000 !important;
-  transform: translateY(-10px);
-  transition: 0.3s;
-}
-.competitor-box-p {
-  color: #c4cfde;
-  text-align: center;
-  transition: 0.3s;
-  font-weight: 500;
-}
-.competitor-box:hover .competitor-box-p {
-  color: #000;
-  transform: translateY(-10px);
   transition: 0.3s;
 }
 
@@ -10359,78 +10023,6 @@ font-family: 'Helvetica Neue';
 
 /* competitor end */
 
-/* service-in start */
-
-.service-in {
-  width: 100%;
-  padding: 70px 100px;
-  background-color: #000;
-  position: relative;
-}
-.service-in-box {
-  width: 100%;
-  /* height: 550px; */
-  padding: 50px;
-  transition: 0.1s ease-in-out;
-  border: 1px solid #0c9179;
-  border-radius: 20px;
-  background-color: #11151c;
-}
-
-/* .service-in-box:hover{
-    border: 1px solid #0c9179;
-    transition: .1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151C;
-} */
-.service-in-h1 {
-  font-size: 50px;
-  color: #0c9179;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.service-in-textbox {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
-.service-in-box:hover .service-in-text {
-  color: #2d4085;
-  transition: 0.5s ease-in-out;
-}
-.service-in-text {
-  color: #c4cfde;
-  font-size: 50px;
-  font-weight: 700;
-  max-width: 500px;
-  padding-top: 20px;
-  transition: 0.5s ease-in-out;
-}
-.best-company-heading-text {
-  position: relative;
-  background: transparent;
-  border: 0;
-  color: #ffffff;
-  z-index: 9;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-.best-company-in-box-wraper-textbox-text-p {
-  color: #c4cfde;
-  padding: 10px 0 30px 0;
-}
-.service-in-p {
-  color: #c4cfde;
-  font-size: 17px;
-  padding-bottom: 20px;
-  text-align: justify;
-}
-
-/* services in end */
 
 /* php start */
 
@@ -12322,22 +11914,6 @@ padding: 0 20px;
     height: 20%;
   }
 }
-.swiper-button-prev-next-flex{
-  display: flex;
-  justify-content: end;
-  gap: 10px;
-}
-.testimonial-prev-button, .testimonial-next-button {
-  width: 50px;
-    height: 50px;
-    background-color: var(--icon-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--icon-color);
-    border-radius: 50%;
-}
-
 
 /* services page css start */
 
@@ -12431,572 +12007,6 @@ padding: 0 20px;
 }
 
 /* web development php box start */
-
-.web-development-page-php-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-php-box:hover{
-  border: 1px solid #652ac9;
-}
-.web-development-page-php-box-h1-heading{
-    color: #c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-php-box:hover .web-development-page-php-box-h1-heading{
-    color: #652ac9;
-}
-.web-development-page-pulse img{
-  width: 40px;
-}
-.web-development-page-pulse{
-  height: 75px;
-  width: 75px;
-  background: #2f0579;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #652ac9;
-}
-.web-development-page-pulse:before,
-.web-development-page-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #652ac9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-php-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-php-box:hover .web-development-page-php-box-down-circle{
-  background-color: #652ac9;
-    box-shadow: 7px 10px 10px #000000;
-    color: #11151c;
-}
-
-
-/* web development wordpress box start */
-
-.web-development-page-wordpress-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-wordpress-box:hover{
-  border: 1px solid #72a5f7;
-}
-.web-development-page-wordpress-box-h1-heading{
-    color: #c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-wordpress-box:hover .web-development-page-wordpress-box-h1-heading{
-    color: #72a5f7;
-}
-.web-development-page-wordpress-pulse img{
-  width: 40px;
-}
-.web-development-page-wordpress-pulse{
-  height: 75px;
-  width: 75px;
-  background: #043583;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #72a5f7;
-}
-.web-development-page-wordpress-pulse:before,
-.web-development-page-wordpress-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#72a5f7;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-wordpress-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-wordpress-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-wordpress-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-wordpress-box:hover .web-development-page-wordpress-box-down-circle{
-  background-color: #72a5f7;
-    box-shadow: 7px 10px 10px #000000;
-    color: #11151c;
-}
-
-
-/* web development Shopify box start */
-
-.web-development-page-shopify-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-shopify-box:hover{
-  border: 1px solid #b110c9;
-}
-.web-development-page-shopify-box-h1-heading{
-    color:#c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-shopify-box:hover .web-development-page-shopify-box-h1-heading{
-    color: #b110c9;
-}
-.web-development-page-shopify-pulse img{
-  width: 40px;
-}
-.web-development-page-shopify-pulse{
-  height: 75px;
-  width: 75px;
-  background: #51025e;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #b110c9;
-}
-.web-development-page-shopify-pulse:before,
-.web-development-page-shopify-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#b110c9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-shopify-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-shopify-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-shopify-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-shopify-box:hover .web-development-page-shopify-box-down-circle{
-  background-color: #b110c9;
-    box-shadow: 7px 10px 10px #000000;
-    color: #11151c;
-}
-
-
-/* web development magento box start */
-
-.web-development-page-magento-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-magento-box:hover{
-  border: 1px solid #c91045;
-}
-.web-development-page-magento-box-h1-heading{
-    color:#c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-magento-box:hover .web-development-page-magento-box-h1-heading{
-    color: #c91045;
-}
-.web-development-page-magento-pulse img{
-  width: 40px;
-}
-.web-development-page-magento-pulse{
-  height: 75px;
-  width: 75px;
-  background: #680420;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #c91045;
-}
-.web-development-page-magento-pulse:before,
-.web-development-page-magento-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#c91045;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-magento-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-magento-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-magento-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-magento-box:hover .web-development-page-magento-box-down-circle{
-  background-color: #c91045;
-    box-shadow: 7px 10px 10px #000000;
-}
-
-
-
-/* web development joomla box start */
-
-.web-development-page-joomla-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-joomla-box:hover{
-  border: 1px solid #0bb84a;
-}
-.web-development-page-joomla-box-h1-heading{
-    color:#c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-joomla-box:hover .web-development-page-joomla-box-h1-heading{
-    color: #0bb84a;
-}
-.web-development-page-joomla-pulse img{
-  width: 40px;
-}
-.web-development-page-joomla-pulse{
-  height: 75px;
-  width: 75px;
-  background: #056e2c;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #0bb84a;
-}
-.web-development-page-joomla-pulse:before,
-.web-development-page-joomla-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#0bb84a;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-joomla-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-joomla-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-joomla-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-joomla-box:hover .web-development-page-joomla-box-down-circle{
-  background-color: #0bb84a;
-    box-shadow: 7px 10px 10px #000000;
-}
-
-
-
-/* web development react box start */
-
-.web-development-page-react-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-react-box:hover{
-  border: 1px solid #72a5f7;
-}
-.web-development-page-react-box-h1-heading{
-    color:#c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-react-box:hover .web-development-page-react-box-h1-heading{
-    color: #72a5f7;
-}
-.web-development-page-react-pulse img{
-  width: 40px;
-}
-.web-development-page-react-pulse{
-  height: 75px;
-  width: 75px;
-  background: #043583;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #72a5f7;
-}
-.web-development-page-react-pulse:before,
-.web-development-page-react-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#72a5f7;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-react-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-react-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-react-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-react-box:hover .web-development-page-react-box-down-circle{
-  background-color:#72a5f7;
-    box-shadow: 7px 10px 10px #000000;
-}
-
-
-
-/* web development node js box start */
-
-.web-development-page-node-js-box{
-  background-size: cover;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 50px;
-    position: relative;
-    transition: .1s ease-in-out;
-    width: 100%;
-}
-.web-development-page-node-js-box:hover{
-  border: 1px solid #652ac9;
-}
-.web-development-page-node-js-box-h1-heading{
-    color:#c4cfde;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.web-development-page-node-js-box:hover .web-development-page-node-js-box-h1-heading{
-    color: #652ac9;
-}
-.web-development-page-node-js-pulse img{
-  width: 40px;
-}
-.web-development-page-node-js-pulse{
-  height: 75px;
-  width: 75px;
-  background: #2f0579;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #652ac9;
-}
-.web-development-page-node-js-pulse:before,
-.web-development-page-node-js-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#652ac9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.web-development-page-node-js-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.web-development-page-node-js-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
-.web-development-page-node-js-box-down-circle{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.web-development-page-node-js-box:hover .web-development-page-node-js-box-down-circle{
-  background-color:#652ac9;
-    box-shadow: 7px 10px 10px #000000;
-}
-
-
-/* ----------------------------------WEB DEVELOPMENT PAGE CSS END ------------------------------------ */
 
 
 /* --------------------------- DIGITAL MARKETING PAGE START --------------------*/
@@ -13094,170 +12104,12 @@ padding: 0 20px;
 
 /* DIGITAL MARKETING page SEO Services in Bangalore section start */
 
-.digital-marketing-seo-services-box{
-  width: 100%;
-    padding: 50px;
-    transition: 0.1s ease-in-out;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    position: relative;
-}
-.digital-marketing-seo-services-box:hover{
-  border: 1px solid #b110c9;
-    transition: 0.1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151c;
-}
-.digital-marketing-seo-services-box-h1-heading{
-  color: #c4cfde;
-  font-size: 50px;
-  padding-bottom: 30px;
-  text-align:left;
-}
-.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-h1-heading{
-  color: #b110c9;
-}
-.digital-marketing-seo-services-box-in-down{
-  width: 100%;
-  padding: 10px 40px;
-  background-color: transparent;
-  border-radius: 20px;
-  border: 2px solid #ffffff;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.digital-marketing-seo-services-box:hover .digital-marketing-seo-services-box-in-down{
-  background-color: #b110c9;
-}
-.digital-marketing-seo-services-pulse img{
-  width: 40px;
-}
-.digital-marketing-seo-services-pulse{
-  height: 75px;
-  width: 75px;
-  background: #51025e;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #b110c9;
-}
-.digital-marketing-seo-services-pulse:before,
-.digital-marketing-seo-services-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#b110c9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.digital-marketing-seo-services-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.digital-marketing-seo-services-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
-
 /* DIGITAL MARKETING page SEO Services in Bangalore section end */
 
 
 
 /* DIGITAL MARKETING page Social Media Marketing Services section start */
 
-.digital-marketing-page-social-media-marketing-box{
-  width: 100%;
-    padding: 50px;
-    transition: 0.1s ease-in-out;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    position: relative;
-}
-.digital-marketing-page-social-media-marketing-box:hover{
-  border: 1px solid #c91045;
-    transition: 0.1s ease-in-out;
-    border-radius: 20px;
-    background-color: #11151c;
-}
-.digital-marketing-page-social-media-marketing-box-h1-heading{
-  color: #c4cfde;
-  font-size: 50px;
-  padding-bottom: 30px;
-  text-align: left;
-}
-.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-h1-heading{
-  color: #c91045;
-}
-.digital-marketing-page-social-media-marketing-box-in-down{
-  width: 100%;
-  padding: 10px 40px;
-  background-color: transparent;
-  border-radius: 20px;
-  border: 2px solid #ffffff;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.digital-marketing-page-social-media-marketing-box:hover .digital-marketing-page-social-media-marketing-box-in-down{
-  background-color: #c91045;
-}
-.in-bangalore2-down-box-i{
-  display: flex;
-}
-.digital-marketing-page-social-media-marketing-pulse img{
-  width: 40px;
-}
-.digital-marketing-page-social-media-marketing-pulse{
-  height: 75px;
-  width: 75px;
-  background: #680420;
-  position: absolute;
-  left: 15%;
-  top:33px;
-  bottom: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 99;
-  border: 2px solid #c91045;
-}
-.digital-marketing-page-social-media-marketing-pulse:before,
-.digital-marketing-page-social-media-marketing-pulse:after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:#c91045;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.digital-marketing-page-social-media-marketing-pulse:before{
-  animation: pulse 2s ease-out infinite;
-}
-.digital-marketing-page-social-media-marketing-pulse:after{
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse{
-  100%{
-      transform: scale(2.5);
-      opacity: 0;
-  }
-}
 
 /* DIGITAL MARKETING page Social Media Marketing Services section end */
 

@@ -1,19 +1,14 @@
 import React from 'react';
-import { images } from '../../Constant/images';
 import CompetitorBox from './CompetitorBox';
 import PropTypes from 'prop-types';
 
 // CompetitorSection component
 const CompetitorSection = ({ competitorData }) => {
-  const { timeImage } = images;
   const { title, description, boxes } = competitorData;
 
   return (
     <>
       <section className="competitor">
-        <div className="competitor-pulse">
-          <img src={timeImage} alt="Competitor Pulse" />
-        </div>
         <div className="competitor-in-box">
           <h1 className="competitor-h1">{title}</h1>
           <p className="competitor-p">{description}</p>

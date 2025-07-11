@@ -5,6 +5,7 @@ const ContactHeroSection = () => {
   return (
     <>
       <div className="layerrr">
+        <div className='contact-hero-wraper'>
          <div className="herosection-heading-h1">
           <h1 className="hero-section-textbox-h1">Contact Us</h1>
         </div>
@@ -22,6 +23,7 @@ const ContactHeroSection = () => {
           <p className="about-text-p2">
             Where innovation meets expertise in web development
           </p>
+        </div>
         </div>
        
       </div>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../../style/style.css';
 // import user1Image from '../../images/user (1).png';
 import service4Image from '../../images/service-4.jpg';
+import headingIconImage from '../../images/subtitle-icon.png';
+import clientTrust from '../../images/client-trust-img.avif';
 // import ServicesHeroSection from '../../Pages/Services/ServicesHeroSection';
 import WorkSection from '../../Pages/LandingPages/WorkSection';
 import { PopUpContext } from '../../Context/ToastContext';
@@ -65,6 +67,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+      {/* OUR VISION MISSION SECTION START */}
       <section className='our-vission-mission-section'>
       <div className='our-vission-mission-section-container'>
         <div className='our-vission-mission-section-heading-box'>
@@ -111,7 +115,81 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+    {/* OUR VISION MISSION SECTION END */}
+
+    {/* OUR CLIENT TRUST START */}
+
+    <section className='client-trust'>
+      <div className="top-heading text-center">
+              <button className="top-heading-text text-stroke-color2 justify-center">
+                <img src={headingIconImage} alt="about-image" />
+                client trust
+              </button>
+        </div>
+        <h1 className="full-heading-text-color-change-span text-center">Why Clients Trust <span className='heading-text-color-change-span'>Techsaraz</span></h1>
+      <div className='client-trust-in-text-imgbox'>
+        <div className='client-trust-in-textbox'>
+          <div className='client-trust-textbox-child grid-1box'>
+            <h1 className='client-trust-textbox-child-h1'>.01</h1>
+            <h3 className='client-trust-textbox-child-h3'>Proven track record of delivering complex projects on time and within budget.</h3>
+          </div>
+          <div className='client-trust-textbox-child'>
+            <h1 className='client-trust-textbox-child-h1'>.02</h1>
+            <h3 className='client-trust-textbox-child-h3'>Agile, scalable solutions tailored to unique business needs.</h3>
+          </div>
+          <div className='client-trust-textbox-child'>
+             <h1 className='client-trust-textbox-child-h1'>.03</h1>
+            <h3 className='client-trust-textbox-child-h3'>A team of certified experts committed to continuous learning and innovation.</h3>
+          </div>
+          <div className='client-trust-textbox-child'>
+            <h1 className='client-trust-textbox-child-h1'>.04</h1>
+            <h3 className='client-trust-textbox-child-h3'>Transparent communication and a client-first mindset.</h3>
+          </div>
+          <div className='client-trust-textbox-child'>
+            <h1 className='client-trust-textbox-child-h1'>.05</h1>
+            <h3 className='client-trust-textbox-child-h3'>Strong emphasis on data security, privacy, and compliance.</h3>
+          </div>
+        </div>
+        <div className='client-trust-in-imgbox'>
+           <div className='client-trust-in-imgbox-clienttrust-img'>
+           <img src={clientTrust} alt="about-image" />
+           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* OUR CLIENT TRUST END */}
+
       <WorkSection />
+
+          {/* LETS BUILDS FUTURE TOGETHER SECTION START */}
+
+    <section className='builds-together'>
+      <div className='builds-together-child-grid-container'>
+        <div className='builds-together-child-text-container'>
+          <div className="top-heading text-center">
+              <button className="top-heading-text color-white justify-center">
+                <img src={headingIconImage} alt="about-image" />
+                builds-together
+              </button>
+        </div>
+        <h1 className="full-heading-text-color-change-span text-center color-white">Let’s Build the <span className='heading-text-color-change-span heading-text-color-change-span-span'>Future Together</span></h1>
+        <p className='builds-together-para paragraph-p text-center color-white'>Ready to take your business to the next level? Let’s connect and explore how Techsaraz can help you achieve your goals.</p>
+        <Link
+            className="button-btn-btn2"
+            onClick={() => togalPopUp(true)}
+            >
+            CONTACT US
+        </Link>
+
+        </div>
+      </div>
+    </section>
+
+
+    {/* LETS BUILDS FUTURE TOGETHER SECTION END */}
+
+
     </>
   );
 };
