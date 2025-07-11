@@ -15,22 +15,12 @@ import TagManager from 'react-gtm-module';
 import { useSetTitle } from './Hooks/useSetTitle';
 import WhatsUp from './Pages/LandingPages/WhatsUp';
 
-const tagManagerArgs = {
-  gtmId: process.env.REACT_APP_GMT_ID,
-};
-
-TagManager.initialize(tagManagerArgs);
-
 function App() {
   const [isPopUp, setIsPopUp] = useState(true);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
   const { titleSetter } = useSetTitle();
   const location = useLocation();
-
-  window.dataLayer.push({
-    event: 'pageview',
-  });
 
   // Scroll to top on route change
   useEffect(() => {
@@ -93,7 +83,19 @@ function App() {
       togalPopUp(true);
     }
   }, [mouseY]);
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: process.env.REACT_APP_GTM_ID, // Corrected variable name
+    };
+    TagManager.initialize(tagManagerArgs);
 
+    // Wait for GTM to initialize before pushing to dataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+      });
+    }
+  }, []);
   return (
     <ToastProvider>
       <PopUpContext.Provider value={{ isPopUp, togalPopUp }}>

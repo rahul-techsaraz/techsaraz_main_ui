@@ -316,4 +316,18 @@ export const constants = {
     aboutSectionDescription:
       'Tech SaraZ is a software company based in Bangalore that specializes in top-notch digital Marketing and web design. In our fast-paced digital world, it’s crucial to make your products or services shine brighter than the rest. We’re here to support those with big dreams and a relentless drive to succeed in their online businesses by providing our unmatched services. A well-designed website is the key to drawing in and keeping customers in this digital era. We at Tech SaraZ grasp this essential fact, and our work ranges from creating the most inventive and user-friendly websites to effectively marketing business online. A top-tier website and extraordinary marketing services can act as the spark that sends business soaring. Our experienced professionals are committed to ensuring your online presence isn’t just another face in the crowd but a standout player that grabs attention and fuels business growth. With Tech SaraZ, you can be confident that your digital marketing needs are in the safest hands.',
   },
+  apiUrl: {
+    SEND_MAIL: 'https://techsaraz.in/mail/newsendmail.php',
+  },
+  apiMethod: {
+    POST: 'post',
+  },
+  apiHeader: {
+    JSON: {'Content-Type': 'application/json'}
+  },
+  apiResponse: {
+    SUCCESS: 'SUCCESS',
+    ERROR: 'error',
+    SUCCESS_CODE: 200,
+  }
 };
