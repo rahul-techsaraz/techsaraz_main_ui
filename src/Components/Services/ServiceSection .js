@@ -25,10 +25,10 @@ const ServiceSection = ({
             </div> */}
             <div className={classesToToggle.box}>
               <div className="all-services-wraper">
-                <div className="php-imgbox">
+                <div className="services-all-img">
                   <img src={imageSrc} alt={altText} />
                 </div>
-                <div className="in-bangalore-textbox">
+                <div className="services-all-parents-textbox">
                   <h1 className={classesToToggle.heading}>{title}</h1>
                   <p className="paragraph-p">{description}</p>
                 </div>
@@ -58,12 +58,12 @@ const ServiceSection = ({
               <img src={pulseImageSrc} alt={pulseAltText} />
             </div> */}
             <div className={classesToToggle.box}>
-              <div className="in-bangalore2-wraper">
-                <div className="in-bangalore2-textbox">
+              <div className="all-services-wraper">
+                <div className="services-all-parents-textbox">
                   <h1 className={classesToToggle.heading}>{title}</h1>
                   <p className="paragraph-p">{description}</p>
                 </div>
-                <div className="in-bangalore2-imgbox">
+                <div className="services-all-img">
                   <img src={imageSrc} alt="best-company-image" />
                 </div>
               </div>

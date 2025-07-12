@@ -5,10 +5,9 @@ import '../../Pages/css/web-development.css';
 import PropTypes from 'prop-types';
 const SlideBoxAnimations = ({ slideAnimationData }) => {
   return (
-    <section className="our-ecommerce">
-      <div className="our-ecommerce-in-box">
+    <section className="all-services-optionbox-container">
         <h1 className="our-ecommerce-in-box-h1">{slideAnimationData.title}</h1>
-        <p className="our-ecommerce-in-box-p">
+        <p className="benefits-p">
           {slideAnimationData.description}
         </p>
         <div className="our-ecommerce-in-box-wraper">
@@ -30,7 +29,7 @@ const SlideBoxAnimations = ({ slideAnimationData }) => {
             </div>
           ))}
         </div>
-      </div>
+  
     </section>
   );
 };
