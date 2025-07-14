@@ -8,67 +8,85 @@ const Footer = () => {
   const { HOME, ABOUT_US, BLOG, SERVICES, CONTACT } = Routes;
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // This function handles the scroll logic
-  const handleScroll = () => {
-    if (
-      document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 200
-    ) {
-      setShowScrollTop(true);
-    } else {
-      setShowScrollTop(false);
-    }
-  };
-
   // Scroll function for the button click
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
-    const loadRecaptchaScript = () => {
-      const script = document.createElement('script');
-      script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.REACT_APP_RECAPTCHA_SITE_KEY}`;
-      script.async = true;
-      script.defer = true;
-      document.body.appendChild(script);
-
-      script.onload = () => {
-        window.grecaptcha.ready(async () => {
-          const recaptchaToken = await window.grecaptcha.execute(
-            process.env.REACT_APP_RECAPTCHA_SITE_KEY,
-            { action: 'submit' },
-          );
-
-          const ipData = await fetch('https://ipapi.co/json/').then((res) =>
-            res.json(),
-          );
-
-          const payload = {
-            ...ipData,
-            userAgent: navigator.userAgent,
-            recaptchaToken,
-          };
-          console.log({ payload });
-
-          fetch(process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload),
-          });
-        });
-      };
+    const handleScroll = () => {
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
     };
 
-    loadRecaptchaScript();
-    // Adding scroll event listener on component mount
+    const loadRecaptchaAndTrack = () => {
+      const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+      const backendUrl = process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL;
+
+      // Prevent multiple script injections
+      if (!document.querySelector('#recaptcha-script')) {
+        const script = document.createElement('script');
+        script.id = 'recaptcha-script';
+        script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+
+        script.onload = () => {
+          const interval = setInterval(() => {
+            if (window.grecaptcha) {
+              clearInterval(interval);
+
+              window.grecaptcha.ready(async () => {
+                try {
+                  const recaptchaToken = await window.grecaptcha.execute(
+                    siteKey,
+                    {
+                      action: 'submit',
+                    },
+                  );
+
+                  const ipData = await fetch('https://ipapi.co/json/').then(
+                    (res) => res.json(),
+                  );
+
+                  const payload = {
+                    ...ipData,
+                    userAgent: navigator.userAgent,
+                    recaptchaToken,
+                  };
+
+                  console.log('Tracking Payload:', payload); // ✅ Should log in console
+
+                  await fetch(backendUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                  });
+                } catch (error) {
+                  console.error('Error tracking visitor:', error);
+                }
+              });
+            }
+          }, 200);
+        };
+      }
+    };
+
+    loadRecaptchaAndTrack();
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
     <>
       <footer>
