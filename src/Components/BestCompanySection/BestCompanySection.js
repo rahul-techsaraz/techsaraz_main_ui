@@ -24,14 +24,14 @@ const BestCompanySection = ({
       <div className="best-company-in-box">
         <div className="best-company-in-box-wraper">
           <div className="best-company-in-box-wraper-textbox">
-            <p className="best-company-p">{title}</p>
+            <p className="service-in-p">{title}</p>
             {description.map((text, index) => (
-              <p key={index} className="best-company-p">
+              <p key={index} className="service-in-p">
                 {text}
               </p>
             ))}
           </div>
-          <div className="best-company-in-box-wraper-imgbox">
+          <div className="services-all-img">
             <img src={webDevelopmentMain768x587Image} alt="Web Development" />
           </div>
         </div>

@@ -21,7 +21,6 @@ const AboutSection = () => {
                 <span className="top-section-span-round"></span>
               </button>
             </div>
-            <div className="border-animation border-animation-border"></div>
             <div className="full-heading-text-color-change-span">
               WE ARE MORE THAN JUST AN <span className='heading-text-color-change-span'>IT COMPANY</span>
             </div>

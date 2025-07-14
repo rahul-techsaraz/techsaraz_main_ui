@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { images } from '../../Constant/images';
+// import { images } from '../../Constant/images';
 
 const BenefitBox = React.memo(({ imageSrc, title, description, icon }) => (
   <article className="benefits-box" id="benefits-seo-heigh">
@@ -17,13 +17,13 @@ const BenefitBox = React.memo(({ imageSrc, title, description, icon }) => (
 ));
 
 const BenefitsSection = ({ benefitsData, title, description }) => {
-  const { timeImage } = images;
+  // const { timeImage } = images;
 
   return (
     <section className="benefits">
-      <div className="benefits-pulse">
+      {/* <div className="benefits-pulse">
         <img src={timeImage} alt="Time-related illustration" />
-      </div>
+      </div> */}
       <div className="benefits-in-box">
         <h1 className="benefits-h1">{title}</h1>
         <p className="benefits-p">{description}</p>

@@ -4,7 +4,6 @@ import { images } from '../../../../Constant/images';
 
 const WordpressDevelopment = () => {
   const {
-    timeImage,
     webImage,
     socialImage,
     migrationImage,
@@ -15,10 +14,7 @@ const WordpressDevelopment = () => {
     user1Image,
   } = images;
   return (
-    <section className="benefits">
-      <div className="benefits-pulse">
-        <img src={timeImage} alt="" />
-      </div>
+    <section className="all-services-optionbox-container">
       <div className="benefits-in-box">
         <h1 className="benefits-h1">
           Our WordPress website development services in Bangalore
