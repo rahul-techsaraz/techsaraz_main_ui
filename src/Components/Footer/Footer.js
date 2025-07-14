@@ -27,7 +27,7 @@ const Footer = () => {
 
     const loadRecaptchaAndTrack = () => {
       const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-      const backendUrl = process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL;
+      // const backendUrl = process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL;
 
       // Prevent multiple script injections
       if (!document.querySelector('#recaptcha-script')) {
