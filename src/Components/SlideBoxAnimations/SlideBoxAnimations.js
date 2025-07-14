@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const SlideBoxAnimations = ({ slideAnimationData }) => {
   return (
     <section className="all-services-optionbox-container">
-        <h1 className="our-ecommerce-in-box-h1">{slideAnimationData.title}</h1>
+        <h1 className="our-ecommerce-in-box-h1 text-center">{slideAnimationData.title}</h1>
         <p className="benefits-p">
           {slideAnimationData.description}
         </p>
