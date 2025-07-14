@@ -27,7 +27,7 @@ const Footer = () => {
 
     const loadRecaptchaAndTrack = () => {
       const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-      const backendUrl = process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL;
+      // const backendUrl = process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL;
 
       // Prevent multiple script injections
       if (!document.querySelector('#recaptcha-script')) {
@@ -39,18 +39,26 @@ const Footer = () => {
         document.body.appendChild(script);
 
         script.onload = () => {
+          console.log('✅ reCAPTCHA script loaded');
+
           const interval = setInterval(() => {
             if (window.grecaptcha) {
               clearInterval(interval);
+              console.log('✅ grecaptcha available');
 
               window.grecaptcha.ready(async () => {
+                console.log('✅ grecaptcha.ready triggered');
+
                 try {
+                  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
                   const recaptchaToken = await window.grecaptcha.execute(
                     siteKey,
                     {
                       action: 'submit',
                     },
                   );
+
+                  console.log('✅ recaptchaToken received:', recaptchaToken);
 
                   const ipData = await fetch('https://ipapi.co/json/').then(
                     (res) => res.json(),
@@ -62,15 +70,19 @@ const Footer = () => {
                     recaptchaToken,
                   };
 
-                  console.log('Tracking Payload:', payload); // ✅ Should log in console
+                  console.log('📦 Payload to send:', payload);
 
+                  const backendUrl =
+                    process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL;
                   await fetch(backendUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload),
                   });
+
+                  console.log('🚀 Data sent to backend');
                 } catch (error) {
-                  console.error('Error tracking visitor:', error);
+                  console.error('❌ Error in tracking:', error);
                 }
               });
             }
