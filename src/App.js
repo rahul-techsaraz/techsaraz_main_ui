@@ -14,6 +14,7 @@ import { PopUpContext } from './Context/ToastContext';
 import TagManager from 'react-gtm-module';
 import { useSetTitle } from './Hooks/useSetTitle';
 import WhatsUp from './Pages/LandingPages/WhatsUp';
+//import LeadCaptureBanner from './Components/LeadSection/LeadCaptureBanner';
 
 function App() {
   const [isPopUp, setIsPopUp] = useState(true);
@@ -113,6 +114,7 @@ function App() {
             </>
           )}
           <Footer />
+          {/* <LeadCaptureBanner /> */}
         </div>
       </PopUpContext.Provider>
     </ToastProvider>

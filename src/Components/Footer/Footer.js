@@ -26,6 +26,41 @@ const Footer = () => {
   };
 
   useEffect(() => {
+    const loadRecaptchaScript = () => {
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.REACT_APP_RECAPTCHA_SITE_KEY}`;
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+
+      script.onload = () => {
+        window.grecaptcha.ready(async () => {
+          const recaptchaToken = await window.grecaptcha.execute(
+            process.env.REACT_APP_RECAPTCHA_SITE_KEY,
+            { action: 'submit' },
+          );
+
+          const ipData = await fetch('https://ipapi.co/json/').then((res) =>
+            res.json(),
+          );
+
+          const payload = {
+            ...ipData,
+            userAgent: navigator.userAgent,
+            recaptchaToken,
+          };
+          console.log({ payload });
+
+          fetch(process.env.REACT_APP_LOCAL_VISITOR_TRACK_BACKEND_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+        });
+      };
+    };
+
+    loadRecaptchaScript();
     // Adding scroll event listener on component mount
     window.addEventListener('scroll', handleScroll);
 
