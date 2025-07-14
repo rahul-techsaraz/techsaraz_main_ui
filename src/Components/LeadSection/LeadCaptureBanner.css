@@ -1,0 +1,153 @@
+/* Disable scroll */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Cookie Banner Overlay */
+.cookie-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cookie-banner {
+  background-color: #222;
+  color: white;
+  padding: 20px 24px;
+  font-size: 15px;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  max-width: 480px;
+  animation: slideUp 0.4s ease-out forwards;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-banner p {
+  margin: 0 0 10px 0;
+}
+
+.cookie-banner a {
+  color: #4ea8ff;
+  text-decoration: underline;
+}
+
+.accept-btn {
+  background-color: #4ea8ff;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #007acc;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  background-color: #4ea8ff;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #007acc;
+}
+
+/* Form */
+.lead-wrapper {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.lead-form {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.lead-form h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.lead-form input[type='email'],
+.lead-form input[type='tel'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.checkbox-label input {
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.lead-form button {
+  background-color: #4ea8ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lead-form button:hover {
+  background-color: #007acc;
+}
